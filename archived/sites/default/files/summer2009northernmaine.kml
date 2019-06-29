@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<kml xmlns:umapst="http://www.afcomponents.com/as3/umap/styles" xmlns:umap="http://www.afcomponents.com/as3/umap" xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name><![CDATA[Summer 2009 (ME)]]></name>
+    <visibility>1</visibility>
+    <Style id="EditablePolylineStyle6">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle7">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle8">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Placemark id="EditablePolyline6">
+      <styleUrl>#EditablePolylineStyle6</styleUrl>
+      <name>Line1</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-71.49243606341554,42.75203091963502,0 -71.49628127825927,42.80561079135247,0 -71.49154342425538,42.83482235529687,0 -71.50252975238038,42.87106578559373,0 -71.46201766741945,42.90125239598066,0 -71.46888412249757,42.94750984039972,0 -71.41120589984132,42.962586279723375,0 -71.41669906390382,43.000763394557005,0 -71.38374007952882,43.00980187053172,0 -71.35764755023195,43.02988261139768,0 -71.26563705218507,43.04393522231834,0 -71.2285581947632,43.022848824215494,0 -71.19422591937257,43.02185110314197,0 -71.1516538978882,43.03288788218457,0 -71.10084213031007,43.02787483284652,0 -71.08298934710695,43.02787483284652,0 -71.04591048968507,43.018933146577886,0 -70.97861922991945,43.004830873314994,0 -70.9319273353882,42.99889904346152,0 -70.90858138812257,42.97665429060139,0 -70.87562240374757,42.96670024970722,0 -70.8550230385132,42.960670520430604,0 -70.84678329241945,42.99181776024094,0 -70.8055845619507,43.056071828944326,0 -70.76575912249757,43.091232469324794,0 -70.70533431781007,43.13529269584028,0 -70.65589584124757,43.161342969762565,0 -70.63941634906007,43.20931277633864,0 -70.62568343890382,43.245479528331295,0 -70.61469711077882,43.273488845324444,0 -70.61469711077882,43.311466158656636,0 -70.53230823291015,43.450203914214356,0 -70.4966026665039,43.480111886045066,0 -70.4801231743164,43.50700458105853,0 -70.44664920581054,43.53326927515702,0 -70.35257877124023,43.623670435010375,0 -70.3318077446289,43.6432946384014,0 -70.33043445361328,43.66614729465431,0 -70.30159534228515,43.72472955680962,0 -70.2988487602539,43.74755120578689,0 -70.31258167041015,43.77433073875392,0 -70.3263145805664,43.86350927483321,0 -70.34004749072265,43.89617469740363,0 -70.32906116259765,43.95650908594902,0 -70.30846179736328,43.9812186142109,0 -70.30159534228515,44.01381945128302,0 -70.2768761040039,44.03060683150767,0 -70.21370471728515,44.05627245363063,0 -70.19722522509765,44.07304780988993,0 -70.15877307666015,44.06712763873546,0 -70.13680042041015,44.07107448530176,0 -70.05577625048828,44.11348646375755,0 -70.03792346728515,44.125316936299356,0 -69.97063220751953,44.125316936299356,0 -69.87724841845703,44.16473473644222,0 -69.86763538134765,44.16966011076322,0 -69.82231677783203,44.21495425733288,0 -69.80721057666015,44.23857216669008,0 -69.80583728564453,44.305438113960015,0 -69.81407703173828,44.33000205644132,0 -69.80171741259765,44.33981861544099,0 -69.78111804736328,44.353573766669875,0 -69.73167957080078,44.4350624352826,0 -69.71245349658203,44.45177911563064,0 -69.69734729541015,44.515464516284226,0 -69.67125476611328,44.55863914088495,0 -69.66576160205078,44.570429049510466,0 -69.63280261767578,44.57331501160054,0 -69.61082996142578,44.598738304941136,0 -69.59297717822265,44.59972224831646,0 -69.56688464892578,44.60847311085736,0 -69.4913536430664,44.66519339174203,0 -69.4419151665039,44.716942598976786,0 -69.39384998095703,44.79793009082862,0 -69.34173358691406,44.81351969748395,0 -69.30740131152344,44.833000781108844,0 -69.29366840136719,44.83202688327409,0 -69.24974025500488,44.81254547049893,0 -69.22912372363281,44.80377668704779,0 -69.20304836047363,44.792082902142376,0 -69.15496600878906,44.78627776320509,0 -69.09042133105469,44.784285728946756,0 -69.00665057910156,44.772587994270594,0 -68.97231830371094,44.759912774058854,0 -68.938003194458,44.76771323871943,0 -68.90365375292969,44.76381313804728,0 -68.81164325488281,44.782336271074136,0 -68.7896877647705,44.80864839798413,0 -68.74709857714844,44.827248458572804,0 -68.71964992297363,44.857385467920224,0 -68.69354022753906,44.878797988988325,0 -68.68943752062988,44.90025118218399,0 -68.70453513873291,44.9274818003413,0 -68.70591701281738,44.964417001214784,0 -68.69767726672363,45.01589219862121,0 -68.68667377246094,45.04500861282153,0 -68.69216693652344,45.095441976075804,0 -68.69354022753906,45.11773484578118,0 -68.70315326464844,45.15551590143033,0 -68.69216693652344,45.17488109177731,0 -68.69079364550781,45.188432808128525,0 -68.67295802844238,45.21552656384776,0 -68.67843402636719,45.23487134696541,0 -68.63998187792969,45.23970651416373,0 -68.6344200493164,45.26774237050749,0 -68.6014610649414,45.317013235106025,0 -68.5630089165039,45.34308048140095,0 -68.52181018603515,45.36141690760143,0 -68.49983752978515,45.365276450852704,0 -68.46825183642578,45.37492415702758,0 -68.4201866508789,45.37781814797954,0 -68.37486804736328,45.36141690760143,0 -68.30345691455078,45.3672603948376,0 -68.2828575493164,45.35954131574035,0 -68.2169395805664,45.375943099901775,0 -68.2059532524414,45.38558898661426,0 -68.11668933642578,45.39913867712824,0 -68.0411583305664,45.411721066943706,0 -68.02055896533203,45.34515569087754,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline7">
+      <styleUrl>#EditablePolylineStyle7</styleUrl>
+      <name>Line2</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-0.000004422790533809007,0.0000023506799128967692,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline8">
+      <styleUrl>#EditablePolylineStyle8</styleUrl>
+      <name>Line3</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-70.37425960314941,43.51583129164232,0 -70.37773574603273,43.51756162374749,0 -70.3803964973755,43.51495365819233,0 -70.38940871966552,43.5135842755417,0 -70.40700401080323,43.50847993917862,0 -70.40863479388429,43.507608423973274,0 -70.41610206378174,43.508230936118274,0 -70.42271102679443,43.507857429601685,0 -70.43309654010011,43.51109440929392,0 -70.44262374652101,43.50113391708209,0 -70.44476951373292,43.501382949418044,0 -70.45017684710695,43.51209036811977,0 -70.45524085772705,43.51806577592543,0 -70.45755828631592,43.52142668279683,0 -70.45970405352784,43.52292035909037,0</coordinates>
+      </LineString>
+    </Placemark>
+    <umap:UMapSettings>
+      <umap:center>-66.94086040,45.23030778,0.00000000</umap:center>
+      <umap:zoom>7</umap:zoom>
+      <umap:bounds>
+        <umap:north>47.77061215612031</umap:north>
+        <umap:south>42.57117504256563</umap:south>
+        <umap:east>-59.882144582397466</umap:east>
+        <umap:west>-73.99957622302247</umap:west>
+      </umap:bounds>
+      <umap:type>road</umap:type>
+      <umap:provider>com.afcomponents.umap.providers.microsoft::MicrosoftProvider</umap:provider>
+    </umap:UMapSettings>
+    <description><![CDATA[Summer 2009 (ME)]]></description>
+  </Document>
+</kml>

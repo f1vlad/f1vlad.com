@@ -1,0 +1,225 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_menu().
+ */
+function disqus_export_menu() {
+  $items = array();
+  $items['admin/settings/disqus/export'] = array(
+    'title' => 'Export',
+    'description' => 'Export existing drupal comments to the Disqus comment system.',
+    'access arguments' => array('administer disqus'),
+    'page callback' => 'disqus_admin_export',
+    'type' => MENU_LOCAL_TASK,
+  );
+  return $items;
+}
+
+/**
+ * Page callback; Setup disqus api object & hand off to the export form.
+ */
+function disqus_admin_export() {
+  module_load_include('php', 'disqus', 'disqus');
+  $user_api_key = variable_get('disqus_userapikey', '');
+  try {
+    $disqus = new Disqus($user_api_key);
+    $forums = $disqus->get_forum_list();
+    $output = drupal_get_form('disqus_admin_export_form', $disqus, $forums);
+  } catch (DisqusException $exception) {
+    $err_msg = t('There was an error retrieving the available forums from Disqus. Please check your user API key and try again. (%message)', array(
+      '%messages' => $exception->getMessage(),
+      ));
+    drupal_set_message($err_msg, 'error');
+    drupal_goto('admin/settings/disqus');
+    return;
+  }
+  return $output;
+}
+
+/**
+ * Form builder; Export comments from drupal to the Disqus comment system.
+ * validator: disqus_admin_export_form_validate
+ * submit handler: disqus_admin_export_form_submit
+ */
+function disqus_admin_export_form(&$form_state, &$disqus, &$forums) {
+  $options = array();
+  foreach ($forums as $forum) {
+    $options[$forum->id] = $forum->name;
+  }
+  $form['forum_id'] = array(
+    '#type' => 'radios',
+    '#title' => t('Target Disqus forum'),
+    '#default_value' => key($options),
+    '#options' => $options,
+  );
+  $commented_types = db_query("SELECT n_t.type AS type, n_t.name AS name, SUM(n_c_s.comment_count) AS comment_count
+    FROM {node_type} n_t
+    JOIN {node} n ON n.type = n_t.type
+    JOIN {node_comment_statistics} n_c_s ON n_c_s.nid = n.nid
+    WHERE n_c_s.comment_count <> 0 GROUP BY n.type");
+
+  $options = array();
+  while ($res = db_fetch_array($commented_types)) {
+    $options[$res['type']] = $res['name'] . ' (' . format_plural($res['comment_count'], '1 comment', '@count comments') . ')';
+  }
+  $form['content_types'] = array(
+    '#type' => 'checkboxes',
+    '#title' => t('Content types to export'),
+    '#description' => t('These content types have comments attached, select the types to export.'),
+    '#options' => $options,
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Export'),
+  );
+  $form['disqus'] = array('#type' => 'value', '#value' => &$disqus);
+  return $form;
+}
+
+function disqus_admin_export_form_validate($form, &$form_state) {
+  if ( (!isset($form['forum_id']['#value'])) || ($form['forum_id']['#value'] == '')) {
+    form_set_error('forum_id', t('You must select a Disqus forum to export to.'));
+  }
+  if (count($form['content_types']['#value']) == 0) {
+    form_set_error('content_types', t('You must select at least one content type\'s comments to export.'));
+  }
+}
+
+function disqus_admin_export_form_submit($form, &$form_state) {
+  $disqus = &$form_state['values']['disqus'];
+  $forum_id = $form['forum_id']['#value'];
+  try {
+    $forum_api_key = $disqus->get_forum_api_key($forum_id);
+    $disqus->forum_api_key = $forum_api_key;
+    variable_set('disqus_forumapikey', $forum_api_key);
+  } catch (DisqusException $exception) {
+    $err_msg = t('There was an error retrieving the available forums from Disqus. Please check your user API key and try again. (%message)', array(
+      '%message' => $exception->getMessage(),
+      ));
+    form_set_error('', $err_msg);
+  }
+  $content_types = _disqus_admin_implode_node_types($form['content_types']['#value']);
+  $commented_nodes = db_query('SELECT ncs.nid AS nid FROM {node_comment_statistics} ncs
+    JOIN {node} n ON ncs.nid = n.nid
+    WHERE comment_count != 0 AND  n.type in (' . $content_types . ')');
+  $batch = array(
+    'title' => t('Exporting Comments'),
+    'operations' => array(),
+    'progress_message' => t('Remaining: @remaining out of @total nodes.'),
+    'finished' => '_disqus_export_batch_finish',
+  );
+  while ($res = db_fetch_array($commented_nodes)) {
+    $batch['operations'][] = array('_disqus_export_process_node', array($res['nid'], $forum_id));
+  }
+  batch_set($batch);
+}
+
+/**
+ * Internal function - build comma separated, quote delimited list of node types
+ */
+function _disqus_admin_implode_node_types($content_types) {
+  $node_types = '';
+  foreach ($content_types as $type) {
+    $node_types .= "'" . $type ."',";
+  }
+  $node_types = trim($node_types, ',');
+  return $node_types;
+}
+
+/**
+ * Batch function - process comments in the current node up to the limit per batch operation
+ */
+function _disqus_export_process_node($nid, $forum_id, &$context) {
+  module_load_include('php', 'disqus', 'disqus');
+  $user_api_key = variable_get('disqus_userapikey', '');
+  $forum_api_key = variable_get('disqus_forumapikey', '');
+  $disqus = new Disqus($user_api_key, $forum_api_key);
+  if (!isset($context['sandbox']['progress'])) {
+    if ( ! isset($context['results']['created_count'])) {
+      $context['results']['created_count'] = 0;
+    }
+    $context['sandbox']['progress'] = 0;  //progress processing the current node's comments
+    $context['sandbox']['range_start'] = 0;
+    $context['sandbox']['total'] = db_result(db_query('SELECT COUNT(c.cid) FROM {comments} c
+       LEFT JOIN {disqus_export} d ON d.cid = c.cid AND d.fid = %d
+      WHERE d.did IS NULL AND c.nid = %d', $forum_id, $nid));
+    $context['sandbox']['title'] = db_result(db_query('SELECT title FROM {node} WHERE nid = %d', $nid));
+    //retrieve or create the current thread
+    try {
+      $thread = $disqus->thread_by_identifier('node/' . $nid, $context['sandbox']['title'])->thread;
+      $context['sandbox']['current_thread_id'] = $thread->id;
+    }
+    catch (DisqusException $exception) {
+      $context['results']['errors'][] = $exception->getMessage();
+    }
+  }
+  //process comments in groups of 10
+  $limit = 10;
+  $comments = db_query_range('SELECT c.*, u.mail AS user_mail FROM {comments} c
+    JOIN {users} u ON u.uid = c.uid
+    LEFT JOIN {disqus_export} d ON d.cid = c.cid AND d.fid = %d
+    WHERE d.did IS NULL AND nid = %d
+    ORDER BY timestamp ASC', $forum_id, $nid, $context['sandbox']['range_start'], $limit);
+
+  while ($comment = db_fetch_object($comments)) {
+    $thread_id = $context['sandbox']['current_thread_id'];
+    // created_at: Format: 2009-03-30T15:41, Timezone: UTC
+    $datestring = format_date($comment->timestamp, 'custom', 'Y-m-d\TH:i', 0);
+    // Check if this comment has a parent post.
+    $parent_post = NULL;
+    if ($comment->pid) {
+      $parent_post = db_result(db_query('SELECT did FROM {disqus_export} WHERE cid = %d AND fid = %d', $comment->pid, $forum_id));
+    }
+    $options = array(
+      'created_at' => $datestring,
+      'ip_address' => $comment->hostname,
+      'author_url' => $comment->homepage,
+      'parent_post' => $parent_post,
+      'state' => 'approved',
+    );
+    // state: Comment's state, must be one of the following: approved, unapproved, spam, killed
+    if ($comment->status != 0) {
+      $options['state'] = 'unapproved';
+    }
+    $email = ($comment->mail != '') ? $comment->mail : $comment->user_mail;
+    try {
+      $post = $disqus->create_post($thread_id, $comment->comment, $comment->name, $email, $options);
+    }
+    catch (DisqusException $exception) {
+      $context['results'][] = $exception->getMessage();
+    }
+
+    if ($post->id) {
+      db_query('INSERT INTO {disqus_export} (did, cid, fid) VALUES (%d, %d, %d)', $post->id, $comment->cid, $forum_id);
+      $context['results']['created_count']++;
+    }
+
+    $context['sandbox']['progress']++;
+  }
+  $context['sandbox']['range_start'] += $limit;
+  // Inform the batch engine that we are not finished,
+  // and provide an estimation of the completion level we reached.
+  if ($context['sandbox']['progress'] != $context['sandbox']['total']) {
+    $context['finished'] = $context['sandbox']['progress'] / $context['sandbox']['total'];
+  }
+}
+
+/**
+ * Batch finish function
+ */
+function _disqus_export_batch_finish($success, $results, $operations) {
+  if ($success) {
+    $message = 'Comment export successful.<br />';
+    $message .= 'Exported: '. $results['created_count'] .' comments<br />';
+  }
+  else {
+    // An error occurred.
+    // $operations contains the operations that remained unprocessed.
+    $error_operation = reset($operations);
+    $message = 'An error occurred while processing ' . $error_operation[0] . ' with arguments :' . print_r($error_operation[0], TRUE);
+    $message .= print_r($results['errors'], TRUE);
+  }
+  drupal_set_message($message);
+  drupal_goto('admin/settings/disqus');
+}

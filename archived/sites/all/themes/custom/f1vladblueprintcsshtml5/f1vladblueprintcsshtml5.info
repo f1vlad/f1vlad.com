@@ -1,0 +1,36 @@
+; $Id: garland.info,v 1.5 2007/07/01 23:27:32 goba Exp $
+name = f1vladblueprintcsshtml5
+description = Tableless
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[hdrtext] = Header text
+regions[content] = Content
+regions[sparow_header] = Sparow Header
+regions[footerleft] = Footer Left Column
+regions[footerright] = Footer Right Column
+regions[footercenter] = Footer Center Column
+regions[feedmadness_1] = fm1
+regions[feedmadness_2] = fm2
+regions[feedmadness_3] = fm3
+regions[feedmadness_4] = fm4
+regions[feedmadness_5] = fm5
+regions[feedmadness_6] = fm6
+regions[feedmadness_7] = fm7
+regions[feedmadness_8] = fm8
+regions[travel_1] = tr1
+regions[travel_2] = tr2
+regions[travel_3] = tr3
+regions[travel_4] = tr4
+regions[travel_5] = tr5
+
+; Information added by drupal.org packaging script on 2008-04-09
+version = "6.2"
+project = "drupal"
+datestamp = "1207776008"

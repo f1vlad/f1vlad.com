@@ -1,0 +1,130 @@
+body {
+background:#e3e3e3;
+}
+
+
+
+.container section.block
+ {
+opacity:.75;
+top:90px;
+right:1px;
+}
+
+.meta,
+article.node {
+display:none;
+}
+
+#tabs-wrapper{
+border:none;
+padding:0;
+margin:0;
+}
+.rmdn,footer {
+display:block;
+clear:both;
+}
+
+
+.rmdn .fm div div.block .feed > ul > li {
+display:block;
+width:140px;
+height:140px;
+overflow:hidden;
+float:left;
+margin:.2em;
+padding:.5em;
+text-indent:none;
+resize:both;
+
+
+text-overflow: ellipsis;
+word-wrap: break-word;
+
+background:none;
+	position: relative;
+	box-shadow: rgb(135,135,115) 0 2px 2px;
+		-moz-box-shadow: rgb(115,115,115) 0 2px 2px;
+		-webkit-box-shadow: rgb(115,115,115) 0 2px 2px;
+	background: rgb(255,255,255); 
+	background-image: -webkit-gradient(linear, 0% 85%, 0% 100%, from(rgb(255,255,255)), to(rgb(235,235,235)));
+	background-image: -moz-linear-gradient(100% 100% 90deg,rgb(235,235,235), rgb(255,255,255), rgb(255,255,255) 25%);
+-webkit-border-radius:.25em;
+-moz-border-radius:.25em;
+}
+
+
+.rmdn .fm div div.block .feed > ul > li:hover
+{
+z-index:100;
+        transform: rotate(1deg) translate(0px, 0px) skew(0deg, 0deg);
+                -moz-transform: rotate(1deg);
+                -webkit-transform: rotate(1deg);
+
+        position: relative;
+        box-shadow: rgb(135,135,115) 0 2px 40px;
+                -moz-box-shadow: rgb(115,115,115) 0 2px 40px;
+                -webkit-box-shadow: rgb(115,115,115) 0 2px 40px;
+
+}
+
+.rmdn .fm div div.block .feed > ul > li div,
+.rmdn .fm div div.block .feed > ul > li div span {
+text-overflow: ellipsis;
+word-wrap: break-word;
+}
+
+.rmdn .fm div div.block .feed > a {
+display:none;
+}
+
+.rmdn .fm div div.block .feed > ul > li * {
+float:none;
+display:inline;
+font:12px/170% "Lucida Grande",Arial,sans-serif !important;
+border:none;
+background:none;
+padding:0 !important;
+margin:0 !important;
+list-style:none;
+}
+
+
+.rmdn .fm div div.block .feed > ul > li img {
+width:140px;
+height:auto;
+}
+
+
+.rmdn .fm div div.block .feed > ul > li a {
+color:#000;
+text-decoration:none;
+}
+
+
+.rmdn .fm div div.block .feed > ul > li:hover a
+{
+color:#ff0099;
+}
+
+li:hover .a2 > a > span {
+opacity:.1;
+}
+
+.a2 > a > span {
+        display:block;width:500px;
+        opacity:.24;
+        top:-40px;
+        left:-71px;
+	position: absolute;
+	transform: rotate(-45deg) translate(0px, 0px) skew(0deg, 0deg);
+		-moz-transform: rotate(-45deg);	
+		-webkit-transform: rotate(-45deg);
+	box-shadow: rgb(205,205,205) 0 1px 1px;
+		-moz-box-shadow: rgb(205,205,205) 0 1px 1px;
+		-webkit-box-shadow: rgb(205,205,205) 0 1px 1px;
+	background: rgb(41,93,120);
+		background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgb(41,93,120)), to(rgb(67,136,171)));
+		background-image: -moz-linear-gradient(100% 100% 90deg,rgb(67,136,171), rgb(41,93,120) 70%);
+}

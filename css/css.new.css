@@ -1,0 +1,362 @@
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, ul, ol, dl {  
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 28px;
+  letter-spacing: -3px;
+}
+
+h3 {
+  font-size: 23px;
+  letter-spacing: -2px;
+}
+
+ul, ol, li, dd, blockquote {  
+  margin-left: 20px;  
+}
+
+body {
+  margin: 0;
+  font:12px/170% "Lucida Grande",Arial,sans-serif;
+  word-spacing: -0.09em;
+  background: rgb(255,255,255);
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+::selection {
+  background: #ffdef4;
+  color: #000;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  color:#0066CC;
+}
+
+a:link {
+  text-decoration: underline;
+}
+
+a:visited {
+  text-decoration: underline;
+  color:#0066CC;
+}
+
+nav a:visited {
+  text-decoration:none;
+  color:#444;
+}
+
+a:hover {
+  color: #FF0099;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active, a.active {
+  text-decoration: underline;
+  color:#FF0099;
+}
+
+p, li, table, article, form {
+    font-size: 103%;
+}
+
+a.hl {
+  height: 100px;
+  width: 100%;
+  display: block;
+  text-indent: 20px;
+  font-size: 32px;
+  line-height: 52px;
+  text-decoration: none;
+  letter-spacing: -3px;
+  color: #444;
+}
+
+.hi {
+  background: transparent url(../i/ico.gif) no-repeat scroll left top;
+  height: 32px;
+  min-width: 200px;
+  position: absolute;
+  text-indent: -9999px;
+  width: 100px;
+  z-index: 3;
+  top: -8px;
+  left: -10px;
+  display: none;
+}
+
+hgroup:hover .ha,
+hgroup:hover .hi {
+  display: block;
+}
+
+.ha {
+  height: 9px;
+  min-width: 200px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+  top: 0px;
+  left: 18px;
+  color: #777 !important;
+  text-decoration: none !important;
+  display: none;
+  font-size: 10px;
+}
+
+hgroup h2 {
+    font-size: 40px;
+    letter-spacing: -4px;
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    margin-left: 300px;
+    margin-right: 10px;
+}
+
+hgroup .twidg {
+  color: #0066CC;
+  display: inline;
+  font-size: 240%;
+  letter-spacing: -2px;
+  margin-left: 25%;
+  margin-right: 1px;
+  opacity: 0.4;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  text-align: right;
+  z-index: 2;
+}
+
+section.navigation {
+  width: 300px;
+  float: left;
+}
+
+section.navigation #navicons {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+nav #navicons a {
+  color: #444444;
+  font-size: 300%;
+  letter-spacing: -4px;
+  line-height: 0.75em;
+  margin: 0;
+  text-align: left;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 100%;
+}
+
+nav #navicons a:link {
+  text-decoration: none;
+}
+
+nav #navicons sup a {
+  font-size: 100%;
+  letter-spacing: 0;
+  padding: 0.15em;
+}
+
+nav #navicons a sup {
+  font-size: 30%;
+  letter-spacing: 0;
+}
+
+nav #navicons .sup {
+  position: absolute;
+}
+
+nav #navicons .sup > br {
+  display: none;
+}
+
+nav #navicons a:hover {
+  color: #FF0099;
+  text-decoration: underline;
+}
+
+nav li {
+  list-style-type: none;
+  background: none;
+}
+
+nav ul#navicons li {
+  background: none;
+  padding-left: 0;
+  margin-left: .5em;
+}
+
+nav a.intro {
+  background: transparent url(../i/impossiblemission.png) no-repeat scroll left center;
+  padding: 0.2em 0 0.25em .4em;
+}
+
+nav sup a:hover {
+  color: #FFFFFF;
+  opacity: 1;
+  -moz-border-radius: .5em;
+  -webkit-border-radius: .5em;
+  border-radius: .5em;
+  text-decoration: none;
+}
+
+nav .travel {
+  background: transparent url(../i/travel.png) no-repeat scroll left center;
+  padding: 0.05em 0 0.25em 0.6em;
+}
+
+nav .portfolio {
+  background: transparent url(../i/cone.png) no-repeat scroll left center;
+  padding: 0.05em 0 0.25em 0.4em;
+}
+
+nav .rss_madness {
+  background: transparent url(../i/rss.png) no-repeat scroll left center;
+  padding: 0.05em 0 0.25em 0.65em;
+}
+
+nav .carputer {
+  background: transparent url(../i/mp3carlogo.png) no-repeat scroll left center;
+  padding: 0.05em 0 0.25em 1.5em;
+}
+
+section.content {
+  position: relative;
+  margin: 24px 50px 100px 300px;
+  font-size: 110%;
+}
+
+#last-known-location {
+  display: block;
+  width: calc(100% - 60px);
+  padding: 1em 1em 0 1em;
+  margin-left: 15px;
+  border: 1px solid transparent;
+  -webkit-border-radius: .5em;
+  -moz-border-radius: .5em;
+  position: relative;
+}
+
+#last-known-location a {
+  text-transform: lowercase;
+  opacity: .5;
+  text-decoration: none;
+  color: #000;
+}
+
+.homepage #last-known-location a {
+  opacity:1;
+}
+
+#last-known-location:hover a {
+  color: #F09;
+  text-shadow: 1px 1px 1px rgb(204,204,204);
+  text-decoration: underline;
+  opacity: 1;
+}
+
+#last-known-location:hover {
+  background: #eee; 
+  background-image: -webkit-gradient(linear, 0% 90%, 0% 40%, from(rgb(226,226,226)), to(rgb(243,243,243)));
+  background-image: -moz-linear-gradient(100% 90% 90deg,rgb(226,226,226), rgb(243,243,243), rgb(243,243,243) 100%);
+  border: 1px solid rgb(216,216,216);
+  box-shadow: rgb(185,185,185) 0 1px 5px;
+  -moz-box-shadow: rgb(185,185,185) 0 1px 5px;
+  -webkit-box-shadow: rgb(185,185,185) 0 1px 5px;
+}
+
+#last-known-location dfn {
+  color: #fff;
+  font-style: normal;
+}
+
+#last-known-location:hover dfn {
+  color: #000;
+}
+
+#last-known-location aside {
+  position: absolute;
+  top: 26px;
+  right: 20px;
+  zoom: .5;
+  opacity: .25;
+}
+
+#last-known-location aside img.s {
+  display: block;
+}
+
+#last-known-location aside img.a {
+  display: none;
+}
+
+#last-known-location:hover aside img.s {
+ display: none;
+}
+
+#last-known-location:hover aside img.a {
+  display: block;
+}
+
+footer {
+  position: relative;
+  font-size: 10px;
+  opacity: .25;
+  text-align: center;
+  margin: 100px 0 10px;
+}
+
+footer a, footer a:active, footer a:visited {
+  color: black;
+}
+
+.highlight_pink {
+  background: rgb(255, 0, 153);
+  color: rgb(255, 255, 255) !important;
+  display: inline;
+  opacity: 0.7;
+  padding:2px 4px;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  text-decoration:none !important;
+  border-radius:4px;
+  margin: 0 -2px;
+}
+
+.highlight {
+  background: #ffff99;
+  padding: 2px 4px;
+  border-radius:4px;
+  margin: 0 -2px;
+}

@@ -1,0 +1,53 @@
+<?php
+// $Id$
+
+/**
+ * Implementation of hook_install().
+ */
+function disqus_export_install() {
+  drupal_install_schema('disqus_export');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function disqus_export_uninstall() {
+  drupal_uninstall_schema('disqus_export');
+}
+
+
+/**
+ * Implementation of hook_schema().
+ */
+function disqus_export_schema() {
+  $schema['disqus_export'] = array(
+    'fields' => array(
+      'did' => array(
+        'description' => 'The primary identifier for the Disqus comment.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'cid' => array(
+        'description' => 'The current {comments}.cid comment identifier.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'fid' => array(
+        'description' => 'The Disqus forum identifier.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'indexes' => array(
+      'fid' => array('fid'),
+      'cid_fid' => array('cid', 'fid'),
+    ),
+    'primary key' => array('did'),
+  );
+  return $schema;
+}

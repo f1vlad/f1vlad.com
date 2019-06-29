@@ -1,0 +1,70 @@
+<?php
+// $Id: node_privacy_byrole.install,v 1.3 2007/12/10 14:26:59 deekayen Exp $
+
+/**
+ * Implementation of hook_schema().
+ *
+ * @return array
+ */
+function node_privacy_byrole_schema() {
+  return array(
+    'node_privacy_byrole' => array(
+      'fields' => array(
+        'nid' => array(
+          'type' => 'int',
+          'unsigned' => true,
+          'not null' => true,
+          'default' => 0,
+          'disp-width' => 10),
+        'gid' => array(
+          'type' => 'int',
+          'unsigned' => true,
+          'not null' => true,
+          'default' => 0,
+          'disp-width' => 10),
+        'realm' => array(
+          'type' => 'varchar',
+          'length' => '255',
+          'not null' => true,
+          'default' => ''),
+        'grant_view' => array(
+          'type' => 'int',
+          'unsigned' => true,
+          'size' => 'tiny',
+          'not null' => true,
+          'default' => 0,
+          'disp-width' => '3'),
+        'grant_update' => array(
+          'type' => 'int',
+          'unsigned' => true,
+          'size' => 'tiny',
+          'not null' => true,
+          'default' => 0,
+          'disp-width' => '3'),
+        'grant_delete' => array(
+          'type' => 'int',
+          'unsigned' => true,
+          'size' => 'tiny',
+          'not null' => true,
+          'default' => 0,
+          'disp-width' => '3')
+      ),
+      'primary key' => array('nid', 'gid', 'realm')
+    )
+  );
+}
+
+/**
+ * Implementation of hook_install().
+ */
+function node_privacy_byrole_install() {
+  drupal_install_schema('node_privacy_byrole');
+}
+
+/**
+ * Implementation of hook_uninstall().
+ */
+function node_privacy_byrole_uninstall() {
+  drupal_uninstall_schema('node_privacy_byrole');
+  drupal_set_message(t('TIP: If all your nodes say access denied, it may be necessary to !rebuild.', array('!rebuild' => l(t('rebuild permissions'), 'admin/content/node-settings'))));
+}

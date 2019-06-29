@@ -1,0 +1,14 @@
+/* $Id: stringoverrides.css,v 1.1.4.2 2008/02/29 16:05:58 robloach Exp $ */
+
+#stringoverrides-admin textarea {
+  width: 100%;
+  height: 1.7em;
+}
+
+#stringoverrides-admin .stringoverrides-original {
+  width: 50%;
+}
+
+#stringoverrides-admin .stringoverrides-replacement {
+  width: 50%;
+}

@@ -1,0 +1,27 @@
+body *, body *:hover {
+    color: #111111 !important;
+}
+
+body img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+body:after {
+    content: "ARCHIVED";
+    position: absolute;
+    top: 15px;
+    left: 7%;
+    font-size: 32px;
+    letter-spacing: -2px;
+    -ms-transform: rotate(-24deg); /* IE 9 */
+    -webkit-transform: rotate(-24deg); /* Chrome, Safari, Opera */
+    transform: rotate(-24deg);
+    border: 5px double #0033CC !important;
+    padding: 4px;
+    color: #0033CC !important;
+    font-weight: 900;
+    opacity: .6;
+    z-index: 1;
+}

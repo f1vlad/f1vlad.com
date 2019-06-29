@@ -1,0 +1,607 @@
+<kml xmlns:umapst="http://www.afcomponents.com/as3/umap/styles" xmlns:umap="http://www.afcomponents.com/as3/umap" xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name>Summer 2008</name>
+    <visibility>1</visibility>
+    <Style id="EditablePolylineStyle0">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle1">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle2">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle3">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle4">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle5">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle6">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle7">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle8">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle9">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle10">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle11">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle12">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle13">
+      <LineStyle>
+        <color>ffaf2222</color>
+        <colorMode>normal</colorMode>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f000000</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">0</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">2237103</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">4</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Placemark id="EditablePolyline0">
+      <styleUrl>#EditablePolylineStyle0</styleUrl>
+      <name>EditablePolyline1</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-71.46199178570319,42.7617469661447,0 -71.45649862164069,42.991200810995515,0 -71.56086873882819,43.22580549025818,0 -71.68171834820319,43.74591261822024,0 -71.68061971539069,44.03332032658865,0 -71.13240194195319,43.976028800484634,0 -71.12635946148444,44.049509964775346,0 -71.17469930523444,44.3865075149378,0 -70.79731893414069,44.40770202778893,0 -71.23677205914069,44.50023980664155,0 -71.14228963726569,44.77814307091604,0 -71.49385213726569,44.89188934321184,0 -71.53614950054694,44.99453518074203,0 -71.79432821148444,45.00735300619432,0 -71.91133260601569,44.84010809566767,0 -72.15303182476569,44.953732112755986,0 -72.18983602398445,44.74342918597405,0 -72.01680135601569,44.5343163174407,0 -72.3299117075782,43.6426470013062,0 -72.40571737164069,43.637479052749896,0 -72.74904012554694,43.59751183391201,0 -72.79573202007819,43.67106277246496,0 -73.04402303570319,43.59094751296502,0 -73.29121541851569,43.58776455415264,0 -73.41096639507819,43.54517629900099,0 -73.58125448101569,43.30380719848086,0 -73.6867232310157,43.328586800025136,0 -73.79026937359382,43.02132858172959,0 -73.75978231304694,42.7617469661447,0 -75.25117635601569,43.11964298316596,0 -76.20424032085944,43.09357494041438,0 -77.69590902203132,43.037792182855576,0 -78.75608968609382,42.94698668672828,0 -80.11811971539069,42.03441512854873,0 -81.67543172710944,41.48822470268296,0 -81.63423299664069,41.25129019054247,0 -80.96983480328132,41.23848625276503,0 -80.64546346539069,41.10203080019229,0 -81.55623006695319,41.058139359211715,0 -81.89337301128913,41.03286779103758,0 -82.41357564800788,40.784193934627055,0 -82.91510152691413,40.298080233129674,0 -83.00409078472663,39.955977688510906,0 -83.25567769878913,39.97913272437253,0 -83.93298482769536,39.899320064082545,0 -84.22851705425789,39.86749542390505,0 -84.78717183941411,39.82743019033141,0 -84.88495015972663,39.87803502000943,0 -85.50952291363288,39.84641137348279,0 -86.25274801128913,39.78523100352289,0 -85.90667867535163,39.187468919925536,0 -85.75287008160163,38.244557351611014,0 -84.84100484722663,38.17549742077383,0 -84.48944234722663,38.03718107516036,0 -82.40258931988288,38.4255277190003,0 -81.63368368023444,38.34802433794275,0 -80.65590047710945,38.68327200518252,0 -79.95277547710944,39.62855157926315,0 -80.15739583843758,39.90627315095576,0 -80.23155355328132,40.194308544142686,0 -79.99809408062507,40.43703112078906,0 -80.0489058482032,40.35001106690916,0 -80.11207723492195,40.42950498427921,0 -80.27577352398444,40.492614797776504,0 -80.33619832867194,40.679713766905145,0 -80.37300252789069,40.83450225015771,0 -80.64381551617194,40.95906905519828,0 -80.62184285992194,41.07760427537956,0 -80.64079427593758,41.09789135039591,0 -80.96901082867195,41.24179073495199,0 -81.58561849468758,41.25624587999022,0 -81.838166712461,41.342909580024575,0 -82.10046529644538,41.38619823979419,0 -82.26938009136725,41.37506962070031,0 -82.376496790586,41.332598511844765,0 -82.6127028452735,41.322285811349445,0 -83.16613912457038,41.41380547556571,0 -83.64129781597663,41.59306927670868,0 -83.84509420269536,41.602106725158194,0 -84.01098775738288,41.597998950927035,0 -84.34771871441413,41.58649579206988,0 -84.40017843121102,41.60621423791417,0 -84.56030416363288,41.61442847898269,0 -84.81573629253913,41.6345489490638,0 -85.03546285503913,41.74530421210967,0 -85.64575338238289,41.75350071950749,0 -85.76385640972664,41.728908057816206,0 -86.11541890972664,41.7330074888161,0 -86.18408346050789,41.71250771775414,0 -86.46148824566413,41.74940259662456,0 -87.00256490582039,41.56266129949701,0 -87.34039449566413,41.60785716980249,0 -87.64801168316413,41.65096916773975,0 -87.78808736675788,41.55032966272502,0 -88.08746480816414,41.513320636305,0 -88.30719137066413,41.46198700271367,0 -88.43353414410163,41.37754281173754,0 -89.22180318707038,41.36311453834724,0 -90.46106099957038,41.433164746238056,0 -90.51324605816411,41.482463608090775,0 -90.57092428082038,41.54827416118526,0 -90.63958883160164,41.609910775829555,0 -91.53772115582038,41.663281585718664,0 -92.16119527691411,41.69200140685936,0 -92.85333394878911,41.6973336767938,0 -92.91925191753911,41.67661738224842,0 -93.22961568707038,41.69528285605703,0 -93.58392476910164,41.64809593152828,0 -93.57293844097664,41.58649579206988,0 -93.77618551128911,41.59039887930055,0 -94.00964498394538,41.53922917801187,0 -94.19091939800788,41.51661118490914,0 -94.23211812847664,41.489870635624136,0 -95.57519674175788,41.49563107161386,0 -95.71527242535164,41.33136107397009,0 -95.8361220347266,41.22340743270296,0 -96.09155416363288,41.22340743270296,0 -96.31402730816411,41.06518052596561,0 -96.29480123394538,41.015462053645386,0 -96.55847310894538,40.89930626272702,0 -96.69305562847664,40.88269589508518,0 -96.75622701519536,40.81621273037815,0 -98.36297750347664,40.820369882323554,0 -99.23968648785164,40.66638179623039,0 -99.65442037457036,40.71636293992405,0 -100.76129293316411,41.1189998166815,0 -102.16012716167975,41.03618264799149,0 -102.5528883921485,41.10244473082298,0 -102.69296407574224,41.16036926673113,0 -103.008821009336,41.14382461798979,0 -103.15438985699224,41.197579459531674,0 -103.470246790586,41.24716016215423,0 -103.65976095074224,41.255419957856695,0 -103.8382887827735,41.2265061042764,0 -104.06076192730475,41.18104420593766,0 -104.8380446421485,41.1189998166815,0 -105.19867086285164,41.09085368701081,0 -105.39560079449224,41.15499271386563,0 -105.58593892925788,41.31197147861435,0 -105.69525289410164,41.32599857156575,0 -105.8707594858985,41.308670547422494,0 -106.14184713238286,41.2950524396558,0 -106.19210958355475,41.348683065181696,0 -106.49725484722664,41.32187326937854,0 -106.53625631207038,41.35074490010216,0 -106.5785536753516,41.35486837404866,0 -106.7496657358985,41.35280666972467,0 -106.81201314800786,41.457046953808685,0 -106.83288717144538,41.74120556596712,0 -107.20312642925786,41.786276283310904,0 -107.3868727671485,41.784228301182175,0 -107.98480367535164,41.67354013594423,0 -108.72912740582036,41.65466314028276,0 -109.22076558941411,41.588960927247875,0 -109.90466451519538,41.535528592958414,0 -110.40179586285164,41.32146072479606,0 -110.95935201519536,41.25954946409197,0 -111.47570943707036,40.98333224837212,0 -111.39880514019536,40.83408663526935,0 -111.49768209332036,40.70095608506751,0 -111.89318990582038,40.76734668178206,0 -111.92614889019536,40.425741600144995,0 -111.62951803082036,40.082182578928126,0 -111.82727193707036,39.71258782682778,0 -112.02227926128911,39.42284097684136,0 -112.12115621441411,39.252793555154,0 -112.26672506207038,39.0888350762652,0 -112.3463759409766,39.11931340812394,0 -112.41504049175788,39.158723863566706,0 -112.410920618711,39.19917649982149,0 -112.49606466167974,39.35640072850197,0 -112.58258199566411,39.355338869367785,0 -112.61554098003911,39.32772486730336,0 -112.72128438824224,39.33303609953525,0 -112.80505514019538,39.30009995711769,0 -113.35849141949224,39.02015731111937,0 -113.49719381207038,39.08414493256673,0 -113.65374898785164,39.07028586802841,0 -113.70868062847664,39.07881484527716,0 -113.81579732769536,39.03935968482072,0 -114.16461324566411,39.06495473378156,0 -114.30743551128911,39.12357506142546,0 -114.377473353086,39.17256554267528,0 -114.39669942730474,39.17256554267528,0 -114.4488844858985,39.07028586802841,0 -114.57797384136724,39.0233580690195,0 -114.62054586285164,39.044692751632,0 -114.68097066753911,39.02015731111937,0 -114.71392965191411,39.04362617047624,0 -114.90069723003911,39.249071472039006,0 -114.96524190777347,39.28320088787597,0 -115.07812642925788,39.39037169848535,0 -115.07125997417975,39.410534140726035,0 -115.11520528667975,39.43175146735151,0 -115.19485616558602,39.42644774120549,0 -115.33355855816414,39.355338869367785,0 -115.38437032574224,39.34047114690776,0 -115.42694234722664,39.385064824000374,0 -115.46676778667975,39.395678169387416,0 -115.50549459332038,39.38824899712048,0 -115.65381002300788,39.421143611376095,0 -115.87216329449228,39.36808011374423,0 -115.91885518902352,39.3829419612065,0 -115.92022848003911,39.41902184641627,0 -115.96554708355475,39.516556172780405,0 -115.9916396128516,39.55362571842657,0 -116.07541036480475,39.57585794328536,0 -116.1015028941016,39.58115027955505,0 -116.209992884336,39.5631546875669,0 -116.73321676128911,39.455083066262475,0 -116.7538161265235,39.41583907787802,0 -116.85681295269538,39.38824899712048,0 -116.93261861675788,39.40215151733442,0 -116.99167013042975,39.45084153875126,0 -117.00265645855475,39.47734684601381,0 -117.03149556988288,39.478406848327936,0 -117.07544088238286,39.499603502308624,0 -117.33224630230475,39.47416674215413,0 -117.45172262066414,39.535622982914965,0 -117.48742818707038,39.544095440220794,0 -117.543733118711,39.583267100913744,0 -117.63437032574224,39.56421338110569,0 -117.78955221050788,39.50066316538361,0 -117.83212423199224,39.43917600573979,0 -117.85684347027347,39.384003400674736,0 -117.95984029644538,39.29903724276106,0 -118.07519674175786,39.28840921189824,0 -118.31689596050788,39.27469666935245,0 -118.38144063824224,39.26927469120862,0 -118.4789443003516,39.29691176564885,0 -118.5533766733985,39.36277154437324,0 -118.646760462461,39.395678169387416,0 -118.68933248394536,39.478406848327936,0 -118.77722310894538,39.47522679292679,0 -118.76623678082036,39.5229123578534,0 -118.78546285503911,39.62241663239488,0 -118.767610071836,39.71850350693625,0 -118.77722310894538,39.83987400267753,0 -118.74975728863286,39.896791493919665,0 -118.74838399761724,39.94313378820153,0 -118.998322962461,39.810342640443736,0 -119.24029683941411,39.5908871224299,0 -119.2897353159766,39.62897465899741,0 -119.46551656597664,39.56971832696606,0 -119.6632704722266,39.50617315294384,0 -119.7401747691016,39.54430723840227,0 -119.81158590191411,39.51888684151251,0 -119.93380880230475,39.51083510889339,0 -119.991487024961,39.51295407637769,0 -120.0299391733985,39.42814497749368,0 -120.02032613628911,39.3782714357751,0 -120.04779195660164,39.36553205080459,0 -120.08899068707038,39.38357882682453,0 -120.17248678082036,39.337391008932656,0 -120.03131246441411,39.238116767008286,0 -120.06852865093757,39.23598944146305,0 -120.09324788921882,39.21258460346247,0 -120.09736776226568,39.18704315299238,0 -120.14405965679694,39.165751517981626,0 -120.16493368023444,39.1630896102743,0 -120.1862196909766,39.169478019535426,0 -120.1951460825782,39.18331758230788,0 -120.2017378794532,39.2011985206017,0 -120.21093892925788,39.248539729752274,0 -120.20517110699224,39.30721972714671,0 -120.1907515513282,39.32740618054097,0 -120.17317342632818,39.33728479485772,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline1">
+      <styleUrl>#EditablePolylineStyle1</styleUrl>
+      <name>0.000 miles / 0.000 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-120.10837553662112,39.32354196715624,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline2">
+      <styleUrl>#EditablePolylineStyle2</styleUrl>
+      <name>134.473 miles / 216.413 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-120.1955108450002,39.32237337476109,0 -120.25401304226584,39.32556040636845,0 -120.29658506375024,39.327260097178666,0 -120.32954404812524,39.34255545551863,0 -120.37486265164084,39.323010792700366,0 -120.51768491726584,39.30388572778213,0 -120.5808563039846,39.32832238295798,0 -120.70857236843771,39.281566545394575,0 -120.78822324734396,39.200732910725634,0 -120.81568906765648,39.2017971158659,0 -120.8349151418752,39.18263895681132,0 -120.8555145071096,39.17412254296505,0 -120.90357969265648,39.14643707383373,0 -120.93516538601584,39.1283291459863,0 -121.00657651882834,38.980095560864896,0 -121.07688901882834,38.90019797071715,0 -121.1249542043752,38.8756124352746,0 -121.1359405325002,38.858504436051504,0 -121.37351987820334,38.64537985317474,0 -121.40647886257834,38.63572601787823,0 -121.43394468289084,38.64537985317474,0 -121.4916229055471,38.636798730459816,0 -121.51771543484396,38.62607088225831,0 -121.50672910671898,38.59280435229686,0 -121.51634214382834,38.56167008830293,0 -121.5081023977346,38.542338585917875,0 -121.52046201687524,38.515480654933526,0 -121.5094756887502,38.48108787690159,0 -121.49574277859396,38.46818635203293,0 -121.4531707571096,38.26683944485881,0 -121.3996124075002,38.18053073902694,0 -121.3982391164846,38.118973334252495,0 -121.38587949734396,38.09195808590841,0 -121.33369443875024,37.96366169587169,0 -121.28700254421898,37.94850227415073,0 -121.27629087429708,37.83969592270034,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline3">
+      <styleUrl>#EditablePolylineStyle3</styleUrl>
+      <name>50.332 miles / 81.002 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-121.279037457461,37.85054041788094,0 -121.30870054339849,37.785992184532574,0 -121.3448180971094,37.75776851595836,0 -121.34207151507812,37.59222668496077,0 -121.1855163392969,37.46611136145244,0 -121.12234495257816,37.47483084725688,0 -121.0536804017969,37.50087425216678,0 -120.84494016742192,37.49662511146403,0 -120.71461485003908,37.37667800537276,0 -120.4893951234766,37.30483597470896,0 -120.19812009906252,37.083858512720376,0 -120.49763486957032,37.081557826644136,0 -120.57453916644532,37.04890247076663,0 -120.84631345843754,37.05964303178461,0 -120.9727935609766,37.05756079691462,0 -121.12934873675783,37.10357581464519,0 -121.2994994935938,37.03783152643127,0 -121.3764037904688,36.99342192120245,0 -121.39150999164066,36.96270381291298,0 -121.49450681781252,36.984646584206,0 -121.56742857074222,37.002196245767664,0 -121.6348571596094,37.1380687458221,0 -121.75158689593756,37.23882931803721,0 -121.86282346820316,37.260692235133874,0 -121.9439849672266,37.251947829543504,0 -122.02226255511722,37.286919360974565,0 -122.05123899554692,37.33923701121006,0 -122.14050291156254,37.365436753668575,0 -122.19131467914067,37.40908266759687,0 -122.2421264467188,37.43525801814372,0 -122.29568479632816,37.457063819917664,0 -122.29980466937504,37.498368377925594,0 -122.34512327289065,37.51590773152813,0 -122.43164060687504,37.605065840645544,0 -122.4192809877344,37.629106094984394,0 -122.4687194642969,37.6877056057573,0 -122.47009275531252,37.78762014439318,0 -122.4851989564844,37.85715477753367,0 -122.51403806781254,37.89184333441619,0 -122.5100555238672,37.93301477673689,0 -122.50456235980472,37.96539400083113,0 -122.44963071917972,37.93518105644253,0 -122.34800718402346,37.924240691113965,0 -122.30680845355472,37.896069885539816,0 -122.26835630511722,37.86366012611573,0 -122.27934263324222,37.800751042428914,0 -122.18582151507816,37.75505413395433,0 -122.17208860492192,37.715955991811974,0 -122.10067747210942,37.66390173562306,0 -122.05398557757816,37.59200905305901,0 -122.02651975726566,37.55075632172464,0 -121.97721860980472,37.509262871269705,0 -121.93601987933596,37.48104286034379,0 -121.91404722308596,37.424352734068904,0 -122.07046506976566,37.38944515062154,0 -122.07788084125004,37.41551828945668,0 -121.90086362933596,37.355503760901016,0 -121.89399717425786,37.324932461114265,0 -121.86241148089849,37.25839692692121,0 -121.75529478167974,37.24090656785301,0 -121.62895200824224,37.13697397369563,0 -121.5726470766016,37.002196245767664,0 -121.54930112933596,36.92758222187824,0 -121.5561675844141,36.89024779410653,0 -121.5836334047266,36.85520270577217,0 -121.60972593402349,36.86399295309087,0 -121.6385650453516,36.85080720297557,0 -121.62895200824224,36.82212034281992,0 -121.67015073871096,36.78814383146428,0 -121.65573118304692,36.73258343204757,0 -121.66877744769536,36.695704333410774,0 -121.62483213519536,36.6626632526601,0 -121.63993833636722,36.65495162530466,0 -121.6605377016016,36.65384990119445,0 -121.7161559877344,36.5794470879715,0 -121.77864072894536,36.56786686516397,0 -121.81640623187504,36.57227858337671,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline4">
+      <styleUrl>#EditablePolylineStyle4</styleUrl>
+      <name>122.809 miles / 197.642 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-121.6240081607425,36.67037410798539,0 -121.4730834781253,36.522852947661306,0 -121.43998716464874,36.50607635595097,0 -121.31913755527376,36.41550834912499,0 -121.24223325839876,36.31819579908355,0 -121.17082212558626,36.24956163521292,0 -121.14884946933626,36.194167552040376,0 -121.12426756015654,36.20524950673109,0 -121.0720825015628,36.185300858855264,0 -121.01715086093782,36.11433118369323,0 -121.01715086093782,36.092139992916955,0 -120.9127807437503,36.003312571056725,0 -120.83862302890655,35.89658743804641,0 -120.8413696109378,35.872109295936916,0 -120.76171873203155,35.852076098416816,0 -120.75347898593782,35.81644902511373,0 -120.69580076328155,35.76074970575733,0 -120.6930541812503,35.69832014087976,0 -120.6985473453128,35.655929361822096,0 -120.6820678531253,35.62021440228139,0 -120.7095336734378,35.54873661737618,0 -120.71228025546904,35.53085720404896,0 -120.6655883609378,35.47719505666021,0 -120.61889646640655,35.392156695057494,0 -120.64636228671904,35.36304401208222,0 -120.6161498843753,35.31375247220734,0 -120.66009519687532,35.27788519889734,0 -120.70802305332062,35.16120684557906,0 -120.57069395175814,35.11628591196889,0 -120.41963194003938,34.99262561055369,0 -120.35920713535188,34.99262561055369,0 -120.34272764316438,35.02187130650721,0 -120.19990537753938,35.019622008808504,0 -120.17243955722688,35.030867878500686,0 -120.17793272128937,35.05335497625817,0 -120.08180235019562,35.111792455431825,0 -120.02961729160188,35.07808363392465,0 -119.94996641269564,35.05335497625817,0 -119.92799375644562,35.0556033455963,0 -119.92799375644562,35.0556033455963,0 -119.82362363925812,34.99262561055369,0 -119.78791807285188,34.99262561055369,0 -119.68629453769564,34.943109082044074,0 -119.60939024082064,34.93185115228045,0 -119.47480772128937,34.93410286185523,0 -119.42536924472688,34.99262561055369,0 -119.43086240878937,35.0421122010573,0 -119.40051267734408,35.06234808217497,0 -119.39776609531285,35.087074015528756,0 -119.44720457187532,35.14099549297442,0 -119.44720457187532,35.17467829131575,0 -119.32086179843782,35.26218826923714,0 -119.22198484531285,35.26218826923714,0 -118.94471738925812,35.01287374445977,0 -118.9172515689456,34.90032072926109,0 -118.85957334628932,34.83947786398875,0 -118.88154600253937,34.80565682367895,0 -118.83210752597684,34.79438005792337,0 -118.7854156314456,34.76730952734439,0 -118.79365537753934,34.722172241520475,0 -118.78472898593776,34.67644561949105,0 -118.75588987460966,34.66289213882449,0 -118.74902341953153,34.63916821249156,0 -118.72293089023466,34.63238870088477,0 -118.7091979800784,34.589438928550244,0 -118.66387937656278,34.54759806930512,0 -118.61993406406278,34.49215480958053,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline5">
+      <styleUrl>#EditablePolylineStyle5</styleUrl>
+      <name>83.875 miles / 134.984 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.61317918887926,34.452494508075425,0 -118.58921526065662,34.435223475864,0 -118.56168077579332,34.37488843644019,0 -118.54794786563708,34.35334991113639,0 -118.5082597552855,34.33520791194365,0 -118.46843431583238,34.28535391437053,0 -118.47118089786365,34.179763277613716,0 -118.46946428409407,34.16101562976725,0 -118.46740434757066,34.153629049462,0 -118.4709062396605,34.140047419917096,0 -118.47454546085191,34.12765725127489,0 -118.4782533465941,34.123053101956955,0 -118.48196123233627,34.11844870191414,0 -118.4822358905394,34.11333240782605,0 -118.4794206439574,34.10935285400677,0 -118.47667406192612,34.096844466101146,0 -118.47406480899645,34.081376994110634,0 -118.44680498233627,34.04690621684159,0 -118.41075609317612,34.00240340848792,0 -118.39015672794176,33.97963080410172,0 -118.36269090762926,33.96135137568479,0 -118.36681078067612,33.899821655753364,0 -118.348957997473,33.882722179670324,0 -118.32835863223865,33.86219828392686,0 -118.28578661075426,33.856496326012035,0 -118.2515229999144,33.8256991754088,0 -118.20338914981676,33.82455832706811,0 -118.17455003848865,33.80972591358321,0 -118.1581392108519,33.80972591358321,0 -118.14571092716052,33.801738164093734,0 -118.11549852481676,33.801738164093734,0 -118.08665941348862,33.77668602965478,0 -118.00014207950426,33.77320440138535,0 -117.98366258731676,33.75722134164804,0 -117.98874376407458,33.7318706654378,0 -117.95585344425037,33.70559854986948,0 -117.93519399753404,33.6952659807565,0 -117.9111614047606,33.68612487001017,0 -117.873052579077,33.68718186065038,0 -117.91665456882308,33.64160519956647,0 -117.92427633395982,33.6346880105494,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline6">
+      <styleUrl>#EditablePolylineStyle6</styleUrl>
+      <name>155.287 miles / 249.910 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-117.92365407052756,33.634816647938486,0 -117.92255543771503,33.63350174947552,0 -117.92852925363304,33.618579104049694,0 -117.95702504220723,33.62852782153627,0 -117.92942189279316,33.62132369257675,0 -117.92427205148456,33.62109498020497,0 -117.91713093820334,33.617092415432374,0 -117.91191243234395,33.61612033593118,0 -117.90133809152366,33.6168065108349,0 -117.8945403009963,33.61348994819058,0 -117.88183735910178,33.611088219710766,0 -117.87194966378928,33.60302478468438,0 -117.87043904367208,33.595704133901485,0 -117.85251759591816,33.58598043389393,0 -117.8403639704299,33.57739978846351,0 -117.8380980402541,33.57368124382513,0 -117.82134388986351,33.561265865535056,0 -117.81626271310569,33.556230549004475,0 -117.80719899240252,33.55308332710904,0 -117.8033537775588,33.55096604059457,0 -117.79758595529316,33.54730358466479,0 -117.78536366525412,33.54306867647773,0 -117.78261708322287,33.54215299336657,0 -117.77492665353536,33.53185088988685,0 -117.76325367990256,33.52292140713394,0 -117.75913380685569,33.51868530443106,0 -117.75158070626972,33.5107277398961,0 -117.74581288400414,33.504372612414954,0 -117.73661183419944,33.495211247152696,0 -117.73441456857444,33.49211906755097,0 -117.72631215158223,33.48702245648741,0 -117.72287892404316,33.48776692400103,0 -117.72068165841816,33.48948490153127,0 -117.71944569650412,33.494066008324246,0 -117.72013234201194,33.49830331632232,0 -117.71972035470726,33.50666280223073,0 -117.71875905099633,33.51353300804572,0 -117.71848439279316,33.51948674517852,0 -117.71244191232442,33.52572627988828,0 -117.7059187800002,33.530706135935766,0 -117.70076893869162,33.53276668213495,0 -117.69115590158223,33.54364097349549,0 -117.68717335763694,33.551709957985494,0 -117.68154286447285,33.55645943339683,0 -117.6719298273635,33.55909156031734,0 -117.67124318185569,33.590956817295115,0 -117.67206715646506,33.594789008860026,0 -117.67756032052756,33.598792609233065,0 -117.6912932306838,33.605426737810866,0 -117.70461415353536,33.61200317178434,0 -117.72068165841816,33.62852782153627,0 -117.73784779611348,33.64876476931844,0 -117.75295399728536,33.66739684747107,0 -117.75261067453144,33.67539711500439,0 -117.74128102365256,33.68876732913866,0 -117.73118733468772,33.701107219498,0 -117.7250761896682,33.70653392496628,0 -117.71999501291036,33.718471470133636,0 -117.71786641183616,33.74394029867339,0 -117.73139332834008,33.751647982729565,0 -117.7327666193557,33.7667758662728,0 -117.74787282052758,33.77956112698665,0 -117.74176167550804,33.78749387848748,0 -117.72864674630884,33.79496939613515,0 -117.72040700021506,33.81299925596384,0 -117.71491383615258,33.823495905251555,0 -117.71491383615258,33.864386316074324,0 -117.69506978097678,33.873109351205265,0 -117.6868986994338,33.872368212936834,0 -117.67570637765648,33.86780722040083,0 -117.66506337228536,33.87060085724967,0 -117.65819691720723,33.8774420307553,0 -117.63004445138692,33.885650715089085,0 -117.61631154123069,33.879722300063136,0 -117.57682942453144,33.88200250843733,0 -117.54284047189476,33.879722300063136,0 -117.4671721369338,33.90052694239997,0 -117.38209675851584,33.949469071234724,0 -117.3463911921096,33.993999611624346,0 -117.29702138009787,34.05438034867922,0 -117.30519246164084,34.141944155797546,0 -117.3573775202346,34.19307584592964,0 -117.45076130929708,34.25320112166731,0 -117.4671721369338,34.30880288287699,0 -117.4782271296096,34.325816475479996,0 -117.4782271296096,34.32695059236723,0 -117.4782271296096,34.350763505681364,0 -117.45076130929708,34.33829091811643,0 -117.31068562570334,34.51500134322188,0 -117.29969929757836,34.53876074356723,0 -117.20363759103536,34.64615901025579,0 -117.20631550851586,34.69246693256552,0 -117.15138386789084,34.768367143465156,0 -117.1046919733596,34.79656505857808,0 -117.0771574884963,34.87231325935713,0 -117.04426716867208,34.88684623368515,0 -117.01405476632834,34.89033827090556,0 -116.93138264718772,34.90284079992168,0 -116.78581379953144,34.90841563849084,0 -116.72538899484395,34.920802813497204,0 -116.4205183893752,35.059186563064536,0 -116.3576216608596,35.084475341940745,0 -116.29582356515648,35.08829607581178,0 -116.2227644831252,35.114249851960885,0 -116.15409993234395,35.1917810112224,0 -116.11839436593772,35.19733616318133,0 -116.08268879953144,35.25903450809853,0 -115.89866780343772,35.370029221114216,0 -115.57731770578144,35.474105604029006,0 -115.49217366281268,35.46622065377867,0 -115.46498250070334,35.459733164697994,0 -115.442803850801,35.470694479306474,0 -115.37970112863302,35.62265636954884,0 -115.35223530832052,35.748755329225794,0 -115.29181050363304,35.82556607542652,0 -115.22321461740256,35.88717260027295,0 -115.1820158869338,35.94634096203384,0 -115.1792006403518,36.06315719302163,0 -115.17940663400412,36.1314002708406,0 -115.1607298761916,36.15690684207369,0 -115.15798329416036,36.17021132572994,0 -115.14081715646506,36.1812966704085,0 -115.14356373849633,36.186284563828494,0 -115.13051747384786,36.209557199828765,0 -115.11129139962912,36.23226905170793,0 -115.08176564279316,36.25608171336299,0 -115.06734608712912,36.2672102597373,0 -114.94512318673851,36.313147163841,0 -114.93757008615256,36.320948215272466,0 -114.92589711251972,36.325927201587454,0 -114.90461110177756,36.35081736115652,0 -114.9004912287307,36.364088860383944,0 -114.89156483712912,36.380675051951975,0 -114.95597218576196,36.4331194126281,0 -114.95974873605492,36.43947222509098,0 -114.96043538156272,36.44278652950689,0 -114.95837544503932,36.4530599735503,0 -114.94601582589868,36.5090980732156,0 -114.92781971994164,36.56233808217728,0 -114.91889332834008,36.5879795050626,0 -114.9195799738479,36.64414028304793,0 -114.93365620675804,36.72563555969555,0 -114.94601582589868,36.79907239513425,0 -114.97279500070336,36.948753157677224,0 -114.97966145578148,36.998727773711956,0 -114.98515461984395,37.04971081278546,0 -115.01021718087912,37.17182101080686,0 -115.014337053926,37.17865992377224,0 -115.01742695871116,37.18577173654324,0 -115.02086018625025,37.18878037882651,0 -115.0311598688674,37.1915154041605,0 -115.036309710176,37.1926093865563,0 -115.04317616525417,37.19889947772972,0 -115.04969929757834,37.20436869622328,0 -115.05862568917992,37.20765003709389,0 -115.06686543527368,37.21093123528979,0 -115.08849476876976,37.22979535590683,0 -115.09776448312525,37.238269004518166,0 -115.10600422921898,37.257126286886,0 -115.11939381662133,37.28062295942989,0 -115.11699055734398,37.288544602746434,0 -115.1183638483596,37.29564605674707,0 -115.1245436579299,37.30984695365509,0 -115.12969349923851,37.316673353375805,0 -115.13655995431664,37.32923230915574,0 -115.14342640939476,37.33605694825253,0 -115.1506361872268,37.349977289421446,0 -115.15921925607444,37.363349304077104,0 -115.15956257882836,37.38053839352867,0 -115.1616225153518,37.38981340847585,0 -115.18153523507836,37.438134029121805,0 -115.190118303926,37.45094521539168,0 -115.1945814997268,37.459938992737186,0 -115.19320820871118,37.46865919845663,0 -115.20694111886743,37.497265228911246,0 -115.2168974787307,37.519869863438586,0 -115.2217039972854,37.52259285131671,0 -115.2217039972854,37.52613258698855,0 -115.22033070626976,37.52831080238406,0 -115.23234700265648,37.53239478481434,0 -115.23681019845726,37.53321155446629,0 -115.32882069650414,37.49672045446596,0 -115.33362721505884,37.493451724338016,0 -115.33912037912134,37.48636898494225,0 -115.34358357492208,37.476288544114475,0 -115.36692952218772,37.45557850848659,0 -115.37139271798851,37.44849217932351,0 -115.3709807306838,37.445766489349225,0 -115.37750386300802,37.43758882360099,0 -115.37338398996114,37.43077341946556,0 -115.3740019709182,37.42504800041033,0 -115.37304066720723,37.423248492561704,0 -115.37304066720723,37.42133987637176,0 -115.37571858468772,37.42084908148825,0 -115.37750386300802,37.421612538805974,0 -115.37956379953144,37.42193973241651,0 -115.38162373605488,37.421503473951454,0 -115.39171742501976,37.41430484233502,0 -115.39769124093772,37.412941387201506,0 -115.4189772516799,37.41577734600238,0 -115.42330311837912,37.41812238467017,0 -115.51126240792988,37.47617955894534,0 -115.59640645089866,37.5318502667437,0 -115.64776753488304,37.56587500503728,0 -115.66905354562525,37.57186175153595,0 -115.67262410226586,37.57447399920487,0 -115.68292378488302,37.58764268562233,0 -115.68807362619162,37.59417174887623,0 -115.69734334054708,37.61919451807674,0 -115.69905995431662,37.621098079802266,0 -115.70523976388692,37.62588396252443,0 -115.708672991426,37.62876622049314,0 -115.74183796945336,37.64589431529512,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline7">
+      <styleUrl>#EditablePolylineStyle7</styleUrl>
+      <name>23.722 miles / 38.177 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-117.95799062839367,33.62851352132212,0 -117.96435926547863,33.63578850960517,0 -117.98616026035168,33.645949596160634,0 -118.02478407016612,33.673525683632036,0 -118.08263395419934,33.72850856888724,0 -118.08761213413096,33.7372169128566,0 -118.10597990146496,33.74535341904919,0 -118.10580824008804,33.75348915339975,0 -118.11130140415057,33.75819896257551,0 -118.1187000094972,33.75605817229882,0 -118.14120481601576,33.76205225034932,0 -118.14688680759288,33.75934069553004,0 -118.18104742160656,33.76561995494614,0 -118.19941518894056,33.767475102641725,0 -118.20851324191906,33.76704699519959,0 -118.24919698825695,33.75534456365984,0 -118.26104162326676,33.74877908548756,0 -118.2721996127687,33.74963548071567,0 -118.2765083133302,33.75049186739099,0 -118.29075620761732,33.74763721187924,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline8">
+      <styleUrl>#EditablePolylineStyle8</styleUrl>
+      <name>15.227 miles / 24.506 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.41150282016616,33.88711849734117,0 -118.40482519260269,33.8840973892877,0 -118.4003448306642,33.878710431194314,0 -118.4000015079103,33.8744348255619,0 -118.39725492587904,33.87186935936382,0 -118.39383886447769,33.868163549833966,0 -118.38798521152358,33.84849156029014,0 -118.38731573215348,33.843644142513504,0 -118.38420866123062,33.83993710806298,0 -118.38594244113784,33.82767423311121,0 -118.38489530673844,33.81968815954512,0 -118.38008878818374,33.814553861278455,0 -118.37596891513684,33.816835809668554,0 -118.36498258701188,33.81170134018304,0 -118.35262296787124,33.80571073628433,0 -118.34163663974624,33.79971971295961,0 -118.3282470523439,33.789733742125485,0 -118.31382749667983,33.7885924141456,0 -118.30249784580091,33.7894484115568,0 -118.28876493564468,33.79173102948203,0 -118.28155515781263,33.79116038070597,0 -118.28018186679702,33.7751806708611,0 -118.2798385440431,33.76861671203136,0 -118.28603551975112,33.76148140383175,0 -118.29151151767591,33.75721420568818,0 -118.29049871555188,33.747779946911834,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline9">
+      <styleUrl>#EditablePolylineStyle9</styleUrl>
+      <name>15.427 miles / 24.828 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-118.47812889209608,34.122918099968246,0 -118.4760260402284,34.12426811015746,0 -118.4744381724916,34.12611545759059,0 -118.47036121478897,34.130165270327,0 -118.4678292094789,34.129099548943294,0 -118.46667049518445,34.12938374262602,0 -118.46405265918592,34.12995567951624,0 -118.46297548404551,34.13101783776,0 -118.4610442935548,34.13030736549632,0 -118.45893715015268,34.130591555118386,0 -118.4576067744813,34.13205866884371,0 -118.45446107974864,34.13304265094917,0 -118.45328090778212,34.131799350352736,0 -118.44967601886609,34.131870396593776,0 -118.44795940509655,34.13073364957112,0 -118.44444034686902,34.130165270327,0 -118.43765972247937,34.13165725769152,0 -118.43542812457896,34.13044946042678,0 -118.43225238910536,34.131799350352736,0 -118.4309649287782,34.131515164791416,0 -118.429849129828,34.131799350352736,0 -118.42856166950084,34.1313020249934,0 -118.424441796454,34.130094222652765,0 -118.42238185993055,34.130094222652765,0 -118.42135189166882,34.12924164590408,0 -118.41937778583384,34.127394366782795,0 -118.4166312038026,34.126968065868404,0 -118.4151720820985,34.12618650860884,0 -118.41397045245982,34.127962764658015,0 -118.41397045245982,34.12902850037333,0 -118.4128546535096,34.12888640305425,0 -118.40890644183968,34.129596887261066,0 -118.4067606746278,34.12867325662776,0 -118.40590236774302,34.12725226671686,0 -118.40349910846568,34.12760751643386,0 -118.40281246295788,34.124339162728226,0 -118.40006588092662,34.123486527938354,0 -118.3982634364686,34.121852287224414,0 -118.39834497562268,34.119365338577,0 -118.39662836185316,34.11915216814674,0 -118.39319513431408,34.120075902796884,0 -118.39001939884044,34.12270493849425,0 -118.38718698612074,34.12313126090486,0 -118.38632867923594,34.12107068267383,0 -118.38280962100842,34.12199439636647,0 -118.38315294376234,34.118157365700476,0 -118.38135049930432,34.115741368182626,0 -118.38006303897716,34.114178038893286,0 -118.37499902835704,34.113893794099766,0 -118.373368245276,34.11481758618612,0 -118.373368245276,34.112685743070436,0 -118.37302492252208,34.11055384622347,0 -118.36959169498304,34.108706158828035,0 -118.36761758914808,34.107284833370336,0 -118.36727426639416,34.10628989134207,0 -118.36564348331312,34.10337606523822,0 -118.365986806067,34.09683735853718,0 -118.36581514469006,34.09079571312288,0 -118.37268589130257,34.09065355156758,0 -118.37500331989142,34.09029814663496,0 -118.3826422511658,34.08589100151163,0 -118.41328380695184,34.06491837837353,0 -118.42839000812371,34.05453678648095,0 -118.43439815631707,34.05027001018842,0 -118.44667194476924,34.046856434542725,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline10">
+      <styleUrl>#EditablePolylineStyle10</styleUrl>
+      <name>33.687 miles / 54.215 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-117.99149034610592,33.771206681937926,0 -117.96024797550044,33.76321533836403,0 -117.92213914981686,33.76155989545313,0 -117.89741991153562,33.778683621333904,0 -117.87819383731684,33.779311426240476,0 -117.8754472552856,33.812977855131656,0 -117.87132738223872,33.8318024554669,0 -117.88231371036376,33.933896382152064,0 -117.8424882709106,33.97553108722093,0 -117.83012865176995,34.00115107385598,0 -117.80128954044189,34.02903960678205,0 -117.76283739200436,34.01936503120088,0 -117.74910448184812,34.02391791003238,0 -117.71065233341062,34.02847054463068,0 -117.6886796771606,34.02847054463068,0 -117.68730638614498,34.011396905606695,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline11">
+      <styleUrl>#EditablePolylineStyle11</styleUrl>
+      <name>296.827 miles / 477.697 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-115.17521809757817,36.064600342387656,0 -115.13786458195317,36.060159797260575,0 -115.1340193671094,36.04128468478178,0 -115.13127278507817,36.02107219535231,0 -115.01454304875004,36.03240071288679,0 -114.98158406437504,36.00463184222204,0 -114.94999837101568,36.000187914953194,0 -114.915666095625,35.98685463057077,0 -114.91017293156251,35.97240769604391,0 -114.86073445500004,35.96773965968334,0 -114.81678914250004,36.00129892024943,0 -114.76735066593751,36.013518945396065,0 -114.73301839054692,36.013518945396065,0 -114.71379231632814,35.98796582368228,0 -114.64375447453128,35.95128818888661,0 -114.62315510929692,35.88678318789739,0 -114.59156941593754,35.84872283203832,0 -114.5682234686719,35.839817186981726,0 -114.50642537296878,35.760735782463264,0 -114.45561360539064,35.66149444169446,0 -114.16859578312504,35.276974305964224,0 -114.13563679875004,35.229873864636,0 -114.10817097843751,35.2130456471078,0 -114.08070515812504,35.20182489703584,0 -114.0683455389844,35.19172489632407,0 -114.0573592108594,35.20967958489706,0 -114.03813313664064,35.21641156975793,0 -114.00517415226564,35.218655440654814,0 -113.95985554875004,35.207435465892466,0 -113.90217732609378,35.19621394056492,0 -113.81840657414064,35.1939694494506,0 -113.77583455265628,35.17039854909318,0 -113.69618367375004,35.15917190843593,0 -113.6673445624219,35.12885223885704,0 -113.66459798039064,35.05693829207325,0 -113.67009114445317,34.96695672101933,0 -113.63163899601564,34.81150604472079,0 -113.59593342960942,34.673833929817526,0 -113.5080428046094,34.58795507559088,0 -113.45585774601568,34.57212559252766,0 -113.42289876164064,34.51556712168158,0 -113.3707137030469,34.4861415315129,0 -113.28556966007817,34.454440820967264,0 -113.2169051092969,34.415930917020845,0 -113.1290144842969,34.32298111588224,0 -113.0685896796094,34.22765738103415,0 -113.0411238592969,34.18677127840257,0 -112.79118489445317,34.005043219037695,0 -112.7170271796094,33.97771621053966,0 -112.66237019718751,33.8934026359147,0 -112.40144490421878,33.67425426488608,0 -112.26411580265628,33.591929180206456,0 -112.26960896671878,33.463711660229166,0 -111.97023152531251,33.45912894814541,0 -111.92079304875004,33.46600292542394,0 -111.91804646671878,33.49807427762801,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline12">
+      <styleUrl>#EditablePolylineStyle12</styleUrl>
+      <name>770.999 miles / 1240.803 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-111.93383932320314,33.45216850017967,0 -111.98310613838868,33.312555193295836,0 -111.8651747724219,33.165246022358104,0 -111.67291403023438,32.921197431444426,0 -111.6784071942969,32.805845757491426,0 -111.3817763349219,32.64872698651696,0 -111.2334609052344,32.46819098159212,0 -111.09613180367188,32.37542379525141,0 -110.9588027021094,32.21290276109651,0 -110.96985769478518,32.171064576253336,0 -110.8983778974219,32.1431327011069,0 -110.70611715523438,32.008206993477,0 -110.62921285835938,31.98954378000376,0 -110.33814382759768,31.952264221514152,0 -110.27765035835938,31.961556402791377,0 -110.1568007489844,31.98488466321072,0 -110.07447195259768,32.04077844281895,0 -109.9865126630469,32.1431327011069,0 -109.8766493817969,32.20819692553177,0 -109.75579977242188,32.33366050645834,0 -109.6129775067969,32.361504841839476,0 -109.4646620771094,32.319764138910394,0 -109.01954412666991,32.21290276109651,0 -108.73389959541994,32.34758374541113,0 -108.65150213448244,32.329018950775996,0 -108.37684393135744,32.1757142131456,0 -107.75062322823244,32.26401219108867,0 -107.62428045479494,32.29187793938214,0 -107.39906072823244,32.23149133502677,0 -107.32215643135744,32.25007610735385,0 -107.23426580635744,32.23625404524864,0 -106.77284002510744,32.29652139843495,0 -106.74537420479494,32.37078438225738,0 -106.58607244698244,32.42180482297851,0 -106.47071600166994,32.42644161513052,0 -106.41578436104494,32.45425736169798,0 -106.17408514229494,32.77813904142691,0 -105.95985174385744,32.86584735180818,0 -106.00929022041991,33.07323166459061,0 -105.86646795479494,33.13765183811947,0 -105.81702947823244,33.16984420905676,0 -105.70716619698244,33.17444215456509,0 -105.69068670479494,33.21581280777879,0 -105.68519354073244,33.27094326530108,0 -105.44898748604494,33.39941701251637,0 -105.31715154854494,33.41778768065874,0 -105.22926092354491,33.362750047120905,0 -105.08643865791994,33.33062867293337,0 -104.98206854073244,33.34892783683831,0 -104.58656072823244,33.39027321982305,0 -104.52064275948244,33.454402781932714,0 -104.33936834541994,33.58497941156485,0 -104.16908025948244,33.64687848420355,0 -104.05372381416994,33.690395619594845,0 -103.74610662666994,33.8432306894293,0 -103.64722967354491,33.950807614017805,0 -103.33411932198244,34.18055145556358,0 -103.19129705635744,34.29635242878415,0 -103.20228338448244,34.40746203125703,0 -103.03748846260744,34.38258854813777,0 -102.86170721260744,34.52295019171416,0 -102.71888494698244,34.638108966048385,0 -102.5103163739844,34.7352222880136,0 -102.3290419599219,34.84569098535084,0 -102.0928359052344,34.951565600858736,0 -101.92804098335938,34.97173949054056,0 -101.9225478192969,35.04156409185002,0 -101.9005751630469,35.133709769581934,0 -101.8401503583594,35.19433419262687,0 -101.59525823799808,35.17862108911519,0 -101.35355901924808,35.09779095690018,0 -101.18876409737308,35.02576527249591,0 -101.10087347237308,35.021294945513326,0 -100.89213323799808,34.931302304364735,0 -100.65592718331057,34.863721832915765,0 -100.52958440987308,34.71942090670558,0 -100.48014593331057,34.66522181683718,0 -100.45817327706057,34.556717228340275,0 -100.37028265206057,34.49811108680505,0 -100.20548773018557,34.42105716508659,0 -100.05167913643557,34.366720051409715,0 -99.88688421456057,34.330352859984124,0 -99.78251409737308,34.298621443400535,0 -99.73307562081057,34.28954501720523,0 -99.54630804268557,34.248688966884366,0 -99.49686956612308,34.257769804556304,0 -99.41447210518557,34.22141218606634,0 -99.27714300362308,34.14424575625911,0 -99.12333440987308,34.11247257162056,0 -99.03544378487308,34.071530662982916,0 -98.92558050362308,34.03056895823548,0 -98.84318304268557,34.007803905908155,0 -98.77177190987308,33.96689685138032,0 -98.65092230049808,33.95769930590524,0 -98.50810003487308,33.934914726264374,0 -98.49711370674808,33.88932727449464,0 -98.41471624581057,33.875589276053965,0 -98.30485296456057,33.84827772528866,0 -98.23893499581057,33.811744144574995,0 -98.14005804268557,33.77525203135652,0 -98.07963323799808,33.68388230866966,0 -97.95878362862308,33.59721979739978,0 -97.84892034737308,33.55139523349749,0 -97.69521475044922,33.34978820443904,0 -97.58535146919922,33.225750343784874,0 -97.49196768013672,33.143056382676995,0 -97.46450185982424,33.01843740175462,0 -97.40957021919924,32.9677569350348,0 -97.31618643013674,32.88012060262972,0 -97.31498480049808,32.837467036308844,0 -96.94694280831057,32.83515929461697,0 -96.90025091377932,32.83285149294026,0 -96.82334661690432,32.80290232878086,0 -96.79313421456057,32.772827601836966,0 -96.7464423200293,32.78899186687344,0 -96.68052435127932,32.795918509960096,0 -96.62009954659182,32.821311584860744,0 -96.62284612862304,32.78899186687344,0 -96.5377020856543,32.779755503593464,0 -96.49101019112304,32.772827601836966,0 -96.44981146065432,32.738180004274994,0 -96.37840032784182,32.74049026344342,0 -96.31248235909182,32.71966689036956,0 -96.24381780831057,32.69427370298116,0 -96.0213446637793,32.638782230808864,0 -95.93345403877932,32.59945493011954,0 -95.88676214424808,32.590198937293195,0 -95.7576727887793,32.5460752148714,0 -95.67252874581057,32.51380053184851,0 -95.62309026924808,32.497586452004015,0 -95.58189153877932,32.497586452004015,0 -95.4775214215918,32.476706519388294,0 -95.44730901924808,32.46514952290769,0 -95.34843206612308,32.46984201614473,0 -95.27976751534182,32.44892667520158,0 -95.18913030831057,32.45124440373316,0 -95.14243841377932,32.43501905220269,0 -95.06278753487304,32.439655164960456,0 -94.80186224190432,32.432700906422404,0 -94.76890325752932,32.425601214239094,0 -94.68375921456057,32.453562072648744,0 -94.51621771065432,32.481398410305715,0 -94.21958685127932,32.497586452004015,0 -94.0657782575293,32.47215920656018,0 -93.99986028877932,32.45124440373316,0 -93.93943548409182,32.44429103929945,0 -93.83231878487304,32.453562072648744,0 -93.74168157784182,32.502219344584475,0 -93.77738714424804,32.55070560806477,0 -93.72520208565432,32.56011035889206,0 -93.74442815987308,32.65728321675574,0 -93.71696233956057,32.76589916074937,0 -93.69498968331057,32.908977264378805,0 -93.69224310127932,32.966604768041584,0 -93.61259222237304,33.24958433940387,0 -93.56864690987308,33.35503626267747,0 -93.57414007393557,33.3872919634873,0 -93.63456487862308,33.47668515916785,0 -93.61808538643557,33.50188197121859,0 -93.61259222237304,33.57739979747184,0 -93.59336614815432,33.67576854691653,0 -93.57414007393557,33.703192266413254,0 -93.44779730049808,33.78749388747382,0 -93.28025579659182,33.910642443387204,0 -93.1649680158301,34.00862924569907,0 -93.1210227033301,34.0678335440394,0 -93.07982397286136,34.14737127397199,0 -93.0605978986426,34.188276474913856,0 -93.00429296700196,34.23370344227593,0 -92.95279455391604,34.28818346870124,0 -92.93528509346682,34.32000389478156,0 -92.9012961408301,34.34262819629513,0 -92.8134055158301,34.40610239633042,0 -92.8408713361426,34.43326257909657,0 -92.86627721993166,34.43164850827363,0 -92.89236974922854,34.442974662871336,0 -92.90472936836916,34.46449012667961,0 -92.92670202461916,34.46562236595182,0 -92.9610343000098,34.4621689881608,0 -93.00772619454104,34.467915103440305,0 -93.06265783516604,34.467915103440305,0 -93.05716467110354,34.510899341104064,0 -93.0144209882422,34.50852291130619,0 -92.97184896675785,34.503996190888834,0 -92.95536947457032,34.50739125425095,0 -92.93888998238285,34.50852291130619,0 -92.91966390816408,34.51757561453589,0 -92.87571859566408,34.5425220359079,0 -92.85374593941408,34.552702100799486,0 -92.80018758980472,34.554907617378795,0 -92.7617354413672,34.545858972152715,0 -92.73152303902346,34.53907184251329,0 -92.67796468941408,34.52668390434774,0 -92.6738448163672,34.53567807015849,0 -92.63401937691408,34.53794060043411,0 -92.61479330269532,34.5605625209332,0 -92.55711508003908,34.593353379706016,0 -92.53514242378908,34.60352722274425,0 -92.41703939644532,34.646441462963196,0 -92.3662276288672,34.67583859965336,0 -92.31404257027346,34.67708090019694,0 -92.29344320503908,34.69955202808331,0 -92.25361776558596,34.71420014380391,0 -92.21928549019532,34.713099508477924,0 -92.19456625191408,34.71197063651778,0 -92.17396688667972,34.726644770098495,0 -92.16298055855472,34.74583009185082,0 -92.15886068550785,34.778604109910454,0 -92.0586104413672,34.790954450587655,0 -92.00917196480472,34.799919977549216,0 -91.87596273628908,34.801104030868125,0 -91.79219198433596,34.796593260547716,0 -91.69331503121096,34.801104030868125,0 -91.65074300972658,34.81914464386979,0 -91.58207845894532,34.815734143244384,0 -91.51753378121096,34.81914464386979,0 -91.47358846871096,34.8327288729895,0 -91.42277670113285,34.845071104713085,0 -91.36372518746096,34.845071104713085,0 -91.30192709175785,34.86425706330003,0 -91.27171468941408,34.87321461268852,0 -91.23600912300785,34.898025870905684,0 -91.17156744209964,34.91047092163689,0 -90.96008062569338,34.96670351745312,0 -90.92300176827148,34.97688767929366,0 -90.84256124703128,35.00956971930448,0 -90.79861593453128,35.0343116322892,0 -90.76016378609376,35.03543608678698,0 -90.72995138375002,35.03093817596455,0 -90.64892721382814,35.08152539706363,0 -90.5088515302344,35.13095814554657,0 -90.45254659859376,35.13320437621995,0 -90.3989882489844,35.14999298761659,0 -90.27951193062502,35.14662431321351,0 -90.1916899701758,35.16801302677845,0 -90.14362478462893,35.14999298761659,0 -90.12302541939457,35.1556913443237,0 -90.02277517525394,35.148926255809826,0 -90.0104155561133,35.18933999983303,0 -89.95823049751955,35.18933999983303,0 -89.91840505806643,35.19040620159571,0 -89.8840727826758,35.14999298761659,0 -89.61216116158205,35.28916550389811,0 -89.55722952095705,35.33113398775866,0 -89.47895193306643,35.36647371152212,0 -89.41303396431643,35.38825230209274,0 -89.27158498970705,35.47611866771829,0 -89.25510549751955,35.538163117676,0 -88.85410452095707,35.66380963026666,0 -88.7799468061133,35.67775507421318,0 -88.72226858345707,35.679428363756294,0 -88.63025808541018,35.719019306441126,0 -88.56159353462893,35.745244444806055,0 -88.35971975533205,35.7959144599881,0 -88.25260305611332,35.820972895403415,0 -88.21003103462893,35.81262096212325,0 -88.17157888619143,35.81707543587583,0 -88.13587331978519,35.81930257903573,0 -88.09604788033205,35.83377748655939,0 -88.02738332955082,35.87106604070841,0 -87.96421194283207,35.86828391832811,0 -87.87906789986332,35.864973065414055,0 -87.8296294233008,35.88160939783006,0 -87.76096487251955,35.88219355336854,0 -87.71289968697268,35.87273526724897,0 -87.6868071576758,35.88160939783006,0 -87.66758108345705,35.88160939783006,0 -87.59891653267582,35.92168359772897,0 -87.53574514595707,35.96671155222155,0 -87.46982717720705,35.9961881753458,0 -87.43549490181644,35.99338267504123,0 -87.40528249947268,36.00449298234407,0 -87.38742971626957,36.00840899254226,0 -87.34760427681643,36.01893404166652,0 -87.27893972603519,36.025042924152835,0 -87.25010061470705,36.01560172433468,0 -87.20615530220705,36.02670890081609,0 -87.18830251900393,36.02173863288443,0 -87.14573049751957,36.04061843070687,0 -87.1210112592383,36.07678280991886,0 -87.06195974556643,36.09071123571181,0 -87.03724050728519,36.07686605485228,0 -86.9891753217383,36.07686605485228,0 -86.97406912056644,36.07017843107224,0 -86.94251775948244,36.08349761805687,0 -86.92603826729494,36.11123867785882,0 -86.87659979073243,36.144015979084955,0 -86.86012029854494,36.152332913049875,0 -86.82029485909182,36.15504958703984,0 -86.80244207588869,36.17223452685262,0 -86.79351568428713,36.18642312061637,0 -86.77772283760744,36.192851481136216,0 -86.77222967354494,36.22933350923892,0 -86.75849676338869,36.24160116555396,0 -86.74613714424807,36.24218265452111,0 -86.73927068916994,36.255804872359334,0 -86.7378973981543,36.27047655567273,0 -86.73240423409182,36.27853096818238,0 -86.69944524971682,36.312510882152345,0 -86.72004461495119,36.35651333213369,0 -86.71798467842775,36.362900056232554,0 -86.709744932334,36.37030910534102,0 -86.71867132393557,36.40380688970569,0 -86.71729803291994,36.41673781500703,0 -86.70905828682619,36.430854379837335,0 -86.67884588448244,36.470372627232045,0 -86.66785955635744,36.49767291219203,0 -86.64320898262697,36.52225977385692,0 -86.63627386299805,36.54237048728621,0 -86.60743475166994,36.586215215529954,0 -86.58134222237305,36.60641952928016,0 -86.56554937569337,36.65292721094122,0 -86.5346503278418,36.69062520633701,0 -86.511991026084,36.73383537512593,0 -86.49455023018557,36.74470289685774,0 -86.47422552315432,36.78747021226126,0 -86.47216558663087,36.817434365696826,0 -86.4295935651465,36.9138721940193,0 -86.39182806221682,36.9734428628149,0 -86.37878179756837,36.99787777517212,0 -86.369168760459,37.00582908386373,0 -86.30943060127932,37.01268299286745,0 -86.29363775459963,37.01295713637227,0 -86.25037908760744,37.020358637191066,0 -86.23664617745119,37.033241011360985,0 -86.21742010323244,37.04173670065237,0 -86.18652105538088,37.04042130128225,0 -86.10893011299807,37.06017729593853,0 -86.06086492745119,37.08562507929435,0 -86.0512518903418,37.09904404356934,0 -86.00867986885744,37.12122120194432,0 -85.99220037666994,37.12319219060027,0 -85.97091436592775,37.138794039350266,0 -85.96954107491213,37.15929052506451,0 -85.93795538155275,37.193511918713675,0 -85.92078924385744,37.26485914947148,0 -85.90018987862307,37.293543012297285,0 -85.90705633370119,37.33859556437227,0 -85.89263677803713,37.36397692012747,0 -85.88027715889649,37.40353287895063,0 -85.87959051338868,37.48939286057247,0 -85.88851690499025,37.504401415681194,0 -85.84937811104494,37.67497584854624,0 -85.83976507393555,37.68122552972517,0 -85.84045171944337,37.69241929456304,0 -85.82809210030275,37.70953270677242,0 -85.82809210030275,37.71903845078124,0 -85.79650640694338,37.74266173073679,0 -85.79513311592775,37.761934914154395,0 -85.78483343331057,37.769317113502474,0 -85.77316045967775,37.77935789286392,0 -85.76766729561525,37.7883120320569,0 -85.75599432198244,37.79129650404658,0 -85.73470831124025,37.81817844829181,0 -85.720975401084,37.82889052194954,0 -85.71273565499025,37.84936117175745,0 -85.70174932686525,37.87294282180786,0 -85.69831609932619,37.88730495602636,0 -85.69831609932619,37.89732969150688,0 -85.68526983467774,37.91656252285567,0 -85.69007635323244,37.95474239366675,0 -85.7044959088965,37.998313594361015,0 -85.69419622627932,38.01860190543768,0 -85.70312261788088,38.13076237235288,0 -85.72166204659182,38.164511930560586,0 -85.71685552803713,38.17881702898833,0 -85.73264837471682,38.19257966146228,0 -85.73608160225588,38.20310227299628,0 -85.75324773995119,38.20822812260623,0 -85.75050115791994,38.23223387580815,0 -85.75256109444338,38.24436860115741,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline13">
+      <styleUrl>#EditablePolylineStyle13</styleUrl>
+      <name>312.844 miles / 503.474 km</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-80.64889668796876,41.096132001614826,0 -80.68089436863283,41.151890652217155,0 -80.56141805027345,41.175669345783575,0 -80.4982466635547,41.178770278385585,0 -80.43768452976563,41.183938173155134,0 -80.16041707371096,41.193239356075665,0 -79.91047810886721,41.19840610897813,0 -79.6962447104297,41.16843326548356,0 -79.63856648777346,41.20160929096689,0 -79.6028609213672,41.17773665049645,0 -79.5699019369922,41.19840610897813,0 -79.5314497885547,41.181871064182864,0 -79.49574422214846,41.19840610897813,0 -79.39137410496095,41.183938173155134,0 -79.3446822104297,41.17773665049645,0 -79.27052449558596,41.17370534587261,0 -79.22383260105471,41.19230929724261,0 -79.05629109714845,41.159128559292064,0 -79.0095992026172,41.165331843547825,0 -78.96565389011721,41.13224087605561,0 -78.9217085776172,41.154992710251165,0 -78.8008589682422,41.150960006183546,0 -78.75691365574221,41.14051518360469,0 -78.65529012058596,41.115792591228725,0 -78.57014607761721,41.12396552479063,0 -78.53718709324221,41.10544564625498,0 -78.44902181003907,41.061970672173985,0 -78.32844685886721,41.01841513305769,0 -78.21556233738283,40.98732341103185,0 -78.16063069675782,40.98732341103185,0 -78.10048055027346,40.95839494661898,0 -77.93019246433596,41.02048739297857,0 -77.8944868979297,41.02048739297857,0 -77.8560347494922,40.99146982144316,0 -77.79286336277345,40.97695624424995,0 -77.72694539402346,40.94179942355794,0 -77.6363081869922,40.9707351619764,0 -77.5813765463672,41.01634280794028,0 -77.51271199558595,41.030847714612044,0 -77.4110884604297,41.06807960719522,0 -77.3396773276172,41.04736905425381,0 -77.20509480808596,41.057725145836706,0 -77.13368367527346,41.03913479831423,0 -77.0210738119922,41.0763620024657,0 -76.9305739340625,41.07843243824785,0 -76.870149129375,41.049543968709294,0 -76.83169698093751,41.04736905425381,0 -76.782258504375,41.01012544141554,0 -76.71359395359374,40.98525010804598,0 -76.49386739109374,41.00815648636184,0 -76.3537917075,41.03291958333995,0 -76.29336690281251,41.00815648636184,0 -76.16427754734376,41.01634280794028,0 -76.15329121921876,40.99986550388705,0 -76.00772237156251,41.04120640623365,0 -76.01321553562501,41.0040111255083,0 -76.04342793796874,40.97913348445073,0 -76.02420186375001,40.93547128214425,0 -76.02145528171876,40.88368224847786,0 -75.96638631199221,40.798489944705985,0 -75.9389204916797,40.74857047884717,0 -75.8839888510547,40.73400357001672,0 -75.83729695652345,40.713188166584,0 -75.8070845541797,40.70486018249265,0 -75.75489949558596,40.69028370428756,0 -75.63686513279299,40.67570403678088,0 -75.59017323826174,40.661121180219055,0 -75.56270741794924,40.59233048071672,0 -75.49603413914065,40.62094976447027,0 -75.35733174656252,40.67200654280103,0 -75.29004048679688,40.68346289970424,0 -75.25021504734376,40.68346289970424,0 -75.23922871921877,40.69491728777299,0 -75.20901631687502,40.699082031633885,0 -75.20626973484376,40.689710991819766,0 -75.19116353367188,40.67929717953218,0 -75.17880391453127,40.67408966322027,0 -75.1691908774219,40.65325553044773,0 -75.15408467625002,40.64908792297031,0 -75.13623189304688,40.66679845702301,0 -75.1087660727344,40.67200654280103,0 -75.07855367039063,40.65950645359969,0 -75.04559468601565,40.65950645359969,0 -75.03323506687501,40.64804598042976,0 -75.00714253757815,40.645962046543886,0 -74.96731709812502,40.63033046826574,0 -74.91238545750002,40.631372687354926,0 -74.84234761570315,40.64804598042976,0 -74.77093648289065,40.650129849242454,0 -74.68853902195313,40.64179398355554,0 -74.50726460789065,40.645962046543886,0 -74.44958638523438,40.65429739164545,0 -74.41250752781252,40.66367341031645,0 -74.37268208835938,40.69491728777299,0 -74.32187032078126,40.71157470101411,0 -74.28479146335938,40.713656584748776,0 -74.25183247898438,40.70532865924232,0 -74.23260640476565,40.706369706887905,0 -74.21647023533204,40.71547817961773,0 -74.20411061619143,40.71391681563858,0 -74.19175099705079,40.708712004590986,0 -74.1642851767383,40.710273490623784,0 -74.14849233005862,40.7040273268011,0 -74.10180043552737,40.69049196214635,0 -74.09493398044924,40.68476463386789,0 -74.07364796970704,40.69882174277036,0 -74.06334828708987,40.7040273268011,0 -74.05373524998049,40.709232504003644,0 -74.0544218954883,40.72224366706334,0 -74.05030202244141,40.73056947690801,0 -74.0097556052051,40.72586031867196,0 -73.9987692770801,40.71909519882786,0 -73.9877829489551,40.704001299892944,0 -73.97816991184573,40.69567216691629,0 -73.96169041965823,40.69411033854087,0 -73.95413731907229,40.713370329595236,0 -73.92941808079104,40.72586031867196,0 -73.9218649802051,40.73470597631785,0 -73.89577245090825,40.72276406069413,0 -73.83603429172855,40.74201576465592,0 -73.8326010641895,40.74669776928455,0 -73.83672093723636,40.75606078971982,0 -73.83054112766605,40.77218290084119,0 -73.82092809055668,40.78934085051825,0 -73.83740758274418,40.8116915282914,0 -73.8326010641895,40.82572182817255,0 -73.83603429172855,40.84182703128607,0 -73.83534764622075,40.85221540862012,0 -73.81749486301763,40.870391150173454,0 -73.81474828098636,40.88804280862799,0 -73.80376195286138,40.88492815212554,0 -73.79620885227544,40.88960008190538,0 -73.794148915752,40.90101896607193,0 -73.74814366672857,40.94460021062425,0 -73.73853062961918,40.961195029794865,0 -73.71655797336919,40.97415682982362,0 -73.70213841770513,40.97415682982362,0 -73.67604588840824,40.98763440085741,0 -73.66643285129886,40.98763440085741,0 -73.63347386692386,41.01872597620212,0 -73.60463475559574,41.02442450720946,0 -73.5909018454395,41.03737388031675,0 -73.56000279758794,41.045142281643685,0 -73.54558324192388,41.045142281643685,0 -73.52429723118168,41.05446315286507,0 -73.51056432102543,41.057052049421394,0 -73.50232457493168,41.06688892709966,0 -73.49133824680669,41.06740661674697,0 -73.46593236301761,41.074653843850854,0 -73.45151280735357,41.09069843231915,0 -73.41924046848636,41.10779971952309,0 -73.40482091282232,41.10779971952309,0 -73.37529515598638,41.119180861237645,0 -73.31212376926763,41.12228446653444,0 -73.2839713034473,41.140903016161595,0 -73.25307225559574,41.145556827957115,0 -73.24414586399418,41.150210309493566,0 -73.24208592747075,41.16158409618759,0 -73.2235464987598,41.16778714801921,0 -73.20981358860357,41.1657195293177,0 -73.19264745090824,41.168820932903834,0 -73.18097447727543,41.17812426286636,0 -73.16174840305668,41.17450645821014,0 -73.1521353659473,41.17554013707264,0 -73.13634251926761,41.18535927272456,0 -73.13153600071294,41.19362687668964,0 -73.12054967258793,41.195693614554784,0 -73.10613011692386,41.203443300395854,0 -73.08965062473636,41.20886753449357,0 -73.07179784153324,41.229294779536204,0 -73.06287144993169,41.23629177413878,0 -73.05119847629886,41.23654995149419,0 -73.03128575657232,41.23164440736527,0 -72.99077367161138,41.2574589305816,0 -72.970174306377,41.269097943672755,0 -72.96262120579105,41.27712275086469,0 -72.94682835911138,41.282024880752346,0 -72.92897557590825,41.28331485373581,0 -72.91455602024419,41.300082182035226,0 -72.90425633762699,41.30240347243906,0 -72.89807652805669,41.29185383173226,0 -72.86374425266605,41.28101868412375,0 -72.78683995579105,41.293917465372814,0 -72.69414281223636,41.29598103373215,0 -72.68178319309575,41.293917465372814,0 -72.65912389133793,41.287210417359766,0 -72.60075902317388,41.287210417359766,0 -72.5801596579395,41.28979013281111,0 -72.55750035618168,41.28772636860997,0 -72.49913548801761,41.2892741978808,0 -72.48608922336919,41.294433363582776,0 -72.46617650364261,41.290306063661426,0 -72.42291783665044,41.2892741978808,0 -72.343953603252,41.31712884540158,0 -72.32816075657232,41.3220279693184,0 -72.28970860813482,41.314550211210765,0 -72.2457632956348,41.32331715124581,0 -72.24164342258793,41.33543421471433,0 -72.19426488254886,41.37331771654943,0 -72.157186025127,41.36790713759556,0 -72.12628697727544,41.37048365988444,0 -72.0974478659473,41.36223842939555,0 -72.06517552708013,41.36378448969931,0 -72.04869603489263,41.35811542234102,0 -72.01711034153325,41.36120770211971,0 -71.99788426731449,41.36945306321326,0 -71.97385167454105,41.369968363589585,0 -71.95599889133794,41.37409061966646,0 -71.93127965305669,41.37177188276508,0 -71.91617345188482,41.37280244270284,0 -71.87840794895513,41.388258882596794,0 -71.84682225559575,41.41787345723072,0 -71.80768346165044,41.43203217832685,0 -71.77266454075199,41.45442239617699,0 -71.74863194797855,41.477833782293544,0 -71.70056676243168,41.50226522110619,0 -71.68958043430669,41.51177813046721,0 -71.6634879050098,41.56600070928949,0 -71.65799474094732,41.60272286515104,0 -71.62160252903324,41.64558174113513,0 -71.60992955540043,41.65148222856268,0 -71.58589696262699,41.64763414588311,0 -71.55019139622075,41.65892120329525,0 -71.52890538547855,41.657638682741684,0 -71.50899266575199,41.665333422950326,0 -71.48976659153324,41.66405103010146,0 -71.47397374485355,41.672770797794335,0 -71.47809361790044,41.68123297225964,0 -71.47466039036136,41.69943569659759,0 -71.47191380833013,41.717120732870626,0 -71.44650792454105,41.73480090403087,0 -71.43895482395511,41.74940259304302,0 -71.4217886862598,41.78653227289789,0 -71.40118932102544,41.79702711263936,0 -71.40736913059574,41.81059106650263,0 -71.41492223118168,41.81801163713778,0 -71.40630483005864,41.86149424136349,0 -71.3815855917774,41.87939025482574,0 -71.37471913669927,41.894214584695156,0 -71.33626698826177,41.90699141846376,0 -71.28957509373052,41.96981620653758,0 -71.29232167576177,41.99176474214434,0 -71.2552428183399,42.02390823629396,0 -71.21816396091802,42.08457940847283,0 -71.23189687107427,42.11158236705676,0 -71.22503041599614,42.12940820550115,0 -71.31978749607427,42.03416012397724,0 -71.34999989841802,42.04027986573977,0 -71.36922597263677,42.05251758128391,0 -71.41729115818364,42.0708697344526,0 -71.42690419529302,42.08513996407923,0 -71.45711659763677,42.10857694608741,0 -71.47084950779302,42.11672690948095,0 -71.48870229099614,42.152370677086346,0 -71.5299010214649,42.18341531649459,0 -71.56697987888677,42.27137706566067,0 -71.5628600058399,42.29830035665315,0 -71.5793394980274,42.35261986096091,0 -71.60543202732427,42.386609128208896,0 -71.60817860935552,42.41150600239907,0 -71.5903258261524,42.428284267762436,0 -71.58208608005864,42.44505804343691,0 -71.50655507419927,42.523596796338246,0 -71.48458241794927,42.54535346102724,0 -71.43514394138677,42.557999200257,0 -71.40630483005864,42.57671019214171,0 -71.3705992636524,42.591371640718435,0 -71.31978749607427,42.608051163834695,0 -71.33626698826177,42.61967364554002,0 -71.3980650839649,42.62629243733626,0 -71.43789052341802,42.6652330529989,0 -71.4475035605274,42.70107120382327,0 -71.45025014255864,42.721807502633375,0 -71.45162343357427,42.7324504536984,0 -71.47222279880864,42.73199652624394,0 -71.49007558201177,42.74309157870117,0 -71.49419545505864,42.76073870705357,0 -71.46260976169927,42.76124283688784,0</coordinates>
+      </LineString>
+    </Placemark>
+    <umap:UMapSettings>
+      <umap:center>-91.65273427,36.16444634,0.00000000</umap:center>
+      <umap:zoom>4</umap:zoom>
+      <umap:bounds>
+        <umap:north>55.646569943082255</umap:north>
+        <umap:south>10.347293300245369</umap:south>
+        <umap:east>-49.94863271091802</umap:east>
+        <umap:west>-133.35683583591802</umap:west>
+      </umap:bounds>
+      <umap:type>road</umap:type>
+      <umap:provider>com.afcomponents.umap.providers.microsoft::MicrosoftProvider</umap:provider>
+    </umap:UMapSettings>
+    <description>Trip around USA</description>
+  </Document>
+</kml>

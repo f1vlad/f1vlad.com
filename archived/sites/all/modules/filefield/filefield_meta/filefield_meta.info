@@ -1,0 +1,12 @@
+; $Id: filefield_meta.info,v 1.2 2008/06/03 03:27:58 jpetso Exp $
+name = FileField - Meta
+description = Add metadata gathering and storage to filefield.
+dependencies = content filefield getid3
+package = CCK
+
+; Information added by drupal.org packaging script on 2008-06-28
+version = "6.x-1.0-beta1"
+core = "6.x"
+project = "filefield"
+datestamp = "1214646309"
+

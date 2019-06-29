@@ -1,0 +1,22 @@
+; $Id: garland.info,v 1.5 2007/07/01 23:27:32 goba Exp $
+name = f1vlad_black
+description = Tableless
+version = VERSION
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = style.css
+stylesheets[print][] = print.css
+
+
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[content] = Content
+regions[header] = Header
+regions[footerleft] = Footer Left Column
+regions[footerright] = Footer Right Column
+regions[footercenter] = Footer Center Column
+
+; Information added by drupal.org packaging script on 2008-04-09
+version = "6.2"
+project = "drupal"
+datestamp = "1207776008"

@@ -1,0 +1,8 @@
+; $Id$
+name = f1init
+description = various initialisation functions
+core = 6.x
+
+package = ""
+
+version = "6.x-0.1-dev"
