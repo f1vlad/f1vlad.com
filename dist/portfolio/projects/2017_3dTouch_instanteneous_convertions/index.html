@@ -1,0 +1,324 @@
+<div>
+    <header>
+        <a href="#" class="btn-close">
+            <div class="menu-btn close">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </a>
+    </header>
+
+    <h3></h3>
+
+    <article>
+        <section class="about">
+            <h4>About</h4>
+            <p>Project Instantaneous Conversions was a rapid prototype (POC) during SugarCRM employees hackathon week. This project was inspired by a patent <a href="https://patents.google.com/patent/US20170199612A1"></a>I filed in 2016</a>.</p>
+
+            <p>This two level UX improvement to Quotes module of the app allows instantly convert foreign currencies or unit measurements, without leaving a view. A mobile user uses a technology akin to Apple's iPhone 3d touch to invoke a translation. A desktop user simple double clicks or long taps the area to invoke a translation.</p>    
+        </section>
+        <section class="meta">        
+            <p><span>Date:</span> 2017</p>
+
+            <p><span>Patent(s):</span> <a href="https://patents.google.com/patent/US20170199612A1">US20170199612A1</a></p>
+
+            <p><span>Technologies used:</span><span class="tech">n/a</span></p>
+        
+            <p><span>Role:</span> Front-end Engineer, Designer</p>
+
+        </section>
+
+        <section class="demos">
+
+            <h4>Video</h4>
+
+            <div class="video">
+                <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XNyQPHAgIhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span>ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet...</span>
+                </div>
+                <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/chP_yQj8AuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span>ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet...</span>
+                </div>
+            </div>
+
+            <h4>Code</h4>
+
+            <div class="code">
+                <div>
+                    <pre>
+                        <code class="javascript">
+///custom/modules/Quotes/clients/base/views/recordlist/recordlist.js
+({
+    extendsFrom: 'BaseRecordlistView',
+
+    _render: function(options) {
+        this._super('_render', arguments);
+        
+        // this.$('.field').on('bla', function(){});
+        // Zepto('.field').on('bla', function(){});
+
+        // TODO: https://scurker.github.io/currency.js/
+
+        // STANDARD: https://www.xe.com/iso4217.php
+
+        // this.fields
+        // this.getFieldEl
+
+        let currencyDict = {
+            '€': 'EUR',
+            '$': 'USD',
+            '¥': 'CNY',
+            '₨': 'INR',
+            '₩': 'KRW',
+            '₴': 'UAH',
+            '¥': 'JPY',
+            'Ƀ': 'BTC'
+        };
+
+        let goodsDict=["Beets","Potatoes","Laptops","Monitors","Desks","Office chairs","Water jugs","Battery banks","Chargers","Blinds","Tires","Batteries","Pens","Notebooks","Brushes","Tomatoes","Pencils","Wood","Sunglasses","Mirrors","Shower curtains","Washing machines","Chairs","Paper towels","Bulbs","Brooms","Screw drivers","Door handles","Decorative trees","Trash bags","Doors","Windows","Towels","Hammer","Plastic chairs","Keyboards","Steel chairs","Bicycles","Work shoes","Hiking shoes","Soccer balls","Liquid soap","Soap bars","Towels","Sunscreen lotions","Reclining chairs","Trash bags","Trash bins","Tiolet paper","Paper plates","Plasticware","Detergent","Soft tissue","Dishwashing soap","Knives","Spoons","Forks","Chop sticks"];
+
+        shuffleArray(goodsDict);
+
+        ti=0;
+        $('.dataTable tbody tr').each(function(){ $(this).attr('num', ti); ti++ });
+
+        let that = this;
+        var currencyCache = {};
+
+        function shuffleArray(array) {
+            for (var i = array.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+
+        this.$('*').on('dblclick', function(){
+
+            // CURRENCY CONVERSION
+            $('td[data-type=currency]').each(function(){
+
+                let currencyCodeFrom,
+                    currencyCodeTo = 'USD',
+                    currencySymbolTo = Object.keys(currencyDict).find(key => currencyDict[key] === currencyCodeTo),
+                    currentRate,
+                    that = $(this);
+
+                var regex = /[.,\s]/g;
+                var this_field_content = $(this).find('.currency-field').text().replace(regex,'');
+                var curr = this_field_content.slice(0,1);
+                var amount = this_field_content.slice(0,100);
+                amount = amount.slice(0, -2) + '.' + amount.slice(-2,);
+                amount = currency(amount);
+
+                $(this).toggleClass('newMode');
+
+                // find regular field and mark it as primary
+                $(this).find('div.currency-field:not(.field-primary):not(.field-alt)').addClass('field-primary');
+
+                // Invoke alt mode
+                if($(this).hasClass('newMode')) {
+
+                    // replace primary field with alternative (translated)
+                    if(amount.value === 0) {
+                        $(this).find('div.currency-field')
+                            .clone()
+                            .html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span>${currencySymbolTo}${currency(0.00)}`)
+                            .addClass('field-alt')
+                            .removeClass('field-primary')
+                            .appendTo($(this).find('span'));
+                        return;
+                    } else {
+                        $(this).find('div.currency-field')
+                            .clone()
+                            .html('<span class="optimistic-loading"></span>')
+                            // .attr('rel', '')
+                            .addClass('field-alt still-loading')
+                            .removeClass('field-primary')
+                            .appendTo($(this).find('span'));
+                    }
+
+                // Remove alt mode
+                } else {
+                    $(this).find('div.currency-field.field-alt').remove();
+
+                    // No need to execute further, we're existed field-alt mode at this point
+                    return;
+                }
+
+                // pick standard code for the currency symbol we need to translate from
+                currencyCodeFrom = currencyDict[curr];
+
+                if (`${currencyCodeFrom}_${currencyCodeTo}` in currencyCache) {
+                    console.log('Conversion rate from cache');
+                    var calculated;
+                    currentRate = currencyCache[`${currencyCodeFrom}_${currencyCodeTo}`];
+                    calculated = amount.multiply(currentRate).format();
+                    setTimeout(function () {
+                        that.find('.field-alt').removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span>${currencySymbolTo}${calculated}`);
+                    }, _.random(700, 1400));
+                } else {
+                    console.log('Conversion rate from API');
+                    $.ajax(`http://free.currencyconverterapi.com/api/v5/convert?q=${currencyCodeFrom}_${currencyCodeTo}&compact=y`, {
+                        success: function (data) {
+                            var calculated;
+                            currentRate = data[`${currencyCodeFrom}_${currencyCodeTo}`].val;
+                            calculated = amount.multiply(currentRate).format();
+                            setTimeout(function () {
+                                that.find('.field-alt').removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span>${currencySymbolTo}${calculated}`);
+                            }, _.random(700, 1400));
+                            currencyCache[`${currencyCodeFrom}_${currencyCodeTo}`] = currentRate;
+                        },
+                        error: function () {
+                            // FALL BACK in case API call fails
+                            console.log('An error occurred');
+                            var calculated;
+                            currentRate = _.random(0.4, 1.4);
+                            calculated = amount.multiply(currentRate).format();
+                            setTimeout(function () {
+                                that.find('.field-alt').removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span>${currencySymbolTo}${calculated}`);
+                            }, _.random(700, 1400));
+                            currencyCache[`${currencyCodeFrom}_${currencyCodeTo}`] = currentRate;
+                        }
+                    });
+                }
+
+            });
+
+
+
+            // QUOTE NAME TRANSLATION
+            $('td[data-type=name]').each(function(){
+
+                // Exit out here if no need to translate
+                var nameFieldValue = $(this).find('a').html();
+                var translateLink = $(this).find('a').attr('href');
+                //console.log(`HELLO ${translateLink}`);
+                var foreignChar = /[^\u0000-\u007f]/;
+                var translationEnabled = true;
+
+                var that = $(this);
+
+                if (foreignChar.test(nameFieldValue)) {
+                    // console.log(nameFieldValue, "This is non-Latin Characters, need to translate");
+                } else {
+                    // console.log(nameFieldValue, "This is Latin Characters");
+                    return;
+                }
+
+                // console.log('TRANSLATING', nameFieldValue);
+
+                $(this).toggleClass('newMode');
+
+                // find regular field and mark it as primary
+                $(this).find('div.ellipsis_inline:not(.field-primary):not(.field-alt)').addClass('field-primary');
+
+                // Invoke alt mode
+                if($(this).hasClass('newMode')) {
+
+                    // replace primary field with alternative (translated)
+                    $(this).find('div.ellipsis_inline')
+                        .clone()
+                        .html('<span class="optimistic-loading"></span>')
+                        .addClass('field-alt still-loading')
+                        // .attr('rel', '')
+                        .removeClass('field-primary')
+                        .appendTo($(this).find('span'));
+
+                // Remove alt mode
+                } else {
+                    $(this).find('div.ellipsis_inline.field-alt').remove();
+                    return;
+                }
+
+                if(translationEnabled) {
+                    console.log(`https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&target=en&format=text&key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`);
+
+                    $.ajax({
+                        url: `https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&target=en&format=text&key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`,
+                        type: 'POST',
+                        success: function(data) {
+                            //console.log(data);
+                            //var dataobj = JSON.parse(data);
+                            setTimeout(function (){
+                                that.find('.field-alt')
+                                .attr('rel', 'tooltip')
+                                .removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="${translateLink}">` + data.data.translations[0].translatedText + `</a>`);
+                            }, _.random(700, 1400));
+                        },
+                        error: function() {
+                            // FALL BACK in case API call fails
+                            console.log('An error occurred');
+                            setTimeout(function (){
+                                that.find('.field-alt')
+                                .attr('rel', 'tooltip')
+                                .removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="${translateLink}">` + goodsDict[$(that).parent('tr').attr('num')] + `</a>`);
+                            }, _.random(700, 1400));
+                        }
+                    });
+                } else {
+                    setTimeout(function (){
+                        that.find('.field-alt').removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="${translateLink}">TRANSLATED_TEXT</a>`);
+                    }, _.random(700, 1400));
+                }
+
+            });
+
+            return false;
+        });
+
+        if(!$('#localization-hint').length) {
+            $('<span id="localization-hint"><span>Hint: Double click anywhere in the table to translate.</span></span>').appendTo($('.main-pane .headerpane').find('span.record-cell:nth-child(2)'));
+        }
+
+        // $("*").on('taphold', function(){
+        //     console.log("waiting for it");
+        // });
+
+
+        $( "table.table *" ).bind("taphold", tapholdHandler);
+
+        function tapholdHandler(){
+            $('body').addClass("taphold");
+
+            if ($('body').hasClass('strike') === false) {
+                $('table.table').trigger('dblclick');
+                $('body').addClass('strike');
+                console.log('tabhold handler');
+            }
+
+            return false;
+        }
+
+        $('body.taphold table.table *').live('mouseup', function(e) { 
+            if ($('body').hasClass('strike') === true) {
+                console.log('mouseup from taphold');
+                $('body').removeClass('strike');
+                $('body').removeClass('taphold');
+                $('table.table').trigger('dblclick');
+            }
+            // e.preventDefault();
+            // e.stopPropagation();
+            // return;
+        });
+    },
+
+    _dispose: function() {
+
+    },
+
+})
+                        </code>
+                    </pre>
+
+                </div>
+            </div>
+
+        </section>
+
+    </article>
+</div>

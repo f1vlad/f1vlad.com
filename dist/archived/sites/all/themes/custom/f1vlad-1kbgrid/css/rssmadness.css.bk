@@ -1,0 +1,171 @@
+
+.container {overflow:visible;}
+
+h1 span.t {
+    float:left;
+    display:block;
+    width:auto;
+    font-size:240%;
+    margin-top:.35em;
+    margin-left:.25em;
+    letter-spacing:-5px;
+    color:#111;
+    padding-right:.5em;
+    height:32px;
+}
+
+div.whtisit {
+    color:#777777;
+    float:left;
+    font-size:140%;
+    margin:0.75em 0 0;
+    padding:0;
+    text-align:left;
+    white-space:nowrap;
+    width:40%;
+
+}
+
+div.whtisit a {
+    color:#777;
+}
+
+div.fm {width:2400px;text-align:left;}
+
+div.fm h2.title {color:#fff;}
+
+div.fm > div[id] {
+    padding:.5em;
+
+    margin:1em 0em 1em 2em;
+    list-style-position:inside;
+
+    float:left;
+
+    width:20em;
+    font-weight:bold;
+
+
+    border:1px solid transparent;
+    -moz-border-radius:1em;
+    -webkit-border-radius:1em;
+    border-radius:1em;
+
+    overflow:hidden;
+}
+
+
+div.fm > div[id] div {
+    border:none;
+}
+
+div.fm > div[id] div.content div.feed ul li {
+    list-style-position:outside;
+    list-type:none;
+    padding:.25em;
+    margin:.5em 0;
+    background-image:none;
+}
+
+li.feed a.span {
+text-decoration:none;
+}
+
+div.fm > div[id] font {
+    font-size:1em;
+    font-weight:normal;
+}
+
+div.fm > div[id] div.a2 span {
+    color:#ccc;
+    font-size:85%;
+    clear:both;
+    display:block
+}
+
+div.fm > div[id] div.a2 span:hover {
+    color:#555;
+}
+
+div.fm > div[id] div.content div.message {
+    display:inline;
+    clear:none;
+}
+
+div.fm > div[id] div.content blockquote {
+
+    padding:0 .5em;
+    margin:0;
+    font-size:.8em;
+    display:inline;
+    border:none;
+    background-color:#eee;
+}
+
+div.fm > div[id] div.content div.feed ul li div {
+    width:100% !important;
+}
+
+div.fm > div[id] div.content div.feed ul li table table{
+    width:auto;
+}
+
+table.pandoraStationContainer tr td br {
+    display:none;
+}
+
+table.pandoraStationContainer tr td,
+div.fm > div[id] div.content div.feed ul li table td{
+    display:inline;
+
+}
+
+div.fm > div[id] div.content div.feed ul li table td div{
+    border:none !important;
+}
+
+div.fm ul {
+    padding-left:0 !important;
+}
+
+div.fm > div:hover {
+    border:1px solid #eee;
+}
+
+div.fm > div h2 {
+    color:#555;
+    font-weight:bold;
+    letter-spacing:-.08em;
+    background:#222;
+    -moz-border-radius:.75em;
+    -webkit-border-radius:.75em;
+    padding:0 .5em;
+}
+
+div.fm > div * {
+    font-weight:normal !important;
+}
+
+div.fm > div:hover h2 {
+    background:#fff;
+    color:#222;
+}
+
+.breadcrumb {
+    text-align:left;
+    opacity:.35;
+}
+
+.breadcrumb:hover {
+    opacity:1;
+}
+
+
+article.node {
+    display:none;
+}
+
+.fm .details {
+display:inline;
+}
+

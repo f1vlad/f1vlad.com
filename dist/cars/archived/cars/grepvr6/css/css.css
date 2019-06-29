@@ -1,0 +1,145 @@
+/* CSS Document */
+#tooltip {
+	filter: Alpha(Opacity=85, FinishOpacity=100, Style=solid, StartX=100, StartY=10, FinishX=100, FinishY=10);
+	width:200px;background:#787878 ;
+	color:#000;
+border-top: 1px solid #fff;
+border-left: 1px solid #fff;
+border-bottom: 1px solid #333;
+border-right: 1px solid #333;
+text-align: justify;
+font: 11px Tahoma;
+margin:0px;
+padding: 5px 5px;
+position:absolute;
+visibility:hidden
+}
+#menu{display:inline;
+line-height: 17px; 
+
+}
+#menu a{border:0px;}
+#menu a:hover{border:0px;color:#fff;}
+.blackout{color:#000;}
+
+
+#contentheader{display:block; font-size:12px; width:460px; height: ; 
+   margin:-190 0 0 220px ; padding: 2px 35px 2px 5px;
+   border: 1px solid #999;
+   color: #000;
+   background-color: #999;
+   	font-weight: bold;
+	
+}
+#content{display:block; font-size:12px; width:460px; height: 65%;  	overflow: auto;line-height: 20px; 
+   margin:-1px 0 0 220px ; padding: 20px 20px 20px 20px;
+   scrollbar-face-color: #000;
+   scrollbar-shadow-color: #000;
+   scrollbar-highlight-color: #999;
+   scrollbar-3dlight-color:  #000;
+   scrollbar-darkshadow-color: #000;
+   scrollbar-track-color: #333;
+   scrollbar-arrow-color: #999;
+   border: 1px solid #999;
+}
+
+#contentheaderfoto{display:block; font-size:12px; width:460px; height: ; 
+   margin:10 0 0 220px ; padding: 2px 35px 2px 5px;
+   border: 1px solid #999;
+   color: #000;
+   background-color: #999;
+   	font-weight: bold;
+}
+
+#contentfoto{
+display:block; font-size:12px; width:460px; height:147px ;  	overflow: auto;line-height: 20px; 
+   margin:-1px 0 0 220px ; padding:0 20px 0 20px;
+   scrollbar-face-color: #000;
+   scrollbar-shadow-color: #000;
+   scrollbar-highlight-color: #999;
+   scrollbar-3dlight-color:  #000;
+   scrollbar-darkshadow-color: #000;
+   scrollbar-track-color: #333;
+   scrollbar-arrow-color: #999;
+   border: 1px solid #999;
+}
+#contentfoto a{
+   border: 0;
+   text-decoration:none;
+}
+#contentfoto a:hover{
+   border: 0;
+   text-decoration:none;
+}
+body	{
+
+	margin: 0;
+	padding: 0;
+	border: 0;	
+	background: #000 url(../img/bg.gif) top left no-repeat;
+	color: #ccc;
+	font-family: "Courier New", Courier, mono;
+	font-size:12px;
+	}
+p,table,td,ul,li,ol{
+	line-height: 20px;	font-size:12px;
+}
+a{
+	color: #ccc;
+	text-decoration: none;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	display:inline;	cursor: crosshair;
+}
+a:hover{
+	color: #fff;
+	text-decoration: none;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #fff;
+
+	
+	
+	display:inline;
+	
+}
+
+#header1{display:inline;}
+#header1{display:inline;}
+#pretitleline{display:inline;}
+#title{display:block;}
+
+#footer{ width:800px;text-align:left;background: #B00E26;color: #fff;display:block; margin: 0 0 0 0; padding: 10px  0 10px 119px; }
+#footeritems ul li { display: inline; margin: 0 0 0 2.5em; padding: 0;}
+#footeritems ul { margin: 0; padding: 0; }	
+.paper{
+	width:764px;
+	height: 105px;
+	background-position: right bottom;
+	background-image: url(../img/paper.gif);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	text-transform: capitalize;
+	filter: Alpha(Opacity=10, FinishOpacity=100, Style=solid, StartX=100, StartY=10, FinishX=100, FinishY=10);
+	text-decoration: line-through;
+}
+	
+.transparent{
+	filter: Alpha(Opacity=70, FinishOpacity=80, Style=none, StartX=100, StartY=100, FinishX=100, FinishY=100);  
+	}
+	
+.news_date{
+	background-color:#333;
+	padding: 2px 4px 2px 4px;
+	font-weight: bold;
+}
+
+h1,h2,h3,h4,h5{
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #ccc;
+	display:inline;
+	padding: 0 6px 0px 6px;
+	
+} 

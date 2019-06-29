@@ -1,0 +1,6 @@
+; $Id$
+name = Disqus Export
+description = Export existing drupal comments to the Disqus web service.
+core = 6.x
+dependencies[] = disqus
+dependencies[] = comment

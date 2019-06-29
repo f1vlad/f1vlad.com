@@ -1,0 +1,102 @@
+<?
+// S T A R T    v B U L L E T I N    A U T O - L O G  I N
+// date: 03/14/2
+:006			
+mysql_select_db("vBulletin");
+require_once("{$_SERVER['DOCUMENT_ROOT']}/vBulletin/includes/functions_login.php");
+					
+$go=mysql_query("SELECT userid FROM user WHERE username='{$_POST['username']}'");
+$get=mysql_fetch_array($go);
+$vBid=$get[0];			
+
+// variables for vB					
+$username=$_POST['username'];
+$password=$_POST['password'];
+$md5password="";
+$md5password_utf="";
+					
+// strikin user
+$strikes=1;
+$query="INSERT INTO  strikes	(striketime, strikeip, username) VALUES	('".time()."', '".$_SERVER['REMOTE_ADDR']."', '$username')";		
+
+function fetch_sessionhash()
+	{
+		return md5(TIMENOW . SCRIPTPATH . SESSION_IDHASH . SESSION_HOST . vbrand(1, 1000000));
+}
+
+function vbrand($min, $max, $seed = -1)
+	{
+	if (!defined('RAND_SEEDED'))
+		{
+		if ($seed == -1)
+			{
+				$seed = (double) microtime() * 1000000;
+			}
+			mt_srand($seed);
+			define('RAND_SEEDED', true);
+		}
+		return mt_rand($min, $max);
+	}
+
+// check several settings for the ip; good for not grabbing proxy IPs, but can still be problematic
+if ($_SERVER['HTTP_CLIENT_IP'])
+{
+	define('ALT_IP', $_SERVER['HTTP_CLIENT_IP']);
+}
+else if ($_SERVER['HTTP_X_FORWARDED_FOR'] AND preg_match_all('#\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}#s', $_SERVER['HTTP_X_FORWARDED_FOR'], $matches))
+{
+	// make sure we dont pick up an internal IP defined by RFC1918
+	foreach ($matches[0] AS $ip)
+	{
+		if (!preg_match("#^(10|172\.16|192\.168)\.#", $ip))
+		{
+			define('ALT_IP', $ip);
+			break;
+		}
+	}
+}
+else if ($_SERVER['HTTP_FROM'])
+{
+	define('ALT_IP', $_SERVER['HTTP_FROM']);
+}
+else
+{
+	define('ALT_IP', $_SERVER['REMOTE_ADDR']);
+}
+
+define('SESSION_HOST', substr(IPADDRESS, 0, 15));
+define('SCRIPTPATH', $scriptpath);
+define('TIMENOW', time());
+define('ALT_IP', $_SERVER['HTTP_CLIENT_IP']);
+define('SESSION_IDHASH', md5($_SERVER['HTTP_USER_AGENT'] . ALT_IP )); // this should *never* change during a session
+
+$query="DELETE FROM session WHERE sessionhash = '" . addslashes($session['dbsessionhash']) . "'";
+$go=mysql_query($query);
+
+$session['sessionhash']=fetch_sessionhash();
+$session['dbsessionhash']=$session['sessionhash'];
+					
+$query="
+						INSERT INTO session
+						(sessionhash, userid, host, idhash, lastactivity, styleid, loggedin, bypass, useragent)
+						VALUES
+						('" . addslashes($session['sessionhash']) . "', ".$vBid.", '" . $_SERVER['REMOTE_ADDR'] . "', '" . addslashes(SESSION_IDHASH) . "', " . TIMENOW . ", 1, 0, 0, '" . addslashes($_SERVER['HTTP_USER_AGENT']) . "')
+						";
+
+$go=mysql_query($query);
+					
+setcookie("sessionhash", $session['sessionhash'], "0", "/", "", "0");
+			
+function vbsetcookie($name, $value = '', $permanent = 1)
+{
+	global $vboptions, $_SERVER;
+		$expire = 0;
+		$secure = 0;
+		$name = COOKIE_PREFIX . $name;
+		$filename = 'N/A';
+		$linenum = 0;
+//		setcookie($name, $value, $expire, '/', $vboptions['cookiedomain'], $secure);
+		setcookie($name, $value, $expire, $vboptions['cookiepath'], '', $secure);
+}
+// E N D   v B U L L E T I N    A U T O - L O G  I N
+?>

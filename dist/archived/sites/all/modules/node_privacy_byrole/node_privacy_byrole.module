@@ -1,0 +1,419 @@
+<?php
+// $Id: node_privacy_byrole.module,v 1.32.2.4 2008/06/06 15:03:44 deekayen Exp $
+
+/**
+ * Implementation of hook_help().
+ */
+function node_privacy_byrole_help($path, $arg) {
+  switch ($path) {
+    case 'admin/help#node_privacy_byrole':
+      $output = '<p>'. t('The node privacy by role module allows users, when creating or editing a post, to select which roles of users on a site will have <em>view</em> permissions for the node and which users on a site will have <em>edit</em> permissions.  Community leaders frequently want to give permissions to roles to create and manage content for a site.  The ability to publish information, that would traditionally be hoarded, allows communities to educate each other while still preserving the value of knowledge.') .'</p>';
+      $output .= '<p>'. t('The node privacy by-role permissions are set by users for their nodes. If the node privacy by role module is disabled, the default permissions scheme will be in effect again, in which all users have view permissions for all nodes. However, if the module is re-enabled, the node-by-node permissions that were in place during the previous period in which the module was enabled will take effect again. Roles given edit permissions are automatically given view permissions even if the user tries to give <em>edit</em> permissions to a particular role, but not view permissions.') .'</p>';
+      $output .= t('<p>You can:</p>
+<ul>
+<li>set default permissions for each content type in the default workflow settings at <a href="@admin-node-configure-types">Administer &gt;&gt; Content management &gt;&gt; Content types</a> for each content type.</li>
+<li>decide who can ignore the default permissions for each content type in the default workflow settings at <a href="@admin-node-configure-types">Administer &gt;&gt; Content management &gt;&gt; Content types</a> for each content type.</li>
+</ul>', array('@admin-node-configure-types' => url('admin/content/types')));
+      $output .= '<p>'. t('For more information please read the configuration and customization handbook <a href="@node_privacy_byrole">Node privacy by role page</a>.', array('@node_privacy_byrole' => 'http://www.drupal.org/handbook/modules/node_privacy_byrole/')) .'</p>';
+      return $output;
+  }
+}
+
+
+/**
+ * Implementation of hook_enable()
+ */
+function node_privacy_byrole_enable() {
+  node_access_needs_rebuild();
+}
+
+
+/**
+ * Implementation of hook_disable()
+ */
+function node_privacy_byrole_disable() {
+  node_privacy_byrole_disabling(TRUE);
+  node_access_needs_rebuild();
+}
+
+
+/**
+ * Simple function to identify when module is being disabled
+ * so that as the node_access table is rebuilt, it doesn't set
+ * any permissions for this module
+ */
+function node_privacy_byrole_disabling($set = NULL) {
+  static $disabling = FALSE;
+  if ($set != NULL) {
+    $disabling = $set;
+  }
+  return $disabling;
+}
+
+
+/**
+ * Implementation of hook_node_grants()
+ */
+function node_privacy_byrole_node_grants($account, $op) {
+  return array(
+    'node_privacy_byrole_role' => array_keys($account->roles),
+    'node_privacy_byrole_user' => array($account->uid)
+  );
+}
+
+
+/**
+ * Implementation of hook_node_access_records()
+ */
+function node_privacy_byrole_node_access_records($node) {
+  if (node_privacy_byrole_disabling()) {
+    return;
+  }
+
+  node_privacy_byrole_nodeapi_prepare($node);
+
+  $grants = array();
+
+  // permission for node owner
+  if ($node->uid > 0) {
+    $grants[] = array(
+      'realm' => 'node_privacy_byrole_user',
+      'gid' => $node->uid,
+      'grant_view' => TRUE,
+      'grant_update' => FALSE,
+      'grant_delete' => FALSE,
+      'priority' => 0,
+    );
+  }
+  // permission for node roles
+  foreach (array_keys(user_roles()) as $rid) {
+    $edit_perm = $node->node_privacy_byrole['roles'][$rid]['edit'] ? 1 : 0;
+    $delete_perm = $node->node_privacy_byrole['roles'][$rid]['delete'] ? 1 : 0;
+    $view_perm = (($edit_perm || $delete_perm) ? 1 : $node->node_privacy_byrole['roles'][$rid]['view']);
+
+    $grants[] = array(
+      'realm' => 'node_privacy_byrole_role',
+      'gid' => $rid,
+      'grant_view' => $view_perm,
+      'grant_update' => $edit_perm,
+      'grant_delete' => $delete_perm,
+      'priority' => 0,
+    );
+  }
+
+  return $grants;
+}
+
+/**
+ * Implementation of hook_nodeapi().
+ */
+function node_privacy_byrole_nodeapi(&$node, $op, $arg = 0) {
+  $roles = array_keys(user_roles());
+
+  switch ($op) {
+    case 'load':
+    case 'prepare':
+      node_privacy_byrole_nodeapi_prepare($node);
+      break;
+    case 'delete':
+      db_query('DELETE FROM {node_privacy_byrole} WHERE nid = %d', $node->nid);
+      break;
+    case 'insert':
+      node_privacy_byrole_nodeapi_prepare($node); // http://drupal.org/node/256396
+
+      foreach ($roles as $rid) {
+        db_query("INSERT INTO {node_privacy_byrole} (nid, gid, realm, grant_view, grant_update, grant_delete)
+                  VALUES (%d, %d, '%s', %d, %d, %d)", $node->nid, $rid, 'node_privacy_byrole_role', $node->node_privacy_byrole['roles'][$rid]['view'], $node->node_privacy_byrole['roles'][$rid]['edit'], $node->node_privacy_byrole['roles'][$rid]['delete']);
+      }
+      db_query("INSERT INTO {node_privacy_byrole} (nid, gid, realm, grant_view, grant_update, grant_delete)
+                VALUES (%d, %d, '%s', %d, %d, %d)", $node->nid, $node->uid, 'node_privacy_byrole_user', 1, 1, 1);
+      break;
+    case 'update':
+      node_privacy_byrole_nodeapi_prepare($node); // http://drupal.org/node/153588
+
+      // As a new role might have been added since creation of the node, we cannot simply "update" and so delete and reinsert
+      db_query("DELETE FROM {node_privacy_byrole} WHERE nid = %d AND realm = 'node_privacy_byrole_role'", $node->nid);
+      foreach ($roles as $rid) {
+        db_query("INSERT INTO {node_privacy_byrole} (nid, gid, realm, grant_view, grant_update, grant_delete)
+                  VALUES (%d, %d, '%s', %d, %d, %d)", $node->nid, $rid, 'node_privacy_byrole_role', $node->node_privacy_byrole['roles'][$rid]['view'],
+                  $node->node_privacy_byrole['roles'][$rid]['edit'], $node->node_privacy_byrole['roles'][$rid]['delete']);
+      }
+      // Record for owner exists for sure, so we can simply update it
+      db_query("UPDATE {node_privacy_byrole} SET grant_view = %d, grant_update = %d, grant_delete = %d
+                WHERE nid = %d AND gid = %d AND realm = 'node_privacy_byrole_user'", 1, 0, 0, $node->nid, $node->uid);
+      break;
+  }
+}
+
+function node_privacy_byrole_nodeapi_prepare(&$node) {
+  if (!isset($node->node_privacy_byrole)) {
+    $roles = array_keys(user_roles());
+    $perms = array('view', 'edit', 'delete');
+
+    if (isset($node->nid) && empty($node->is_new)) {
+      // this is an existing node, get current permissions
+      $result = db_query("SELECT gid, grant_view, grant_update, grant_delete FROM {node_privacy_byrole} "
+        ."WHERE nid = %d AND realm = 'node_privacy_byrole_role'", $node->nid);
+
+      $current_perms = array();
+      while ($role = db_fetch_object($result)) {
+        $current_perms[$role->gid]['view'] = $role->grant_view;
+        $current_perms[$role->gid]['edit'] = $role->grant_update;
+        $current_perms[$role->gid]['delete'] = $role->grant_delete;
+      }
+
+      while (list(, $rid) = each($roles)) {
+        // if the role exists in node_privacy_byrole table, fill its perm with the database ones
+        if (isset($current_perms[$rid])) {
+          while (list(, $perm) = each($perms)) {
+            $node->node_privacy_byrole['roles'][$rid][$perm] = $current_perms[$rid][$perm] ? 1 : 0;
+          }
+        }
+        else {
+          // else : the role doesn't exist in node_privacy_byrole table (it has been recently added).
+          // In this case, fill perms with default ones
+          while (list(, $perm) = each($perms)) {
+            $default_roles = _node_privacy_byrole_get_default_roles($node->type, $perm);
+            $node->node_privacy_byrole['roles'][$rid][$perm] = in_array($rid, $default_roles) ? 1 : 0;
+          }
+        }
+        reset($perms);
+      }
+    }
+    else {
+      // case where node is being created
+      while (list(, $rid) = each($roles)) {
+        while (list(, $perm) = each($perms)) {
+          $default_roles = _node_privacy_byrole_get_default_roles($node->type, $perm);
+          $node->node_privacy_byrole['roles'][$rid][$perm] = in_array($rid, $default_roles) ? 1 : 0;
+        }
+        reset($perms);
+      }
+    }
+  }
+}
+
+/**
+ * Implementation of hook_form_alter().
+ */
+function node_privacy_byrole_form_alter(&$form, $form_state, $form_id) {
+  if ('node_type_form' == $form_id) {
+    node_privacy_byrole_node_type_form($form);
+  }
+  elseif ($form['#id'] == 'node-form') {
+    if (node_privacy_byrole_user_has_meta_perm($form['#node'])) {
+      node_privacy_byrole_node_form($form);
+    }
+  }
+}
+
+/**
+ * Checks that the active user has access to set permissions on nodes.
+ */
+function node_privacy_byrole_user_has_meta_perm($node) {
+  global $user;
+
+  if ($user->uid == 1) {
+    return TRUE;
+  }
+
+  $permitted_roles = _node_privacy_byrole_get_default_roles($node->type, 'grant');
+  $user_roles = array_keys($user->roles);
+
+  return count(array_intersect($permitted_roles, $user_roles)) ? TRUE : FALSE;
+}
+
+/**
+ * Returns those role id's that are permitted to do $action on a $type node
+ */
+function _node_privacy_byrole_get_default_roles($type, $action) {
+  return variable_get('npbr_default_'. $action .'_perms_'. $type, array());
+}
+
+/**
+ * Form elements that extends node type form
+ * Used for set the default permission settings per node type
+ */
+function node_privacy_byrole_node_type_form(&$form) {
+  $type = $form['#node_type']->type;
+
+  $roles = user_roles();
+
+  $perms = array(
+    'view' => array(
+      'title' => t('Default View Permissions'),
+      'description' => t('Select roles to be given view permisions by default.'),
+    ),
+    'edit' => array(
+      'title' => t('Default Edit Permissions'),
+      'description' => t('Select roles to be given edit permissions by default.'),
+    ),
+    'delete' => array(
+      'title' => t('Default Delete Permissions'),
+      'description' => t('Select roles to be given delete permissions by default.'),
+    ),
+    'grant' => array(
+      'title' => t('Roles with rights to update permissions'),
+      'description' => t('Select which roles will have rights to alter permissions on nodes.'),
+    ),
+  );
+
+  $form['npbr_workflow_settings'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Node privacy by role'),
+    '#collapsible' => TRUE,
+    '#collapsed' => TRUE,
+    '#weight' => 0
+  );
+
+  while (list($perm, $permdata) = each($perms)) {
+    $permname = 'npbr_default_'. $perm .'_perms';
+
+    $form['npbr_workflow_settings'][$permname] = array(
+      '#tree' => TRUE,
+      '#type' => 'fieldset',
+      '#title' => $permdata['title'],
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+      '#description' => $permdata['description'],
+      '#weight' => 0,
+    );
+
+    $default_perms = _node_privacy_byrole_get_default_roles($type, $perm);
+
+    foreach (array_keys($roles) as $rid) {
+      $form['npbr_workflow_settings'][$permname][$rid] = array(
+        '#type' => 'checkbox',
+        '#title' => t($roles[$rid]),
+        '#return_value' => 1,
+        '#default_value' => in_array($rid, $default_perms),
+      );
+    }
+  }
+}
+
+/**
+ * Form elements that extends node edit form
+ */
+function node_privacy_byrole_node_form(&$form) {
+
+  $roles = array_keys(user_roles());
+  $perms = array('view', 'edit', 'delete');
+
+  // create checkboxes for every role and every permission
+  // later depending on the $op variable only the default values will be updated
+  $form['node_privacy_byrole'] = array(
+    '#tree' => TRUE,
+    '#theme' => 'node_privacy_byrole_node_form',
+    '#type' => 'fieldset',
+    '#title' => t('View/Edit Permissions'),
+    '#collapsible' => TRUE,
+    // collapse depends on bug when viewing tables included in collapsed fielsets in IE7:
+    // http://drupal.org/node/237565
+    '#collapsed' => strpos($_SERVER['HTTP_USER_AGENT'], 'MSIE 7.0') > 0 ? FALSE : TRUE,
+    '#weight' => 9,
+  );
+
+  while (list(, $rid) = each($roles)) {
+    $form['node_privacy_byrole']['roles'][$rid] = array(
+      '#type' => 'fieldset',
+      '#collapsible' => FALSE,
+      '#collapsed' => FALSE,
+      '#weight' => 0
+    );
+    while (list(, $perm) = each($perms)) {
+      $form['node_privacy_byrole']['roles'][$rid][$perm] = array(
+        '#type' => 'checkbox',
+        '#title' => NULL,
+        '#return_value' => 1,
+        '#default_value' => $form['#node']->node_privacy_byrole['roles'][$rid][$perm]
+      );
+    }
+    reset($perms);
+  }
+}
+
+function node_privacy_byrole_theme() {
+  return array(
+    'node_privacy_byrole_node_form' => array(
+      'arguments' => array('form' => NULL)
+    )
+  );
+}
+
+/**
+ * Theming permission settings form elements on node edit form.
+ */
+function theme_node_privacy_byrole_node_form($form) {
+  $roles = user_roles();
+  $header = array(t('Role'), t('View'), t('Edit'), t('Delete'));
+
+  $rows = array();
+  // every row is a role
+  foreach (element_children($form['roles']) as $rid) {
+    $row = array();
+    $row[] = $roles[$rid];
+    // every column is a permission
+    foreach (element_children($form['roles'][$rid]) as $i) {
+      $row[] = drupal_render($form['roles'][$rid][$i]);
+    }
+    $rows[] = $row;
+  }
+
+  return theme('form_element', array('#description' => t('Select which users can view/edit your post based on their role.')), theme('table', $header, $rows));
+}
+
+function node_privacy_byrole_node_operations() {
+  global $form_values;
+
+  $operations = array();
+
+  foreach (user_roles() as $rid => $role) {
+    $grants = array();
+    $revokes = array();
+    foreach (array('view', 'edit', 'delete') as $priv) {
+      $grants['grant-'. $rid .'-'. $priv] = t('Grant !priv for !role', array('!priv' => $priv, '!role' => $role));
+      $revokes['revoke-'. $rid .'-'. $priv] = t('Revoke !priv for !role', array('!priv' => $priv, '!role' => $role));
+    }
+    $operations[t('Access for role !role', array('!role' => $role))] = array(
+      'label' => $grants + $revokes
+    );
+  }
+
+  // If the form has been posted, we need to map the callback
+  if ($form_values) {
+    $operation_args = explode('-', $form_values['operation']);
+    if ($operation_args[0] == 'grant' || $operation_args[0 ]== 'revoke') {
+      if (user_access('administer content')) {
+        $op = ($operation_args[0] == 'grant' ? 1 : 0);
+        $operations[$form_values['operation']] = array(
+          'callback' => 'node_privacy_byrole_node_operations_update',
+          'callback arguments' => array($op, $operation_args[1], $operation_args[2]),
+        );
+      }
+      else {
+        watchdog('security', t('Detected malicious attempt to alter content access permissions.'), WATCHDOG_WARNING);
+        return;
+      }
+    }
+  }
+  return $operations;
+}
+
+function node_privacy_byrole_node_operations_update($nodes, $op, $rid, $priv) {
+  $roles = user_roles();
+  $sql = 'UPDATE {node_privacy_byrole} SET ';
+  switch ($priv) {
+    case 'view' :
+      $sql .= 'grant_view = %d';
+      break;
+    case 'edit' :
+      $sql .= 'grant_update = %d';
+      break;
+    case 'delete' :
+      $sql .= 'grant_delete = %d';
+      break;
+  }
+  $sql .= ' WHERE nid IN(%s) AND gid = %d AND realm = "node_privacy_byrole_role"';
+  db_query($sql, (int)$op, implode(',', $nodes), $rid);
+}

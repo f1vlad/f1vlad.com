@@ -1,0 +1,1380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns:umapst="http://www.afcomponents.com/as3/umap/styles" xmlns:umap="http://www.afcomponents.com/as3/umap" xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <name><![CDATA[#aycj]]></name>
+    <visibility>1</visibility>
+    <Style id="EditableMarkerStyle0">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle1">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle2">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle3">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle4">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle5">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle6">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle7">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditableMarkerStyle8">
+      <IconStyle>
+        <color>ffffffff</color>
+        <colorMode>normal</colorMode>
+        <scale>1</scale>
+        <heading>0</heading>
+      </IconStyle>
+      <umapst:MarkerStyle type="com.afcomponents.umap.styles::MarkerStyle">
+        <umapst:radius type="int">10</umapst:radius>
+        <umapst:icon type="null"/>
+        <umapst:iconStyle type="com.afcomponents.umap.styles::IconStyle">
+          <umapst:align type="com.afcomponents.umap.types::Align" horizontal="center" vertical="bottom"/>
+          <umapst:offset type="com.afcomponents.umap.types::Offset" x="0" y="0"/>
+          <umapst:scale type="int">1</umapst:scale>
+          <umapst:rotation type="int">0</umapst:rotation>
+          <umapst:colorTransform type="null"/>
+        </umapst:iconStyle>
+        <umapst:label type="Boolean">true</umapst:label>
+        <umapst:shadow type="Boolean">true</umapst:shadow>
+        <umapst:labelStyle type="com.afcomponents.umap.styles::TextStyle">
+          <umapst:antiAliasType type="String">advanced</umapst:antiAliasType>
+          <umapst:autoSize type="String">left</umapst:autoSize>
+          <umapst:condenseWhite type="Boolean">true</umapst:condenseWhite>
+          <umapst:embedFonts type="Boolean">false</umapst:embedFonts>
+          <umapst:gridFitType type="String">pixel</umapst:gridFitType>
+          <umapst:sharpness type="int">0</umapst:sharpness>
+          <umapst:thickness type="int">0</umapst:thickness>
+          <umapst:textFormat type="flash.text::TextFormat">
+            <umapst:font type="String">_sans</umapst:font>
+            <umapst:size type="int">12</umapst:size>
+          </umapst:textFormat>
+          <umapst:wordWrap type="Boolean">false</umapst:wordWrap>
+          <umapst:multiline type="Boolean">false</umapst:multiline>
+          <umapst:selectable type="Boolean">false</umapst:selectable>
+          <umapst:html type="Boolean">false</umapst:html>
+          <umapst:styleSheet type="null"/>
+        </umapst:labelStyle>
+        <umapst:shadowStyle type="com.afcomponents.umap.styles::DropShadowStyle">
+          <umapst:angle type="int">15</umapst:angle>
+          <umapst:distance type="Number">0.5</umapst:distance>
+          <umapst:color type="int">0</umapst:color>
+          <umapst:alpha type="Number">0.6</umapst:alpha>
+          <umapst:blurX type="int">3</umapst:blurX>
+          <umapst:blurY type="int">3</umapst:blurY>
+          <umapst:strength type="int">1</umapst:strength>
+          <umapst:quality type="int">1</umapst:quality>
+        </umapst:shadowStyle>
+        <umapst:fill type="String">true</umapst:fill>
+        <umapst:fillRGB type="int">16777215</umapst:fillRGB>
+        <umapst:fillAlpha type="int">1</umapst:fillAlpha>
+        <umapst:fillGradient type="com.afcomponents.umap.styles::GradientStyle">
+          <umapst:type type="String">linear</umapst:type>
+          <umapst:colors type="Array">
+            <umapst:i0 type="int">14540253</umapst:i0>
+            <umapst:i1 type="int">16777215</umapst:i1>
+          </umapst:colors>
+          <umapst:alphas type="Array">
+            <umapst:i0 type="int">70</umapst:i0>
+            <umapst:i1 type="int">100</umapst:i1>
+          </umapst:alphas>
+          <umapst:ratios type="Array">
+            <umapst:i0 type="int">200</umapst:i0>
+            <umapst:i1 type="int">255</umapst:i1>
+          </umapst:ratios>
+          <umapst:matrix type="flash.geom::Matrix" a="-1.121197631055316e-17" b="-0.06103515625" c="0.06103515625" d="-1.121197631055316e-17" tx="50" ty="50"/>
+          <umapst:spreadMethod type="String">pad</umapst:spreadMethod>
+          <umapst:interpolationMethod type="String">rgb</umapst:interpolationMethod>
+          <umapst:focalPointRatio type="int">0</umapst:focalPointRatio>
+        </umapst:fillGradient>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">true</umapst:stroke>
+        <umapst:strokeRGB type="int">0</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">1</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:MarkerStyle>
+    </Style>
+    <Style id="EditablePolylineStyle1">
+      <LineStyle>
+        <color>cc0000ff</color>
+        <colorMode>normal</colorMode>
+        <width>6</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16711680</umapst:strokeRGB>
+        <umapst:strokeAlpha type="Number">0.8</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">6</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle2">
+      <LineStyle>
+        <color>ff3333ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16724787</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle3">
+      <LineStyle>
+        <color>ff9933ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16724889</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle4">
+      <LineStyle>
+        <color>ffff0033</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">3342591</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle5">
+      <LineStyle>
+        <color>ff9933ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16724889</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle6">
+      <LineStyle>
+        <color>ff333333</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">3355443</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle7">
+      <LineStyle>
+        <color>ff0066ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16737792</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle8">
+      <LineStyle>
+        <color>ff0066ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16737792</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle9">
+      <LineStyle>
+        <color>ff0066ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16737792</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle10">
+      <LineStyle>
+        <color>ff0066ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16737792</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle11">
+      <LineStyle>
+        <color>ff0066ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16737792</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Style id="EditablePolylineStyle12">
+      <LineStyle>
+        <color>ff0066ff</color>
+        <colorMode>normal</colorMode>
+        <width>5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7ffeb989</color>
+        <colorMode>normal</colorMode>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <umapst:GeometryStyle type="com.afcomponents.umap.styles::GeometryStyle">
+        <umapst:fill type="String">rgb</umapst:fill>
+        <umapst:fillRGB type="int">9026046</umapst:fillRGB>
+        <umapst:fillAlpha type="Number">0.5</umapst:fillAlpha>
+        <umapst:fillGradient type="null"/>
+        <umapst:fillBitmap type="null"/>
+        <umapst:stroke type="String">rgb</umapst:stroke>
+        <umapst:strokeRGB type="int">16737792</umapst:strokeRGB>
+        <umapst:strokeAlpha type="int">1</umapst:strokeAlpha>
+        <umapst:strokeThickness type="int">5</umapst:strokeThickness>
+        <umapst:strokeGradient type="null"/>
+        <umapst:strokeStyle type="com.afcomponents.umap.styles::StrokeStyle">
+          <umapst:pixelHinting type="Boolean">true</umapst:pixelHinting>
+          <umapst:noScale type="String">normal</umapst:noScale>
+          <umapst:capsStyle type="String">round</umapst:capsStyle>
+          <umapst:jointStyle type="String">round</umapst:jointStyle>
+          <umapst:miterLimit type="int">3</umapst:miterLimit>
+        </umapst:strokeStyle>
+      </umapst:GeometryStyle>
+    </Style>
+    <Placemark id="EditableMarker0">
+      <styleUrl>#EditableMarkerStyle0</styleUrl>
+      <name>1. Boston,MA</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-71.07435207,42.33906878,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker1">
+      <styleUrl>#EditableMarkerStyle1</styleUrl>
+      <name>2. Pittsburgh,PA</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-80.00074367,40.43316262,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker2">
+      <styleUrl>#EditableMarkerStyle2</styleUrl>
+      <name>3. Seattle,WA</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-122.33106594,47.60274779,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker3">
+      <styleUrl>#EditableMarkerStyle3</styleUrl>
+      <name>4. Orlando,FL</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-81.38364772,28.54328568,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker4">
+      <styleUrl>#EditableMarkerStyle4</styleUrl>
+      <name>5. Chicago,IL</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-87.64310817,41.88163870,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker5">
+      <styleUrl>#EditableMarkerStyle5</styleUrl>
+      <name>6. New York,NY</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-74.00632839,40.71375968,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker6">
+      <styleUrl>#EditableMarkerStyle6</styleUrl>
+      <name>7. Las Vegas</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-115.12815456,36.15984405,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker7">
+      <styleUrl>#EditableMarkerStyle7</styleUrl>
+      <name>8. Ft. Lauderdale,FL</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-80.18064479,26.08122203,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditableMarker8">
+      <styleUrl>#EditableMarkerStyle8</styleUrl>
+      <name>9. Phoenix,AZ</name>
+      <visibility>1</visibility>
+      <Point>
+        <coordinates>-112.23875026,33.44497721,0.00000000</coordinates>
+      </Point>
+      <Metadata>
+        <umap:index/>
+      </Metadata>
+    </Placemark>
+    <Placemark id="EditablePolyline1">
+      <styleUrl>#EditablePolylineStyle1</styleUrl>
+      <name>Directions from (lat=40.814890, lng=-81.982052) to (lat=40.860605, lng=-83.640987)</name>
+      <description>Total distance: 91.24</description>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates/>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline2">
+      <styleUrl>#EditablePolylineStyle2</styleUrl>
+      <name>Line27</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-71.07215480375031,42.3646440578857,0 -80.0106313662503,40.45322935424522,0 -91.61658839750032,41.43244303337072,0 -122.3299673037503,47.60135882663349,0 -81.39930324125032,28.543526952360217,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline3">
+      <styleUrl>#EditablePolylineStyle3</styleUrl>
+      <name>Line28</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-81.40369777250038,28.547387276786196,0 -87.63514308500037,41.87898027706163,0 -74.01209621000037,40.7102204419465,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline4">
+      <styleUrl>#EditablePolylineStyle4</styleUrl>
+      <name>Line29</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-74.00550441312537,40.714800593391736,0 -115.12678126859409,36.167161525300266,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline5">
+      <styleUrl>#EditablePolylineStyle5</styleUrl>
+      <name>Line30</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-115.14710597562534,36.17203945999879,0 -80.14905910062534,26.106751683824204,0 -112.26333217191444,33.45758113745454,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline6">
+      <styleUrl>#EditablePolylineStyle6</styleUrl>
+      <name>Line31</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-71.06995753812535,42.350842822056705,0 -112.2648427920316,33.462163931355505,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline7">
+      <styleUrl>#EditablePolylineStyle7</styleUrl>
+      <name>Line43</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-80.64893703031287,41.09882175185324,0 -80.01365260648473,40.44716815992044,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline8">
+      <styleUrl>#EditablePolylineStyle8</styleUrl>
+      <name>Line44</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-86.15308742093787,39.76084815877643,0 -87.63816432523473,41.89002224463216,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline9">
+      <styleUrl>#EditablePolylineStyle9</styleUrl>
+      <name>Line45</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-110.93824367093788,31.291239402599345,0 -112.25303248929724,33.449789831892,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline10">
+      <styleUrl>#EditablePolylineStyle10</styleUrl>
+      <name>Line46</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-122.42444972562532,47.60135882663349,0 -113.99573878812532,46.80119840212143,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline11">
+      <styleUrl>#EditablePolylineStyle11</styleUrl>
+      <name>Line47</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-81.73109035062537,24.510656480015935,0 -80.13477687406287,26.116493415707897,0</coordinates>
+      </LineString>
+    </Placemark>
+    <Placemark id="EditablePolyline12">
+      <styleUrl>#EditablePolylineStyle12</styleUrl>
+      <name>Line48</name>
+      <visibility>1</visibility>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <coordinates>-80.61048488187537,28.315034226143528,0 -81.39792995023474,28.541114177748423,0</coordinates>
+      </LineString>
+    </Placemark>
+    <umap:UMapSettings>
+      <umap:center>-89.76758937,37.84537490,0.00000000</umap:center>
+      <umap:zoom>3</umap:zoom>
+      <umap:bounds>
+        <umap:north>70.31356309441179</umap:north>
+        <umap:south>-18.1604519925559</umap:south>
+        <umap:east>22.820301255000004</umap:east>
+        <umap:west>-202.355479995</umap:west>
+      </umap:bounds>
+      <umap:type>road</umap:type>
+      <umap:provider>com.afcomponents.umap.providers.microsoft::MicrosoftProvider</umap:provider>
+    </umap:UMapSettings>
+    <description><![CDATA[#aycj]]></description>
+  </Document>
+</kml>

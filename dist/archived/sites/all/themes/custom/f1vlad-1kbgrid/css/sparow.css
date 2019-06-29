@@ -1,0 +1,560 @@
+.container {overflow:visible;}
+
+a.hl {
+}
+
+header > h2 {
+color:#fff !important;
+}
+
+div.status {
+background-color:#111;
+}
+
+article time {
+    color:#FFFFFF;
+    font-size:0.75em;
+}
+
+h1 span.t {
+    float:left;
+    display:block;
+    width:auto;
+    font-size:240%;
+    margin-top:.35em;
+    margin-left:.25em;
+    letter-spacing:-5px;
+    color:#111;
+    padding-right:.5em;
+    height:32px;
+}
+
+div.whtisit {
+    color:#777777;
+    float:left;
+    font-size:140%;
+    margin:0.75em 0 0;
+    padding:0;
+    text-align:left;
+    white-space:nowrap;
+    width:40%;
+
+}
+
+div.whtisit a {
+    color:#777;
+}
+
+div.fm {width:2000px;text-align:left;}
+
+
+div.fm > div[id] {
+    padding:.5em;
+
+    margin:1em 0em 1em 2em;
+    list-style-position:inside;
+
+    float:left;
+
+    width:20em;
+    font-weight:bold;
+
+
+    border:1px solid transparent;
+    -moz-border-radius:1em;
+    -webkit-border-radius:1em;
+
+    overflow:hidden;
+}
+
+
+div.fm > div[id] div {
+    border:none;
+}
+
+div.fm > div[id] div.content div.feed ul li {
+    list-style-position:outside;
+    list-type:none;
+    padding:.25em;
+    margin:.5em 0;
+    background-image:none;
+}
+
+div.fm > div[id] font {
+    font-size:1em;
+    font-weight:normal;
+}
+
+div.fm > div[id] div.a2 span {
+    color:#ccc;
+    font-size:85%;
+    clear:both;
+    display:block
+}
+
+div.fm > div[id] div.a2 span:hover {
+    color:#555;
+}
+
+div.fm > div[id] div.content div.message {
+    display:inline;
+    clear:none;
+}
+
+div.fm > div[id] div.content blockquote {
+
+    padding:0 .5em;
+    margin:0;
+    font-size:.8em;
+    display:inline;
+    border:none;
+    background-color:#eee;
+}
+
+div.fm > div[id] div.content div.feed ul li div {
+    width:100% !important;
+}
+
+div.fm > div[id] div.content div.feed ul li table table{
+    width:auto;
+}
+
+table.pandoraStationContainer tr td br {
+    display:none;
+}
+
+table.pandoraStationContainer tr td,
+div.fm > div[id] div.content div.feed ul li table td{
+    display:inline;
+
+}
+
+div.fm > div[id] div.content div.feed ul li table td div{
+    border:none !important;
+}
+
+div.fm ul {
+    padding-left:0 !important;
+}
+
+div.fm > div:hover {
+    border:1px solid #eee;
+}
+
+div.fm > div h2 {
+    color:#555;
+    font-weight:bold;
+    letter-spacing:-.08em;
+    background:#eee;
+    -moz-border-radius:.75em;
+    -webkit-border-radius:.75em;
+    padding:0 .5em;
+}
+
+div.fm > div * {
+    font-weight:normal;
+}
+
+div.fm > div:hover h2 {
+    background:#f8f8f8;
+    color:#666666;
+}
+
+.breadcrumb {
+    text-align:left;
+    opacity:.35;
+    left:-1px;
+    top:-1px;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a{
+color:#000 !important;
+background:#eee;
+}
+
+.breadcrumb:hover {
+    opacity:1;
+}
+
+body.page_sparow {
+    background:#333333 url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/corebg.png) no-repeat scroll right 0;
+    color:#fff;
+    margin:0;
+    padding:0;
+}
+
+body.page_sparow .toggle  a {
+    background:#fff;
+    -moz-border-radius:.5em;
+    -webkit-border-radius:.5em;
+    display:inline;
+    padding:.25em .75em;
+    color:#000;
+}
+
+
+body.page_sparow a {
+    color:#dcebfd;
+}
+body.page_sparow a:hover {
+    color:#3399FF !important;
+}
+
+body.page_sparow h1 a[title] {
+    background:none;
+    display:inline;
+    float:none;
+    text-indent:0;
+    margin:0;
+    padding:0 0 0 .5em;
+}
+
+body.page_sparow div#hd h1 {
+    font-size:320%;
+    font-weight:light;
+    letter-spacing:-2px;
+}
+
+body.page_sparow div#hd {
+    padding:0pt;
+    margin:0pt;
+    height:40em;
+}
+
+body.page_sparow div#hd div {
+
+}
+
+body.page_sparow div#hd div.yui-g div.yui-u {
+    width:1%;
+}
+
+body.page_sparow div#hd div.yui-g div.yui-u.first {
+    width:50%;
+    min-width:380px;
+    height:40em;
+}
+
+body.page_sparow div#hd div.yui-g div.yui-u.first h1 {
+    color:#999;
+}
+
+
+body.page_sparow divradius:.5em;
+display:inline;
+padding:.25em .75em;
+color:#000;
+}
+
+
+body.page_sparow a {
+    color:#dcebfd;
+}
+body.page_sparow a:hover {
+    color:#3399FF !important;
+}
+
+body.page_sparow h1 a[title] {
+    background:none;
+    display:inline;
+    float:none;
+    text-indent:0;
+    margin:0;
+    padding:0 0 0 .5em;
+}
+
+body.page_sparow di}
+
+body.page_sparow div.overlaybg{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/overlaybg.png) no-repeat scroll 0 0;
+    height:424px;
+    position:absolute;
+    right:63px;
+    top:0;
+    width:360px;
+    z-index:1;}
+
+
+
+body.page_sparow div.sponsors{
+    _display:block;
+    display:none;
+    height:424px;
+    position:absolute;
+    right:86px;
+    top:0;
+    width:316px;
+}
+
+
+body.page_sparow div.sponsors a.scotland{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors//scotlandflag.png) no-repeat;
+    width:274px;
+    height:238px;
+    display:block;
+    margin:150px 0pt 0pt 22px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+body.page_sparow div.sponsors a.jerichoflag{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors//jerichoflag.png) no-repeat;
+    width:274px;
+    height:238px;
+    display:block;
+    margin:150px 0pt 0pt 22px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+
+body.page_sparow div.sponsors a.trizubets{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors/trizubets.png) no-repeat;
+    width:274px;
+    height:238px;
+    display:block;
+    margin:150px 0pt 0pt 22px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+
+body.page_sparow div.sponsors a.griffin{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors/griffin.png) no-repeat;
+    width:204px;
+    height:36px;
+    display:block;
+    margin:240px 0pt 0pt 54px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+
+body.page_sparow div.sponsors a.spt{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors/spt.png) no-repeat;
+    width:204px;
+    height:36px;
+    display:block;
+    margin:304px 0 0 106px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+body.page_sparow div.sponsors a.cobbtunning{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors/cobbtuning.png) no-repeat;
+    width:204px;
+    height:36px;
+    display:block;
+    margin:345px 0 0 109px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+
+body.page_sparow div.sponsors a.f1{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors/f1.png) no-repeat;
+    width:204px;
+    height:136px;
+    display:block;
+    margin:268px 0 0 184px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+
+body.page_sparow div.sponsors a.f1vladcomsparow{
+    background:transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/page_sparow/sponsors/f1vladcomsparow.png) no-repeat;
+    width:204px;
+    height:186px;
+    display:block;
+    margin:170px 0 0 30px;
+    text-indent:-9999px;
+    position:absolute;
+}
+
+
+
+
+body.page_sparow div.yui-u.first h1 {
+    height:1em;
+    line-height:1em !important;
+    text-indent:0pt !important;
+    margin:.5em 0 0 0pt !important;
+    padding:.25em 0 0 .75em !important;
+    background: transparent url(http://f1vlad.com/sites/all/themes/custom/f1vladc/i/sparow.png) no-repeat .75em .25em;
+}
+
+
+body.page_sparow div.yui-u.first h1 a {
+    padding-left:2em;
+}
+
+body.page_sparow  h1 a {
+    color:#0066CC;
+}
+
+body.page_sparow acronym:hover {
+    background:#0066CC;
+}
+
+body.page_sparow  h1 a:hover {
+    color:#fff !important;
+    text-decoration:underline !important;
+}
+
+body.page_sparow div.header div.sparow_into {
+    position:absolute !important;
+    right:5%;
+    top:37em;
+    width:33%;
+}
+
+body.page_sparow div.header div.sparow_news {
+    height:27em;
+    line-height:1.25em !important;
+    overflow:hidden;
+    padding:0 1em;
+    position:absolute !important;
+    top:13em !important;
+    width:45%;
+
+}
+
+
+.sparow_news {
+margin-right:40%;
+margin-left:1em;
+}
+
+.sparow_news_item h2 {
+display:inline;
+}
+
+.sparow_news_item .clear-block {
+display:inline;
+clear:none;
+}
+
+.page_sparow .node  .meta {
+display:none;
+}
+
+.page_sparow .content > div.meta.show {
+display:inline !important;
+}
+
+article.node.sparow_news_item {
+margin-bottom:3em !important;
+}
+
+
+.sparow_news_item div.meta {
+display:inline;
+border:none;
+float:none;
+padding:0;
+margin:0;
+display:inline;
+background:none;
+}
+
+body.page_sparow div.header div.sparow_news h3
+{
+    font-size:1.5em !important;
+    font-weight:normal !important;
+    height:1em !important;
+    line-height:1em !important;
+    margin:1em 0 0 !important;
+    padding:0 !important;
+    color:#999;
+    display:inline !important;
+}
+
+
+body.page_sparow div.header div.sparow_news h3 a,
+body.page_sparow div.header div.sparow_news  a {
+    color:#999;
+    text-decoration:none;
+}
+
+body.page_sparow div.header div.sparow_news div.sparow_news_item {
+    padding-bottom:1.5em;
+}
+
+
+body.page_sparow div.header div.sparow_news p {
+    font-size:1em !important;
+    font-weight:normal !important;
+    display:inline !important;
+
+    padding:0pt !important;
+    margin:0pt !important;
+}
+
+body.page_sparow div.header div.sparow_news small {
+    padding:0pt 1em;
+}
+
+div.clear-block {
+margin:0;
+}
+
+.sparow_table_legend {
+margin-bottom:3em !important;
+}
+
+
+.page_sparow h1, .page_sparow h2, .page_sparow #hd h2, .page_sparow h3, .page_sparow h4, .page_sparow h5, .page_sparow h6 {
+    color:#FFFFFF !important;
+}
+
+.page_sparow .twidg {
+    color:#fff;
+}
+
+able.sparowinventory tfoot td {
+border-top:1px solid #ccc !important;
+border-right:1px solid #ccc;
+border-bottom:none;
+padding:1em;
+color:#fff;
+text-transform:uppercase;
+    background-color:#2b2b2b;
+}
+
+table.sparowinventory th{
+cursor:move;
+cursor:nesw-resize !important;
+border-bottom:1px solid #ccc;
+border-right:1px solid #ccc;
+padding:1em;
+color:#fff;
+text-transform:uppercase;
+    background-color:#2b2b2b;
+}
+
+table.sparowinventory td {
+    padding: .5em 1em;
+    border-right:1px solid #444;
+    border-bottom:1px solid #444;
+}
+
+
+table.sparowinventory tr:hover {
+    background-color:#2b2b2b;
+}
+
+table#inventory tr.crossout td *,
+table#inventory tr.crossout td {
+    text-decoration:line-through;
+    opacity:.5;
+}
+
+

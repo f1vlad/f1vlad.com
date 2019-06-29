@@ -1,0 +1,2965 @@
+<html><head>
+        <meta http-equiv="X-UA-Compatible" content="IE=8, IE=9, IE=10, IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Gregory Mikkelson Â» Contacts Â» SugarCRM</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <link rel="stylesheet" href="sugar.css">
+</head>
+    <body>
+        <div id="sugarcrm">
+            <div id="sidecar">
+                <div id="alerts" class="alert-top"></div>
+                <div id="header">
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="nav-collapse">
+        <div class="module-list">
+<ul class="nav megamenu" role="navigation" data-container="module-list">
+    <li class="dropdown" data-module="Home"><span class="btn-group home" title="Dashboard">
+
+    <a class="cube btn btn-invisible btn-link" href="#Home" data-route="#Home" track="click:cube" aria-label="Home"><img src="styleguide/assets/img/logo.svg" alt="SugarCRM"></a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:cube-dropdown" aria-label="Home - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_CREATE_DASHBOARD_MENU" href="#Home/create" data-route="#Home/create" track="click:#Home/create"><i class="icon-plus"></i>Create Dashboard</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_ACTIVITIES" href="#activities" data-route="#activities" track="click:#activities"><i class="icon-time"></i>Activity Stream</a>
+                </li>
+            
+            <li class="divider" data-container="dashboards"></li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Accounts"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Accounts" data-route="#Accounts" track="click:Accounts" aria-label="Accounts">Accounts</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Accounts - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_ACCOUNT" href="#Accounts/create" data-route="#Accounts/create" track="click:#Accounts/create"><i class="icon-plus"></i>Create Account</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_BAL" href="#Accounts/layout/dnb-bal" data-route="#Accounts/layout/dnb-bal" track="click:#Accounts/layout/dnb-bal"><i class="icon-plus"></i>Build A List</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_ACCOUNT_LIST" href="#Accounts" data-route="#Accounts" track="click:#Accounts"><i class="icon-reorder"></i>View Accounts</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_ACCOUNT_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=Accounts&amp;query=true&amp;report_module=Accounts" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=Accounts&amp;query=true&amp;report_module=Accounts" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=Accounts&amp;query=true&amp;report_module=Accounts"><i class="icon-bar-chart"></i>View Account Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_ACCOUNTS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Accounts" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Accounts" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Accounts"><i class="icon-upload"></i>Import Accounts</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown active" data-module="Contacts"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Contacts" data-route="#Contacts" track="click:Contacts" aria-label="Contacts">Contacts</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Contacts - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_CONTACT" href="#Contacts/create" data-route="#Contacts/create" track="click:#Contacts/create"><i class="icon-plus"></i>Create Contact</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_BAL" href="#Contacts/layout/dnb-bal" data-route="#Contacts/layout/dnb-bal" track="click:#Contacts/layout/dnb-bal"><i class="icon-plus"></i>Build A List</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_VCARD" href="#Contacts/vcard-import" data-route="#Contacts/vcard-import" track="click:#Contacts/vcard-import"><i class="icon-plus"></i>Create Contact From vCard</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_CONTACT_LIST" href="#Contacts" data-route="#Contacts" track="click:#Contacts"><i class="icon-reorder"></i>View Contacts</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_CONTACT_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=contacts&amp;query=true&amp;report_module=Contacts" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=contacts&amp;query=true&amp;report_module=Contacts" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=contacts&amp;query=true&amp;report_module=Contacts"><i class="icon-bar-chart"></i>View Contact Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_CONTACTS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Contacts&amp;return_module=Contacts&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Contacts&amp;return_module=Contacts&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Contacts&amp;return_module=Contacts&amp;return_action=index"><i class="icon-upload"></i>Import Contacts</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Opportunities"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Opportunities" data-route="#Opportunities" track="click:Opportunities" aria-label="Opportunities">Opportunities</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Opportunities - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_OPPORTUNITY" href="#Opportunities/create" data-route="#Opportunities/create" track="click:#Opportunities/create"><i class="icon-plus"></i>Create Opportunity</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_OPPORTUNITY_LIST" href="#Opportunities" data-route="#Opportunities" track="click:#Opportunities"><i class="icon-reorder"></i>View Opportunities</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_OPPORTUNITY_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=opportunities&amp;query=true&amp;report_module=Opportunities" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=opportunities&amp;query=true&amp;report_module=Opportunities" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=opportunities&amp;query=true&amp;report_module=Opportunities"><i class="icon-bar-chart"></i>View Opportunity Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_OPPORTUNITIES" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Opportunities&amp;return_module=Opportunities&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Opportunities&amp;return_module=Opportunities&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Opportunities&amp;return_module=Opportunities&amp;return_action=index"><i class="icon-upload"></i>Import Opportunities</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Leads"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Leads" data-route="#Leads" track="click:Leads" aria-label="Leads">Leads</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Leads - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_LEAD" href="#Leads/create" data-route="#Leads/create" track="click:#Leads/create"><i class="icon-plus"></i>Create Lead</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_BAL" href="#Leads/layout/dnb-bal" data-route="#Leads/layout/dnb-bal" track="click:#Leads/layout/dnb-bal"><i class="icon-plus"></i>Build A List</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_VCARD" href="#Leads/vcard-import" data-route="#Leads/vcard-import" track="click:#Leads/vcard-import"><i class="icon-plus"></i>Create Lead From vCard</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_LEAD_LIST" href="#Leads" data-route="#Leads" track="click:#Leads"><i class="icon-reorder"></i>View Leads</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_LEAD_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=leads&amp;query=true&amp;report_module=Leads" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=leads&amp;query=true&amp;report_module=Leads" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=leads&amp;query=true&amp;report_module=Leads"><i class="icon-bar-chart"></i>View Lead Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_LEADS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Leads&amp;return_module=Leads&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Leads&amp;return_module=Leads&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Leads&amp;return_module=Leads&amp;return_action=index"><i class="icon-upload"></i>Import Leads</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Calendar"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Calendar&amp;action=index" data-route="#bwc/index.php?module=Calendar&amp;action=index" track="click:Calendar" aria-label="Calendar">Calendar</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Calendar - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_MEETING" href="#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView" data-route="#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView" track="click:#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView"><i class="icon-plus"></i>Schedule Meeting</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_CALL" href="#bwc/index.php?module=Calls&amp;action=EditView&amp;return_module=Calls&amp;return_action=DetailView" data-route="#bwc/index.php?module=Calls&amp;action=EditView&amp;return_module=Calls&amp;return_action=DetailView" track="click:#bwc/index.php?module=Calls&amp;action=EditView&amp;return_module=Calls&amp;return_action=DetailView"><i class="icon-plus"></i>Schedule Call</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_TASK" href="#Tasks/create" data-route="#Tasks/create" track="click:#Tasks/create"><i class="icon-plus"></i>Create Task</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_VIEW_CALENDAR" href="#bwc/index.php?module=Calendar&amp;action=index&amp;view=day" data-route="#bwc/index.php?module=Calendar&amp;action=index&amp;view=day" track="click:#bwc/index.php?module=Calendar&amp;action=index&amp;view=day"><i class="icon-reorder"></i>Today</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Reports"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Reports&amp;action=index" data-route="#bwc/index.php?module=Reports&amp;action=index" track="click:Reports" aria-label="Reports">Reports</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Reports - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_CREATE_REPORT" href="#bwc/index.php?module=Reports&amp;report_module=&amp;action=index&amp;page=report&amp;Create+Custom+Report=Create+Custom+Report" data-route="#bwc/index.php?module=Reports&amp;report_module=&amp;action=index&amp;page=report&amp;Create+Custom+Report=Create+Custom+Report" track="click:#bwc/index.php?module=Reports&amp;report_module=&amp;action=index&amp;page=report&amp;Create+Custom+Report=Create+Custom+Report"><i class="icon-plus"></i>Create Report</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_FAVORITE_REPORTS" href="#bwc/index.php?module=Reports&amp;favorite=1&amp;action=index" data-route="#bwc/index.php?module=Reports&amp;favorite=1&amp;action=index" track="click:#bwc/index.php?module=Reports&amp;favorite=1&amp;action=index"><i class="icon-favorite"></i>My Favorite Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_ALL_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index" data-route="#bwc/index.php?module=Reports&amp;action=index" track="click:#bwc/index.php?module=Reports&amp;action=index"><i class="icon-reorder"></i>View Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_ADVANCED_REPORTING" href="#bwc/index.php?module=ReportMaker&amp;action=index&amp;return_module=ReportMaker&amp;return_action=index" data-route="#bwc/index.php?module=ReportMaker&amp;action=index&amp;return_module=ReportMaker&amp;return_action=index" track="click:#bwc/index.php?module=ReportMaker&amp;action=index&amp;return_module=ReportMaker&amp;return_action=index"><i class="icon-bar-chart"></i>Manage Advanced Reports</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Quotes"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Quotes&amp;action=index" data-route="#bwc/index.php?module=Quotes&amp;action=index" track="click:Quotes" aria-label="Quotes">Quotes</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Quotes - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_QUOTE" href="#bwc/index.php?module=Quotes&amp;action=EditView&amp;return_module=Quotes&amp;return_action=DetailView" data-route="#bwc/index.php?module=Quotes&amp;action=EditView&amp;return_module=Quotes&amp;return_action=DetailView" track="click:#bwc/index.php?module=Quotes&amp;action=EditView&amp;return_module=Quotes&amp;return_action=DetailView"><i class="icon-plus"></i>Create Quote</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_QUOTE_LIST" href="#Quotes" data-route="#Quotes" track="click:#Quotes"><i class="icon-reorder"></i>View Quotes</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_QUOTE_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=quotes&amp;query=true&amp;report_module=Quotes" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=quotes&amp;query=true&amp;report_module=Quotes" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=quotes&amp;query=true&amp;report_module=Quotes"><i class="icon-bar-chart"></i>View Quote Reports</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Documents"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Documents&amp;action=index" data-route="#bwc/index.php?module=Documents&amp;action=index" track="click:Documents" aria-label="Documents">Documents</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Documents - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_DOCUMENT" href="#bwc/index.php?module=Documents&amp;action=editview" data-route="#bwc/index.php?module=Documents&amp;action=editview" track="click:#bwc/index.php?module=Documents&amp;action=editview"><i class="icon-plus"></i>Create Document</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_DOCUMENT_LIST" href="#Documents" data-route="#Documents" track="click:#Documents"><i class="icon-reorder"></i>View Documents</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Emails"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Emails&amp;action=index" data-route="#bwc/index.php?module=Emails&amp;action=index" track="click:Emails" aria-label="Emails">Emails</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Emails - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_VIEW_MY_INBOX" href="#Emails" data-route="#Emails" track="click:#Emails"><i class="icon-plus"></i>View My Email</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_EMAIL_TEMPLATE" href="#bwc/index.php?module=EmailTemplates&amp;action=EditView&amp;return_module=EmailTemplates&amp;return_action=DetailView" data-route="#bwc/index.php?module=EmailTemplates&amp;action=EditView&amp;return_module=EmailTemplates&amp;return_action=DetailView" track="click:#bwc/index.php?module=EmailTemplates&amp;action=EditView&amp;return_module=EmailTemplates&amp;return_action=DetailView"><i class="icon-plus"></i>Create Email Template</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_EMAIL_TEMPLATE_LIST" href="#EmailTemplates" data-route="#EmailTemplates" track="click:#EmailTemplates"><i class="icon-reorder"></i>View Email Templates</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Campaigns"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Campaigns&amp;action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=index" track="click:Campaigns" aria-label="Campaigns">Campaigns</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Campaigns - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNL_NEW_CAMPAIGN_WIZARD" href="#bwc/index.php?module=Campaigns&amp;action=WizardHome&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=WizardHome&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=WizardHome&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-magic"></i>Create Campaign (Wizard)</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_CAMPAIGN" href="#bwc/index.php?module=Campaigns&amp;action=EditView&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=EditView&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=EditView&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-plus"></i>Create Campaign (Classic)</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_CAMPAIGN_LIST" href="#bwc/index.php?module=Campaigns&amp;action=index&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=index&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=index&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-reorder"></i>View Campaigns</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_NEWSLETTERS" href="#bwc/index.php?module=Campaigns&amp;action=newsletterlist&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=newsletterlist&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=newsletterlist&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-reorder"></i>View Newsletters</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_EMAIL_TEMPLATE" href="#bwc/index.php?module=EmailTemplates&amp;action=EditView&amp;return_module=EmailTemplates&amp;return_action=DetailView" data-route="#bwc/index.php?module=EmailTemplates&amp;action=EditView&amp;return_module=EmailTemplates&amp;return_action=DetailView" track="click:#bwc/index.php?module=EmailTemplates&amp;action=EditView&amp;return_module=EmailTemplates&amp;return_action=DetailView"><i class="icon-plus"></i>Create Email Template</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_EMAIL_TEMPLATE_LIST" href="#bwc/index.php?module=EmailTemplates&amp;action=index" data-route="#bwc/index.php?module=EmailTemplates&amp;action=index" track="click:#bwc/index.php?module=EmailTemplates&amp;action=index"><i class="icon-reorder"></i>View Email Templates</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_EMAIL_SETUP_WIZARD" href="#bwc/index.php?module=Campaigns&amp;action=WizardEmailSetup&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=WizardEmailSetup&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=WizardEmailSetup&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-cog"></i>Set Up Email</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_DIAGNOSTIC_WIZARD" href="#bwc/index.php?module=Campaigns&amp;action=CampaignDiagnostic&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=CampaignDiagnostic&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=CampaignDiagnostic&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-bar-chart"></i>View Diagnostics</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_WEB_TO_LEAD" href="#bwc/index.php?module=Campaigns&amp;action=WebToLeadCreation&amp;return_module=Campaigns&amp;return_action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=WebToLeadCreation&amp;return_module=Campaigns&amp;return_action=index" track="click:#bwc/index.php?module=Campaigns&amp;action=WebToLeadCreation&amp;return_module=Campaigns&amp;return_action=index"><i class="icon-plus"></i>Create Lead Form</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Calls"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Calls&amp;action=index" data-route="#bwc/index.php?module=Calls&amp;action=index" track="click:Calls" aria-label="Calls">Calls</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Calls - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_CALL" href="#bwc/index.php?module=Calls&amp;action=EditView" data-route="#bwc/index.php?module=Calls&amp;action=EditView" track="click:#bwc/index.php?module=Calls&amp;action=EditView"><i class="icon-plus"></i>Log Call</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_CALL_LIST" href="#Calls" data-route="#Calls" track="click:#Calls"><i class="icon-reorder"></i>View Calls</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_CALLS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Calls&amp;query=true&amp;report_module=Calls" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Calls&amp;query=true&amp;report_module=Calls" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Calls&amp;query=true&amp;report_module=Calls"><i class="icon-upload"></i>Import Calls</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_ACTIVITIES_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=Calls" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=Calls" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=Calls"><i class="icon-bar-chart"></i>Activities Report</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown" data-module="Meetings"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=Meetings&amp;action=index" data-route="#bwc/index.php?module=Meetings&amp;action=index" track="click:Meetings" aria-label="Meetings">Meetings</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Meetings - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_MEETING" href="#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView" data-route="#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView" track="click:#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView"><i class="icon-plus"></i>Schedule Meeting</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_MEETING_LIST" href="#Meetings" data-route="#Meetings" track="click:#Meetings"><i class="icon-reorder"></i>View Meetings</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_MEETINGS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Meetings&amp;return_module=Meetings&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Meetings&amp;return_module=Meetings&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Meetings&amp;return_module=Meetings&amp;return_action=index"><i class="icon-upload"></i>Import Meetings</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="Tasks"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Tasks" data-route="#Tasks" track="click:Tasks" aria-label="Tasks">Tasks</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Tasks - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_TASK" href="#Tasks/create" data-route="#Tasks/create" track="click:#Tasks/create"><i class="icon-plus"></i>Create Task</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_TASK_LIST" href="#Tasks" data-route="#Tasks" track="click:#Tasks"><i class="icon-reorder"></i>View Tasks</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_TASKS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Tasks&amp;return_module=Tasks&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Tasks&amp;return_module=Tasks&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Tasks&amp;return_module=Tasks&amp;return_action=index"><i class="icon-upload"></i>Import Tasks</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="Notes"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Notes" data-route="#Notes" track="click:Notes" aria-label="Notes">Notes</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Notes - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_NOTE" href="#Notes/create" data-route="#Notes/create" track="click:#Notes/create"><i class="icon-plus"></i>Create Note or Attachment</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NOTE_LIST" href="#Notes" data-route="#Notes" track="click:#Notes"><i class="icon-reorder"></i>View Notes</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_NOTES" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Notes&amp;return_module=Notes&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Notes&amp;return_module=Notes&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Notes&amp;return_module=Notes&amp;return_action=index"><i class="icon-upload"></i>Import Notes</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="Forecasts"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Forecasts" data-route="#Forecasts" track="click:Forecasts" aria-label="Forecasts">Forecasts</a>
+    
+
+</span></li><li class="dropdown hidden" data-module="Cases"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Cases" data-route="#Cases" track="click:Cases" aria-label="Cases">Cases</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Cases - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_CASE" href="#Cases/create" data-route="#Cases/create" track="click:#Cases/create"><i class="icon-plus"></i>Create Case</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_CASE_LIST" href="#Cases" data-route="#Cases" track="click:#Cases"><i class="icon-reorder"></i>View Cases</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_CASE_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=cases&amp;query=true&amp;report_module=Cases" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=cases&amp;query=true&amp;report_module=Cases" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=cases&amp;query=true&amp;report_module=Cases"><i class="icon-bar-chart"></i>View Case Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_CASES" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Cases&amp;return_module=Cases&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Cases&amp;return_module=Cases&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Cases&amp;return_module=Cases&amp;return_action=index"><i class="icon-upload"></i>Import Cases</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="Prospects"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Prospects" data-route="#Prospects" track="click:Prospects" aria-label="Targets">Targets</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Targets - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_PROSPECT" href="#Prospects/create" data-route="#Prospects/create" track="click:#Prospects/create"><i class="icon-plus"></i>Create Target</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_BAL" href="#Prospects/layout/dnb-bal" data-route="#Prospects/layout/dnb-bal" track="click:#Prospects/layout/dnb-bal"><i class="icon-plus"></i>Build A List</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_VCARD" href="#Prospects/vcard-import" data-route="#Prospects/vcard-import" track="click:#Prospects/vcard-import"><i class="icon-plus"></i>Create Target From vCard</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_PROSPECT_LIST" href="#Prospects" data-route="#Prospects" track="click:#Prospects"><i class="icon-reorder"></i>View Targets</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_PROSPECTS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Prospects&amp;return_module=Prospects&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Prospects&amp;return_module=Prospects&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Prospects&amp;return_module=Prospects&amp;return_action=index"><i class="icon-upload"></i>Import Targets</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="ProspectLists"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#ProspectLists" data-route="#ProspectLists" track="click:ProspectLists" aria-label="Target Lists">Target Lists</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Target Lists - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_PROSPECT_LIST" href="#ProspectLists/create" data-route="#ProspectLists/create" track="click:#ProspectLists/create"><i class="icon-plus"></i>Create Target List</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_PROSPECT_LIST_LIST" href="#ProspectLists" data-route="#ProspectLists" track="click:#ProspectLists"><i class="icon-reorder"></i>View Target Lists</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="RevenueLineItems"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#RevenueLineItems" data-route="#RevenueLineItems" track="click:RevenueLineItems" aria-label="Revenue Line Items">Revenue Line Items</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Revenue Line Items - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_REVENUELINEITEM" href="#RevenueLineItems/create" data-route="#RevenueLineItems/create" track="click:#RevenueLineItems/create"><i class="icon-plus"></i>Create Revenue Line Item</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_REVENUELINEITEM_LIST" href="#RevenueLineItems" data-route="#RevenueLineItems" track="click:#RevenueLineItems"><i class="icon-reorder"></i>View Revenue Line Items</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_REVENUELINEITEMS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=RevenueLineItems&amp;return_module=RevenueLineItems&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=RevenueLineItems&amp;return_module=RevenueLineItems&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=RevenueLineItems&amp;return_module=RevenueLineItems&amp;return_action=index"><i class="icon-upload"></i>Import Revenue Line Items</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="KBDocuments"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#bwc/index.php?module=KBDocuments&amp;action=index" data-route="#bwc/index.php?module=KBDocuments&amp;action=index" track="click:KBDocuments" aria-label="Knowledge Base">Knowledge Base</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Knowledge Base - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_ARTICLE" href="#bwc/index.php?module=KBDocuments&amp;action=EditView&amp;return_module=KBDocuments&amp;return_action=DetailView" data-route="#bwc/index.php?module=KBDocuments&amp;action=EditView&amp;return_module=KBDocuments&amp;return_action=DetailView" track="click:#bwc/index.php?module=KBDocuments&amp;action=EditView&amp;return_module=KBDocuments&amp;return_action=DetailView"><i class="icon-plus"></i>Create Article</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_LIST_ARTICLES" href="#KBDocuments" data-route="#KBDocuments" track="click:#KBDocuments"><i class="icon-reorder"></i>View Articles</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LBL_KNOWLEDGE_BASE_ADMIN_MENU" href="#bwc/index.php?module=KBDocuments&amp;action=KBAdminView" data-route="#bwc/index.php?module=KBDocuments&amp;action=KBAdminView" track="click:#bwc/index.php?module=KBDocuments&amp;action=KBAdminView"><i class="icon-question-sign"></i>Administer Knowledge Base</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown hidden" data-module="Bugs"><span class="btn-group">
+
+    <a class="btn btn-invisible btn-link module-name" href="#Bugs" data-route="#Bugs" track="click:Bugs" aria-label="Bugs">Bugs</a>
+    
+    <button type="button" title="More" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" track="click:module-menu-dropdown" aria-label="Bugs - More"><i class="icon-caret-down"></i></button>
+    <div class="dropdown-menu scroll">
+        <ul role="menu">
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_NEW_BUG" href="#Bugs/create" data-route="#Bugs/create" track="click:#Bugs/create"><i class="icon-plus"></i>Report Bug</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_BUG_LIST" href="#Bugs" data-route="#Bugs" track="click:#Bugs"><i class="icon-reorder"></i>View Bugs</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_BUG_REPORTS" href="#bwc/index.php?module=Reports&amp;action=index&amp;view=bugs&amp;query=true&amp;report_module=Bugs" data-route="#bwc/index.php?module=Reports&amp;action=index&amp;view=bugs&amp;query=true&amp;report_module=Bugs" track="click:#bwc/index.php?module=Reports&amp;action=index&amp;view=bugs&amp;query=true&amp;report_module=Bugs"><i class="icon-bar-chart"></i>View Bug Reports</a>
+                </li>
+            
+                <li><a class="ellipsis_inline" tabindex="-1" data-navbar-menu-item="LNK_IMPORT_BUGS" href="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Bugs&amp;return_module=Bugs&amp;return_action=index" data-route="#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Bugs&amp;return_module=Bugs&amp;return_action=index" track="click:#bwc/index.php?module=Import&amp;action=Step1&amp;import_module=Bugs&amp;return_module=Bugs&amp;return_action=index"><i class="icon-upload"></i>Import Bugs</a>
+                </li>
+            
+            <li class="divider" data-container="recently-viewed"></li>
+            <li class="divider" data-container="favorites"></li>
+        </ul>
+    </div>
+    
+
+</span></li><li class="dropdown more" data-action="more-modules">
+        <div class="btn-group">
+            <button type="button" data-toggle="dropdown" class="btn btn-invisible dropdown-toggle" title="More" track="click:navbar-more-modules" aria-label="More Modules"><i class="icon-chevron-down"></i></button>
+            <div class="dropdown-menu scroll" role="menu">
+                <ul data-container="overflow"><li class="dropdown hidden" data-module="Home"><span title="Dashboard" class="home btn-group">
+
+    <a class="cube module-list-link" href="#Home" data-route="#Home" track="click:cube" tabindex="-1"><img src="styleguide/assets/img/logo.svg" alt="SugarCRM"></a>
+
+</span></li><li class="dropdown hidden" data-module="Accounts"><span>
+
+    <a class="module-list-link" href="#Accounts" data-route="#Accounts" track="click:Accounts" tabindex="-1"><span class="label label-module label-module-mini label-Accounts" title="Accounts">Ac</span>Accounts</a>
+
+</span></li><li class="dropdown hidden" data-module="Contacts"><span>
+
+    <a class="module-list-link" href="#Contacts" data-route="#Contacts" track="click:Contacts" tabindex="-1"><span class="label label-module label-module-mini label-Contacts" title="Contacts">Co</span>Contacts</a>
+
+</span></li><li class="dropdown hidden" data-module="Opportunities"><span>
+
+    <a class="module-list-link" href="#Opportunities" data-route="#Opportunities" track="click:Opportunities" tabindex="-1"><span class="label label-module label-module-mini label-Opportunities" title="Opportunities">Op</span>Opportunities</a>
+
+</span></li><li class="dropdown hidden" data-module="Leads"><span>
+
+    <a class="module-list-link" href="#Leads" data-route="#Leads" track="click:Leads" tabindex="-1"><span class="label label-module label-module-mini label-Leads" title="Leads">Le</span>Leads</a>
+
+</span></li><li class="dropdown hidden" data-module="Calendar"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Calendar&amp;action=index" data-route="#bwc/index.php?module=Calendar&amp;action=index" track="click:Calendar" tabindex="-1"><span class="label label-module label-module-mini label-Calendar" title="Calendar">Ca</span>Calendar</a>
+
+</span></li><li class="dropdown hidden" data-module="Reports"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Reports&amp;action=index" data-route="#bwc/index.php?module=Reports&amp;action=index" track="click:Reports" tabindex="-1"><span class="label label-module label-module-mini label-Reports" title="Reports">Re</span>Reports</a>
+
+</span></li><li class="dropdown hidden" data-module="Quotes"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Quotes&amp;action=index" data-route="#bwc/index.php?module=Quotes&amp;action=index" track="click:Quotes" tabindex="-1"><span class="label label-module label-module-mini label-Quotes" title="Quotes">Qu</span>Quotes</a>
+
+</span></li><li class="dropdown hidden" data-module="Documents"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Documents&amp;action=index" data-route="#bwc/index.php?module=Documents&amp;action=index" track="click:Documents" tabindex="-1"><span class="label label-module label-module-mini label-Documents" title="Documents">Do</span>Documents</a>
+
+</span></li><li class="dropdown hidden" data-module="Emails"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Emails&amp;action=index" data-route="#bwc/index.php?module=Emails&amp;action=index" track="click:Emails" tabindex="-1"><span class="label label-module label-module-mini label-Emails" title="Emails">Em</span>Emails</a>
+
+</span></li><li class="dropdown hidden" data-module="Campaigns"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Campaigns&amp;action=index" data-route="#bwc/index.php?module=Campaigns&amp;action=index" track="click:Campaigns" tabindex="-1"><span class="label label-module label-module-mini label-Campaigns" title="Campaigns">Ca</span>Campaigns</a>
+
+</span></li><li class="dropdown hidden" data-module="Calls"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Calls&amp;action=index" data-route="#bwc/index.php?module=Calls&amp;action=index" track="click:Calls" tabindex="-1"><span class="label label-module label-module-mini label-Calls" title="Calls">Cl</span>Calls</a>
+
+</span></li><li class="dropdown hidden" data-module="Meetings"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=Meetings&amp;action=index" data-route="#bwc/index.php?module=Meetings&amp;action=index" track="click:Meetings" tabindex="-1"><span class="label label-module label-module-mini label-Meetings" title="Meetings">Me</span>Meetings</a>
+
+</span></li><li class="dropdown" data-module="Tasks"><span>
+
+    <a class="module-list-link" href="#Tasks" data-route="#Tasks" track="click:Tasks" tabindex="-1"><span class="label label-module label-module-mini label-Tasks" title="Tasks">Ts</span>Tasks</a>
+
+</span></li><li class="dropdown" data-module="Notes"><span>
+
+    <a class="module-list-link" href="#Notes" data-route="#Notes" track="click:Notes" tabindex="-1"><span class="label label-module label-module-mini label-Notes" title="Notes">Nt</span>Notes</a>
+
+</span></li><li class="dropdown" data-module="Forecasts"><span>
+
+    <a class="module-list-link" href="#Forecasts" data-route="#Forecasts" track="click:Forecasts" tabindex="-1"><span class="label label-module label-module-mini label-Forecasts" title="Forecasts">Fo</span>Forecasts</a>
+
+</span></li><li class="dropdown" data-module="Cases"><span>
+
+    <a class="module-list-link" href="#Cases" data-route="#Cases" track="click:Cases" tabindex="-1"><span class="label label-module label-module-mini label-Cases" title="Cases">Cs</span>Cases</a>
+
+</span></li><li class="dropdown" data-module="Prospects"><span>
+
+    <a class="module-list-link" href="#Prospects" data-route="#Prospects" track="click:Prospects" tabindex="-1"><span class="label label-module label-module-mini label-Prospects" title="Targets">Ta</span>Targets</a>
+
+</span></li><li class="dropdown" data-module="ProspectLists"><span>
+
+    <a class="module-list-link" href="#ProspectLists" data-route="#ProspectLists" track="click:ProspectLists" tabindex="-1"><span class="label label-module label-module-mini label-ProspectLists" title="Target Lists">TL</span>Target Lists</a>
+
+</span></li><li class="dropdown" data-module="RevenueLineItems"><span>
+
+    <a class="module-list-link" href="#RevenueLineItems" data-route="#RevenueLineItems" track="click:RevenueLineItems" tabindex="-1"><span class="label label-module label-module-mini label-RevenueLineItems" title="Revenue Line Items">RL</span>Revenue Line Items</a>
+
+</span></li><li class="dropdown" data-module="KBDocuments"><span>
+
+    <a class="module-list-link" href="#bwc/index.php?module=KBDocuments&amp;action=index" data-route="#bwc/index.php?module=KBDocuments&amp;action=index" track="click:KBDocuments" tabindex="-1"><span class="label label-module label-module-mini label-KBDocuments" title="Knowledge Base">KB</span>Knowledge Base</a>
+
+</span></li><li class="dropdown" data-module="Bugs"><span>
+
+    <a class="module-list-link" href="#Bugs" data-route="#Bugs" track="click:Bugs" tabindex="-1"><span class="label label-module label-module-mini label-Bugs" title="Bugs">Bu</span>Bugs</a>
+
+</span></li></ul>
+            </div>
+        </div>
+    </li>
+</ul>
+</div><div id="searchForm">
+<div class="navbar-search" aria-role="search">
+    <input type="text" class="search-query" placeholder="Search" data-provide="typeahead" data-items="5" aria-label="Global Search">
+    <div class="advanced">
+        <div class="btn-toolbar pull-right">
+            <div class="btn-group">
+                <button class="btn btn-link btn-invisible advanced dropdown-toggle" data-toggle="dropdown" track="click:globalsearch-dropdown" aria-label="Global Search Module Filter"><i class="icon-caret-down"></i></button>
+                <div class="dropdown-menu pull-right globalsearch-adv-wrap scroll">
+                    <ul class="globalsearch-adv reset-width" role="menu" data-advanced="options" tabindex="-1">
+                        <li><label class="active"><input data-action="select-module" data-module="all" type="checkbox" checked="checked" tabindex="-1"> Search all</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Contacts" type="checkbox" tabindex="-1"> Contacts</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Accounts" type="checkbox" tabindex="-1"> Accounts</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Opportunities" type="checkbox" tabindex="-1"> Opportunities</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Cases" type="checkbox" tabindex="-1"> Cases</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Notes" type="checkbox" tabindex="-1"> Notes</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Calls" type="checkbox" tabindex="-1"> Calls</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Meetings" type="checkbox" tabindex="-1"> Meetings</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Leads" type="checkbox" tabindex="-1"> Leads</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Products" type="checkbox" tabindex="-1"> Quoted Line Items</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="RevenueLineItems" type="checkbox" tabindex="-1"> Revenue Line Items</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="ProductCategories" type="checkbox" tabindex="-1"> Product Categories</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Manufacturers" type="checkbox" tabindex="-1"> Manufacturers</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Bugs" type="checkbox" tabindex="-1"> Bugs</label></li>
+                        
+                        <li><label><input data-action="select-module" data-module="Documents" type="checkbox" tabindex="-1"> Documents</label></li>
+                        
+                    </ul>
+                </div>
+                <button class="btn btn-inverse" data-action="search" track="click:globalsearch" aria-label="Run Global Search"><i class="icon icon-search"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="typeahead-wrapper"><ul class="typeahead dropdown-menu"></ul></div>
+</div><div>
+<ul class="nav megamenu">
+    <li class="dropdown notification-list">
+        <div class="btn-group" data-name="notifications-list-button">
+            <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" rel="tooltip" title="" aria-label="Notifications" data-placement="bottom" data-original-title="Notifications">
+                1
+                
+            </button>
+            <div class="dropdown-menu scroll pull-right">
+                <ul role="menu">
+                    
+                        <li><a class="row-fluid" href="#Notifications/bee8e528-2697-7f5c-39ab-55c3a20be552/detail" data-id="bee8e528-2697-7f5c-39ab-55c3a20be552" data-action="is-read-handler" tabindex="-1"><span class="span8 ellipsis_inline" title="" data-placement="bottom" data-original-title="Missing SMTP Server settings">
+                            
+                                <span sfuuid="395" class="detail">
+<span class="label label-warning">Warning</span>
+</span>
+                            
+                            Missing SMTP Server settings</span>
+                            <time datetime="2015-08-06T14:06:13-04:00" class="span4 pull-right" title="08/06/2015 2:06pm">12 minutes ago</time>
+                        </a></li>
+                    
+                    <li><a class="row-fluid" href="#Notifications" tabindex="-1"><i class="icon-reorder span1"></i><span class="span8 ellipsis_inline" data-original-title="" title="">View Notifications</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+</div><div>
+<ul class="nav megamenu" id="userList">
+    <li class="dropdown" id="userActions" data-menu="user-actions" tabindex="-1">
+        <div class="btn-group">
+            <button id="userTab" data-toggle="dropdown" class="btn btn-invisible btn-link dropdown-toggle" rel="tooltip" data-placement="bottom" title="" track="click:userActions" aria-label="User Menu" data-original-title="admin">
+                
+                    <img src="rest/v10/Users/1/file/picture?format=sugar-html-json&amp;1438884811482=1&amp;platform=base" alt="admin" class="avatar avatar-btn">
+                
+                <i class="icon-caret-down"></i>
+            </button>
+            <div class="dropdown-menu scroll pull-right">
+                <ul role="menu" id="fullmenu">
+                    
+                        <li class="profileactions-profile">
+                            <a href="#bwc/index.php?module=Users&amp;action=DetailView&amp;record=1" track="click:userAction-LBL_PROFILE" tabindex="-1">
+                                <img src="rest/v10/Users/1/file/picture?format=sugar-html-json&amp;1438884811482=1&amp;platform=base" alt="admin" class="avatar avatar-sm">Profile
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="profileactions-employees">
+                            <a href="#bwc/index.php?module=Employees&amp;action=index&amp;query=true" track="click:userAction-LBL_EMPLOYEES" tabindex="-1">
+                                <i class="icon-group"></i>Employees
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="administration">
+                            <a href="#bwc/index.php?module=Administration&amp;action=index" track="click:userAction-LBL_ADMIN" tabindex="-1">
+                                <i class="icon-cogs"></i>Admin
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="profileactions-about">
+                            <a href="#about" track="click:userAction-LNK_ABOUT" tabindex="-1">
+                                <i class="icon-info-sign"></i>About
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        <li class="profileactions-logout">
+                            <a href="#logout/?clear=1" track="click:userAction-LBL_LOGOUT" tabindex="-1">
+                                <i class="icon-signout"></i>Log Out
+                                
+                            </a>
+                            
+                        </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+</div><div>
+<ul class="nav megamenu">
+    <li class="dropdown" id="createList">
+        <div class="btn-group">
+            <button data-toggle="dropdown" role="button" class="btn btn-invisible btn-link dropdown-toggle" rel="tooltip" data-placement="left" title="" track="click:quickCreate" aria-label="Quick Create Menu" data-original-title="Quick Create"><i class="icon-plus icon-md"></i></button>
+            <div class="dropdown-menu scroll pull-right" role="menu">
+                <ul>
+                    
+                        <li><span sfuuid="130" class="quickcreate">
+<a class="actionLink" data-module="Accounts" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Accounts" tabindex="-1"><i class="icon-plus"></i>Create Account</a>
+</span></li>
+                    
+                        <li><span sfuuid="131" class="quickcreate">
+<a class="actionLink" data-module="Contacts" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Contacts" tabindex="-1"><i class="icon-plus"></i>Create Contact</a>
+</span></li>
+                    
+                        <li><span sfuuid="132" class="quickcreate">
+<a class="actionLink" data-module="Opportunities" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Opportunities" tabindex="-1"><i class="icon-plus"></i>Create Opportunity</a>
+</span></li>
+                    
+                        <li><span sfuuid="133" class="quickcreate">
+<a class="actionLink" data-module="Leads" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Leads" tabindex="-1"><i class="icon-plus"></i>Create Lead</a>
+</span></li>
+                    
+                        <li><span sfuuid="134" class="quickcreate">
+<a class="actionLink" data-module="Documents" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Documents" tabindex="-1"><i class="icon-plus"></i>Create Document</a>
+</span></li>
+                    
+                        <li><span sfuuid="135" class="quickcreate">
+<a data-action="email" href="javascript:void(0)" track="click:quickCreate-Emails" tabindex="-1"><i class="icon-plus"></i>Compose Email</a>
+</span></li>
+                    
+                        <li><span sfuuid="136" class="quickcreate">
+<a class="actionLink" data-module="Calls" data-layout="create" href="#bwc/index.php?module=Calls&amp;action=EditView&amp;return_module=Calls&amp;return_action=DetailView" track="click:quickCreate-Calls" tabindex="-1"><i class="icon-phone"></i>Log Call</a>
+</span></li>
+                    
+                        <li><span sfuuid="137" class="quickcreate">
+<a class="actionLink" data-module="Meetings" data-layout="create" href="#bwc/index.php?module=Meetings&amp;action=EditView&amp;return_module=Meetings&amp;return_action=DetailView" track="click:quickCreate-Meetings" tabindex="-1"><i class="icon-calendar"></i>Schedule Meeting</a>
+</span></li>
+                    
+                        <li><span sfuuid="138" class="quickcreate">
+<a class="actionLink" data-module="Tasks" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Tasks" tabindex="-1"><i class="icon-plus"></i>Create Task</a>
+</span></li>
+                    
+                        <li><span sfuuid="139" class="quickcreate">
+<a class="actionLink" data-module="Notes" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Notes" tabindex="-1"><i class="icon-plus"></i>Create Note or Attachment</a>
+</span></li>
+                    
+                        <li><span sfuuid="140" class="quickcreate">
+<a class="actionLink" data-module="RevenueLineItems" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-RevenueLineItems" tabindex="-1"><i class="icon-plus"></i>Create Revenue Line Item</a>
+</span></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </li>
+</ul>
+</div></div>
+    </div>
+</div>
+</div>
+                <div id="content"><div><div class="row-fluid">
+<div class="main-pane span8"><div><div>
+<div>
+
+    
+        <div class="headerpane">
+            <h1>
+                
+                    
+                        
+                            
+                                <span class="record-cell" data-type="avatar" data-name="picture">
+                                    <span class="table-cell-wrapper">
+                                        
+                                            
+                                        
+                                        <span class="index" data-fieldname="picture" data-index="">
+                                            <span sfuuid="141" class="detail">
+
+<span class="label label-module label-module-lg label-Contacts" rel="tooltip" title="" data-placement="right" data-original-title="Contact" tabindex="-1">
+    Co
+</span>
+
+</span>
+                                        </span>
+                                        
+                                            
+                                                <span class="record-edit-link-wrapper" data-name="picture" tabindex="-1">
+                                                    <a class="record-edit-link btn btn-invisible" data-type="avatar" data-name="picture"><i class="icon-pencil"></i></a>
+                                                </span>
+                                            
+                                        
+                                    </span>
+                                </span>
+                            
+                        
+                            
+                                <span class="record-cell" data-type="fullname" data-name="full_name">
+                                    <span class="table-cell-wrapper">
+                                        
+                                            
+                                        
+                                        <span class="index" data-fieldname="full_name" data-index="">
+                                            <span sfuuid="142" class="detail">
+<span class="record-cell" data-name="full_name" data-type="fullname" style="max-width: 651px;">
+    
+    <span class="ellipsis_inline" rel="tooltip" title="" data-placement="bottom" data-fieldname="full_name" data-original-title="Gregory Mikkelson">
+        Gregory Mikkelson
+    </span>
+</span>
+</span>
+                                        </span>
+                                        
+                                            
+                                                <span class="record-edit-link-wrapper" data-name="full_name" tabindex="-1">
+                                                    <a class="record-edit-link btn btn-invisible" data-type="fullname" data-name="full_name"><i class="icon-pencil"></i></a>
+                                                </span>
+                                            
+                                        
+                                    </span>
+                                </span>
+                            
+                        
+                            
+                                <span class="record-cell" data-type="favorite" data-name="favorite">
+                                    <span class="table-cell-wrapper">
+                                        
+                                            
+                                        
+                                        <span class="index" data-fieldname="favorite" data-index="">
+                                            <span sfuuid="143" class="detail">
+<i class="icon-favorite" rel="tooltip" title="" data-placement="bottom" data-original-title="Favorite" tabindex="-1"></i>
+</span>
+                                        </span>
+                                        
+                                            
+                                                
+                                            
+                                        
+                                    </span>
+                                </span>
+                            
+                        
+                            
+                                <span class="record-cell" data-type="follow" data-name="follow" style="width: 100%;">
+                                    <span class="table-cell-wrapper">
+                                        
+                                            
+                                        
+                                        <span class="index" data-fieldname="follow" data-index="">
+                                            <span sfuuid="144" class="detail">
+
+    <a href="javascript:void(0);" name="follow" class="label" data-hover="true" data-event="list:follow:fire">Follow</a>
+
+</span>
+                                        </span>
+                                        
+                                            
+                                        
+                                    </span>
+                                </span>
+                            
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+                    <div class="btn-toolbar pull-right">
+                        
+                            
+                        
+                        
+                            <span sfuuid="145" class="detail">
+<a class="btn btn-invisible btn-link hide" href="javascript:void(0);" track="click:cancel_button" name="cancel_button" style="display: none;">
+Cancel</a>
+
+</span>
+                        
+                            <span sfuuid="146" class="detail">
+<a class="rowaction btn btn-primary hide" href="javascript:void(0);" data-event="button:save_button:click" name="save_button" track="click:save_button" style="display: none;">
+Save</a>
+</span>
+                        
+                            <span sfuuid="147" class="actions btn-group detail"><span sfuuid="148" class="detail">
+<a class="rowaction btn btn-primary" href="javascript:void(0);" data-event="button:edit_button:click" name="edit_button" track="click:edit_button">
+Edit</a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle btn-primary" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="149"></span></li><li><span sfuuid="150"></span></li><li><span sfuuid="151"></span></li><li class="divider"></li><li><span sfuuid="153"></span></li><li><span sfuuid="154"></span></li><li class="divider"></li><li><span sfuuid="156"></span></li><li><span sfuuid="157"></span></li><li><span sfuuid="158"></span></li><li><span sfuuid="159"></span></li><li class="divider"></li><li><span sfuuid="161"></span></li></ul></span>
+                        
+                            <span sfuuid="162" class="detail" tabindex="-1">
+<button class="btn btn-invisible sidebar-toggle" rel="tooltip" title="" data-placement="left" track="click:togglesidebar" data-original-title="Open/Close Dashboard">
+    <i class="icon-double-angle-right"></i>
+</button>
+</span>
+                        
+                    </div>
+                
+            </h1>
+        </div>
+    
+
+    
+        
+        <div class="row-fluid show-hide-toggle">
+            <div class="record-cell">
+                <button class="btn-link btn-invisible more" data-moreless="more" data-target=".panel_hidden">Show more...</button>
+                <button class="btn-link btn-invisible less hide" data-moreless="less" data-target=".panel_hidden">Show less</button>
+            </div>
+        </div>
+    
+
+</div>
+</div><div></div><div>
+<div class="search-filter">
+    <div class="control-group">
+        <div class="filter controls controls-two btn-group-fit"><div class="filter-view search" style="visibility: visible;"><span class="table-cell">
+<div class="select2-container select2 related-filter" id="s2id_autogen1"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-2">
+<span class="select2-choice-type">Related<i class="icon-caret-down"></i></span></span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen2" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2" tabindex="0"><div class="select2-drop select2-display-none select2-with-searchbox search-related-dropdown">   <div class="select2-search">       <label for="s2id_autogen2_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-2">   </ul></div></div><input type="hidden" class="select2 related-filter select2-offscreen" tabindex="-1" title="" value="all_modules">
+<div class="choice-related">All</div>
+</span><span class="table-cell">
+<div class="select2-container select2-container-disabled select2 search-filter" id="s2id_autogen3"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-4">
+<span class="select2-choice-type">Filter</span>
+</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen4" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-4" id="s2id_autogen4" tabindex="0" disabled=""><div class="select2-drop select2-display-none select2-with-searchbox search-filter-dropdown">   <div class="select2-search">       <label for="s2id_autogen4_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-4" id="s2id_autogen4_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-4">   </ul></div></div><input type="hidden" class="select2 search-filter select2-offscreen" data-placeholder="Filter" tabindex="-1" title="" disabled="" value="all_records">
+<div class="choice-filter" style="cursor: not-allowed;">
+    <span class="choice-filter-label">All Records</span>
+    <span class="choice-filter-close" style="display: none;"><i class="icon-remove-sign"></i></span>
+</div>
+</span><div class="table-cell full-width">
+<input type="text" class="search-name" placeholder="Search...">
+</div></div>
+            <div class="toggle-actions actions">
+                <div class="btn-group" data-toggle="buttons-radio">
+                    
+                        <a type="button" class="btn  active" data-view="subpanels" data-mode="view" rel="tooltip" title="" track="click:subpanels" data-original-title="Data View" tabindex="-1"><i class="icon-table"></i></a>
+                    
+                        <a type="button" class="btn " data-view="activitystream" data-mode="view" rel="tooltip" title="" track="click:activitystream" data-original-title="Activity Stream" tabindex="-1"><i class="icon-time"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="filter-options extend hide"><div class="filter-definition-container">
+
+</div><div class="filter-header">
+<div class="row-fluid">
+    <div class="controls span6">
+        <input type="text" class="inherit-width" placeholder="Enter new filter nameâ€¦">
+    </div>
+    
+    <div class="span6">
+        <div class="pull-right">
+            <a class="btn btn-link btn-invisible reset_button" track="click:filter-reset" tabindex="-1">Reset</a>
+            <a class="btn btn-link btn-invisible filter-close" track="click:filter-close" tabindex="-1">Cancel</a>
+            <a class="btn btn-link btn-invisible delete_button hide" track="click:filter-delete">Delete</a>
+            <a class="btn btn-primary disabled save_button" track="click:filter-save">Save</a>
+        </div>
+    </div>
+    
+</div>
+</div></div>
+</div>
+<div class="main-content"><div class="subpanels-layout ui-sortable" tabindex="-1"><div data-subpanel-link="calls" class="filtered tabbable tabs-left" style="">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Calls pull-left">Cl</div> <h4 class="pull-left">Calls</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="221" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="222" class="actions btn-group pull-right panel-top"><span sfuuid="223" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="224"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="225" class="list"><span sfuuid="226"></span><span sfuuid="227" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBystatus" data-fieldname="status" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBycontact_name" data-fieldname="contact_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Contact
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_start" data-fieldname="date_start" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Start Date
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_end" data-fieldname="date_end" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            End Date
+                        </span>
+                
+            </th>
+        
+            <th class="" data-fieldname="assigned_user_name" data-orderby="">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="228"><span sfuuid="229"></span><span sfuuid="230"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="8">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="meetings" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Meetings pull-left">Me</div> <h4 class="pull-left">Meetings</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="231" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="232" class="actions btn-group pull-right panel-top"><span sfuuid="233" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="234"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="235" class="list"><span sfuuid="236"></span><span sfuuid="237" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBystatus" data-fieldname="status" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBycontact_name" data-fieldname="contact_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Contact
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_start" data-fieldname="date_start" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Start Date
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_end" data-fieldname="date_end" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            End Date
+                        </span>
+                
+            </th>
+        
+            <th class="" data-fieldname="assigned_user_name" data-orderby="">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="238"><span sfuuid="239"></span><span sfuuid="240"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="8">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr name="Meetings_c0c818fc-250f-97d3-4e1e-55c3a24979f7" class="single">
+        
+        <td>
+             <span sfuuid="241" class="list"><span sfuuid="242" class="list">
+<i class="icon-favorite" rel="tooltip" title="" data-original-title="Favorite" tabindex="-1"></i>
+</span><span sfuuid="243" class="list"></span></span>
+        </td>
+        
+        
+            <td data-type="name">
+              <span sfuuid="244" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Introduce all players">
+    <a href="#bwc/index.php?module=Meetings&amp;action=DetailView&amp;record=c0c818fc-250f-97d3-4e1e-55c3a24979f7">Introduce all players</a>
+    </div></span>
+            </td>
+        
+            <td data-type="enum">
+              <span sfuuid="245" class="list">
+
+    
+        
+            
+        
+            
+                <div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Held">
+                    Held
+                </div>
+            
+        
+            
+        
+    
+
+</span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="246" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Gregory Mikkelson">
+    
+        <a href="#Contacts/b69aa8c5-f4f9-9b98-fcc4-55c3a2472b6f">Gregory Mikkelson</a>
+    
+</div>
+</span>
+            </td>
+        
+            <td data-type="datetimecombo">
+              <span sfuuid="247" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="03/30/2016 3:15pm">
+    03/30/2016 3:15pm
+    </div></span>
+            </td>
+        
+            <td data-type="datetimecombo">
+              <span sfuuid="248" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="03/30/2016 4:30pm">
+    03/30/2016 4:30pm
+    </div></span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="249" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Sarah Smith">
+    
+        <a href="#bwc/index.php?module=Employees&amp;action=DetailView&amp;record=seed_sarah_id">Sarah Smith</a>
+    
+</div>
+</span>
+            </td>
+        
+        
+        <td>
+             <span sfuuid="250" class="overflow-visible list"><span sfuuid="251" class="actions btn-group list"><span sfuuid="252" class="small">
+<a class="rowaction btn" href="javascript:void(0);" data-event="list:editrow:fire" rel="tooltip" data-placement="bottom" title="" name="edit_button" track="click:edit_button" data-original-title="Edit">
+    <i class="icon-pencil"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="253"></span></li></ul><span sfuuid="254" class="hide"></span></span><span sfuuid="255" class="list"></span></span>
+        </td>
+        
+    </tr>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 1047px;">&nbsp;</div></div>
+
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="all_tasks" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Tasks pull-left">Ts</div> <h4 class="pull-left">Tasks</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="256" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="257" class="actions btn-group pull-right panel-top"><span sfuuid="258" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="259"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="260" class="list"><span sfuuid="261"></span><span sfuuid="262" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBystatus" data-fieldname="status" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBycontact_name" data-fieldname="contact_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Contact
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_start" data-fieldname="date_start" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Start Date
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_due" data-fieldname="date_due" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Due Date
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByassigned_user_name" data-fieldname="assigned_user_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="263"><span sfuuid="264"></span><span sfuuid="265"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="8">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr name="Tasks_bc635b1b-5bd1-c17c-2b86-55c3a27a00e6" class="single">
+        
+        <td>
+             <span sfuuid="266" class="list"><span sfuuid="267" class="list">
+<i class="icon-favorite" rel="tooltip" title="" data-original-title="Favorite" tabindex="-1"></i>
+</span><span sfuuid="268" class="list"></span></span>
+        </td>
+        
+        
+            <td data-type="name">
+              <span sfuuid="269" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Send fax">
+    <a href="#Tasks/bc635b1b-5bd1-c17c-2b86-55c3a27a00e6">Send fax</a>
+    </div></span>
+            </td>
+        
+            <td data-type="enum">
+              <span sfuuid="270" class="list">
+
+    
+        
+            
+        
+            
+        
+            
+                <div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Completed">
+                    Completed
+                </div>
+            
+        
+            
+        
+            
+        
+    
+
+</span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="271" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Gregory Mikkelson">
+    
+        <a href="#Contacts/b69aa8c5-f4f9-9b98-fcc4-55c3a2472b6f">Gregory Mikkelson</a>
+    
+</div>
+</span>
+            </td>
+        
+            <td data-type="datetimecombo">
+              <span sfuuid="272" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="">
+    
+    </div></span>
+            </td>
+        
+            <td data-type="datetimecombo">
+              <span sfuuid="273" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="04/13/2016 12:00pm">
+    04/13/2016 12:00pm
+    </div></span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="274" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Sarah Smith">
+    
+        <a href="#bwc/index.php?module=Employees&amp;action=DetailView&amp;record=seed_sarah_id">Sarah Smith</a>
+    
+</div>
+</span>
+            </td>
+        
+        
+        <td>
+             <span sfuuid="275" class="overflow-visible list"><span sfuuid="276" class="actions btn-group list"><span sfuuid="277" class="small">
+<a class="rowaction btn" href="javascript:void(0);" data-event="list:preview:fire" rel="tooltip" data-placement="bottom" title="" name="" track="click:" data-original-title="Preview">
+    <i class="icon-eye-open"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="278"></span></li><li><span sfuuid="279"></span></li></ul><span sfuuid="280" class="hide"></span></span><span sfuuid="281" class="list"></span></span>
+        </td>
+        
+    </tr>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 1047px;">&nbsp;</div></div>
+
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="notes" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Notes pull-left">Nt</div> <h4 class="pull-left">Notes</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="282" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="283" class="actions btn-group pull-right panel-top"><span sfuuid="284" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="285"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="286" class="list"><span sfuuid="287"></span><span sfuuid="288" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_modified" data-fieldname="date_modified" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Last Modified
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_entered" data-fieldname="date_entered" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Date Created
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByassigned_user_name" data-fieldname="assigned_user_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="289"><span sfuuid="290"></span><span sfuuid="291"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="6">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="leads" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Leads pull-left">Le</div> <h4 class="pull-left">Leads</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="292" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="293" class="actions btn-group pull-right panel-top"><span sfuuid="294" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="295"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="296" class="list"><span sfuuid="297"></span><span sfuuid="298" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByfull_name" data-fieldname="full_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByrefered_by" data-fieldname="refered_by" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Referred By
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBylead_source" data-fieldname="lead_source" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Lead Source
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByphone_work" data-fieldname="phone_work" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Office Phone
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByemail" data-fieldname="email" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Email
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBylead_source_description" data-fieldname="lead_source_description" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Lead Source Description
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByassigned_user_name" data-fieldname="assigned_user_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="299"><span sfuuid="300"></span><span sfuuid="301"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="9">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="opportunities" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Opportunities pull-left">Op</div> <h4 class="pull-left">Opportunities</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="302" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="303" class="actions btn-group pull-right panel-top"><span sfuuid="304" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="305"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="306" class="list"><span sfuuid="307"></span><span sfuuid="308" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByaccount_name" data-fieldname="account_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Account Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBysales_status" data-fieldname="sales_status" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_closed" data-fieldname="date_closed" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Expected Close Date
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByamount" data-fieldname="amount" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Likely
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByassigned_user_name" data-fieldname="assigned_user_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="309"><span sfuuid="310"></span><span sfuuid="311"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="8">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr name="Opportunities_dcbe0c57-31ff-cbe8-8ed6-55c3a24d06c3" class="single">
+        
+        <td>
+             <span sfuuid="312" class="list"><span sfuuid="313" class="list">
+<i class="icon-favorite" rel="tooltip" title="" data-original-title="Favorite" tabindex="-1"></i>
+</span><span sfuuid="314" class="list"></span></span>
+        </td>
+        
+        
+            <td data-type="name">
+              <span sfuuid="315" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Aim Capital Inc - 207 Units">
+    <a href="#Opportunities/dcbe0c57-31ff-cbe8-8ed6-55c3a24d06c3">Aim Capital Inc - 207 Units</a>
+    </div></span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="316" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Aim Capital Inc">
+    
+        <a href="#Accounts/b9e824b0-201c-6dc8-1111-55c3a251fe02">Aim Capital Inc</a>
+    
+</div>
+</span>
+            </td>
+        
+            <td data-type="enum">
+              <span sfuuid="317" class="list">
+
+    
+        
+            
+                <div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="New">
+                    New
+                </div>
+            
+        
+            
+        
+            
+        
+            
+        
+    
+
+</span>
+            </td>
+        
+            <td data-type="date">
+              <span sfuuid="318" class="list disabled">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="10/08/2015">
+    10/08/2015
+    </div></span>
+            </td>
+        
+            <td data-type="currency">
+              <span sfuuid="319" class="list disabled" tabindex="-1">
+<div class="currency-field ellipsis_inline" data-placement="bottom" data-original-title="$6,198.55">
+
+    $6,198.55
+
+</div>
+</span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="320" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Sally Bronsen">
+    
+        <a href="#bwc/index.php?module=Employees&amp;action=DetailView&amp;record=seed_sally_id">Sally Bronsen</a>
+    
+</div>
+</span>
+            </td>
+        
+        
+        <td>
+             <span sfuuid="321" class="overflow-visible list"><span sfuuid="322" class="actions btn-group list"><span sfuuid="323" class="small">
+<a class="rowaction btn" href="javascript:void(0);" data-event="list:preview:fire" rel="tooltip" data-placement="bottom" title="" name="" track="click:" data-original-title="Preview">
+    <i class="icon-eye-open"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="324"></span></li><li><span sfuuid="325"></span></li></ul></span><span sfuuid="326" class="list"></span></span>
+        </td>
+        
+    </tr>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 1047px;">&nbsp;</div></div>
+
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="archived_emails" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Emails pull-left">Em</div> <h4 class="pull-left">Emails</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="327" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="328" class="actions btn-group pull-right panel-top"><span sfuuid="329" class="small">
+<a data-action="email" href="javascript:void(0)" rel="tooltip" data-placement="bottom" title="Create" name="email_compose_button" track="click:email_compose_button" class="btn">
+<i class="icon-plus"></i> </a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle disabled" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="330"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="331" class="list"><span sfuuid="332" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBystatus" data-fieldname="status" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_entered" data-fieldname="date_entered" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Date Created
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_modified" data-fieldname="date_modified" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Date Modified
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByassigned_user_name" data-fieldname="assigned_user_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="333"><span sfuuid="334"></span><span sfuuid="335"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="7">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    <tr name="Emails_c66b26d0-ccd3-29e5-dc12-55c3a203bf42" class="single">
+        
+        <td>
+             <span sfuuid="336" class="list"><span sfuuid="337" class="list"></span></span>
+        </td>
+        
+        
+            <td data-type="name">
+              <span sfuuid="338" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Demo">
+    <a href="#bwc/index.php?module=Emails&amp;action=DetailView&amp;record=c66b26d0-ccd3-29e5-dc12-55c3a203bf42">Demo</a>
+    </div></span>
+            </td>
+        
+            <td data-type="enum">
+              <span sfuuid="339" class="list">
+
+    
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+                <div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="Sent">
+                    Sent
+                </div>
+            
+        
+            
+        
+            
+        
+    
+
+</span>
+            </td>
+        
+            <td data-type="datetimecombo">
+              <span sfuuid="340" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="08/06/2015 2:06pm">
+    08/06/2015 2:06pm
+    </div></span>
+            </td>
+        
+            <td data-type="datetimecombo">
+              <span sfuuid="341" class="list">
+<div class="ellipsis_inline" data-placement="bottom" title="" data-original-title="08/06/2015 2:06pm">
+    08/06/2015 2:06pm
+    </div></span>
+            </td>
+        
+            <td data-type="relate">
+              <span sfuuid="342" class="list">
+<div class="ellipsis_inline" data-placement="bottom" data-container="body" title="" data-original-title="Sarah Smith">
+    
+        <a href="#bwc/index.php?module=Employees&amp;action=DetailView&amp;record=seed_sarah_id">Sarah Smith</a>
+    
+</div>
+</span>
+            </td>
+        
+        
+        <td>
+             <span sfuuid="343" class="overflow-visible list"><span sfuuid="344" class="list"></span><span sfuuid="345" class="list"></span></span>
+        </td>
+        
+    </tr>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 1047px;">&nbsp;</div></div>
+
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="cases" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Cases pull-left">Cs</div> <h4 class="pull-left">Cases</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="346" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="347" class="actions btn-group pull-right panel-top"><span sfuuid="348" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="349"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="350" class="list"><span sfuuid="351"></span><span sfuuid="352" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderBycase_number" data-fieldname="case_number" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Num.
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByaccount_name" data-fieldname="account_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Account Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBystatus" data-fieldname="status" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_entered" data-fieldname="date_entered" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Date Created
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByassigned_user_name" data-fieldname="assigned_user_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="353"><span sfuuid="354"></span><span sfuuid="355"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="8">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="direct_reports" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Contacts pull-left">Co</div> <h4 class="pull-left">Direct Reports</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="356" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="357" class="actions btn-group pull-right panel-top"><span sfuuid="358" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="359"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="360" class="list"><span sfuuid="361"></span><span sfuuid="362" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByfull_name" data-fieldname="full_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByaccount_name" data-fieldname="account_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Account Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByemail" data-fieldname="email" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Email
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByphone_work" data-fieldname="phone_work" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Office Phone
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="363"><span sfuuid="364"></span><span sfuuid="365"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="6">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="documents" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Documents pull-left">Do</div> <h4 class="pull-left">Documents</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="366" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="367" class="actions btn-group pull-right panel-top"><span sfuuid="368" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="369"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="370" class="list"><span sfuuid="371"></span><span sfuuid="372" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderBydocument_name" data-fieldname="document_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByfilename" data-fieldname="filename" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            File
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBycategory_id" data-fieldname="category_id" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Category
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydoc_type" data-fieldname="doc_type" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Source
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBystatus_id" data-fieldname="status_id" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Status
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByactive_date" data-fieldname="active_date" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Publish Date
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="373"><span sfuuid="374"></span><span sfuuid="375"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="8">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="quotes" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix empty closed"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-Quotes pull-left">Qu</div> <h4 class="pull-left">Quotes</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="376" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" rel="tooltip" data-placement="bottom" title="" name="" data-original-title="Toggle Visibility">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="377" class="actions btn-group pull-right panel-top"><span sfuuid="378" class="small">
+<a class="rowaction btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="379"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view left-actions right-actions hide" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="380" class="list"><span sfuuid="381"></span><span sfuuid="382" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderByname" data-fieldname="name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Subject
+                        </span>
+                
+            </th>
+        
+            <th class="" data-fieldname="account_name" data-orderby="">
+                
+                        <span>
+                            Account Name
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBytotal_usdollar" data-fieldname="total_usdollar" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Converted Amount
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderBydate_quote_expected_closed" data-fieldname="date_quote_expected_closed" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Valid Until
+                        </span>
+                
+            </th>
+        
+            <th class="" data-fieldname="assigned_user_name" data-orderby="">
+                
+                        <span>
+                            Assigned User
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="383"><span sfuuid="384"></span><span sfuuid="385"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="7">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div><div data-subpanel-link="campaigns" class="filtered tabbable tabs-left">
+<ul class="nav results">
+    <li class="subpanel clearfix closed empty"><div data-sortable-subpanel="true" class="subpanel-header" tabindex="-1">
+<div class="label label-module label-CampaignLog pull-left">CL</div> <h4 class="pull-left">Campaign Log</h4>
+<div class="subpanel-controls btn-toolbar pull-right">
+    
+        <span sfuuid="386" class="panel-top">
+<a class="btn btn-invisible" href="javascript:void(0);" track="click:" name="">
+<i class="icon-chevron-up"></i> </a>
+
+</span>
+    
+        <span sfuuid="387" class="actions btn-group pull-right panel-top"><span sfuuid="388" class="small">
+<a class="rowaction disabled btn" href="javascript:void(0);" rel="tooltip" data-placement="bottom" title="" name="create_button" track="click:create_button" data-original-title="Create">
+    <i class="icon-plus"></i></a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle disabled" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="389"></span></li></ul></span>
+    
+</div>
+</div><div class="flex-list-view hide left-actions right-actions" style="display: none;">
+
+<div class="flex-list-view-content">
+    <table class="table table-striped dataTable">
+    <thead>
+    <tr>
+        
+        <th>
+            <span>
+                <span sfuuid="390" class="list"><span sfuuid="391" class="list"></span></span>
+            </span>
+        </th>
+        
+        
+            <th class="sorting orderBycampaign_name1" data-fieldname="campaign_name1" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Campaign
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByactivity_type" data-fieldname="activity_type" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Activity Type
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByactivity_date" data-fieldname="activity_date" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Activity Date
+                        </span>
+                
+            </th>
+        
+            <th class="sorting orderByrelated_name" data-fieldname="related_name" data-orderby="" tabindex="-1">
+                
+                        <span>
+                            Related
+                        </span>
+                
+            </th>
+        
+        
+            
+            <th>
+                <span>
+                    <span sfuuid="392"><span sfuuid="393"></span><span sfuuid="394"></span></span>
+                </span>
+            </th>
+            
+        
+    </tr>
+    <tr>
+        <th data-target="alert-container" class="alert alert-warning hide" colspan="6">
+            <div data-target="alert">
+            </div>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    
+    </tbody>
+    </table>
+    <span class="scrollbar-landmark"></span>
+</div>
+<div class="uxs-scroll-bar" data-scroll-spy="flex-list-view-content" style="display: none;"><div style="width: 0px;">&nbsp;</div></div>
+
+    
+        <div class="block-footer">
+            No data available.
+        </div>
+    
+
+
+</div><div class="hide" style="display: none;">
+
+    
+
+</div></li>
+</ul>
+</div></div></div>
+</div></div></div>
+<div class="side sidebar-content span4">
+    <div class="side-pane active"><div><div></div></div></div>
+    <div class="dashboard-pane"><div><div class="row-fluid"><div class="dashboard" data-dashboard="true"><div class="cols row-fluid"><div class="preview-headerbar">
+<div class="headerpane">
+    <h1>
+        
+            
+                <span class="record-cell" data-type="dashboardtitle" data-name="name">
+                    <span sfuuid="205" class="detail" style="max-width: 416px;">
+<div class="dropdown">
+<a class="dropdown-toggle btn btn-invisible btn-link" data-toggle="dropdown" href="javascript:void(0);">Help Dashboard <i class="icon-caret-down"></i></a>
+<ul class="dropdown-menu">
+    
+        <li>
+            <div class="alert-process">
+                <strong>Loading...</strong>
+                <div class="loading">
+                    <span class="l1"></span><span class="l2"></span><span class="l3"></span>
+                </div>
+            </div>
+        </li>
+    
+</ul>
+</div>
+</span>
+                </span>
+            
+                <span class="record-cell" data-type="layoutbutton" data-name="layout" style="width: 100%;">
+                    <span sfuuid="206" class="detail"></span>
+                </span>
+            
+        
+        <div class="btn-toolbar">
+            
+                <span sfuuid="207" class="actions btn-group detail"><span sfuuid="208" class="detail">
+<a class="rowaction btn" href="javascript:void(0);" name="add_button" track="click:add_button">
+Create</a>
+</span><a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" title="" data-original-title="Actions"><span class="icon-caret-down"></span></a><ul data-menu="dropdown" class="dropdown-menu" role="menu"><li><span sfuuid="209"></span></li><li><span sfuuid="210"></span></li></ul></span>
+            
+                <span sfuuid="211" class="detail">
+<a class="btn btn-invisible btn-link hide" href="javascript:void(0);" track="click:cancel_button" name="cancel_button" style="display: none;">
+Cancel</a>
+
+</span>
+            
+                <span sfuuid="212" class="detail">
+<a class="btn btn-primary hide" href="javascript:void(0);" track="click:save_button" name="save_button" style="display: none;">
+Save</a>
+
+</span>
+            
+                <span sfuuid="213" class="detail">
+<a class="btn btn-invisible btn-link hide" href="javascript:void(0);" track="click:create_cancel_button" name="create_cancel_button" style="display: none;">
+Cancel</a>
+
+</span>
+            
+                <span sfuuid="214" class="detail">
+<a class="btn btn-primary hide" href="javascript:void(0);" track="click:create_button" name="create_button" style="display: none;">
+Save</a>
+
+</span>
+            
+        </div>
+    </h1>
+</div>
+</div><ul class="dashlets row-fluid"><li class="span12"><ul class="dashlet-row ui-sortable ui-sortable-disabled"><li class="row-fluid sortable" data-sortable="1"><div class="rows well well-invisible">
+<a data-toggle="dropdown" class="btn btn-invisible btn-link hide" rel="tooltip" title="" data-placement="bottom" data-original-title="Configure" tabindex="-1"><i class="icon-cog"></i></a>
+<ul class="dropdown-menu left">
+    <div>
+        <li><a class="remove-row" tabindex="-1">Remove</a></li>
+    </div>
+</ul>
+<a class="move btn btn-invisible btn-link hide" rel="tooltip" title="" data-container="body" data-placement="bottom" data-original-title="Move" tabindex="-1"><i class="icon-resize-vertical"></i></a>
+<ul class="dashlet-cell rows row-fluid"><li class="dashlet-container span12 ui-droppable"><div>
+<div class="thumbnail dashlet ui-draggable" data-type="dashlet" data-action="droppable">
+    
+        <div data-dashlet="toolbar"><div class="dashlet-header">
+<div class="btn-toolbar pull-right">
+
+    
+        <span sfuuid="216" class="dashlet-toolbar">
+<a href="javascript:void(0);" track="click:" data-dashletaction="toggleMinify" rel="tooltip" data-placement="bottom" title="" name="" class="dashlet-toggle btn btn-invisible minify" data-original-title="Open/Close">
+    <i class="icon-chevron-up"></i></a>
+</span>
+    
+
+</div>
+<h4 data-toggle="dashlet" class="dashlet-title">Record View Help</h4>
+</div></div>
+    
+    <div data-dashlet="dashlet" class="dashlet-content"><div>
+<div class="help-dashlet-content">
+    <div class="help-body">
+        The Contacts module consists of individual people with whom your organization has a relationship.<br><br>- Edit this record's fields by clicking an individual field or the Edit button.<br>- View or modify links to other records in the subpanels by toggling the bottom left pane to "Data View".<br>- Make and view user comments and record change history in the Activity Stream by toggling the bottom left pane to "Activity Stream".<br>- Follow or favorite this record using the icons to the right of the record name.<br>- Additional actions are available in the dropdown Actions menu to the right of the Edit button.
+    </div>
+
+    <div class="help-more">
+        For more information, refer to the <a href="http://www.sugarcrm.com/crm/product_doc.php?edition=ENT&amp;version=7.0&amp;lang=en_us&amp;module=Contacts&amp;route=record" target="_blank"> Contacts documentation.</a>
+    </div>
+</div>
+</div></div>
+    <div class="swappable-dashlet icon-download-alt"></div>
+</div>
+</div></li><li class="dashlet-container span12 ui-droppable"><div>
+<div class="thumbnail dashlet ui-draggable" data-type="dashlet" data-action="droppable">
+    
+        <div data-dashlet="toolbar"><div class="dashlet-header">
+<div class="btn-toolbar pull-right">
+
+    
+        <span sfuuid="217" class="dashlet-toolbar">
+<a href="javascript:void(0);" track="click:" data-dashletaction="toggleMinify" rel="tooltip" data-placement="bottom" title="" name="" class="dashlet-toggle btn btn-invisible minify" data-original-title="Open/Close">
+    <i class="icon-chevron-up"></i></a>
+</span>
+    
+
+    
+        
+        <div class="btn-group">
+            <a data-toggle="dropdown" rel="tooltip" title="" class="dropdown-toggle btn btn-invisible" data-placement="bottom" data-original-title="Configure"><i data-action="loading" class="icon-cog" track="click:dashletToolbarCog"></i></a>
+            <ul class="dropdown-menu left">
+                <div>
+                    
+                        <li><span sfuuid="218" class="dashlet-toolbar">
+<a href="javascript:void(0);" track="click:" data-dashletaction="editClicked" name="">
+    Edit</a>
+</span></li>
+                    
+                        <li><span sfuuid="219" class="dashlet-toolbar">
+<a href="javascript:void(0);" track="click:" data-dashletaction="refreshClicked" name="">
+    Refresh</a>
+</span></li>
+                    
+                        <li><span sfuuid="220" class="dashlet-toolbar">
+<a href="javascript:void(0);" track="click:" data-dashletaction="removeClicked" name="">
+    Remove</a>
+</span></li>
+                    
+                </div>
+            </ul>
+        </div>
+        
+    
+
+</div>
+<h4 data-toggle="dashlet" class="dashlet-title">Learning Resources</h4>
+</div></div>
+    
+    <div data-dashlet="dashlet" class="dashlet-content"><ul class="resource-list">
+
+<li class="resource ">
+    <a href="http://university.sugarcrm.com/" target="_blank"><span class="label label-module label-module-md pull-left blue"><i class="icon-2x icon-book"></i></span></a>
+    <div class="resource-info">
+        <a href="http://university.sugarcrm.com/" target="_blank">Sugar University</a>
+        <p class="details">Become a Sugar expert with upgrade training, videos, classes, webinars, and certification.</p>
+    </div>
+</li>
+
+<li class="resource ">
+    <a href="https://community.sugarcrm.com/" target="_blank"><span class="label label-module label-module-md pull-left green"><i class="icon-2x icon-comments-alt"></i></span></a>
+    <div class="resource-info">
+        <a href="https://community.sugarcrm.com/" target="_blank">Community Forums</a>
+        <p class="details">Join the discussion, problem solve, and share ideas with other users.</p>
+    </div>
+</li>
+
+<li class="resource ">
+    <a href="http://support.sugarcrm.com/" target="_blank"><span class="label label-module label-module-md pull-left red"><i class="icon-2x icon-question-sign"></i></span></a>
+    <div class="resource-info">
+        <a href="http://support.sugarcrm.com/" target="_blank">Documentation &amp; Support</a>
+        <p class="details">Learn the details of how Sugar works and engage with support.</p>
+    </div>
+</li>
+
+</ul></div>
+    <div class="swappable-dashlet icon-download-alt"></div>
+</div>
+</div></li></ul></div></li><li class="row-fluid" data-sortable="1"><div class="rows well well-invisible">
+<a data-toggle="dropdown" class="btn btn-invisible btn-link hide" rel="tooltip" title="" data-placement="bottom" data-original-title="Configure" tabindex="-1"><i class="icon-cog"></i></a>
+<ul class="dropdown-menu left">
+    <div>
+        <li><a class="remove-row" tabindex="-1">Remove</a></li>
+    </div>
+</ul>
+<a class="move btn btn-invisible btn-link hide" rel="tooltip" title="" data-container="body" data-placement="bottom" data-original-title="Move" tabindex="-1"><i class="icon-resize-vertical"></i></a>
+<div><div></div></div></div></li></ul></li></ul></div></div></div></div></div>
+    <div class="preview-pane"><div><div><div class="preview-headerbar">
+<h1>Preview</h1>
+<div class="btn-toolbar pull-right">
+    <div class="btn-group">
+        
+    </div>
+    <div class="btn-group">
+        <a class="btn btn-invisible closeSubdetail" data-toggle="tab" tabindex="-1"><i class="icon-remove"></i></a>
+    </div>
+</div>
+</div><div></div><div class="block filtered activitystream-layout">
+<ul class="activitystream-list results"></ul>
+<div>
+
+</div></div></div></div></div>
+</div>
+</div></div></div>
+                <div id="drawers"></div>
+                <div id="footer">
+<footer>
+    <div class="table-row">
+        <div class="table-cell">
+            <button data-action="home" title="SugarCRM" class="btn btn-invisible logo" role="link" aria-label="SugarCRM" type="button">
+                <img src="themes/default/images/company_logo.png?v=3c1F2LVv80mqXmb8AV7EDw" alt="SugarCRM">
+            </button>
+        </div>
+        <div class="table-cell">
+            <div class="btn-toolbar pull-right">
+            <span>
+<button data-action="mobile" class="btn btn-invisible" aria-label="Mobile" role="link" type="button">
+    <i class="icon-mobile-phone"></i><span class="action-label"> Mobile</span>
+</button>
+</span><span>
+
+
+</span><span>
+
+   <button data-action="shortcuts" class="btn btn-invisible" aria-label="Shortcuts" role="link"><i class="icon-keyboard"></i><span class="action-label">  Shortcuts</span></button>
+   <button data-action="tour" class="btn btn-invisible" aria-label="Tour" role="link"><i class="icon-road"></i><span class="action-label"> Tour</span></button>
+   <button data-action="feedback" class="btn btn-invisible" aria-label="Feedback" role="link"><i class="icon-comment"></i><span class="action-label"> Feedback</span></button>
+   <button data-action="help" class="btn btn-invisible active" aria-label="Help" role="link"><i class="icon-exclamation-sign"></i><span class="action-label"> Help</span></button>
+   <button data-action="support" class="btn btn-invisible" aria-label="Support" role="link"><i class="icon-question-sign"></i><span class="action-label"> Support</span></button>
+
+</span></div>
+        </div>
+    </div>
+</footer>
+</div>
+            </div>
+        </div>
+
+</body></html>

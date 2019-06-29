@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf=8">
+        <title>/etc/hosts weekend | f1vlad.com</title>
+        <link rel="alternate2" type="application/rss+xml" title="f1vlad.com feed" href="http://feeds.feedburner.com/f1vlad" />
+        <link rel="stylesheet" type="text/css" href="../..//f1vlad.com/sites/all/themes/custom/f1vlad-1kbgrid/css/geshifilter.css">
+
+        <!--[if IE]><script src="/misc/html5.js"></script><![endif]-->
+        <link type="text/css" rel="stylesheet" media="all" href="../../modules/aggregator/aggregator.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/node/node.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/defaults.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/system/system-menus.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/user/user.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/geshifilter/geshifilter.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/modules/og/theme/og.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../modules/comment/comment.css?h" />
+<link type="text/css" rel="stylesheet" media="all" href="../../sites/all/themes/custom/f1vlad-1kbgrid/style.css?h" />
+        <script type="text/javascript" src="../../misc/jquery.js?h"></script>
+<script type="text/javascript" src="../../misc/drupal.js?h"></script>
+<script type="text/javascript" src="../../sites/all/modules/og/og.js?h"></script>
+<script type="text/javascript" src="../../sites/all/modules/disqus/disqus.js?h"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "disqus": { "url": "http://localhost:8888/node/201/index.html", "title": "/etc/hosts weekend", "identifier": "node/201/index.html", "shortname": "f1vlad", "language": "en" } });
+//--><!]]>
+</script>
+        <link media="only screen and (max-device-width: 480px)" href="../..//f1vlad.com/sites/all/themes/custom/f1vladblueprintcsshtml5/css/iPhone.css" type="text/css" rel="stylesheet" />
+        <link media="only screen and (max-device-width: 480px)" href="../..//f1vlad.com/sites/all/themes/custom/f1vlad-1kbgrid/css/1kbgrid-liquid.css" type="text/css" rel="stylesheet" />
+        <link rel="openid.server" href="https://api.screenname.aol.com/auth/openidServer" />
+        <link rel="openid.delegate" href="http://openid.aol.com/f1vlad" />
+        <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+        <script src="../../misc/dragtable.js"></script>
+        <script src="../../misc/sorttable.js"></script>
+        <script src="../../misc/jquery.js"></script>
+        <!--[if IE]>
+        <script src="/misc/html5.js"></script>
+        <![endif]-->
+            </head>
+
+    <body class="blog  ">
+        <div class="container">
+            <header>
+                <section class="block row">
+                    <div class="column grid_3">
+                        <hgroup>
+                            <h1><a class="hl" href="/">f1vlad.com</a></h1>
+                            <h2><a class="ha" href="../../">by Vladislav Kulchitski</a></h3>
+                            <h3><a class="hi" href="../../">*</a></h3>
+                        </hgroup>
+                    </div>
+                    <div class="column grid_9">
+                        <h4>/etc/hosts weekend</h4>
+                        <p class="twidg"><!--block-33 -->
+ " </p>
+                    </div>
+                </section>
+            </header>
+                                    <section class="block row">
+                                                    <div class="column grid_3">
+                                                                    <!--block-26 -->
+<nav role="navigation">
+    <ul id="navicons">
+        <li><a class="intro" href="../">back<br>to archive</a>
+            <span class="sup">
+                
+                
+                
+            </span>
+        </li>
+        
+            
+                
+            </span>
+        </li>
+        
+        
+        
+        
+        
+    </ul>
+</nav>  <div class="block block-block" id="block-block-35">
+    <h2 class="title"></h2>
+    <div class="content"><section id="last-known-location"><span><p><a href="#?q="></a></p></span></section>
+
+</div>
+ </div>
+                                                            </div>
+                                            <div class="column grid_9 content_body">
+                        <nav class="breadcrumb"><a href="/">Home</a>› <a href="../../blogs/1">f1vlad&#039;s blog archive</a></nav>                                                                         
+                                                                                                <section class="clear-block"> 
+                        <article id="node-201" class="node">
+<header>
+    
+    </header>
+
+    <div class="content clear-block">
+        <p>This weekend I spent much time figuring out one annoying issue. In a nutshell, my server has been experiencing strange slowness issues. Some certain .php pages were taking consistently between 1.01 and 1.09 minutes to respond. At some point I found a pattern &#8212; it happened only on those pages that had drupal_mail() or php native mail() function.</p>
+<p>So I went ahead and <span class="geshifilter"><code class="geshifilter-bash"><span class="kw2">tail</span> -f <span class="sy0">/</span>var<span class="sy0">/</span>log<span class="sy0">/</span>mail.err</code></span> it to find the following:</p>
+<p><pre>
+<div class="geshifilter"><pre class="geshifilter-bash">Jan <span class="nu0">25</span> <span class="nu0">11</span>:<span class="nu0">40</span>:<span class="nu0">01</span> sms sm-msp-queue<span class="br0">&#91;</span><span class="nu0">6272</span><span class="br0">&#93;</span>: My unqualified host name <span class="br0">&#40;</span>localhost<span class="br0">&#41;</span> unknown; sleeping <span class="kw1">for</span> retry
+Jan <span class="nu0">25</span> <span class="nu0">11</span>:<span class="nu0">41</span>:<span class="nu0">01</span> sms sm-msp-queue<span class="br0">&#91;</span><span class="nu0">6272</span><span class="br0">&#93;</span>: unable to qualify my own domain name <span class="br0">&#40;</span>localhost<span class="br0">&#41;</span> -- using short name
+Jan <span class="nu0">25</span> <span class="nu0">11</span>:<span class="nu0">53</span>:<span class="nu0">17</span> sms sendmail<span class="br0">&#91;</span><span class="nu0">6276</span><span class="br0">&#93;</span>: My unqualified host name <span class="br0">&#40;</span>localhost<span class="br0">&#41;</span> unknown; sleeping <span class="kw1">for</span> retry
+Jan <span class="nu0">25</span> <span class="nu0">11</span>:<span class="nu0">54</span>:<span class="nu0">17</span> sms sendmail<span class="br0">&#91;</span><span class="nu0">6276</span><span class="br0">&#93;</span>: unable to qualify my own domain name <span class="br0">&#40;</span>localhost<span class="br0">&#41;</span> -- using short name</pre></div>
+</pre></p>
+<p>I found similar problems reported on <a href="http://ubuntuforums.org/showthread.php?t=255847">ubuntuforums.org &#8212; Sendmail Hostname Issue - Appears to be a common though difficult issue</a>. Unfortunately, that discussion has been archived so I cannot post my response there.</p>
+<p>After reading online about this for a bit, my solution was simple. I realised that my /etc/hosts file is not correctly constructed. The order for host names for 127.0.0.1 <em>matters</em>. Therefore, I had to shuffle names in such order where first comes actual host unique name, then 'localhost localhost.localdomain', then domain name itself as shown below:</p>
+<pre>
+<div class="geshifilter"><pre class="geshifilter-bash"><span class="nu0">127.0</span><span class="nu0">.0</span><span class="nu0">.1</span>       vladserver localhost localhost.localdomain f1vlad.com www.f1vlad.com</pre></div>
+</pre><p>This simple fix solves the issue. I think the following will be useful to know as well:</p>
+<pre><div class="geshifilter"><pre class="geshifilter-bash"><span class="co0"># cat php.ini | grep l_p</span>
+; sendmail_path =
+sendmail_path =<span class="sy0">/</span>usr<span class="sy0">/</span>sbin<span class="sy0">/</span>sendmail -t -i</pre></div></pre><div id="disqus_thread"></div><noscript><div class="disqus-noscript"><a href="http://f1vlad.disqus.com/?url=http%3A%2F%2Flocalhost%3A8888%2Fblog%2F2009%2F01%2F25%2F1201%2Fetchosts-weekend">View the discussion thread.</a></div></noscript>    </div>
+
+        <div class="meta">
+                            <time datetime="2009-01-25" pubdate>Sun, January 25 2009</time><!-- &mdash; <a href="/users/f1vlad" title="View user profile.">f1vlad</a>-->
+                                       <span class="terms"></span><ul class="links inline"><li class="taxonomy_term_94 first last"><a href="../../category/tags/linux" rel="tag" title="">linux</a></li>
+</ul>                                        | <span class="links"><ul class="links inline"><li class="blog_usernames_blog first"><a href="../../blogs/1" title="Read f1vlad&#039;s latest blog entries.">f1vlad&#039;s blog archive</a></li>
+<li class="comment_forbidden last"></li>
+</ul></span>
+                    </div>
+
+</article>
+                        </section>
+                                            </div>
+                    </section>  
+        </div>
+
+        
+        <footer role="contentinfo">
+                  <div class="block block-block" id="block-block-36">
+    <h2 class="title"></h2>
+    <div class="content"><aside id="flasti"> 
+	
+<img src="http://farm9.staticflickr.com/8435/7895718884_77f3fa4afd_z.jpg" width="240" height="232" alt="Screen Shot 2012-08-27 at 11.54.03 AM" /></aside>
+</div>
+ </div>
+<p>&copy; 1999&#150;2009 <a href="http://f1vlad.com">f1vlad.com</a>.</p>        </footer>
+
+<!-- Yandex.Metrika -->
+            <script src="../..//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+            <script type="text/javascript">
+            try { var yaCounter576084 = new Ya.Metrika(576084); } catch(e){}
+                </script>
+<noscript><div style="position: absolute;"><img src="../..//mc.yandex.ru/watch/576084" alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-141548-9";
+urchinTracker();
+</script>
+</body>
+</html>	

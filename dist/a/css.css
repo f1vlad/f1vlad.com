@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+}
+.splash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  z-index: 1000;
+  display: none;
+}
+.splash.shown {
+  display: block;
+}
+.splash.delete-start {
+  animation: deleteStart 5s ease;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+}
+@keyframes deleteStart {
+  0% {
+      opacity: 100;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+
+}
+@keyframes fadeInOut {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+}
+
+@keyframes fadeOutIn {
+  0% {
+      opacity: 1;
+  }
+
+  50% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+      opacity: 1;
+  }
+
+  to {
+      opacity: 0;
+  }
+}
+
+h1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 300;
+  position: fixed;
+  top: calc(50% + 120px);
+  letter-spacing: .8em;
+  margin: 0;
+  padding: 0;
+  line-height: .8em;
+  z-index: 1;
+  opacity: 0;
+  text-indent: .75rem;
+  animation: fadeIn .5s ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+h1 span {
+  line-height: 1.2em;
+  font-size: 1.2em;
+  font-weight: 900;
+  position: fixed;
+  width: auto;
+  top: calc(50% - 136px);
+  letter-spacing: 1.35em;
+  text-indent: 0;
+}
+
+h2 {
+  width: 70%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: .3em;
+  line-height: 1.8em;
+  position: fixed;
+  top: calc(50% + 178px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn .5s ease;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+ul {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: .8em;
+  text-align: center;
+  padding: 0;
+  display: block;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+svg {
+  display: block;
+  position: fixed;
+  top: calc(50% + 55px);
+  left: calc(50% + 55px);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.planet,
+.moon {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  height: 174px;
+  width: 174px;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 110px;
+  opacity: 0;
+  animation: fadeInOut 14s ease;
+  animation-iteration-count: infinite;
+}
+
+.stars {
+  display: block;
+  position: fixed;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  animation: fadeInOut 14s ease;
+  animation-iteration-count: infinite;
+}
+
+#logo {
+  fill: #fff;
+  opacity: 0;
+  animation: fadeIn .5s ease;
+  animation-delay: .25s;
+  animation-fill-mode: forwards;
+}
+
+.chroma0 {
+  box-shadow:
+      5px 10px 20px rgba(0, 57, 255, 1),
+      0px 1px 3px rgba(0, 57, 255, 1);
+  animation-delay: .75s;
+}
+
+.chroma1 {
+  box-shadow:
+      -1px -1px 3px rgba(255, 255, 255, 1),
+      1px 1px 3px rgba(255, 255, 255, 1);
+  animation-delay: .75s;
+}
+
+.chroma2 {
+  box-shadow:
+      -5px -10px 20px rgba(255, 0, 0, 1),
+      0px 1px 3px rgba(255, 0, 0, 1);
+  animation-delay: .5s;
+}
+
+.chroma3 {
+  box-shadow:
+      0px -5px 40px rgba(0, 155, 255, .6);
+  animation-delay: 1s;
+}
+
+.chroma4 {
+  box-shadow:
+      0px 0px 100px rgba(0, 125, 255, .6);
+  animation-delay: 2.75s;
+}
+
+.chroma5 {
+  box-shadow:
+      0px -5px 100px rgba(255, 0, 0, 1);
+  animation-delay: 1s;
+}
+
+.chroma6 {
+  background-image: radial-gradient(ellipse farthest-side at 0% 0%, rgba(255, 106, 0, .6) 10%, rgba(255, 0, 0, .6) 60%, rgba(0, 0, 0, 0) 110%);
+  animation-delay: 2s;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.chroma7 {
+  background-image: radial-gradient(ellipse farthest-side at 100% 100%, rgba(0, 155, 255, .6) 10%, rgba(0, 57, 255, .6) 60%, rgba(0, 0, 0, 0) 110%);
+  animation-delay: 6s;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.logoWrap {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+.logoWrap > img {
+  width: 186px;
+  height: 186px;
+  z-index: 1;
+}

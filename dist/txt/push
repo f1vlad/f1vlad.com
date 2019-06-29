@@ -1,0 +1,78 @@
+#!/bin/bash
+
+blog_url="http://example.com"
+blog_site_name="Be Static Blog"
+
+dir_source=source # original blog posts
+dir_templates=templates # templates for the blogs
+dir_static=static # generated blog posts
+dir_img=i
+
+blog_title_html_wrap="h1"
+blog_time_html_wrap="time"
+blog_index=""
+blog_rss=""
+
+template_header=`cat $dir_templates/header.html`
+template_footer=`cat $dir_templates/footer.html`
+template_nav=`cat $dir_templates/nav.html`
+
+
+emotions=true # convert some smiley icons into animated icons
+
+#------
+
+#ls $dir_source > filelist.tmp
+ls $dir_source | sed '1!G;h;$!d' > filelist.tmp # output in reverse order, eg. when using timestamps for filenames, which are descending
+
+exec 0<filelist.tmp
+
+printf "\nbestatic (https://github.com/f1vlad/bestatic)\n--------\n"
+i=0
+
+
+while read LINE
+do
+
+    array[$i]="$LINE"
+
+    blog_title=`cat $dir_source/$LINE | grep "<$blog_title_html_wrap>" | sed "s/<$blog_title_html_wrap>//g;s/<\/$blog_title_html_wrap>//g"`
+    blog_time=`cat $dir_source/$LINE | grep "<$blog_time_html_wrap>" | sed "s/<$blog_time_html_wrap>//g;s/<\/$blog_time_html_wrap>//g"`
+    blog_friendly_time=`date -r $blog_time`
+    blog_title_alt=${blog_title//[^a-zA-Z0-9]/}  # get rid of non alphanumerical charachters
+
+    this_line="$blog_time-$blog_title_alt.html" # currently files are sorted by unix timestamp, it's suggested to keep this line intact
+
+
+    blog_index+="<li><a href=\"./$this_line\">$blog_title</a> <sup><time data-unix-timestamp=\"$blog_time\">$blog_friendly_time</time></sup></li>"
+    blog_rss+="<item><title>$blog_title</title><link>$blog_url/$dir_static/$this_line</link><description>$blog_title</description></item>"
+
+    cp $dir_source/$LINE $dir_static/$this_line
+
+    sed -i -e "s/~header~/$template_header/g" $dir_static/$this_line
+    sed -i -e "s/~footer~/$template_footer/g" $dir_static/$this_line
+    sed -i -e "s/~nav~/$template_nav/g" $dir_static/$this_line
+    sed -i -e "s/~post_title~/$blog_title \| $blog_site_name/g" $dir_static/$this_line
+    sed -i -e "s/$blog_time/$blog_friendly_time/g" $dir_static/$this_line
+
+    if [ $emotions = true ]; then
+        source $(dirname $0)/emotions.sh
+    fi
+
+    printf "\n[s] $i. $blog_title, $this_line"
+    rm -f $dir_static/$this_line-e
+    ((i++))
+done
+
+printf "\n[s] Index of blog entries"
+blog_index=" ~header~~nav~<ul>$blog_index</ul><aside><a href=\"index.rss\">rss</a></aside>~footer~"
+echo $blog_index > $dir_static/index.html
+printf "\n[s] Blog rss feed"
+blog_rss="<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?><rss version=\"2.0\"><channel><title>$blog_site_name</title><link>$blog_url</link><description></description>$blog_rss</channel></rss>"
+echo $blog_rss > $dir_static/index.rss
+sed -i -e "s/~header~/$template_header/g" $dir_static/index.html
+sed -i -e "s/~footer~/$template_footer/g" $dir_static/index.html
+sed -i -e "s/~nav~/$template_nav/g" $dir_static/index.html
+sed -i -e "s/~post_title~/Blog Index \| $blog_site_name/g" $dir_static/index.html
+rm -fr $dir_static/index.html-e
+printf "\nDone!\n"
