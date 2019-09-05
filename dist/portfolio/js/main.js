@@ -4,7 +4,7 @@
     let page;
 
     let headerContent = `
-        <div class="menu-btn">
+        <div class="menu-btn" role="button">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
