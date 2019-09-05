@@ -445,14 +445,14 @@ main {
 #resume h1 small {
   font-size: .25em; }
 
-#project-detail .mobile-app a {
+#project-detail .mobile-app-store a {
   text-decoration: none;
   position: relative; }
-  #project-detail .mobile-app a img {
+  #project-detail .mobile-app-store a img {
     width: 160px;
     border: none;
     padding: 0 .25rem 0 0; }
-  #project-detail .mobile-app a:before {
+  #project-detail .mobile-app-store a:before {
     content: "Download";
     position: absolute;
     width: 100%;
@@ -460,13 +460,13 @@ main {
     bottom: -13px;
     font-size: .75rem;
     color: #ccc; }
-  #project-detail .mobile-app a.soon {
+  #project-detail .mobile-app-store a.soon {
     position: relative;
     pointer-events: none; }
-    #project-detail .mobile-app a.soon:before {
+    #project-detail .mobile-app-store a.soon:before {
       content: "Coming soon";
       color: #888; }
-    #project-detail .mobile-app a.soon img {
+    #project-detail .mobile-app-store a.soon img {
       opacity: .25;
       filter: grayscale(100); }
 
