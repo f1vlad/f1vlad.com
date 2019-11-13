@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="375px" height="812px" viewBox="0 0 375 812" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="F.splash-Copy">
+            <g id="Group-2" transform="translate(408.000000, 546.500000) rotate(-23.000000) translate(-408.000000, -546.500000) translate(-412.000000, -103.000000)">
+                <g id="Group" transform="translate(41.033197, 63.784129)" fill="#1B6DFF">
+                    <ellipse id="Oval" transform="translate(798.897831, 617.370683) rotate(-59.000000) translate(-798.897831, -617.370683) " cx="798.897831" cy="617.370683" rx="251.547102" ry="780.006705"></ellipse>
+                </g>
+                <g id="Group" transform="translate(0.178743, 0.407151)" fill="#3880FF">
+                    <ellipse id="Oval" transform="translate(796.857573, 616.453319) rotate(-59.000000) translate(-796.857573, -616.453319) " cx="796.857573" cy="616.453319" rx="250.920959" ry="777.820132"></ellipse>
+                </g>
+            </g>
+            <rect id="Rectangle" fill="#3880FF" x="0" y="0" width="375" height="285"></rect>
+        </g>
+    </g>
+</svg>
