@@ -3,7 +3,7 @@
   "short_name": "CipherTrace",
   "theme_color": "#FFFFFF",
   "background_color": "#FFFFFF",
-  "display": "fullscreen",
+  "display": "standalone",
   "scope": "/",
   "start_url": "/tmp/yyy",
   "icons": [
