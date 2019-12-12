@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SugarCRM Multiverse Styleguide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="kss-assets/styles.css?497ccc1b00e589d29219ca8d">
+
+</head>
+<body id="kss-node" >
+
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title"><svg class="sugar-cube" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" enable-background="new 0 0 512 512"><g><path class="sc-top" d="M272.24,175c-10.35,4.079-27.267,4.079-37.579,0L48.178,101.127c-10.326-4.093-10.326-10.782,0-14.877 l186.483-73.841c10.312-4.097,27.229-4.097,37.579,0L458.712,86.25c10.325,4.096,10.325,10.784,0,14.877L272.24,175z"></path><path class="sc-left" d="M243.068,477.624c0,11.132-8.449,16.852-18.79,12.792L37.797,416.574 c-10.327-4.096-18.789-16.508-18.789-27.649V129.978c0-11.091,8.462-16.847,18.789-12.759l186.482,73.863 c10.34,4.074,18.79,16.518,18.79,27.646V477.624z"></path><path class="sc-right" d="M263.78,477.55c0,11.132,8.46,16.841,18.812,12.783l186.465-73.851c10.336-4.099,18.79-16.547,18.79-27.642 V129.918c0-11.119-8.454-16.885-18.79-12.784l-186.465,73.836c-10.352,4.103-18.812,16.551-18.812,27.646V477.55z"></path></g></svg> SugarCRM Multiverse Styleguide</h1>
+  </header>
+  <nav class="kss-nav" aria-label="Style Guide">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-introduction.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Introduction</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-basecss.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Base CSS</span>
+        </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-typographyfont">
+                  <span class="kss-nav__ref ">2.1</span
+                  ><span class="kss-nav__name">Typography typeface</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-iconsexamplefa">
+                  <span class="kss-nav__ref ">2.2</span
+                  ><span class="kss-nav__name">Font Awesome</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-iconsexamplefasug">
+                  <span class="kss-nav__ref ">2.3</span
+                  ><span class="kss-nav__name">Font Awesome sugar extended</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-iconssizes">
+                  <span class="kss-nav__ref ">2.4</span
+                  ><span class="kss-nav__name">Icon sizes</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-fixedwidthicons">
+                  <span class="kss-nav__ref ">2.5</span
+                  ><span class="kss-nav__name">Fixed width icons</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-rotatingicons">
+                  <span class="kss-nav__ref ">2.6</span
+                  ><span class="kss-nav__name">Rotating icons</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-animatingicons">
+                  <span class="kss-nav__ref ">2.7</span
+                  ><span class="kss-nav__name">Animating icons</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-slashedicons">
+                  <span class="kss-nav__ref ">2.8</span
+                  ><span class="kss-nav__name">Slashed icons</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-iconssugarcube">
+                  <span class="kss-nav__ref ">2.9</span
+                  ><span class="kss-nav__name">SugarCRM cube</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-iconssugarlogo">
+                  <span class="kss-nav__ref ">2.10</span
+                  ><span class="kss-nav__name">SugarCRM logo</span>
+                </a>
+              </li>
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-basecss.html#kssref-basecss-colors">
+                  <span class="kss-nav__ref ">2.11</span
+                  ><span class="kss-nav__name">Colors</span>
+                </a>
+              </li>
+            </ul>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-forms.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Form elements</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-components.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Components</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-layoutsandviews.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Layouts &amp; views</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-dashboards.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Dashboards</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-labs.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">🅛🅐🅑🅢</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<main class="kss-main" aria-label="Content">
+  <article>
+
+    <div id="kssref-basecss" class="kss-section kss-section--depth-1 ">
+
+      <div class="kss-style">
+        <h1 class="kss-title kss-title--level-1">
+          <a class="kss-title__permalink" href="#kssref-basecss">
+            <span class="kss-title__ref">
+              2
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS
+              </span>
+            </span>
+            Base CSS
+          </a>
+        </h1>
+
+
+          <div class="kss-description">
+            <p>Basic HTML elements styled and enhanced with extensible classes for a fresh, consistent look and feel.</p>
+
+          </div>
+
+
+
+
+      </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>document/basecss.less</code>, line 1
+        </div>
+
+    </div>
+    <section id="kssref-basecss-typographyfont" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-typographyfont">
+            <span class="kss-title__ref">
+              2.1
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.TypographyFont
+              </span>
+            </span>
+            Typography typeface
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <p>SugarCRM interfaces use font <a href="https://fonts.google.com/specimen/Open+Sans">Open Sans</a>. Usage: <code>.import-opensans()</code>.</p>
+<p>Font weights available: 100, 400, 600, 700, 900</p>
+<p>Font name can be namespaced, there's an optional variable <code>@{FONT_NAME_PREFIX}</code> in <a href="https://github.com/sugarcrm/multiverse/blob/master/projects/styleguide/less/undocumented-components/font.less">undocumented-components/font.less</a> which can be used to prepend namespace. Here is an example of how it can be done in webpack:</p>
+<pre class="hljs"><code class="language-">{
+   loader: 'less-loader',
+   options: {
+       modifyVars: {
+           'FONT_NAME_PREFIX': projectConfig.projectKey + '-'
+       }
+   }
+}
+</code></pre>
+<p><span class="work-in-progress">WORK IN PROGRESS</span> To be added: paragraphs, headers, ordered/unordered lists, ellipsis, emphasis and other font styles, blockquotes, addresses, abbreviations and acronyms.</p>
+
+          </div>
+
+
+
+
+      </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>document/typography.less</code>, line 1
+        </div>
+
+    </section>
+    <section id="kssref-basecss-iconsexamplefa" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-iconsexamplefa">
+            <span class="kss-title__ref">
+              2.2
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.IconsExampleFA
+              </span>
+            </span>
+            Font Awesome
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-iconsexamplefa" data-kss-fullscreen="kssref-basecss-iconsexamplefa">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-iconsexamplefa.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-iconsexamplefa" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-iconsexamplefa" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Usage:
+<code>.getFaIcon('ICON_NAME'; 'COLLECTION_NAME');</code>
+Obtain icon name when browsing <a href="https://fontawesome.com/icons?d=gallery&m=free">icons available</a>. For example, <code>&lt;i class=&quot;fab fa-angellist&quot;&gt;&lt;/i&gt;</code>. Icon name would be <code>angellist</code>, collection would be <code>fab</code>. The following collections are currently supported:</p>
+<ul>
+<li><code>fas</code>, default collection, and included as default in <code>.getFaIcon</code> call.</li>
+<li><code>fab</code>, brands collection</li>
+<li><code>far</code>, regular collection</li>
+<li><code>fasug</code>, <a href="#kssref-basecss-iconsexamplefasug">custom icons designed by SugarCRM</a></li>
+</ul>
+<pre class="hljs"><code class="language-">.MY_ICON_ARROWS_ALT {
+  .getFaIcon('arrows-alt'); // no need to specify collection when default
+}
+
+.MY_ICON_GITHUB {
+  .getFaIcon('github'; 'fab');
+  color: @blue;
+}
+
+.MY_ICON_SOCCER {
+  .getFaIcon('futbol'; 'far');
+}
+
+.MY_ICON_SUG_LINK {
+  .getFaIcon('sugar-link'; 'fasug');
+  color: @red;
+}
+</code></pre>
+<p>Note: Font Awesome name can be namespaced, <a href="#kssref-basecss-typographyfont">see an example in Typography section</a> on how Open Sans is namespaced. Font Awesome is also namespaced in <a href="https://github.com/sugarcrm/multiverse/tree/master/projects/playground/mfe_template_js"><code>playground/mfe_template_js</code> example</a>.</p>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <div class="display-flex">
+    <i class="MY_ICON_ARROWS_ALT"></i>
+    <i class="MY_ICON_GITHUB"></i>
+    <i class="MY_ICON_SOCCER"></i>
+    <i class="MY_ICON_SUG_LINK"></i>
+</div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_ICON_ARROWS_ALT"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_ICON_GITHUB"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_ICON_SOCCER"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_ICON_SUG_LINK"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 30
+        </div>
+
+    </section>
+    <section id="kssref-basecss-iconsexamplefasug" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-iconsexamplefasug">
+            <span class="kss-title__ref">
+              2.3
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.IconsExampleFASUG
+              </span>
+            </span>
+            Font Awesome sugar extended
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-iconsexamplefasug" data-kss-fullscreen="kssref-basecss-iconsexamplefasug">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-iconsexamplefasug.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-iconsexamplefasug" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-iconsexamplefasug" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>List of custom SugarCRM icons available.</p>
+<pre class="hljs"><code class="language-">.SUGAR_ICON_ENVELOPE_OPEN { .getFaIcon('envelope-open'; 'fasug'); }
+.SUGAR_ICON_SUGAR_LINK { .getFaIcon('sugar-link'; 'fasug'); }
+.SUGAR_ICON_TAG_PRIVATE { .getFaIcon('tag-private'; 'fasug'); }
+.SUGAR_ICON_CLOCK_PRIVATE { .getFaIcon('clock-o-private'; 'fasug'); }
+.SUGAR_ICON_DASHBOARD_DEFAULT { .getFaIcon('dashboard-default'; 'fasug'); }
+.SUGAR_ICON_FAVORITE_PRIVATE { .getFaIcon('favorite-private'; 'fasug'); }
+.SUGAR_ICON_FILTER_DEFAULT { .getFaIcon('filter-default'; 'fasug'); }
+</code></pre>
+<p>Note: Font Awesome sugar extended name can be namespaced, <a href="#kssref-basecss-typographyfont">see an example in Typography section</a> on how Open Sans is namespaced. Font Awesome sugar extended is also namespaced in <a href="https://github.com/sugarcrm/multiverse/tree/master/projects/playground/mfe_template_js"><code>playground/mfe_template_js</code> example</a>.</p>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <div class="display-flex">
+    <i class="SUGAR_ICON_ENVELOPE_OPEN"></i>
+    <i class="SUGAR_ICON_SUGAR_LINK"></i>
+    <i class="SUGAR_ICON_TAG_PRIVATE"></i>
+    <i class="SUGAR_ICON_CLOCK_PRIVATE"></i>
+    <i class="SUGAR_ICON_DASHBOARD_DEFAULT"></i>
+    <i class="SUGAR_ICON_FAVORITE_PRIVATE"></i>
+    <i class="SUGAR_ICON_FILTER_DEFAULT"></i>
+</div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_ENVELOPE_OPEN"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_SUGAR_LINK"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_TAG_PRIVATE"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_CLOCK_PRIVATE"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_DASHBOARD_DEFAULT"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_FAVORITE_PRIVATE"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SUGAR_ICON_FILTER_DEFAULT"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 92
+        </div>
+
+    </section>
+    <section id="kssref-basecss-iconssizes" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-iconssizes">
+            <span class="kss-title__ref">
+              2.4
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.IconsSizes
+              </span>
+            </span>
+            Icon sizes
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-iconssizes" data-kss-fullscreen="kssref-basecss-iconssizes">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-iconssizes.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-iconssizes" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-iconssizes" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>Icons are sized relative to its parent element. Icons inherit size class (<code>fa-2x</code>, <code>fa-3x</code>, etc) from their parent, see &quot;Markup&quot; section.</p>
+<pre class="hljs"><code class="language-">.ICON_IGLOO_XS {
+  .getFaIcon('igloo');
+  .fa-xs;
+}
+
+.ICON_IGLOO_SM {
+  .getFaIcon('igloo');
+  .fa-sm;
+}
+
+.ICON_IGLOO_LG {
+  .getFaIcon('igloo');
+  .fa-lg;
+}
+
+.ICON_IGLOO_2X {
+  .getFaIcon('igloo');
+  .fa-2x;
+}
+
+.ICON_IGLOO_3X {
+  .getFaIcon('igloo');
+  .fa-3x;
+}
+
+.ICON_IGLOO_5X {
+  .getFaIcon('igloo');
+  .fa-5x;
+}
+
+.ICON_IGLOO_7X {
+  .getFaIcon('igloo');
+  .fa-7x;
+}
+
+.ICON_IGLOO_10X {
+  .getFaIcon('igloo');
+  .fa-10x;
+}
+</code></pre>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <div class="display-flex">
+    <i class="ICON_IGLOO_XS"></i>
+    <i class="ICON_IGLOO_SM"></i>
+    <i class="ICON_IGLOO_LG"></i>
+    <i class="ICON_IGLOO_2X"></i>
+    <i class="ICON_IGLOO_3X"></i>
+    <i class="ICON_IGLOO_5X"></i>
+    <i class="ICON_IGLOO_7X"></i>
+    <i class="ICON_IGLOO_10X"></i>
+</div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_XS"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_SM"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_LG"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_2X"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_3X"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_5X"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_7X"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_IGLOO_10X"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 134
+        </div>
+
+    </section>
+    <section id="kssref-basecss-fixedwidthicons" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-fixedwidthicons">
+            <span class="kss-title__ref">
+              2.5
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.FixedWidthIcons
+              </span>
+            </span>
+            Fixed width icons
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-fixedwidthicons" data-kss-fullscreen="kssref-basecss-fixedwidthicons">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-fixedwidthicons.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-fixedwidthicons" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-fixedwidthicons" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <pre class="hljs"><code class="language-">.ICON_ELLIPSIS_V_FIXED_WIDTH {
+  .getFaIcon('ellipsis-v');
+  .fa-fw;
+}
+
+.ICON_EGG_FIXED_WIDTH {
+  .getFaIcon('egg');
+  .fa-fw;
+}
+
+.ICON_FEATHER_FIXED_WIDTH {
+  .getFaIcon('feather');
+  .fa-fw;
+}
+
+.ICON_LOCATION_ARROW_FIXED_WIDTH {
+  .getFaIcon('location-arrow');
+  .fa-fw;
+}
+
+.ICON_ELLIPSIS_V {
+  .getFaIcon('ellipsis-v');
+}
+
+.ICON_EGG {
+  .getFaIcon('egg');
+}
+
+.ICON_FEATHER {
+  .getFaIcon('feather');
+}
+
+.ICON_LOCATION_ARROW {
+  .getFaIcon('location-arrow');
+}
+</code></pre>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <table cellpadding=10>
+    <tr>
+        <td>
+            <i class="ICON_ELLIPSIS_V_FIXED_WIDTH"></i><br>
+            <i class="ICON_EGG_FIXED_WIDTH"></i><br>
+            <i class="ICON_FEATHER_FIXED_WIDTH"></i><br>
+            <i class="ICON_LOCATION_ARROW_FIXED_WIDTH"></i><br>
+        </td>
+        <td>
+            <i class="ICON_ELLIPSIS_V"></i><br>
+            <i class="ICON_EGG"></i><br>
+            <i class="ICON_FEATHER"></i><br>
+            <i class="ICON_LOCATION_ARROW"></i><br>
+        </td>
+    </tr>
+</table>
+</table>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span> <span class="hljs-attr">cellpadding</span>=<span class="hljs-string">10</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ELLIPSIS_V_FIXED_WIDTH"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_EGG_FIXED_WIDTH"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_FEATHER_FIXED_WIDTH"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_LOCATION_ARROW_FIXED_WIDTH"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ELLIPSIS_V"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_EGG"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_FEATHER"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_LOCATION_ARROW"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 232
+        </div>
+
+    </section>
+    <section id="kssref-basecss-rotatingicons" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-rotatingicons">
+            <span class="kss-title__ref">
+              2.6
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.RotatingIcons
+              </span>
+            </span>
+            Rotating icons
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-rotatingicons" data-kss-fullscreen="kssref-basecss-rotatingicons">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-rotatingicons.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-rotatingicons" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-rotatingicons" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <pre class="hljs"><code class="language-">.SNOWMAN-FA-2X {
+  .fa-2x;
+}
+
+.SNOWMAN {
+  .getFaIcon('snowman');
+}
+
+.SNOWMAN_ROTATE_90 {
+  .getFaIcon('snowman');
+  .fa-rotate-90;
+}
+
+.SNOWMAN_ROTATE_180 {
+  .getFaIcon('snowman');
+  .fa-rotate-180;
+}
+
+.SNOWMAN_ROTATE_270 {
+  .getFaIcon('snowman');
+  .fa-rotate-270;
+}
+
+.SNOWMAN_FLIP_HORIZONTAL {
+  .getFaIcon('snowman');
+  .fa-flip-horizontal;
+}
+
+.SNOWMAN_FLIP_VERTICAL {
+  .getFaIcon('snowman');
+  .fa-flip-vertical;
+}
+
+.SNOWMAN_FLIP_BOTH {
+  .getFaIcon('snowman');
+  .fa-flip-both;
+}
+</code></pre>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <div class="display-flex SNOWMAN-FA-2X">
+    <i class="SNOWMAN"></i>
+    <i class="SNOWMAN_ROTATE_90"></i>
+    <i class="SNOWMAN_ROTATE_180"></i>
+    <i class="SNOWMAN_ROTATE_270"></i>
+    <i class="SNOWMAN_FLIP_HORIZONTAL"></i>
+    <i class="SNOWMAN_FLIP_VERTICAL"></i>
+    <i class="SNOWMAN_FLIP_BOTH"></i>
+</div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex SNOWMAN-FA-2X"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN_ROTATE_90"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN_ROTATE_180"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN_ROTATE_270"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN_FLIP_HORIZONTAL"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN_FLIP_VERTICAL"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"SNOWMAN_FLIP_BOTH"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 327
+        </div>
+
+    </section>
+    <section id="kssref-basecss-animatingicons" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-animatingicons">
+            <span class="kss-title__ref">
+              2.7
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.AnimatingIcons
+              </span>
+            </span>
+            Animating icons
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-animatingicons" data-kss-fullscreen="kssref-basecss-animatingicons">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-animatingicons.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-animatingicons" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-animatingicons" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <pre class="hljs"><code class="language-">.ICON_ANIM_SPINNER {
+  .getFaIcon('spinner');
+  .fa-anim('spin', 'SPINNER_ANIMATED_F3GT4D3D');
+}
+
+.ICON_ANIM_CIRCLE_NOTCH {
+  .getFaIcon('circle-notch');
+  .fa-anim('spin', 'CIRCLE_NOTCH_ANIM_F7D79F');
+}
+
+.ICON_ANIM_SYNC {
+  color: @red;
+  .getFaIcon('sync');
+  .fa-anim('spin', 'SYNC_ICON_ANIM_324FJ4_Z9R');
+}
+
+.ICON_ANIM_COG {
+  .getFaIcon('cog');
+  .fa-anim('spin', 'COG_ICON_ANIM_32-3V_4FJ4Z9R');
+}
+
+.ICON_ANIM_SPINNER_PULSE {
+  .getFaIcon('spinner');
+  .fa-anim('spin', 'SPINNER_PULSE_ANIMATE_9R-23D');
+}
+
+.ICON_ANIM_STROOPWAFEL {
+  .getFaIcon('stroopwafel');
+  .fa-anim('spin', 'STROOPWAFEL_ICON_ANIM_-40Z9NFJ');
+}
+</code></pre>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <div class="display-flex">
+    <i class="ICON_ANIM_SPINNER"></i>
+    <i class="ICON_ANIM_CIRCLE_NOTCH"></i>
+    <i class="ICON_ANIM_SYNC"></i>
+    <i class="ICON_ANIM_COG"></i>
+    <i class="ICON_ANIM_SPINNER_PULSE"></i>
+    <i class="ICON_ANIM_STROOPWAFEL"></i>
+</div>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ANIM_SPINNER"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ANIM_CIRCLE_NOTCH"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ANIM_SYNC"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ANIM_COG"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ANIM_SPINNER_PULSE"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"ICON_ANIM_STROOPWAFEL"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 418
+        </div>
+
+    </section>
+    <section id="kssref-basecss-slashedicons" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-slashedicons">
+            <span class="kss-title__ref">
+              2.8
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.SlashedIcons
+              </span>
+            </span>
+            Slashed icons
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <p>Slashed icons are still in experimental mode, currently avaiable for preview from <a href="section-labs.html">Labs section</a>.</p>
+
+          </div>
+
+
+
+
+      </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 496
+        </div>
+
+    </section>
+    <section id="kssref-basecss-iconssugarcube" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-iconssugarcube">
+            <span class="kss-title__ref">
+              2.9
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.IconsSugarCube
+              </span>
+            </span>
+            SugarCRM cube
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-iconssugarcube" data-kss-fullscreen="kssref-basecss-iconssugarcube">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-iconssugarcube.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-iconssugarcube" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-iconssugarcube" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>SugarCRM cube svg is being imported via background. <code>.sugar-cube()</code>, takes two optional parameters, color and size.</p>
+<p>When specifying color, symbol <code>#</code> is an illegal value for this property url(). Therefore, <code>#</code> must be replaced by <code>%23</code>.</p>
+<p>Example: <code>#000</code> would be <code>%23000</code>. The value should be also LESS-escaped like so: <code>~&quot;%23ddd&quot;</code>.`</p>
+<pre class="hljs"><code class="language-">.MY_SUGAR_CUBE_1 {
+  .sugar-cube('default', 10vw);
+}
+.MY_SUGAR_CUBE_2 {
+  .sugar-cube(~&quot;%23ddd&quot;, 8vw);
+}
+.MY_SUGAR_CUBE_3 {
+  .sugar-cube(~&quot;%23999&quot;, 6vw);
+}
+.MY_SUGAR_CUBE_4 {
+  .sugar-cube(~&quot;%23000&quot;, 4vw);
+}
+.MY_SUGAR_CUBE_5 {
+  .sugar-cube();
+}
+</code></pre>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <section class="display-flex">
+    <span class="MY_SUGAR_CUBE_1"></span>
+    <span class="MY_SUGAR_CUBE_2"></span>
+    <span class="MY_SUGAR_CUBE_3"></span>
+    <span class="MY_SUGAR_CUBE_4"></span>
+    <span class="MY_SUGAR_CUBE_5"></span>
+<section>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_CUBE_1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_CUBE_2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_CUBE_3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_CUBE_4"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_CUBE_5"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 504
+        </div>
+
+    </section>
+    <section id="kssref-basecss-iconssugarlogo" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-iconssugarlogo">
+            <span class="kss-title__ref">
+              2.10
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.IconsSugarLogo
+              </span>
+            </span>
+            SugarCRM logo
+          </a>
+        </h2>
+
+          <p class="kss-toolbar">
+              <a href="#kssref-basecss-iconssugarlogo" data-kss-fullscreen="kssref-basecss-iconssugarlogo">
+                <span class="kss-toolbar__tooltip">Toggle full screen</span>
+                <svg focusable="false" aria-hidden="true" class="off" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M64 0v26l-10-10-12 12-6-6 12-12-10-10zM28 42l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+                <svg focusable="false" aria-hidden="true" class="on" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <path class="kss-toolbar__icon-fill" d="M28 36v26l-10-10-12 12-6-6 12-12-10-10zM64 6l-12 12 10 10h-26v-26l10 10 12-12z"></path>
+                </svg>
+              </a>
+              <a href="item-basecss-iconssugarlogo.html" target="_blank">
+                <span class="kss-toolbar__tooltip">Open in new window</span>
+                <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                  <rect x="0" y="20" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M40,64l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="0" y="20" width="40" height="10"/>
+                  <rect x="24" y="0" width="40" height="44" fill="#fff"/>
+                  <path class="kss-toolbar__icon-fill" d="M64,44l-40,0l0,-44l40,0l0,44Zm-36,-40l0,36l32,0l0,-36l-32,0Z"/>
+                  <rect class="kss-toolbar__icon-fill" x="24" y="0" width="40" height="10"/>
+                </svg>
+              </a>
+            <a href="#kssref-basecss-iconssugarlogo" data-kss-guides="true">
+              <span class="kss-toolbar__tooltip">Toggle example guides</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <rect class="kss-toolbar__icon-fill" x="5" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="35" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="21" width="5" height="9"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="5" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="0" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="5" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="54" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="49" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="5" y="49" width="5" height="15"/>
+                <rect class="kss-toolbar__icon-fill" x="0" y="54" width="15" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="35" y="54" width="9" height="5"/>
+                <rect class="kss-toolbar__icon-fill" x="20" y="54" width="9" height="5"/>
+              </svg>
+            </a>
+            <a href="#kssref-basecss-iconssugarlogo" data-kss-markup="true">
+              <span class="kss-toolbar__tooltip">Toggle HTML markup</span>
+              <svg focusable="false" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="0 0 64 64">
+                <path class="kss-toolbar__icon-fill" d="M37.555,46.239l6.103,6.103l20.342,-20.342l-20.342,-20.342l-6.103,6.103l14.24,14.239l-14.24,14.239Z"/>
+                <path class="kss-toolbar__icon-fill" d="M26.445,17.761l-6.103,-6.103l-20.342,20.342l20.342,20.342l6.103,-6.103l-14.24,-14.239l14.24,-14.239Z"/>
+              </svg>
+            </a>
+          </p>
+
+          <div class="kss-description">
+            <p>SugarCRM logo svg is being imported via background. <code>.sugar-logo()</code>,  takes three optional parameters, color, size, and desaturate.</p>
+<pre class="hljs"><code class="language-">.MY_SUGAR_LOGO_1 {
+  .sugar-logo();
+}
+.MY_SUGAR_LOGO_2 {
+  .sugar-logo(40px; 200px);
+}
+.MY_SUGAR_LOGO_3 {
+  .sugar-logo(24px; 122px; true);
+}
+</code></pre>
+
+          </div>
+
+
+
+
+      </div>
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+            
+          <div class="kss-modifier__example">
+            <section class="display-flex">
+    <span class="MY_SUGAR_LOGO_1"></span>
+    <span class="MY_SUGAR_LOGO_2"></span>
+    <span class="MY_SUGAR_LOGO_3"></span>
+<section>
+            <div class="kss-modifier__example-footer"></div>
+          </div>
+
+        </div>
+
+          <details class="kss-markup kss-style">
+            <summary>
+                Markup
+            </summary>
+            <pre class="hljs"><code class="language-handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"display-flex"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_LOGO_1"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_LOGO_2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"MY_SUGAR_LOGO_3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span>&gt;</span></span></code></pre>
+          </details>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/icons.less</code>, line 578
+        </div>
+
+    </section>
+    <section id="kssref-basecss-colors" class="kss-section kss-section--depth-2 ">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-basecss-colors">
+            <span class="kss-title__ref">
+              2.11
+              <span class="kss-title__permalink-hash">
+                  #BaseCSS.Colors
+              </span>
+            </span>
+            Colors
+          </a>
+        </h2>
+
+
+          <div class="kss-description">
+            <p>The following colors should be used instead of defining new custom colors or relying on the default css color names.</p>
+<p>If you are creating a component and not using one of these color variables, please consider adding it to this list
+after reviewing it with the UX team.</p>
+<p>Double-click on color box to copy less variable to your clipboard.</p>
+
+          </div>
+
+
+
+          <div class="color-variables">
+              <div class="color-variable" style="background: #18e7d2;;" title="@mint: #18e7d2;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @mint
+                </span>
+                <span class="hex">#18e7d2;</span>
+              </div>
+              <div class="color-variable" style="background: #54cb14;;" title="@green: #54cb14;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @green
+                </span>
+                <span class="hex">#54cb14;</span>
+              </div>
+              <div class="color-variable" style="background: #429e10;;" title="@army: #429e10;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @army
+                </span>
+                <span class="hex">#429e10;</span>
+              </div>
+              <div class="color-variable" style="background: #f4e429;;" title="@yellow: #f4e429;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @yellow
+                </span>
+                <span class="hex">#f4e429;</span>
+              </div>
+              <div class="color-variable" style="background: #fbc02d;;" title="@orange: #fbc02d;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @orange
+                </span>
+                <span class="hex">#fbc02d;</span>
+              </div>
+              <div class="color-variable" style="background: #e61718;;" title="@red: #e61718;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @red
+                </span>
+                <span class="hex">#e61718;</span>
+              </div>
+              <div class="color-variable" style="background: #de5af1;;" title="@pink: #de5af1;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @pink
+                </span>
+                <span class="hex">#de5af1;</span>
+              </div>
+              <div class="color-variable" style="background: #854edb;;" title="@purple: #854edb;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @purple
+                </span>
+                <span class="hex">#854edb;</span>
+              </div>
+              <div class="color-variable" style="background: #011523;;" title="@night: #011523;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @night
+                </span>
+                <span class="hex">#011523;</span>
+              </div>
+              <div class="color-variable" style="background: #0679c8;;" title="@blue: #0679c8;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @blue
+                </span>
+                <span class="hex">#0679c8;</span>
+              </div>
+              <div class="color-variable" style="background: #41b7d1;;" title="@ocean: #41b7d1;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @ocean
+                </span>
+                <span class="hex">#41b7d1;</span>
+              </div>
+              <div class="color-variable" style="background: #198cc6;;" title="@pacific: #198cc6;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @pacific
+                </span>
+                <span class="hex">#198cc6;</span>
+              </div>
+              <div class="color-variable" style="background: #1cc8d3;;" title="@teal: #1cc8d3;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @teal
+                </span>
+                <span class="hex">#1cc8d3;</span>
+              </div>
+              <div class="color-variable" style="background: #da3eac;;" title="@coral: #da3eac;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @coral
+                </span>
+                <span class="hex">#da3eac;</span>
+              </div>
+              <div class="color-variable" style="background: #33800d;;" title="@moss: #33800d;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @moss
+                </span>
+                <span class="hex">#33800d;</span>
+              </div>
+              <div class="color-variable" style="background: #0f7799;;" title="@stone: #0f7799;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @stone
+                </span>
+                <span class="hex">#0f7799;</span>
+              </div>
+              <div class="color-variable" style="background: #7e6017;;" title="@cider: #7e6017;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @cider
+                </span>
+                <span class="hex">#7e6017;</span>
+              </div>
+              <div class="color-variable" style="background: #ebaaaa;;" title="@rose: #ebaaaa;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @rose
+                </span>
+                <span class="hex">#ebaaaa;</span>
+              </div>
+              <div class="color-variable" style="background: #fdf8ee;;" title="@cream: #fdf8ee;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @cream
+                </span>
+                <span class="hex">#fdf8ee;</span>
+              </div>
+              <div class="color-variable" style="background: #000;;" title="@black: #000;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @black
+                </span>
+                <span class="hex">#000;</span>
+              </div>
+              <div class="color-variable" style="background: #111;;" title="@grayDarker: #111;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @grayDarker
+                </span>
+                <span class="hex">#111;</span>
+              </div>
+              <div class="color-variable" style="background: #222;;" title="@grayDark: #222;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @grayDark
+                </span>
+                <span class="hex">#222;</span>
+              </div>
+              <div class="color-variable" style="background: #4d4f50;;" title="@grayDarkish: #4d4f50;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @grayDarkish
+                </span>
+                <span class="hex">#4d4f50;</span>
+              </div>
+              <div class="color-variable" style="background: #555;;" title="@gray: #555;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @gray
+                </span>
+                <span class="hex">#555;</span>
+              </div>
+              <div class="color-variable" style="background: #717171;;" title="@grayLight: #717171;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @grayLight
+                </span>
+                <span class="hex">#717171;</span>
+              </div>
+              <div class="color-variable" style="background: #f6f6f6;;" title="@grayLighter: #f6f6f6;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @grayLighter
+                </span>
+                <span class="hex">#f6f6f6;</span>
+              </div>
+              <div class="color-variable" style="background: #fff;;" title="@white: #fff;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @white
+                </span>
+                <span class="hex">#fff;</span>
+              </div>
+              <div class="color-variable" style="background: #9aa5ad;;" title="@slate: #9aa5ad;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @slate
+                </span>
+                <span class="hex">#9aa5ad;</span>
+              </div>
+              <div class="color-variable" style="background: #50575b;;" title="@steel: #50575b;" ondblclick="copyToClipboard(this)">
+                <span class="color-variable-details">
+                  @steel
+                </span>
+                <span class="hex">#50575b;</span>
+              </div>
+          </div>
+
+      </div>
+
+        <div class="kss-source kss-style">
+          Source: <code>documented-components/colors.less</code>, line 1
+        </div>
+
+    </section>
+</article>
+</main>
+
+<!-- SCRIPTS -->
+<script src="kss-assets/kss.js"></script>
+<script src="kss-assets/scrollspy.js"></script>
+<script src="kss-assets/kss-fullscreen.js"></script>
+<script src="kss-assets/kss-guides.js"></script>
+<script src="kss-assets/kss-markup.js"></script>
+<script>
+  var spy = new ScrollSpy('#kss-node', {
+    nav: '.kss-nav__menu-child > li > a',
+    className: 'is-in-viewport'
+  });
+  var kssFullScreen = new KssFullScreen({
+    idPrefix: 'kss-fullscreen-',
+    bodyClass: 'kss-fullscreen-mode',
+    elementClass: 'is-fullscreen'
+  });
+  var kssGuides = new KssGuides({
+    bodyClass: 'kss-guides-mode'
+  });
+  var kssMarkup = new KssMarkup({
+    bodyClass: 'kss-markup-mode',
+    detailsClass: 'kss-markup'
+  });
+</script>
+<script src="kss-assets/styleguide.js"></script>
+
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>
