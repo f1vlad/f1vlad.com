@@ -472,6 +472,8 @@ main {
     #project-detail .mobile-app-store a.soon img {
       opacity: .25;
       filter: grayscale(100); }
+  #project-detail .mobile-app-store a:nth-child(3):before {
+    content: "Visit"; }
 
 @media screen and (min-width: 1171px) {
   .projects {
