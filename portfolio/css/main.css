@@ -448,32 +448,34 @@ main {
 #resume h1 small {
   font-size: .25em; }
 
-#project-detail .mobile-app-store a {
-  text-decoration: none;
-  position: relative; }
-  #project-detail .mobile-app-store a img {
-    width: 160px;
-    border: none;
-    padding: 0 .25rem 0 0; }
-  #project-detail .mobile-app-store a:before {
-    content: "Download";
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    bottom: -13px;
-    font-size: .75rem;
-    color: #ccc; }
-  #project-detail .mobile-app-store a.soon {
-    position: relative;
-    pointer-events: none; }
-    #project-detail .mobile-app-store a.soon:before {
-      content: "Coming soon";
-      color: #888; }
-    #project-detail .mobile-app-store a.soon img {
-      opacity: .25;
-      filter: grayscale(100); }
-  #project-detail .mobile-app-store a:nth-child(3):before {
-    content: "Visit"; }
+#project-detail .mobile-app-store {
+  display: flex; }
+  #project-detail .mobile-app-store a {
+    text-decoration: none;
+    position: relative; }
+    #project-detail .mobile-app-store a img {
+      width: 160px;
+      border: none;
+      padding: 0 .25rem 0 0; }
+    #project-detail .mobile-app-store a:before {
+      content: "Download";
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      bottom: -13px;
+      font-size: .75rem;
+      color: #ccc; }
+    #project-detail .mobile-app-store a.soon {
+      position: relative;
+      pointer-events: none; }
+      #project-detail .mobile-app-store a.soon:before {
+        content: "Coming soon";
+        color: #888; }
+      #project-detail .mobile-app-store a.soon img {
+        opacity: .25;
+        filter: grayscale(100); }
+    #project-detail .mobile-app-store a:nth-child(3):before {
+      content: "Visit"; }
 
 @media screen and (min-width: 1171px) {
   .projects {
