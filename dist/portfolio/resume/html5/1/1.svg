@@ -25,19 +25,24 @@ fill: #999999;
 <g clip-path="url(#c1_1)">
 <path d="M0,68.8H935V1210H0V68.8Z" class="g0_1"/>
 </g>
-<path d="M68.8,563.8H837.6v19.4H68.8V563.8Z" class="g0_1"/>
-<path d="M68.8,585.5H834.2V605H68.8V585.5Z" class="g0_1"/>
-<path d="M68.8,607.3H845.6v19.5H68.8V607.3Z" class="g0_1"/>
-<path d="M68.8,629.1H834.2v19.4H68.8V629.1Z" class="g0_1"/>
-<path d="M68.8,650.8H792.9v19.5H68.8V650.8Z" class="g0_1"/>
-<path d="M68.8,672.6H224.6v19.5H68.8V672.6Z" class="g0_1"/>
+<path d="M68.8,418.2H798.6v19.5H68.8V418.2Z" class="g0_1"/>
+<path d="M68.8,440H787.2v19.5H68.8V440Z" class="g0_1"/>
+<path d="M68.8,461.8H836.5v19.5H68.8V461.8Z" class="g0_1"/>
+<path d="M68.8,483.5h637V503H68.8V483.5Z" class="g0_1"/>
+<path d="M68.8,584.4H843.3v19.5H68.8V584.4Z" class="g0_1"/>
+<path d="M68.8,606.1H307.1v19.5H68.8V606.1Z" class="g0_1"/>
+<path d="M68.8,707H837.6v19.5H68.8V707Z" class="g0_1"/>
+<path d="M68.8,728.8H834.2v19.4H68.8V728.8Z" class="g0_1"/>
+<path d="M68.8,750.5H845.6V770H68.8V750.5Z" class="g0_1"/>
+<path d="M68.8,772.3H834.2v19.5H68.8V772.3Z" class="g0_1"/>
+<path d="M68.8,794.1H792.9v19.4H68.8V794.1Z" class="g0_1"/>
+<path d="M68.8,815.8H224.6v19.5H68.8V815.8Z" class="g0_1"/>
 <path d="M0,0V0Z" class="g1_1"/>
 <image preserveAspectRatio="none" x="71" y="367" width="83" height="27" xlink:href="img/1.png"/>
-<image preserveAspectRatio="none" x="71" y="443" width="89" height="18" xlink:href="img/2.png"/>
-<image preserveAspectRatio="none" x="71" y="510" width="30" height="30" xlink:href="img/3.png"/>
-<image preserveAspectRatio="none" x="71" y="720" width="30" height="29" xlink:href="img/4.png"/>
-<image preserveAspectRatio="none" x="71" y="913" width="23" height="23" xlink:href="img/5.png"/>
-<image preserveAspectRatio="none" x="71" y="1054" width="23" height="23" xlink:href="img/6.png"/>
+<image preserveAspectRatio="none" x="71" y="531" width="30" height="29" xlink:href="img/2.png"/>
+<image preserveAspectRatio="none" x="71" y="653" width="30" height="30" xlink:href="img/3.png"/>
+<image preserveAspectRatio="none" x="71" y="863" width="30" height="30" xlink:href="img/4.png"/>
+<image preserveAspectRatio="none" x="71" y="1056" width="23" height="23" xlink:href="img/5.png"/>
 <path d="M68.8,116.9H215.4V118H68.8v-1.1Z" class="g2_1"/>
 <path d="M230.3,116.9H385V118H230.3v-1.1Z" class="g2_1"/>
 <path d="M399.9,116.9H550V118H399.9v-1.1Z" class="g2_1"/>
