@@ -20,6 +20,7 @@ fill: #FFFFFF;
 <g clip-path="url(#c1_2)">
 <path d="M0,68.8H935V1210H0V68.8Z" class="g0_2"/>
 </g>
-<image preserveAspectRatio="none" x="71" y="140" width="23" height="23" xlink:href="img/1.png"/>
-<image preserveAspectRatio="none" x="71" y="281" width="101" height="30" xlink:href="img/2.png"/>
+<image preserveAspectRatio="none" x="71" y="163" width="23" height="23" xlink:href="img/1.png"/>
+<image preserveAspectRatio="none" x="71" y="281" width="23" height="23" xlink:href="img/2.png"/>
+<image preserveAspectRatio="none" x="71" y="422" width="101" height="29" xlink:href="img/3.png"/>
 </svg>
