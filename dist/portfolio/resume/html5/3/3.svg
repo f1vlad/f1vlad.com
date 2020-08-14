@@ -13,11 +13,7 @@ fill: #FFFFFF;
 </defs>
 <path d="M0,0H935V1210H0V0Z" class="g0"/>
 <path d="M0,0H935V1210H0V0Z" class="g0"/>
-<g clip-path="url(#c0)">
-<path d="M0,-2419.9H935V1210H0V-2419.9Z" class="g0"/>
-</g>
+<path clip-path="url(#c0)" d="M0,-2419.9H935V1210H0V-2419.9Z" class="g0"/>
 <path d="M0,0H935V1208.9H0V0Z" class="g0"/>
-<g clip-path="url(#c1)">
-<path d="M0,68.8H935V1210H0V68.8Z" class="g0"/>
-</g>
+<path clip-path="url(#c1)" d="M0,68.8H935V1210H0V68.8Z" class="g0"/>
 </svg>

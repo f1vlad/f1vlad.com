@@ -5,6 +5,11 @@
 <defs>
 <clipPath id="c0_1"><path d="M0,1210V0H935V1210Z"/></clipPath>
 <clipPath id="c1_1"><path d="M0,1208.9V0H935V1208.9Z"/></clipPath>
+<clipPath id="c2_1"><path d="M71,393V366.7H99.7V393Z"/></clipPath>
+<clipPath id="c3_1"><path d="M71,491.6V464.1h82.5v27.5Z"/></clipPath>
+<clipPath id="c4_1"><path d="M71,657.7V627.9h29.8v29.8Z"/></clipPath>
+<clipPath id="c5_1"><path d="M71,780.3V750.5h29.8v29.8Z"/></clipPath>
+<clipPath id="c6_1"><path d="M71,990V960.2h29.8V990Z"/></clipPath>
 <style type="text/css"><![CDATA[
 .g0_1{
 fill: #FFFFFF;
@@ -14,36 +19,37 @@ fill: #FFFFFF;
 .g2_1{
 fill: #999999;
 }
+.g3_1{
+fill: #1155CC;
+}
 ]]></style>
 </defs>
 <path d="M0,0H935V1210H0V0Z" class="g0_1"/>
 <path d="M0,0H935V1210H0V0Z" class="g0_1"/>
-<g clip-path="url(#c0_1)">
-<path d="M0,0H935V3630H0V0Z" class="g0_1"/>
-</g>
+<path clip-path="url(#c0_1)" d="M0,0H935V3630H0V0Z" class="g0_1"/>
 <path d="M0,0H935V1208.9H0V0Z" class="g0_1"/>
-<g clip-path="url(#c1_1)">
-<path d="M0,68.8H935V1210H0V68.8Z" class="g0_1"/>
-</g>
-<path d="M68.8,418.2H798.6v19.5H68.8V418.2Z" class="g0_1"/>
-<path d="M68.8,440H787.2v19.5H68.8V440Z" class="g0_1"/>
-<path d="M68.8,461.8H836.5v19.5H68.8V461.8Z" class="g0_1"/>
-<path d="M68.8,483.5h637V503H68.8V483.5Z" class="g0_1"/>
-<path d="M68.8,584.4H843.3v19.5H68.8V584.4Z" class="g0_1"/>
-<path d="M68.8,606.1H307.1v19.5H68.8V606.1Z" class="g0_1"/>
-<path d="M68.8,707H837.6v19.5H68.8V707Z" class="g0_1"/>
-<path d="M68.8,728.8H834.2v19.4H68.8V728.8Z" class="g0_1"/>
-<path d="M68.8,750.5H845.6V770H68.8V750.5Z" class="g0_1"/>
-<path d="M68.8,772.3H834.2v19.5H68.8V772.3Z" class="g0_1"/>
-<path d="M68.8,794.1H792.9v19.4H68.8V794.1Z" class="g0_1"/>
-<path d="M68.8,815.8H224.6v19.5H68.8V815.8Z" class="g0_1"/>
-<path d="M0,0V0Z" class="g1_1"/>
-<image preserveAspectRatio="none" x="71" y="367" width="83" height="27" xlink:href="img/1.png"/>
-<image preserveAspectRatio="none" x="71" y="531" width="30" height="29" xlink:href="img/2.png"/>
-<image preserveAspectRatio="none" x="71" y="653" width="30" height="30" xlink:href="img/3.png"/>
-<image preserveAspectRatio="none" x="71" y="863" width="30" height="30" xlink:href="img/4.png"/>
-<image preserveAspectRatio="none" x="71" y="1056" width="23" height="23" xlink:href="img/5.png"/>
+<path clip-path="url(#c1_1)" d="M0,68.8H935V1210H0V68.8Z" class="g0_1"/>
+<path d="M68.8,417.1H822.7v19.5H68.8V417.1Z" class="g0_1"/>
+<path d="M68.8,515.6H798.6v19.5H68.8V515.6Z" class="g0_1"/>
+<path d="M68.8,537.4H787.2v19.5H68.8V537.4Z" class="g0_1"/>
+<path d="M68.8,559.2H830.7v19.4H68.8V559.2Z" class="g0_1"/>
+<path d="M68.8,580.9h637v19.5H68.8V580.9Z" class="g0_1"/>
+<path d="M68.8,681.8H843.3v19.5H68.8V681.8Z" class="g0_1"/>
+<path d="M68.8,703.5H307.1V723H68.8V703.5Z" class="g0_1"/>
+<path d="M68.8,804.4H837.6v19.5H68.8V804.4Z" class="g0_1"/>
+<path d="M68.8,826.1H834.2v19.5H68.8V826.1Z" class="g0_1"/>
+<path d="M68.8,847.9H845.6v19.5H68.8V847.9Z" class="g0_1"/>
+<path d="M68.8,869.7H834.2v19.5H68.8V869.7Z" class="g0_1"/>
+<path d="M68.8,891.5H792.9v19.4H68.8V891.5Z" class="g0_1"/>
+<path d="M68.8,913.2H224.6v19.5H68.8V913.2Z" class="g0_1"/>
+<path d="M0,0H.6V.6H0V0Z" class="g1_1"/>
+<image clip-path="url(#c2_1)" preserveAspectRatio="none" x="71" y="367" width="29" height="26" xlink:href="img/1.png"/>
+<image clip-path="url(#c3_1)" preserveAspectRatio="none" x="71" y="464" width="83" height="28" xlink:href="img/2.jpg"/>
+<image clip-path="url(#c4_1)" preserveAspectRatio="none" x="71" y="628" width="30" height="30" xlink:href="img/3.png"/>
+<image clip-path="url(#c5_1)" preserveAspectRatio="none" x="71" y="751" width="30" height="29" xlink:href="img/4.jpg"/>
+<image clip-path="url(#c6_1)" preserveAspectRatio="none" x="71" y="960" width="30" height="30" xlink:href="img/5.jpg"/>
 <path d="M68.8,116.9H215.4V118H68.8v-1.1Z" class="g2_1"/>
 <path d="M230.3,116.9H385V118H230.3v-1.1Z" class="g2_1"/>
 <path d="M399.9,116.9H550V118H399.9v-1.1Z" class="g2_1"/>
+<path d="M666.9,434.3H817v1.1H666.9v-1.1Z" class="g3_1"/>
 </svg>

@@ -5,6 +5,10 @@
 <defs>
 <clipPath id="c0_2"><path d="M0,1210V0H935V1210Z"/></clipPath>
 <clipPath id="c1_2"><path d="M0,1208.9V0H935V1208.9Z"/></clipPath>
+<clipPath id="c2_2"><path d="M71,116.9V94H94v22.9Z"/></clipPath>
+<clipPath id="c3_2"><path d="M71,257.8V234.9H94v22.9Z"/></clipPath>
+<clipPath id="c4_2"><path d="M71,375.8V352.9H94v22.9Z"/></clipPath>
+<clipPath id="c5_2"><path d="M71,523.6V493.9H171.9v29.7Z"/></clipPath>
 <style type="text/css"><![CDATA[
 .g0_2{
 fill: #FFFFFF;
@@ -13,14 +17,11 @@ fill: #FFFFFF;
 </defs>
 <path d="M0,0H935V1210H0V0Z" class="g0_2"/>
 <path d="M0,0H935V1210H0V0Z" class="g0_2"/>
-<g clip-path="url(#c0_2)">
-<path d="M0,-1209.9H935V2420H0V-1209.9Z" class="g0_2"/>
-</g>
+<path clip-path="url(#c0_2)" d="M0,-1209.9H935V2420H0V-1209.9Z" class="g0_2"/>
 <path d="M0,0H935V1208.9H0V0Z" class="g0_2"/>
-<g clip-path="url(#c1_2)">
-<path d="M0,68.8H935V1210H0V68.8Z" class="g0_2"/>
-</g>
-<image preserveAspectRatio="none" x="71" y="163" width="23" height="23" xlink:href="img/1.png"/>
-<image preserveAspectRatio="none" x="71" y="281" width="23" height="23" xlink:href="img/2.png"/>
-<image preserveAspectRatio="none" x="71" y="422" width="101" height="29" xlink:href="img/3.png"/>
+<path clip-path="url(#c1_2)" d="M0,68.8H935V1210H0V68.8Z" class="g0_2"/>
+<image clip-path="url(#c2_2)" preserveAspectRatio="none" x="71" y="94" width="23" height="23" xlink:href="img/1.jpg"/>
+<image clip-path="url(#c3_2)" preserveAspectRatio="none" x="71" y="235" width="23" height="23" xlink:href="img/2.jpg"/>
+<image clip-path="url(#c4_2)" preserveAspectRatio="none" x="71" y="353" width="23" height="23" xlink:href="img/3.jpg"/>
+<image clip-path="url(#c5_2)" preserveAspectRatio="none" x="71" y="494" width="101" height="30" xlink:href="img/4.png"/>
 </svg>
