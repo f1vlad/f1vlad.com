@@ -1,5 +1,5 @@
-<!DOCTYPE html >
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta charset="utf-8" />
@@ -19,6 +19,14 @@
 	overflow: visible;
 	line-height: 1.5;
 }
+.text-container {
+	white-space: pre;
+}
+@supports (-webkit-touch-callout: none) {
+	.text-container {
+		white-space: normal;
+	}
+}
 </style>
 <!-- End shared CSS values -->
 
@@ -26,51 +34,54 @@
 <!-- Begin inline CSS -->
 <style type="text/css" >
 
-#t1_3{left:69px;bottom:1117px;letter-spacing:-0.12px;}
-#t2_3{left:155px;bottom:1117px;letter-spacing:-0.11px;}
-#t3_3{left:636px;bottom:1117px;letter-spacing:-0.11px;}
-#t4_3{left:69px;bottom:1100px;letter-spacing:0.37px;}
-#t5_3{left:69px;bottom:1076px;letter-spacing:-0.11px;}
-#t6_3{left:69px;bottom:1053px;letter-spacing:-0.1px;}
-#t7_3{left:69px;bottom:1002px;letter-spacing:0.21px;}
-#t8_3{left:69px;bottom:955px;letter-spacing:-0.13px;}
-#t9_3{left:189px;bottom:955px;letter-spacing:-0.11px;}
-#ta_3{left:627px;bottom:955px;letter-spacing:-0.12px;}
-#tb_3{left:69px;bottom:939px;letter-spacing:0.36px;}
-#tc_3{left:69px;bottom:915px;letter-spacing:-0.11px;}
-#td_3{left:69px;bottom:892px;letter-spacing:-0.11px;}
-#te_3{left:69px;bottom:846px;letter-spacing:-0.13px;}
-#tf_3{left:229px;bottom:846px;letter-spacing:-0.11px;}
-#tg_3{left:583px;bottom:846px;letter-spacing:-0.12px;}
-#th_3{left:69px;bottom:830px;letter-spacing:0.37px;}
-#ti_3{left:69px;bottom:806px;letter-spacing:-0.11px;}
-#tj_3{left:69px;bottom:760px;letter-spacing:-0.12px;}
-#tk_3{left:227px;bottom:760px;letter-spacing:-0.11px;}
-#tl_3{left:617px;bottom:760px;letter-spacing:-0.12px;}
-#tm_3{left:69px;bottom:744px;letter-spacing:0.37px;}
-#tn_3{left:69px;bottom:720px;letter-spacing:-0.11px;}
-#to_3{left:69px;bottom:697px;letter-spacing:-0.11px;}
-#tp_3{left:69px;bottom:674px;letter-spacing:-0.1px;}
-#tq_3{left:69px;bottom:628px;letter-spacing:-0.11px;}
-#tr_3{left:129px;bottom:628px;letter-spacing:-0.11px;}
-#ts_3{left:619px;bottom:628px;letter-spacing:-0.12px;}
-#tt_3{left:69px;bottom:612px;letter-spacing:0.37px;}
-#tu_3{left:69px;bottom:588px;letter-spacing:-0.11px;}
-#tv_3{left:69px;bottom:565px;letter-spacing:-0.1px;}
-#tw_3{left:69px;bottom:514px;letter-spacing:0.21px;}
-#tx_3{left:69px;bottom:490px;letter-spacing:-0.1px;}
-#ty_3{left:69px;bottom:467px;letter-spacing:-0.11px;}
-#tz_3{left:69px;bottom:444px;letter-spacing:-0.1px;}
-#t10_3{left:69px;bottom:421px;letter-spacing:-0.1px;}
-#t11_3{left:69px;bottom:398px;letter-spacing:-0.11px;}
-#t12_3{left:69px;bottom:347px;letter-spacing:0.21px;}
-#t13_3{left:69px;bottom:322px;letter-spacing:-0.1px;}
-#t14_3{left:69px;bottom:300px;letter-spacing:-0.1px;}
+#t1_3{left:109px;bottom:1112px;letter-spacing:-0.11px;}
+#t2_3{left:169px;bottom:1112px;letter-spacing:-0.11px;}
+#t3_3{left:626px;bottom:1112px;letter-spacing:-0.12px;}
+#t4_3{left:69px;bottom:1091px;letter-spacing:0.37px;word-spacing:4.28px;}
+#t5_3{left:69px;bottom:1051px;letter-spacing:-0.14px;word-spacing:0.06px;}
+#t6_3{left:69px;bottom:1028px;letter-spacing:-0.1px;}
+#t7_3{left:109px;bottom:977px;letter-spacing:-0.12px;}
+#t8_3{left:233px;bottom:977px;letter-spacing:-0.11px;}
+#t9_3{left:621px;bottom:977px;letter-spacing:-0.12px;}
+#ta_3{left:69px;bottom:956px;letter-spacing:0.37px;word-spacing:4.28px;}
+#tb_3{left:69px;bottom:915px;letter-spacing:-0.12px;word-spacing:0.02px;}
+#tc_3{left:69px;bottom:892px;letter-spacing:-0.12px;word-spacing:0.01px;}
+#td_3{left:179px;bottom:816px;letter-spacing:-0.13px;}
+#te_3{left:402px;bottom:816px;letter-spacing:-0.18px;word-spacing:0.13px;}
+#tf_3{left:647px;bottom:816px;letter-spacing:-0.13px;word-spacing:0.02px;}
+#tg_3{left:69px;bottom:791px;letter-spacing:0.37px;word-spacing:4.28px;}
+#th_3{left:69px;bottom:750px;letter-spacing:-0.14px;word-spacing:0.06px;}
+#ti_3{left:69px;bottom:727px;letter-spacing:-0.11px;word-spacing:0.01px;}
+#tj_3{left:69px;bottom:705px;letter-spacing:-0.12px;word-spacing:0.02px;}
+#tk_3{left:69px;bottom:682px;letter-spacing:-0.12px;word-spacing:0.03px;}
+#tl_3{left:69px;bottom:659px;letter-spacing:-0.12px;word-spacing:0.03px;}
+#tm_3{left:69px;bottom:636px;letter-spacing:-0.12px;word-spacing:0.03px;}
+#tn_3{left:69px;bottom:613px;letter-spacing:-0.12px;word-spacing:0.03px;}
+#to_3{left:69px;bottom:567px;letter-spacing:-0.14px;}
+#tp_3{left:177px;bottom:567px;letter-spacing:-0.22px;word-spacing:0.2px;}
+#tq_3{left:822px;bottom:567px;letter-spacing:-0.13px;}
+#tr_3{left:69px;bottom:551px;letter-spacing:0.37px;word-spacing:4.28px;}
+#ts_3{left:69px;bottom:510px;letter-spacing:-0.11px;word-spacing:0.01px;}
+#tt_3{left:69px;bottom:487px;letter-spacing:-0.11px;word-spacing:0.01px;}
+#tu_3{left:69px;bottom:464px;letter-spacing:-0.15px;word-spacing:0.09px;}
+#tv_3{left:69px;bottom:418px;letter-spacing:-0.15px;}
+#tw_3{left:183px;bottom:418px;letter-spacing:-0.13px;word-spacing:0.05px;}
+#tx_3{left:757px;bottom:418px;letter-spacing:-0.12px;}
+#ty_3{left:69px;bottom:402px;letter-spacing:0.37px;word-spacing:4.28px;}
+#tz_3{left:69px;bottom:361px;letter-spacing:-0.11px;word-spacing:0.02px;}
+#t10_3{left:69px;bottom:338px;letter-spacing:-0.11px;}
+#t11_3{left:69px;bottom:292px;letter-spacing:-0.13px;}
+#t12_3{left:273px;bottom:292px;letter-spacing:-0.21px;word-spacing:0.19px;}
+#t13_3{left:646px;bottom:292px;letter-spacing:-0.11px;}
+#t14_3{left:69px;bottom:276px;letter-spacing:0.37px;word-spacing:4.28px;}
+#t15_3{left:69px;bottom:235px;letter-spacing:-0.11px;word-spacing:0.01px;}
+#t16_3{left:69px;bottom:212px;letter-spacing:-0.11px;word-spacing:0.01px;}
+#t17_3{left:69px;bottom:189px;letter-spacing:-0.11px;}
+#t18_3{left:69px;bottom:166px;letter-spacing:-0.11px;word-spacing:0.01px;}
 
-.s1{font-size:17px;font-family:Verdana-Bold_u;color:#000;}
-.s2{font-size:17px;font-family:Verdana_w;color:#000;}
-.s3{font-size:12px;font-family:CourierNewPSMT_-;color:#999;}
-.s4{font-size:21px;font-family:Verdana-Bold_u;color:#000;}
+.s0_3{font-size:17px;font-family:Verdana-Bold_-;color:#000;}
+.s1_3{font-size:17px;font-family:Verdana_13;color:#000;}
+.s2_3{font-size:12px;font-family:CourierNew_1b;color:#000;}
 </style>
 <!-- End inline CSS -->
 
@@ -78,18 +89,18 @@
 <style id="fonts3" type="text/css" >
 
 @font-face {
-	font-family: CourierNewPSMT_-;
-	src: url("fonts/CourierNewPSMT_-.woff") format("woff");
+	font-family: CourierNew_1b;
+	src: url("fonts/CourierNew_1b.woff") format("woff");
 }
 
 @font-face {
-	font-family: Verdana-Bold_u;
-	src: url("fonts/Verdana-Bold_u.woff") format("woff");
+	font-family: Verdana-Bold_-;
+	src: url("fonts/Verdana-Bold_-.woff") format("woff");
 }
 
 @font-face {
-	font-family: Verdana_w;
-	src: url("fonts/Verdana_w.woff") format("woff");
+	font-family: Verdana_13;
+	src: url("fonts/Verdana_13.woff") format("woff");
 }
 
 </style>
@@ -102,47 +113,38 @@
 
 
 <!-- Begin text definitions (Positioned/styled in CSS) -->
-<div id="t1_3" class="t s1">pulse.ua</div>
-<div id="t2_3" class="t s2">Web Designer </div>
-<div id="t3_3" class="t s2">February 2000 – July 2001</div>
-<div id="t4_3" class="t s3">php, jquery, html, css, flash, swift3d</div>
-<div id="t5_3" class="t s2">In charge of corporate web properties. Designed online web advertising campaigns. Designed </div>
-<div id="t6_3" class="t s2">interactive Flash advertising campaigns and websites. </div>
-<div id="t7_3" class="t s4">Part-time and consultations </div>
-<div id="t8_3" class="t s1">zicasso.com</div>
-<div id="t9_3" class="t s2">User Experience Consultant </div>
-<div id="ta_3" class="t s2">March 2012 – October 2012</div>
-<div id="tb_3" class="t s3">php, js, jquery, html5, css3, drupal </div>
-<div id="tc_3" class="t s2">Moved all front-end markup from legacy to modern HTML5/CSS3. Worked on improving user </div>
-<div id="td_3" class="t s2">experience and performance. </div>
-<div id="te_3" class="t s1">dodstarbase.org</div>
-<div id="tf_3" class="t s2">Web Product Developer </div>
-<div id="tg_3" class="t s2">February 2008 – November 2008</div>
-<div id="th_3" class="t s3">php, mysql, js, jquery, drupal</div>
-<div id="ti_3" class="t s2">Developed custom solution in php for intranet. Created internal messenger system. </div>
-<div id="tj_3" class="t s1">totalpermit.com</div>
-<div id="tk_3" class="t s2">Web Product Developer </div>
-<div id="tl_3" class="t s2">September 2007 – May 2011</div>
-<div id="tm_3" class="t s3">php, mysql, html, css, drupal</div>
-<div id="tn_3" class="t s2">Developed a prototype of online permitting system for the state of NH based on Drupal CMS. </div>
-<div id="to_3" class="t s2">Programmed a framework to connect PDF downloadable forms to backend parser to submit it </div>
-<div id="tp_3" class="t s2">to database. </div>
-<div id="tq_3" class="t s1">sf.net</div>
-<div id="tr_3" class="t s2">User Experience Consultant </div>
-<div id="ts_3" class="t s2">November 2007 – April 2008</div>
-<div id="tt_3" class="t s3">html, css, javascript, jquery</div>
-<div id="tu_3" class="t s2">Worked with design team to improve user experience, designed promo mini websites for </div>
-<div id="tv_3" class="t s2">advertisers. Maintained corporate website. </div>
-<div id="tw_3" class="t s4">Education </div>
-<div id="tx_3" class="t s2">B.S. in Business Administration, Marketing. Intercollege (University of Nicosia), Nicosia, </div>
-<div id="ty_3" class="t s2">Cyprus, June 1999. </div>
-<div id="tz_3" class="t s2">A.S. in Business Administration, University of Indianapolis. January 1999. </div>
-<div id="t10_3" class="t s2">A.S. in Business Administration, Marketing. Intercollege (University of Nicosia). Nicosia, </div>
-<div id="t11_3" class="t s2">Cyprus, June 1998. </div>
-<div id="t12_3" class="t s4">Activities and Interests</div>
-<div id="t13_3" class="t s2">I enjoy travelling by car, attending software engineering and design conferences, motor </div>
-<div id="t14_3" class="t s2">racing, reading and history.</div>
-
+<div class="text-container"><span id="t1_3" class="t s0_3">sf.net </span><span id="t2_3" class="t s1_3">UI Engineer </span><span id="t3_3" class="t s1_3">December 2009 – July 2010 </span>
+<span id="t4_3" class="t s2_3">python, mongodb, html5, css3, javascript, jquery, usability testing, uiux </span>
+<span id="t5_3" class="t s1_3">Led front-end UX development of sf.net downloads section. Evolved UX based on usability </span>
+<span id="t6_3" class="t s1_3">testing. </span>
+<span id="t7_3" class="t s0_3">slashdot.org </span><span id="t8_3" class="t s1_3">UI Engineer </span><span id="t9_3" class="t s1_3">April 2008 – December 2009 </span>
+<span id="ta_3" class="t s2_3">html5, css3, javascript, jquery, uiux </span>
+<span id="tb_3" class="t s1_3">Supported engineering team and moved all legacy markup to HTML5/CSS3, significantly </span>
+<span id="tc_3" class="t s1_3">improved user experience, cross-browser support and performance. </span>
+<span id="td_3" class="t s0_3">DareMightyThings.com </span><span id="te_3" class="t s1_3">Web Product Developer </span><span id="tf_3" class="t s1_3">May 2004 – January 2009 </span>
+<span id="tg_3" class="t s2_3">php, mysql, javascript, jquery, html, css, drupal, revize cms, bash, awstats, sys admin </span>
+<span id="th_3" class="t s1_3">Designed and developed web portal for National Guard Youth ChalleNGe Program. Developed </span>
+<span id="ti_3" class="t s1_3">intranet, state local websites with staging and production locations for web editors. </span>
+<span id="tj_3" class="t s1_3">Supported and trained web editors onsite and online. Delivered annual in-class training to </span>
+<span id="tk_3" class="t s1_3">web editors. Provided custom programmatic solutions to integrate third party software into </span>
+<span id="tl_3" class="t s1_3">product. Developed internal technical assistance ticket and tracking system. Developed </span>
+<span id="tm_3" class="t s1_3">enhanced front-end representation for awstats logging system. Performed some system </span>
+<span id="tn_3" class="t s1_3">administration duties. </span>
+<span id="to_3" class="t s0_3">NHBis.com </span><span id="tp_3" class="t s1_3">Web Developer </span><span id="tq_3" class="t s1_3">2005 </span>
+<span id="tr_3" class="t s2_3">php, asp, html, css, jquery, adobe photoshop, seo </span>
+<span id="ts_3" class="t s1_3">Designed website mockups in Photoshop. Implemented fully functional website solutions from </span>
+<span id="tt_3" class="t s1_3">mockups. Created customized website solution for clients, such as shopping carts, catalogues </span>
+<span id="tu_3" class="t s1_3">and online order forms. Took charge of SEO efforts for clients. </span>
+<span id="tv_3" class="t s0_3">B2B2B.com </span><span id="tw_3" class="t s1_3">Graphic Designer </span><span id="tx_3" class="t s1_3">2004 – 2005 </span>
+<span id="ty_3" class="t s2_3">adobe illustrator, adobe photoshop </span>
+<span id="tz_3" class="t s1_3">Designed banners, leaflets, posters, political yard signs and other offline print advertisement </span>
+<span id="t10_3" class="t s1_3">artwork. </span>
+<span id="t11_3" class="t s0_3">AlidaConnection.com </span><span id="t12_3" class="t s1_3">Web Designer </span><span id="t13_3" class="t s1_3">October 2001 – July 2004 </span>
+<span id="t14_3" class="t s2_3">php, asp, javascript, html, css, macromedia flash, adobe photoshop, adobe illustrator </span>
+<span id="t15_3" class="t s1_3">Designed website mockups in Photoshop. Implemented fully functional website solutions from </span>
+<span id="t16_3" class="t s1_3">mockups. Created customized website solutions for clients, such as shopping carts, </span>
+<span id="t17_3" class="t s1_3">catalogues, online order forms and promotional campaigns. Designed animated ad banners. </span>
+<span id="t18_3" class="t s1_3">Designed advertisement artwork for offline marketing campaigns. </span></div>
 <!-- End text definitions -->
 
 

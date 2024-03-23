@@ -1,5 +1,5 @@
-<!DOCTYPE html >
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
 <meta charset="utf-8" />
@@ -19,6 +19,14 @@
 	overflow: visible;
 	line-height: 1.5;
 }
+.text-container {
+	white-space: pre;
+}
+@supports (-webkit-touch-callout: none) {
+	.text-container {
+		white-space: normal;
+	}
+}
 </style>
 <!-- End shared CSS values -->
 
@@ -26,69 +34,58 @@
 <!-- Begin inline CSS -->
 <style type="text/css" >
 
-#t1_1{left:69px;bottom:1106px;letter-spacing:0.22px;}
-#t2_1{left:362px;bottom:1106px;letter-spacing:0.23px;}
-#t3_1{left:69px;bottom:1088px;letter-spacing:-0.12px;}
+#t1_1{left:69px;bottom:1106px;letter-spacing:0.25px;word-spacing:2.25px;}
+#t2_1{left:401px;bottom:1106px;letter-spacing:0.22px;word-spacing:0.03px;}
+#t3_1{left:69px;bottom:1088px;letter-spacing:-0.13px;}
 #t4_1{left:564px;bottom:1088px;}
 #t5_1{left:583px;bottom:1088px;letter-spacing:-0.14px;}
-#t6_1{left:69px;bottom:1035px;letter-spacing:0.22px;}
-#t7_1{left:69px;bottom:1011px;letter-spacing:-0.11px;}
-#t8_1{left:69px;bottom:988px;letter-spacing:-0.11px;}
-#t9_1{left:69px;bottom:965px;letter-spacing:-0.11px;}
-#ta_1{left:69px;bottom:942px;letter-spacing:-0.09px;}
-#tb_1{left:69px;bottom:919px;letter-spacing:-0.11px;}
-#tc_1{left:69px;bottom:868px;letter-spacing:0.22px;}
-#td_1{left:109px;bottom:815px;letter-spacing:-0.11px;}
-#te_1{left:177px;bottom:815px;letter-spacing:-0.11px;}
-#tf_1{left:697px;bottom:815px;letter-spacing:-0.11px;}
-#tg_1{left:69px;bottom:792px;letter-spacing:0.37px;}
-#th_1{left:69px;bottom:770px;letter-spacing:0.02px;}
-#ti_1{left:666px;bottom:770px;letter-spacing:0.02px;}
-#tj_1{left:817px;bottom:770px;}
-#tk_1{left:164px;bottom:717px;letter-spacing:-0.12px;}
-#tl_1{left:283px;bottom:717px;letter-spacing:-0.11px;}
-#tm_1{left:671px;bottom:717px;letter-spacing:-0.12px;}
-#tn_1{left:69px;bottom:693px;letter-spacing:0.37px;}
-#to_1{left:69px;bottom:671px;letter-spacing:0.02px;}
-#tp_1{left:69px;bottom:649px;letter-spacing:0.02px;}
-#tq_1{left:69px;bottom:628px;letter-spacing:0.02px;}
-#tr_1{left:69px;bottom:606px;letter-spacing:0.02px;}
-#ts_1{left:109px;bottom:552px;letter-spacing:-0.11px;}
-#tt_1{left:253px;bottom:552px;letter-spacing:-0.11px;}
-#tu_1{left:695px;bottom:552px;letter-spacing:-0.12px;}
-#tv_1{left:69px;bottom:527px;letter-spacing:0.37px;}
-#tw_1{left:69px;bottom:505px;letter-spacing:0.02px;}
-#tx_1{left:69px;bottom:483px;letter-spacing:0.02px;}
-#ty_1{left:109px;bottom:429px;letter-spacing:-0.15px;}
-#tz_1{left:212px;bottom:429px;letter-spacing:-0.11px;}
-#t10_1{left:635px;bottom:429px;letter-spacing:-0.12px;}
-#t11_1{left:69px;bottom:405px;letter-spacing:0.37px;}
-#t12_1{left:69px;bottom:382px;letter-spacing:0.02px;}
-#t13_1{left:69px;bottom:361px;letter-spacing:0.02px;}
-#t14_1{left:69px;bottom:339px;letter-spacing:0.02px;}
-#t15_1{left:69px;bottom:317px;letter-spacing:0.02px;}
-#t16_1{left:69px;bottom:295px;letter-spacing:0.02px;}
-#t17_1{left:69px;bottom:274px;letter-spacing:0.02px;}
-#t18_1{left:109px;bottom:219px;letter-spacing:-0.15px;}
-#t19_1{left:212px;bottom:219px;letter-spacing:-0.11px;}
-#t1a_1{left:620px;bottom:219px;letter-spacing:-0.12px;}
-#t1b_1{left:69px;bottom:195px;letter-spacing:0.37px;}
-#t1c_1{left:69px;bottom:171px;letter-spacing:-0.1px;}
-#t1d_1{left:69px;bottom:148px;letter-spacing:-0.1px;}
-#t1e_1{left:69px;bottom:125px;letter-spacing:-0.11px;}
-#t1f_1{left:69px;bottom:102px;letter-spacing:-0.11px;}
-#t1g_1{left:69px;bottom:80px;letter-spacing:-0.1px;}
+#t6_1{left:69px;bottom:1035px;letter-spacing:0.23px;word-spacing:1.97px;}
+#t7_1{left:69px;bottom:1012px;letter-spacing:-0.17px;word-spacing:0.12px;}
+#t8_1{left:69px;bottom:989px;letter-spacing:-0.19px;word-spacing:0.16px;}
+#t9_1{left:69px;bottom:966px;letter-spacing:-0.15px;word-spacing:0.07px;}
+#ta_1{left:69px;bottom:943px;letter-spacing:-0.12px;word-spacing:0.03px;}
+#tb_1{left:69px;bottom:920px;letter-spacing:-0.13px;word-spacing:0.04px;}
+#tc_1{left:69px;bottom:897px;letter-spacing:-0.13px;word-spacing:0.05px;}
+#td_1{left:69px;bottom:845px;letter-spacing:0.24px;word-spacing:1.97px;}
+#te_1{left:130px;bottom:789px;letter-spacing:-0.13px;}
+#tf_1{left:241px;bottom:789px;letter-spacing:-0.12px;word-spacing:0.02px;}
+#tg_1{left:682px;bottom:789px;letter-spacing:-0.13px;word-spacing:0.03px;}
+#th_1{left:69px;bottom:763px;letter-spacing:0.37px;word-spacing:4.28px;}
+#ti_1{left:69px;bottom:717px;letter-spacing:0.01px;word-spacing:0.01px;}
+#tj_1{left:69px;bottom:695px;letter-spacing:-0.01px;word-spacing:0.07px;}
+#tk_1{left:69px;bottom:673px;letter-spacing:-0.05px;word-spacing:0.15px;}
+#tl_1{left:109px;bottom:618px;letter-spacing:-0.13px;word-spacing:1.55px;}
+#tm_1{left:342px;bottom:618px;letter-spacing:-0.11px;word-spacing:0.02px;}
+#tn_1{left:674px;bottom:618px;letter-spacing:-0.12px;}
+#to_1{left:69px;bottom:592px;letter-spacing:0.37px;word-spacing:4.28px;}
+#tp_1{left:69px;bottom:546px;letter-spacing:-0.03px;word-spacing:0.11px;}
+#tq_1{left:69px;bottom:525px;letter-spacing:-0.02px;word-spacing:0.09px;}
+#tr_1{left:69px;bottom:503px;letter-spacing:-0.01px;word-spacing:0.05px;}
+#ts_1{left:69px;bottom:481px;letter-spacing:-0.04px;word-spacing:0.12px;}
+#tt_1{left:69px;bottom:437px;letter-spacing:0.01px;word-spacing:0.02px;}
+#tu_1{left:69px;bottom:416px;letter-spacing:-0.05px;word-spacing:0.14px;}
+#tv_1{left:69px;bottom:394px;letter-spacing:-0.02px;word-spacing:0.09px;}
+#tw_1{left:69px;bottom:372px;letter-spacing:0.01px;word-spacing:0.03px;}
+#tx_1{left:69px;bottom:350px;letter-spacing:0.01px;word-spacing:0.02px;}
+#ty_1{left:69px;bottom:307px;letter-spacing:-0.11px;word-spacing:0.25px;}
+#tz_1{left:69px;bottom:285px;word-spacing:0.05px;}
+#t10_1{left:69px;bottom:263px;letter-spacing:-0.04px;word-spacing:0.13px;}
+#t11_1{left:164px;bottom:211px;letter-spacing:-0.13px;}
+#t12_1{left:283px;bottom:211px;letter-spacing:-0.13px;word-spacing:0.05px;}
+#t13_1{left:655px;bottom:211px;letter-spacing:-0.12px;}
+#t14_1{left:69px;bottom:187px;letter-spacing:0.37px;word-spacing:4.28px;}
+#t15_1{left:69px;bottom:142px;letter-spacing:0.02px;word-spacing:0.01px;}
+#t16_1{left:69px;bottom:120px;letter-spacing:-0.1px;}
 
-.s1_1{font-size:24px;font-family:Verdana-Bold_u;color:#000;}
-.s2_1{font-size:24px;font-family:Verdana_w;color:#000;}
-.s3_1{font-size:14px;font-family:Verdana_w;color:#999;}
-.s4_1{font-size:14px;font-family:MS-Gothic_q;color:#999;}
-.s5_1{font-size:21px;font-family:Verdana-Bold_u;color:#000;}
-.s6_1{font-size:17px;font-family:Verdana_w;color:#000;}
-.s7_1{font-size:17px;font-family:Verdana-Bold_u;color:#000;}
-.s8_1{font-size:12px;font-family:CourierNewPSMT_-;color:#999;}
-.s9_1{font-size:16px;font-family:Verdana_w;color:#000;}
-.sa_1{font-size:16px;font-family:Verdana_w;color:#15C;}
+.s0_1{font-size:24px;font-family:Verdana-Bold_-;color:#000;}
+.s1_1{font-size:24px;font-family:Verdana_13;color:#000;}
+.s2_1{font-size:14px;font-family:Verdana_13;color:#000;}
+.s3_1{font-size:14px;font-family:MS-PGothic_17;color:#000;}
+.s4_1{font-size:21px;font-family:Verdana-Bold_-;color:#000;}
+.s5_1{font-size:17px;font-family:Verdana_13;color:#000;}
+.s6_1{font-size:17px;font-family:Verdana-Bold_-;color:#000;}
+.s7_1{font-size:12px;font-family:CourierNew_1b;color:#000;}
+.s8_1{font-size:16px;font-family:Verdana_13;color:#000;}
 </style>
 <!-- End inline CSS -->
 
@@ -96,23 +93,23 @@
 <style id="fonts1" type="text/css" >
 
 @font-face {
-	font-family: CourierNewPSMT_-;
-	src: url("fonts/CourierNewPSMT_-.woff") format("woff");
+	font-family: CourierNew_1b;
+	src: url("fonts/CourierNew_1b.woff") format("woff");
 }
 
 @font-face {
-	font-family: MS-Gothic_q;
-	src: url("fonts/MS-Gothic_q.woff") format("woff");
+	font-family: MS-PGothic_17;
+	src: url("fonts/MS-PGothic_17.woff") format("woff");
 }
 
 @font-face {
-	font-family: Verdana-Bold_u;
-	src: url("fonts/Verdana-Bold_u.woff") format("woff");
+	font-family: Verdana-Bold_-;
+	src: url("fonts/Verdana-Bold_-.woff") format("woff");
 }
 
 @font-face {
-	font-family: Verdana_w;
-	src: url("fonts/Verdana_w.woff") format("woff");
+	font-family: Verdana_13;
+	src: url("fonts/Verdana_13.woff") format("woff");
 }
 
 </style>
@@ -125,59 +122,39 @@
 
 
 <!-- Begin text definitions (Positioned/styled in CSS) -->
-<div id="t1_1" class="t s1_1">Vladislav Kulchitski · </div>
-<div id="t2_1" class="t s2_1">Senior UIUX / Front-end Engineer </div>
-<div id="t3_1" class="t s3_1">f1vlad.com/portfolio/ · linkedin.com/in/f1vlad · kulchitski@gmail.com · </div>
-<div id="t4_1" class="t s4_1">☎</div>
-<div id="t5_1" class="t s3_1">603-265-7525 · San Jose,CA/Nashua,NH </div>
-<div id="t6_1" class="t s5_1">Skills Summary </div>
-<div id="t7_1" class="t s6_1">Languages: JavaScript, HTML5, CSS3. </div>
-<div id="t8_1" class="t s6_1">Web technologies: Ionic Framework, Angular, Zepto, Bootstrap, SASS, LessCSS, MySQL. </div>
-<div id="t9_1" class="t s6_1">Familiar with: React, React Native, GraphQL, MongoDB, PHP, Python. </div>
-<div id="ta_1" class="t s6_1">Versioning: git. </div>
-<div id="tb_1" class="t s6_1">Graphics: Sketch, Adobe Photoshop. </div>
-<div id="tc_1" class="t s5_1">Work Experience </div>
-<div id="td_1" class="t s7_1">Metals </div>
-<div id="te_1" class="t s6_1">Software Engineer </div>
-<div id="tf_1" class="t s6_1">Aug 2020 – Present</div>
-<div id="tg_1" class="t s8_1">javascript, ionic5, angular, threejs, html5, css3, product design</div>
-<div id="th_1" class="t s9_1">The privacy mobile app for precious metals numismatists and stackers — </div>
-<div id="ti_1" class="t sa_1">https://metals.live</div>
-<div id="tj_1" class="t s9_1">.</div>
-<div id="tk_1" class="t s7_1">CipherTrace </div>
-<div id="tl_1" class="t s6_1">Software Engineer </div>
-<div id="tm_1" class="t s6_1">June 2019 – May 2020</div>
-<div id="tn_1" class="t s8_1">javascript, ionic5, angular, html5, css3, product design</div>
-<div id="to_1" class="t s9_1">Designed and developed a mobile scout application that communicates to private backend </div>
-<div id="tp_1" class="t s9_1">services via API to help investigators perform investigations of blockchain addresses and </div>
-<div id="tq_1" class="t s9_1">transactions across a number of different cryptocurrencies. The mobile app called CipherTrace </div>
-<div id="tr_1" class="t s9_1">was successfully released to Google Play, App Store, as well as a PWA version.</div>
-<div id="ts_1" class="t s7_1">api.metals.live </div>
-<div id="tt_1" class="t s6_1">Software Engineer </div>
-<div id="tu_1" class="t s6_1">May 2019 – Present</div>
-<div id="tv_1" class="t s8_1">javascript, nodejs, mongodb</div>
-<div id="tw_1" class="t s9_1">The public API server for real time precious metals rates — gold, silver, platinum and palladium </div>
-<div id="tx_1" class="t s9_1">and other commodity metals.</div>
-<div id="ty_1" class="t s7_1">SugarCRM</div>
-<div id="tz_1" class="t s6_1">Senior Software Engineer </div>
-<div id="t10_1" class="t s6_1">February 2018 – May 2019</div>
-<div id="t11_1" class="t s8_1">javascript, handlebars, html5, css3, less, living styleguide</div>
-<div id="t12_1" class="t s9_1">Architected SugarCRM Multiverse [Living] Styleguide that provides a baseline design language, </div>
-<div id="t13_1" class="t s9_1">CSS rulesets for layouts and components that can be consumed by microservices. This type of </div>
-<div id="t14_1" class="t s9_1">styleguide does not define code structures or naming conventions making it very easy to inherit </div>
-<div id="t15_1" class="t s9_1">look and feel of base SugarCRM by any framework without having to touch any HTML markup. </div>
-<div id="t16_1" class="t s9_1">Worked closely with the design team to implement new features into production. Filed 14 </div>
-<div id="t17_1" class="t s9_1">UX-centric patents.</div>
-<div id="t18_1" class="t s7_1">SugarCRM</div>
-<div id="t19_1" class="t s6_1">Senior UI/UX / Front-end Engineer </div>
-<div id="t1a_1" class="t s6_1">March 2012 – February 2018</div>
-<div id="t1b_1" class="t s8_1">javascript, jquery, handlebars, html5, css3, less, styleguide, usability testing, rapid prototyping</div>
-<div id="t1c_1" class="t s6_1">Hired to completely redesign the app 6.x into all new 7.x. Took charge of building styleguide </div>
-<div id="t1d_1" class="t s6_1">from scratch. Built living styleguide. Was in charge of front-end bug fixes. Performed a </div>
-<div id="t1e_1" class="t s6_1">number of usability tests and A/B tests in annual SugarCON UIUX lab. Took charge of </div>
-<div id="t1f_1" class="t s6_1">performing a number of code changes to localize SugarCRM app to RTL languages. Rapid </div>
-<div id="t1g_1" class="t s6_1">prototype developer. </div>
-
+<div class="text-container"><span id="t1_1" class="t s0_1">Vladyslav Kulchytskyy · </span><span id="t2_1" class="t s1_1">Senior Software Engineer </span>
+<span id="t3_1" class="t s2_1">f1vlad.com/portfolio/ · linkedin.com/in/f1vlad · kulchitski@gmail.com · </span><span id="t4_1" class="t s3_1">☎ </span><span id="t5_1" class="t s2_1">603-265-7525 · San Jose,CA/Nashua,NH </span>
+<span id="t6_1" class="t s4_1">Skills Summary </span>
+<span id="t7_1" class="t s5_1">Core: JavaScript, TypeScript, Node.js, HTML5, CSS3. </span>
+<span id="t8_1" class="t s5_1">Web technologies: React, Next.js, Ionic Framework, Angular, SASS, LessCSS, MySQL, </span>
+<span id="t9_1" class="t s5_1">PostgreSQL, MongoDB. </span>
+<span id="ta_1" class="t s5_1">VCS: git, GitHub. </span>
+<span id="tb_1" class="t s5_1">Graphics: Firgma, Sketch, Adobe Photoshop. </span>
+<span id="tc_1" class="t s5_1">Web3: Holaplex, Metaplex SDK, Solana blockchain. </span>
+<span id="td_1" class="t s4_1">Work Experience </span>
+<span id="te_1" class="t s6_1">Mastercard </span><span id="tf_1" class="t s5_1">Senior Software Engineer </span><span id="tg_1" class="t s5_1">Apr 2023 – May 2024 </span>
+<span id="th_1" class="t s7_1">javascript, node.js, typescript, angular 16, html5, css3, scss, postgresql </span>
+<span id="ti_1" class="t s8_1">Cyber and Intelligence Solutions group, implementing new features and bug fixes in web </span>
+<span id="tj_1" class="t s8_1">applications for multi-cryptocurrency wallets/transactions tracing and complying with global Travel </span>
+<span id="tk_1" class="t s8_1">Rule regulations and Financial Action Task Force (FATF) recommendations. </span>
+<span id="tl_1" class="t s6_1">Parlement Technologies </span><span id="tm_1" class="t s5_1">Sr Software/Blockchain Engineer II </span><span id="tn_1" class="t s5_1">June 2021 – Dec 2022 </span>
+<span id="to_1" class="t s7_1">javascript, react, vue, scss, node.js, php, mysql, postgresql, sequelize, metaplex sdk </span>
+<span id="tp_1" class="t s8_1">DeepRedSky.io NFT platform and marketplace. </span>
+<span id="tq_1" class="t s8_1">- Front-end — React, Next.js, SCSS. </span>
+<span id="tr_1" class="t s8_1">- Back-end — API service, Node.js, PostgreSQL, Sequelize. </span>
+<span id="ts_1" class="t s8_1">- Web3 — Metaplex SDK. </span>
+<span id="tt_1" class="t s8_1">Development and maintenance of customers’ web3 projects USAMemorabilia.com, </span>
+<span id="tu_1" class="t s8_1">melaniatrump.com, citykey.art. </span>
+<span id="tv_1" class="t s8_1">- Front-end — React, Next.js, SCSS. </span>
+<span id="tw_1" class="t s8_1">- Web3 — Metaplex SDK, wallet connect, NFT token minting, NFT collection contract </span>
+<span id="tx_1" class="t s8_1">stamping/verification, smart contracts. </span>
+<span id="ty_1" class="t s8_1">Parler.com social network. </span>
+<span id="tz_1" class="t s8_1">- Front-end new features implementation — Vue.js, SCSS. </span>
+<span id="t10_1" class="t s8_1">- Back-end admin tools development — PHP, Slim Framework, MySQL, Doctrine 2 ORM. </span>
+<span id="t11_1" class="t s6_1">CipherTrace </span><span id="t12_1" class="t s5_1">Software Engineer / Contract </span><span id="t13_1" class="t s5_1">June 2019 – March 2020 </span>
+<span id="t14_1" class="t s7_1">javascript, ionic5, angular, html5, css3, product design </span>
+<span id="t15_1" class="t s8_1">Hybrid Mobile App Development — Ionic 5, Angular 8, App Store/Play Store release management, </span>
+<span id="t16_1" class="t s8_1">PWA. </span></div>
 <!-- End text definitions -->
 
 
