@@ -173,6 +173,12 @@ body > footer {
   text-decoration: line-through !important;
 }
 
+.linethrough,
+s,
+s a {
+  color: #969696;
+}
+
 .strike-through,
 .strike-through td {
   text-decoration: line-through;
