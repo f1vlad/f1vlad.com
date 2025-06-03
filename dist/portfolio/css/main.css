@@ -38,6 +38,7 @@
     height: 100vh;
     overflow: hidden; }
   .menu-nav {
+    width: 100%;
     margin: 0;
     padding: 0;
     background: rgba(0, 0, 0, 0.9);
@@ -47,6 +48,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
+    display: none;
     background: rgba(0, 0, 0, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
@@ -55,7 +57,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
+      /* background: url("../img/portrait.jpg"); */
       border-radius: 50%;
       border: solid 3px #eece1a; }
   .menu .nav-item {
@@ -500,7 +502,7 @@ main {
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   ul.menu-nav {
-    height: 75vh;
+    height: 100vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   div.menu-branding {
