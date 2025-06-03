@@ -16,9 +16,8 @@
             <span class="text-secondary">Patents</span>
         </h1>
         <p><em>A list of patents I have filed.</em></p>
-
         <section class="patents">
-            <ul class="patents">
+            <ol class="patents">
                 <li>
                     <a href="https://patents.google.com/patent/US20170010759A1"><span>US 20170010759 A1</span> Smart user feedback</a>
                 </li>
@@ -61,7 +60,7 @@
                 <li>
                     <a href="https://patents.google.com/patent/US20160307164A1"><span>US 20160307164 A1</span> Location aware event scheduling</a>
                 </li>
-            </ul>
+            </ol>
         </section>
 
     </main>
@@ -84,5 +83,21 @@
 
   gtag('config', 'UA-141548-9');
 </script>
+<style>
+ol {
+    margin: 0 0 0 1.75em;
+    padding: 0;
+}
+
+ol li {
+    /* border: 1px solid red; */
+    margin-bottom: 1em;
+}
+
+ol li a {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+</style>
 
 </html>
