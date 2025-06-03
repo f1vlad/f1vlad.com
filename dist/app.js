@@ -19,6 +19,18 @@ function formSubmit(e) {
   e.preventDefault();
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const tip = document.querySelector("section.tip");
+  const form = tip.closest("form");
+  if (tip && form) {
+    tip.addEventListener("click", function (e) {
+      e.preventDefault();
+      form.requestSubmit ? form.requestSubmit() : form.submit();
+    });
+    tip.style.cursor = "pointer"; // Optional: show pointer cursor
+  }
+});
+
 async function typing(e) {
   route = `./${input.value.toLowerCase()}`;
   try {
