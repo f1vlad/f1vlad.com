@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  padding: 0;
   font-family: 'Courier New', Courier, monospace;  
 }
 
@@ -140,11 +141,37 @@ html, body {
   }
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.3);
+  }
+  25% {
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.5),
+                0 0 30px rgba(255, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5),
+                0 0 40px rgba(0, 0, 255, 0.3);
+  }
+  75% {
+    box-shadow: 0 0 15px rgba(255, 128, 0, 0.5),
+                0 0 30px rgba(128, 0, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.3);
+  }
+}
+
 form {
   display: flex;
+  flex-direction: row;
   z-index: 1;
   position: relative;
-  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40vh;
 }
 
 input {
@@ -160,12 +187,78 @@ input {
   border: none;
   color: #ddd;
   font-family: inherit;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  /* border-color: teal; */
+  animation: glow 6s ease-in-out infinite;
 }
 
 input:focus {
   outline: none;
 }
 
+input:not(:placeholder-shown) {
+  text-shadow:
+  0 0 2px #fff,
+  3px 0 2px red,
+  0 3px 2px red,
+  3px 3px 2px red,
+  0 0 2px #fff,
+  3px 0 2px red,
+  0 3px 2px red,
+  3px 3px 2px red;
+}
+
 .route-found input {
-  text-shadow: 0 0 2px #fff;
+  text-shadow:
+    0 0 2px #fff,
+    3px 0 2px teal,
+    0 3px 2px teal,
+    3px 3px 2px teal,
+    0 0 2px #fff,
+    3px 0 2px teal,
+    0 3px 2px teal,
+    3px 3px 2px teal;
+}
+
+.tip {
+  visibility: hidden;
+  color: #fff;
+  display: inline-block;
+  background: #333;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  margin-left: 10px;
+  box-shadow: 0 2px 0 #222;
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 20px;
+  width: 16px;
+  text-align: center;
+  margin: 1em;
+}
+
+.route-found input + .tip {
+  visibility: visible;
+
+}
+
+input + .tip:hover {
+  background: #444;
+  transform: translateY(1px);
+  box-shadow: 0 1px 0 #222;
+}
+
+input + .tip:active {
+  transform: translateY(2px);
+  box-shadow: none;
 }

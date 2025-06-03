@@ -289,6 +289,11 @@
   // Add popstate event listener at the top level
   window.addEventListener("popstate", function (e) {
     if (showProject) {
+      // Special case for resume page
+      if (window.location.pathname.includes("resume")) {
+        window.location.href = "/portfolio/resume";
+        return;
+      }
       closeProject(e);
     }
   });
