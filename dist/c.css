@@ -231,7 +231,15 @@ input:not(:placeholder-shown) {
   3px 3px 2px red;
 }
 
+input:not(:placeholder-shown) {
+  border-color: rgba(255, 255, 255, 0.03);
+  background-color: rgba(255, 255, 255, 0.01);
+}
+
 .route-found input {
+  border-color: rgba(255, 255, 255, 0.09);
+  background-color: rgba(255, 255, 255, 0.025);
+
   text-shadow:
     0 0 2px #fff,
     3px 0 2px teal,
