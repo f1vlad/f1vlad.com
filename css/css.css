@@ -607,3 +607,20 @@ span.grade {
   cursor:pointer !important;
 }
 
+.service-entries {
+  margin: 1em 0;
+}
+
+.service-row {
+  padding: 0.5em;
+  margin: 0;
+}
+
+.service-row:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+.service-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
