@@ -42,6 +42,7 @@ body {
   font:12px/170% "Lucida Grande",Arial,sans-serif;
   word-spacing: -0.09em;
   background: rgb(255,255,255);
+  min-width: 400px;
 }
 
 p {
@@ -244,6 +245,7 @@ a:active, a.active {
   text-indent: -999999px;
   width: 100%;
   display: block;
+  /* background-size: contain; */
 }
 
 .hi {
@@ -649,21 +651,30 @@ span.grade {
   #navicons li,
   #navicons li a {
     display: inline-block;
-    margin: 0.35rem 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    letter-spacing: -1.5px;
   }
 
   /* Reduce large titles to avoid overflow on mobile */
   h1 {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 1.2;
+    margin: 0.25em 0 0.35em 0;
   }
 
   h2 {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1.25;
+    margin: 0 0 0.35em 0;
   }
 
   /* Ensure main content uses full width without horizontal overflow */
+  hgroup {
+    margin: 0.25rem 0 0.5rem 0;
+  }
+
   .content_body {
     width: 100% !important;
     overflow-x: hidden;
@@ -680,13 +691,50 @@ span.grade {
     text-align: center;
   }
 
+  nav[role="navigation"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
   #navicons {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.5rem 0.75rem;
+    gap: 0;
     padding: 0;
+    margin: 0 0 0.5rem 0;
+  }
+
+  /* Hide small superscripts in nav on mobile */
+  #navicons .sup {
+    display: none;
+  }
+
+  /* Remove any backgrounds on nav links */
+  #navicons li a {
+    background: none !important;
+  }
+
+  /* Prevent logo background from scaling oddly on mobile */
+  .hl {
+    background-size: initial;
+    height: 60px;
+  }
+
+  /* Adjust header column positioning */
+  .container > header > section > div.column {
+    position: relative;
+    top: 20px;
+  }
+
+  .container > header > section > div > h2 {
+    position: relative;
+    font-size: 32px;
+    letter-spacing: -4px;
+    text-shadow: 2px 1.5px white, -2px -1.5px #ffffff;
   }
 
   /* Hide the “Good morning…” tweet widget on mobile */
