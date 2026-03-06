@@ -618,6 +618,12 @@ span.grade {
     overflow-x: hidden;
   }
 
+  /* Bump base text size for mobile */
+  body {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
   .container {
     width: 100%;
     padding: 0 1rem;
