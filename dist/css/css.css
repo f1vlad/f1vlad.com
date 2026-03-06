@@ -245,7 +245,7 @@ a:active, a.active {
   text-indent: -999999px;
   width: 100%;
   display: block;
-  background-size: contain;
+  /* background-size: contain; */
 }
 
 .hi {
