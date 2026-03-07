@@ -796,8 +796,8 @@ span.grade {
 
 @media (max-width: 480px) {
   body {
-    font-size: 11px;
-    line-height: 1.6;
+    font-size: 15px;
+    line-height: 1.7;
   }
 
   h1, h2, h3 {
