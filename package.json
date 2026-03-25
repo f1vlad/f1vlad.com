@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist"
+    "deploy": "wrangler pages deploy dist --project-name f1vlad-com --commit-dirty=true"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/f1vlad/f1vlad.com/issues"
   },
-  "dependencies": {
-    "gh-pages": "^2.0.1"
+  "devDependencies": {
+    "wrangler": "^4.77.0"
   }
 }
