@@ -17,6 +17,7 @@
     "url": "https://github.com/f1vlad/f1vlad.com/issues"
   },
   "devDependencies": {
+    "cheerio": "^1.2.0",
     "wrangler": "^4.77.0"
   }
 }
