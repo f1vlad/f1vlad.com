@@ -1,45 +1,38 @@
-<div>
-    <header>
-        <a href="#" class="btn-close">
-            <div class="menu-btn close">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </div>
-        </a>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SugarCRM: Project instantaneous conversions — Portfolio — f1vlad.com</title>
+  <link rel="stylesheet" href="../../css/style.css">
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="33f9e25a-b4ed-490e-88b2-09f9216ae1d9"></script>
+</head>
+<body>
+  <nav>
+    <a href="../../" class="back-link">← Projects</a>
+    <a href="../../patents.html">Patents</a>
+    <a href="../../resume.html">Resume</a>
+    <a href="../../contact.html">Contact</a>
+  </nav>
+  <main>
+    <h1>SugarCRM: Project instantaneous conversions</h1>
+    <p class="project-date">2017</p>
+    <div class="project-tags"><span>rapid prototyping</span><span>js</span><span>currency.js.org</span><span>currencyconverterapi.com</span></div>
+    <article class="project-content">
+      <p>Project Instantaneous Conversions was a rapid prototype (POC) during SugarCRM employees hackathon week. This project was inspired by a patent <a href="https://patents.google.com/patent/US20170199612A1"></a>I filed in 2016.</p>
 
-    <h3></h3>
-
-    <article>
-        <section class="about">
-            <h4>About</h4>
-            <p>Project Instantaneous Conversions was a rapid prototype (POC) during SugarCRM employees hackathon week. This project was inspired by a patent <a href="https://patents.google.com/patent/US20170199612A1"></a>I filed in 2016</a>.</p>
-
-            <p>This two level UX improvement to Quotes module of the app allows instantly convert foreign currencies or unit measurements, without leaving a view. A mobile user uses a technology akin to Apple's iPhone 3d touch to invoke a translation. A desktop user simple double clicks or long taps the area to invoke a translation.</p>    
-        </section>
-        <section class="meta">        
-            <p><span>Date:</span> 2017</p>
-
-            <p><span>Patent(s):</span> <a href="https://patents.google.com/patent/US20170199612A1">US20170199612A1</a></p>
-
-            <p><span>Technologies used:</span><span class="tech">n/a</span></p>
-        
-            <p><span>Role:</span> Front-end Engineer, Designer</p>
-
-        </section>
-
-        <section class="demos">
-
-            <h4>Video</h4>
+            <p>This two level UX improvement to Quotes module of the app allows instantly convert foreign currencies or unit measurements, without leaving a view. A mobile user uses a technology akin to Apple's iPhone 3d touch to invoke a translation. A desktop user simple double clicks or long taps the area to invoke a translation.</p>
+    </article>
+    <div class="project-links"><p><span>Patent(s):</span> <a href="https://patents.google.com/patent/US20170199612A1">US20170199612A1</a></p></div>
+    <section class="project-demos"><h4>Video</h4>
 
             <div class="video">
                 <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XNyQPHAgIhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XNyQPHAgIhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     <span>ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet...</span>
                 </div>
                 <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/chP_yQj8AuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/chP_yQj8AuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     <span>ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet...</span>
                 </div>
             </div>
@@ -48,8 +41,7 @@
 
             <div class="code">
                 <div>
-                    <pre>
-                        <code class="javascript">
+                    <pre>                        <code class="javascript">
 ///custom/modules/Quotes/clients/base/views/recordlist/recordlist.js
 ({
     extendsFrom: 'BaseRecordlistView',
@@ -89,7 +81,7 @@
         var currencyCache = {};
 
         function shuffleArray(array) {
-            for (var i = array.length - 1; i > 0; i--) {
+            for (var i = array.length - 1; i &gt; 0; i--) {
                 var j = Math.floor(Math.random() * (i + 1));
                 var temp = array[i];
                 array[i] = array[j];
@@ -104,7 +96,7 @@
 
                 let currencyCodeFrom,
                     currencyCodeTo = 'USD',
-                    currencySymbolTo = Object.keys(currencyDict).find(key => currencyDict[key] === currencyCodeTo),
+                    currencySymbolTo = Object.keys(currencyDict).find(key =&gt; currencyDict[key] === currencyCodeTo),
                     currentRate,
                     that = $(this);
 
@@ -163,7 +155,7 @@
                     }, _.random(700, 1400));
                 } else {
                     console.log('Conversion rate from API');
-                    $.ajax(`http://free.currencyconverterapi.com/api/v5/convert?q=${currencyCodeFrom}_${currencyCodeTo}&compact=y`, {
+                    $.ajax(`http://free.currencyconverterapi.com/api/v5/convert?q=${currencyCodeFrom}_${currencyCodeTo}&amp;compact=y`, {
                         success: function (data) {
                             var calculated;
                             currentRate = data[`${currencyCodeFrom}_${currencyCodeTo}`].val;
@@ -236,10 +228,10 @@
                 }
 
                 if(translationEnabled) {
-                    console.log(`https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&target=en&format=text&key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`);
+                    console.log(`https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&amp;target=en&amp;format=text&amp;key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`);
 
                     $.ajax({
-                        url: `https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&target=en&format=text&key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`,
+                        url: `https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&amp;target=en&amp;format=text&amp;key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`,
                         type: 'POST',
                         success: function(data) {
                             //console.log(data);
@@ -247,7 +239,7 @@
                             setTimeout(function (){
                                 that.find('.field-alt')
                                 .attr('rel', 'tooltip')
-                                .removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="${translateLink}">` + data.data.translations[0].translatedText + `</a>`);
+                                .removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="../../../deprecated/portfolio/${translateLink}">` + data.data.translations[0].translatedText + `</a>`);
                             }, _.random(700, 1400));
                         },
                         error: function() {
@@ -256,13 +248,13 @@
                             setTimeout(function (){
                                 that.find('.field-alt')
                                 .attr('rel', 'tooltip')
-                                .removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="${translateLink}">` + goodsDict[$(that).parent('tr').attr('num')] + `</a>`);
+                                .removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="../../../deprecated/portfolio/${translateLink}">` + goodsDict[$(that).parent('tr').attr('num')] + `</a>`);
                             }, _.random(700, 1400));
                         }
                     });
                 } else {
                     setTimeout(function (){
-                        that.find('.field-alt').removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="${translateLink}">TRANSLATED_TEXT</a>`);
+                        that.find('.field-alt').removeClass('still-loading').html(`<span class="fa fa-info-circle indicator" data-placement="bottom" data-original-title="You can undo by double clicking on the table" rel="tooltip" title="You can undo by double clicking on the table"></span><a href="../../../deprecated/portfolio/${translateLink}">TRANSLATED_TEXT</a>`);
                     }, _.random(700, 1400));
                 }
 
@@ -316,9 +308,11 @@
                     </pre>
 
                 </div>
-            </div>
-
-        </section>
-
-    </article>
-</div>
+            </div></section>
+    <p class="project-role">Role: Front-end Engineer, Designer</p>
+  </main>
+  <footer>
+    <p>© 1999–2026 f1vlad.com</p>
+  </footer>
+</body>
+</html>

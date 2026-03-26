@@ -6,9 +6,9 @@ const cheerio = require('cheerio');
 
 const ROOT = __dirname;
 const DIST = path.join(ROOT, 'dist');
-const CURRENT = path.join(DIST, 'portfolio');
+const CURRENT = path.join(DIST, 'deprecated', 'portfolio');
 const ARCHIVED = path.join(DIST, 'archived', 'portfolio');
-const OUTPUT = path.join(DIST, 'new', 'portfolio');
+const OUTPUT = path.join(DIST, 'portfolio');
 
 // ---------------------------------------------------------------------------
 // Utilities
@@ -59,19 +59,19 @@ function cleanHtml(html) {
     .trim();
 }
 
-// From project pages at dist/new/portfolio/projects/<slug>/ we need to reach
-// back into the original asset trees. That is 4 directory levels up to dist/.
+// From project pages at dist/portfolio/projects/<slug>/ we need to reach
+// back into the original asset trees. That is 3 directory levels up to dist/.
 function fixCurrentPaths(html) {
   return (html || '').replace(
     /(src|href)="(?!https?:\/\/|\/\/|data:|#|mailto:)([^"]+)"/g,
-    (_, attr, val) => `${attr}="../../../../portfolio/${val}"`
+    (_, attr, val) => `${attr}="../../../deprecated/portfolio/${val}"`
   );
 }
 
 function fixArchivedPaths(html) {
   return (html || '')
-    .replace(/(src|href)="\.\.\/images\//g, '$1="../../../../archived/portfolio/images/')
-    .replace(/(src|href)="\.\.\/files\//g, '$1="../../../../archived/portfolio/files/');
+    .replace(/(src|href)="\.\.\/images\//g, '$1="../../../archived/portfolio/images/')
+    .replace(/(src|href)="\.\.\/files\//g, '$1="../../../archived/portfolio/files/');
 }
 
 function mkdirp(dir) {
