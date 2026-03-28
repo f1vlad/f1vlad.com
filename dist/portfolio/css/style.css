@@ -33,6 +33,7 @@ header h1 { font-size: 1.5rem; font-weight: 600; }
 .project-list li { margin-bottom: 1rem; }
 .project-title { font-weight: 500; color: #1a1a1a; }
 .project-title:hover { color: #0969da; text-decoration: none; }
+.project-list-date { display: block; color: #656d76; font-size: 0.75rem; margin-top: 0.125rem; }
 .project-desc { color: #656d76; font-size: 0.8125rem; margin-top: 0.125rem; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.25rem; }
 .project-tags span {

@@ -263,6 +263,7 @@ function timelineHtml(yearGroups) {
       items += `
         <li>
           <a href="projects/${p.slug}/" class="project-title">${esc(p.title)}</a>
+          <span class="project-list-date">${esc(p.date)}</span>
           ${desc ? '<p class="project-desc">' + esc(desc) + '</p>' : ''}
           ${tagsStr ? '<div class="project-tags">' + tagsStr + '</div>' : ''}
         </li>`;
