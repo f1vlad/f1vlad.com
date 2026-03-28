@@ -296,8 +296,7 @@ function timelineHtml(yearGroups) {
     <a href="contact.html">Contact</a>
   </nav>
   <header>
-    <h1>Portfolio</h1>
-    <p class="subtitle">${first}\u2013${last}</p>
+    <h1>Portfolio <input type="checkbox" id="table-toggle" hidden><label for="table-toggle" class="view-toggle" data-tip-list="List view" data-tip-table="Table view"></label></h1>
   </header>
   <main>${sections}
   </main>
