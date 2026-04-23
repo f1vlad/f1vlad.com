@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "generate:portfolio": "node generate-portfolio.js",
+    "inject:ga4": "node inject-ga4.js",
+    "build:site": "node generate-portfolio.js && node inject-ga4.js",
     "deploy": "wrangler pages deploy dist --project-name f1vlad-com --commit-dirty=true"
   },
   "repository": {

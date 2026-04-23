@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
+<!DOCTYPE html><!--
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2009 Frederico Caldeira Knabben
  *
@@ -20,13 +19,11 @@
  * == END LICENSE ==
  *
  * Sample page.
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+--><html xmlns="http://www.w3.org/1999/xhtml"><head>
 	<title>FCKeditor - Sample</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex, nofollow" />
-	<link href="../sample.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="../sample.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="../../fckeditor.js"></script>
 	<script type="text/javascript">
 <!--
@@ -138,6 +135,16 @@ function ResetIsDirty()
 }
 -->
 	</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body>
 	<h1>
@@ -147,7 +154,7 @@ function ResetIsDirty()
 		This sample shows how to use the FCKeditor JavaScript API to interact with the editor
 		at runtime.
 	</div>
-	<hr />
+	<hr>
 	<form action="../php/sampleposteddata.php" method="post" target="_blank">
 		<script type="text/javascript">
 <!--
@@ -162,13 +169,13 @@ oFCKeditor.Value	= '<p>This is some <strong>sample text<\/strong>. You are using
 oFCKeditor.Create() ;
 //-->
 		</script>
-		<br />
-		<input type="submit" value="Submit" />
+		<br>
+		<input type="submit" value="Submit">
 	</form>
 	<div>
 		&nbsp;
 	</div>
-	<hr />
+	<hr>
 	<div id="eMessage">
 		&nbsp;
 	</div>
@@ -176,21 +183,22 @@ oFCKeditor.Create() ;
 		&nbsp;
 	</div>
 	<div id="eButtons" style="visibility: hidden">
-		<input type="button" value="Insert HTML" onclick="InsertHTML();" />
-		<input type="button" value="Set Editor Contents" onclick="SetContents();" />
-		<input type="button" value="Get Editor Contents (XHTML)" onclick="GetContents();" />
-		<br />
-		<br />
-		<input type="button" value='Execute "Bold" Command' onclick="ExecuteCommand('Bold');" />
-		<input type="button" value='Execute "Link" Command' onclick="ExecuteCommand('Link');" />
-		<br />
-		<br />
-		<input type="button" value="Interact with the Editor Area DOM" onclick="GetLength();" />
-		<input type="button" value="Get innerHTML" onclick="GetInnerHTML();" />
-		<br />
-		<br />
-		<input type="button" value="Check IsDirty()" onclick="CheckIsDirty();" />
-		<input type="button" value="Reset IsDirty()" onclick="ResetIsDirty();" />
+		<input type="button" value="Insert HTML" onclick="InsertHTML();">
+		<input type="button" value="Set Editor Contents" onclick="SetContents();">
+		<input type="button" value="Get Editor Contents (XHTML)" onclick="GetContents();">
+		<br>
+		<br>
+		<input type="button" value="Execute &quot;Bold&quot; Command" onclick="ExecuteCommand('Bold');">
+		<input type="button" value="Execute &quot;Link&quot; Command" onclick="ExecuteCommand('Link');">
+		<br>
+		<br>
+		<input type="button" value="Interact with the Editor Area DOM" onclick="GetLength();">
+		<input type="button" value="Get innerHTML" onclick="GetInnerHTML();">
+		<br>
+		<br>
+		<input type="button" value="Check IsDirty()" onclick="CheckIsDirty();">
+		<input type="button" value="Reset IsDirty()" onclick="ResetIsDirty();">
 	</div>
-</body>
-</html>
+
+
+</body></html>

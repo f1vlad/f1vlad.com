@@ -1,4 +1,14 @@
-<div>
+<html><head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
+</head><body><div>
     <header>
         <a href="#" class="btn-close">
             <div class="menu-btn close">
@@ -14,7 +24,7 @@
     <article>
         <section class="about">
             <h4>About</h4>
-            <p>Project Instantaneous Conversions was a rapid prototype (POC) during SugarCRM employees hackathon week. This project was inspired by a patent <a href="https://patents.google.com/patent/US20170199612A1"></a>I filed in 2016</a>.</p>
+            <p>Project Instantaneous Conversions was a rapid prototype (POC) during SugarCRM employees hackathon week. This project was inspired by a patent <a href="https://patents.google.com/patent/US20170199612A1"></a>I filed in 2016.</p>
 
             <p>This two level UX improvement to Quotes module of the app allows instantly convert foreign currencies or unit measurements, without leaving a view. A mobile user uses a technology akin to Apple's iPhone 3d touch to invoke a translation. A desktop user simple double clicks or long taps the area to invoke a translation.</p>    
         </section>
@@ -35,11 +45,11 @@
 
             <div class="video">
                 <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XNyQPHAgIhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XNyQPHAgIhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     <span>ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet...</span>
                 </div>
                 <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/chP_yQj8AuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/chP_yQj8AuI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                     <span>ipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit ametipsum dolor sit amet...</span>
                 </div>
             </div>
@@ -48,8 +58,7 @@
 
             <div class="code">
                 <div>
-                    <pre>
-                        <code class="javascript">
+                    <pre>                        <code class="javascript">
 ///custom/modules/Quotes/clients/base/views/recordlist/recordlist.js
 ({
     extendsFrom: 'BaseRecordlistView',
@@ -89,7 +98,7 @@
         var currencyCache = {};
 
         function shuffleArray(array) {
-            for (var i = array.length - 1; i > 0; i--) {
+            for (var i = array.length - 1; i &gt; 0; i--) {
                 var j = Math.floor(Math.random() * (i + 1));
                 var temp = array[i];
                 array[i] = array[j];
@@ -104,7 +113,7 @@
 
                 let currencyCodeFrom,
                     currencyCodeTo = 'USD',
-                    currencySymbolTo = Object.keys(currencyDict).find(key => currencyDict[key] === currencyCodeTo),
+                    currencySymbolTo = Object.keys(currencyDict).find(key =&gt; currencyDict[key] === currencyCodeTo),
                     currentRate,
                     that = $(this);
 
@@ -163,7 +172,7 @@
                     }, _.random(700, 1400));
                 } else {
                     console.log('Conversion rate from API');
-                    $.ajax(`http://free.currencyconverterapi.com/api/v5/convert?q=${currencyCodeFrom}_${currencyCodeTo}&compact=y`, {
+                    $.ajax(`http://free.currencyconverterapi.com/api/v5/convert?q=${currencyCodeFrom}_${currencyCodeTo}&amp;compact=y`, {
                         success: function (data) {
                             var calculated;
                             currentRate = data[`${currencyCodeFrom}_${currencyCodeTo}`].val;
@@ -236,10 +245,10 @@
                 }
 
                 if(translationEnabled) {
-                    console.log(`https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&target=en&format=text&key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`);
+                    console.log(`https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&amp;target=en&amp;format=text&amp;key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`);
 
                     $.ajax({
-                        url: `https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&target=en&format=text&key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`,
+                        url: `https://translation.googleapis.com/language/translate/v2?q=` + encodeURI(nameFieldValue) + `&amp;target=en&amp;format=text&amp;key=AIzaSyDR9LjYxoafa6l829bNDalUuAz65EGnaNo`,
                         type: 'POST',
                         success: function(data) {
                             //console.log(data);
@@ -322,3 +331,4 @@
 
     </article>
 </div>
+</body></html>

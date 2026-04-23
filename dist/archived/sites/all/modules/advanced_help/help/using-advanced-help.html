@@ -1,5 +1,14 @@
-<!-- $Id: using-advanced-help.html,v 1.6 2008/10/17 18:55:38 merlinofchaos Exp $ -->
-<p>The <em>Advanced help</em> system is a pluggable system that provides advanced help facilities for Drupal and its modules. Although the advanced help does not provide general help by itself, it provides a powerful and easy framework that modules may use to provide their own help.
+<!-- $Id: using-advanced-help.html,v 1.6 2008/10/17 18:55:38 merlinofchaos Exp $ --><html><head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
+</head><body><p>The <em>Advanced help</em> system is a pluggable system that provides advanced help facilities for Drupal and its modules. Although the advanced help does not provide general help by itself, it provides a powerful and easy framework that modules may use to provide their own help.
 </p>
 
 <p>
@@ -7,8 +16,7 @@ Modules utilizing <em>Advanced help</em> should create a 'help' subdirectory ins
 module's directory. Place the file MODULENAME.help.ini in this subdirectory, formatted
 similar to the following example:
 </p>
-<pre>
-[buses]
+<pre>[buses]
 title = "How buses are tied into the system"
 file = buses
 
@@ -36,11 +44,12 @@ within the help directory, such as images you wish to embed within the help text
 
 <p>Use <strong>&lt;a href="&amp;base_url&amp;admin/settings/site-configuration"&gt;</strong> to reference any normal path in the site.</p>
 
-<p>If the search module is enabled, the contents of help system will be indexed on cron. If you enable new modules and wish to immediately index its help text, visit the "Administration -> Reports -> Status report" and click the "Run cron manually" link.</p>
+<p>If the search module is enabled, the contents of help system will be indexed on cron. If you enable new modules and wish to immediately index its help text, visit the "Administration -&gt; Reports -&gt; Status report" and click the "Run cron manually" link.</p>
 
-<p>Example: <a href="&path&nowhere.jpg">Don't click this!</a></p>
+<p>Example: <a href="&amp;path&amp;nowhere.jpg">Don't click this!</a></p>
 
-<p>See: <a href="&topic:advanced_help/ini-file&">ini file format</a></p>
+<p>See: <a href="&amp;topic:advanced_help/ini-file&amp;">ini file format</a></p>
 
 <p><strong>NOTE: </strong> In previous versions Advanced Help did not require the &amp;'s wrapped around the topic:, path:, and base_url: links.  This
-is currently still supported, but may be removed in a future version.  By adding the &'s these tokens are now not limited to href="" and src="" paramaters.</p>
+is currently still supported, but may be removed in a future version.  By adding the &amp;'s these tokens are now not limited to href="" and src="" paramaters.</p>
+</body></html>

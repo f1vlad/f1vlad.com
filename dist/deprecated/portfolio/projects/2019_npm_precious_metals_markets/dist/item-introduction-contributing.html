@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
-<head>
+<!DOCTYPE html><html class="no-js" lang="en"><head>
   <meta charset="utf-8">
   <title>SugarCRM Multiverse Styleguide</title>
 
@@ -11,6 +9,16 @@
   <link rel="stylesheet" href="kss-assets/kss.css">
   <link rel="stylesheet" href="kss-assets/styles.css?497ccc1b00e589d29219ca8d">
 
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body id="kss-node" class="kss-fullscreen-mode">
 
@@ -22,8 +30,7 @@
     <ul class="kss-nav__menu">
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="./">
-          <span class="kss-nav__ref">0</span
-          ><span class="kss-nav__name">Overview</span>
+          <span class="kss-nav__ref">0</span><span class="kss-nav__name">Overview</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
@@ -87,7 +94,7 @@
             <p>The following is example on how to write documentation:</p>
 <pre class="hljs"><code class="language-">// Basic button
 //
-// This is styling of a &lt;i&gt;basic&lt;/i&gt; button, mockup: &lt;img src=&quot;mockup.png&quot;&gt;
+// This is styling of a &lt;i&gt;basic&lt;/i&gt; button, mockup: &lt;img src="mockup.png"&gt;
 //
 // Markup: mybutton.hbs
 //
@@ -120,14 +127,14 @@
 Description can contain some HTML tags as shown in the example.</p>
 <p>Next is markup where we show a demo. Markup can be either in an hbs file or right in the documentation like this:</p>
 <pre class="hljs"><code class="language-">// Markup:
-// &lt;button class=&quot;myButton&quot;&gt;&lt;/button&gt;
+// &lt;button class="myButton"&gt;&lt;/button&gt;
 </code></pre>
 <p>Next we show the css code for our button that consumes button mixin.</p>
 <p>Next we want to demo this button in our styleguide documentation: <code>democlasses: true</code> followed by <code>cssclasses: ...</code> where consume
 mixin in our demo code. Demo classes are living strictly in styleguide documentation, they are built separately than main css
 output file. <span style="color: red">Note:</span> there can be no empty lines under <code>cssclasses: ...</code>.</p>
 <p>Finally, we specify <code>Weight: 1</code> which sorts documentation pieces under the category, and <code>Styleguide SomeSection.MyButton</code> which
-puts this documentation piece under &quot;SomeSection&quot; category.</p>
+puts this documentation piece under "SomeSection" category.</p>
 <p>If some documentation specific styling is required, file <code>src/styleguide-doc-frontend/kss.less</code> should be used.</p>
 <p>It is also possible to make these demo components interactive, file <code>src/styleguide-doc-frontend/styleguide.js</code> should be used.</p>
 <p>For more information see KSS-specific stuff, see <a href="https://github.com/kss-node/kss/blob/spec/SPEC.md">KSS markup</a>
@@ -177,5 +184,6 @@ and <a href="https://github.com/kss-node/kss-node/wiki/Quick-Start-Guide">Quick 
 
 
 <!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
-</body>
-</html>
+
+
+</body></html>

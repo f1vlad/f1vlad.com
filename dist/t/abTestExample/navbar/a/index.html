@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-   <head>
+<!DOCTYPE html><html><head>
       <script src="include/jquery-1.11.3.js"></script>
       <script src="include/jquery.uitablefilter.js"></script>
       <script src="include/faker.js"></script>
@@ -14,7 +12,17 @@
       <link rel="stylesheet" href="./include/bootstrap_23d99d94c15b03b7d24e723ff0af8f51.css">
       <link rel="stylesheet" href="./include/sugar_35121640a256edc4947c120c8e8a6317.css">
       <link rel="stylesheet" href="css.css" type="text/css">
-   </head>
+   
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
+</head>
    <body>
       <div id="sugarcrm">
          <div id="sidecar">
@@ -668,72 +676,72 @@
 
             <div>
                <div class="navbar search">
-                  <div class="navbar-search table" aria-role=search data-component=searchbar>
-                     <div class="table-cell quicksearch-modulelist-wrapper hide" style=display:none>
-                        <div class=module-dropdown data-toggle=dropdown tabindex=-1><span data-label=module-icons><span class="label non-module-label" aria-label="Global Search Module Filter" title=All>All</span></span>
-                           <button class="module-dropdown-button btn btn-invisible" track=click:globalsearch-dropdown><i class="fa fa-caret-down"></i></button>
+                  <div class="navbar-search table" aria-role="search" data-component="searchbar">
+                     <div class="table-cell quicksearch-modulelist-wrapper hide" style="display:none">
+                        <div class="module-dropdown" data-toggle="dropdown" tabindex="-1"><span data-label="module-icons"><span class="label non-module-label" aria-label="Global Search Module Filter" title="All">All</span></span>
+                           <button class="module-dropdown-button btn btn-invisible" track="click:globalsearch-dropdown"><i class="fa fa-caret-down"></i></button>
                         </div>
                         <ul class="dropdown-menu module-dropdown-list">
-                           <li class="menu-item ellipsis_inline selected" data-action=select-all tabindex=-1 data-original-title="Search all"><i class="fa fa-check"></i><span>Search all</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Accounts data-action=select-module tabindex=-1 data-original-title=Accounts><i class="fa fa-check"></i><span>Accounts</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Bugs data-action=select-module tabindex=-1 data-original-title=Bugs><i class="fa fa-check"></i><span>Bugs</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Calls data-action=select-module tabindex=-1 data-original-title=Calls><i class="fa fa-check"></i><span>Calls</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Campaigns data-action=select-module tabindex=-1 data-original-title=Campaigns><i class="fa fa-check"></i><span>Campaigns</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Cases data-action=select-module tabindex=-1 data-original-title=Cases><i class="fa fa-check"></i><span>Cases</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Contacts data-action=select-module tabindex=-1 data-original-title=Contacts><i class="fa fa-check"></i><span>Contacts</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Contracts data-action=select-module tabindex=-1 data-original-title=Contracts><i class="fa fa-check"></i><span>Contracts</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Documents data-action=select-module tabindex=-1 data-original-title=Documents><i class="fa fa-check"></i><span>Documents</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Emails data-action=select-module tabindex=-1 data-original-title=Emails><i class="fa fa-check"></i><span>Emails</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Employees data-action=select-module tabindex=-1 data-original-title=Employees><i class="fa fa-check"></i><span>Employees</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=KBContents data-action=select-module tabindex=-1 data-original-title="Knowledge Base"><i class="fa fa-check"></i><span>Knowledge Base</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Leads data-action=select-module tabindex=-1 data-original-title=Leads><i class="fa fa-check"></i><span>Leads</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Manufacturers data-action=select-module tabindex=-1 data-original-title=Manufacturers><i class="fa fa-check"></i><span>Manufacturers</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Meetings data-action=select-module tabindex=-1 data-original-title=Meetings><i class="fa fa-check"></i><span>Meetings</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Notes data-action=select-module tabindex=-1 data-original-title=Notes><i class="fa fa-check"></i><span>Notes</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Opportunities data-action=select-module tabindex=-1 data-original-title=Opportunities><i class="fa fa-check"></i><span>Opportunities</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=ProductCategories data-action=select-module tabindex=-1 data-original-title="Product Categories"><i class="fa fa-check"></i><span>Product Categories</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=ProjectTask data-action=select-module tabindex=-1 data-original-title="Project Tasks"><i class="fa fa-check"></i><span>Project Tasks</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Project data-action=select-module tabindex=-1 data-original-title=Projects><i class="fa fa-check"></i><span>Projects</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Products data-action=select-module tabindex=-1 data-original-title="Quoted Line Items"><i class="fa fa-check"></i><span>Quoted Line Items</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Quotes data-action=select-module tabindex=-1 data-original-title=Quotes><i class="fa fa-check"></i><span>Quotes</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=RevenueLineItems data-action=select-module tabindex=-1 data-original-title="Revenue Line Items"><i class="fa fa-check"></i><span>Revenue Line Items</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=ProspectLists data-action=select-module tabindex=-1 data-original-title="Target Lists"><i class="fa fa-check"></i><span>Target Lists</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Prospects data-action=select-module tabindex=-1 data-original-title=Targets><i class="fa fa-check"></i><span>Targets</span></li>
-                           <li class="menu-item ellipsis_inline" data-module=Tasks data-action=select-module tabindex=-1 data-original-title=Tasks><i class="fa fa-check"></i><span>Tasks</span></li>
+                           <li class="menu-item ellipsis_inline selected" data-action="select-all" tabindex="-1" data-original-title="Search all"><i class="fa fa-check"></i><span>Search all</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Accounts" data-action="select-module" tabindex="-1" data-original-title="Accounts"><i class="fa fa-check"></i><span>Accounts</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Bugs" data-action="select-module" tabindex="-1" data-original-title="Bugs"><i class="fa fa-check"></i><span>Bugs</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Calls" data-action="select-module" tabindex="-1" data-original-title="Calls"><i class="fa fa-check"></i><span>Calls</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Campaigns" data-action="select-module" tabindex="-1" data-original-title="Campaigns"><i class="fa fa-check"></i><span>Campaigns</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Cases" data-action="select-module" tabindex="-1" data-original-title="Cases"><i class="fa fa-check"></i><span>Cases</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Contacts" data-action="select-module" tabindex="-1" data-original-title="Contacts"><i class="fa fa-check"></i><span>Contacts</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Contracts" data-action="select-module" tabindex="-1" data-original-title="Contracts"><i class="fa fa-check"></i><span>Contracts</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Documents" data-action="select-module" tabindex="-1" data-original-title="Documents"><i class="fa fa-check"></i><span>Documents</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Emails" data-action="select-module" tabindex="-1" data-original-title="Emails"><i class="fa fa-check"></i><span>Emails</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Employees" data-action="select-module" tabindex="-1" data-original-title="Employees"><i class="fa fa-check"></i><span>Employees</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="KBContents" data-action="select-module" tabindex="-1" data-original-title="Knowledge Base"><i class="fa fa-check"></i><span>Knowledge Base</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Leads" data-action="select-module" tabindex="-1" data-original-title="Leads"><i class="fa fa-check"></i><span>Leads</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Manufacturers" data-action="select-module" tabindex="-1" data-original-title="Manufacturers"><i class="fa fa-check"></i><span>Manufacturers</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Meetings" data-action="select-module" tabindex="-1" data-original-title="Meetings"><i class="fa fa-check"></i><span>Meetings</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Notes" data-action="select-module" tabindex="-1" data-original-title="Notes"><i class="fa fa-check"></i><span>Notes</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Opportunities" data-action="select-module" tabindex="-1" data-original-title="Opportunities"><i class="fa fa-check"></i><span>Opportunities</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="ProductCategories" data-action="select-module" tabindex="-1" data-original-title="Product Categories"><i class="fa fa-check"></i><span>Product Categories</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="ProjectTask" data-action="select-module" tabindex="-1" data-original-title="Project Tasks"><i class="fa fa-check"></i><span>Project Tasks</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Project" data-action="select-module" tabindex="-1" data-original-title="Projects"><i class="fa fa-check"></i><span>Projects</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Products" data-action="select-module" tabindex="-1" data-original-title="Quoted Line Items"><i class="fa fa-check"></i><span>Quoted Line Items</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Quotes" data-action="select-module" tabindex="-1" data-original-title="Quotes"><i class="fa fa-check"></i><span>Quotes</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="RevenueLineItems" data-action="select-module" tabindex="-1" data-original-title="Revenue Line Items"><i class="fa fa-check"></i><span>Revenue Line Items</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="ProspectLists" data-action="select-module" tabindex="-1" data-original-title="Target Lists"><i class="fa fa-check"></i><span>Target Lists</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Prospects" data-action="select-module" tabindex="-1" data-original-title="Targets"><i class="fa fa-check"></i><span>Targets</span></li>
+                           <li class="menu-item ellipsis_inline" data-module="Tasks" data-action="select-module" tabindex="-1" data-original-title="Tasks"><i class="fa fa-check"></i><span>Tasks</span></li>
                         </ul>
                      </div>
                      <div class="table-cell quicksearch-selected-tags"></div>
                      <div class="table-cell quicksearch-bar-wrapper">
-                        <input class=search-query placeholder=Search data-action=search_bar aria-label="Global Search">
+                        <input class="search-query" placeholder="Search" data-action="search_bar" aria-label="Global Search">
                      </div>
                   </div>
                   <div>
-                     <div class=quicksearch-tags-wrapper>
+                     <div class="quicksearch-tags-wrapper">
                         <div class="quicksearch-tags dropdown-menu hide"><span class="qs-tags-row qs-tag-icon"><i class="fa fa-tag"></i></span></div>
                      </div>
                   </div>
                   <div>
-                     <div class=typeahead-wrapper>
+                     <div class="typeahead-wrapper">
                         <ul class="typeahead dropdown-menu search-results">
-                           <li class="no-results ellipsis_inline" data-placement=bottom data-original-title="">
-                              <div class=loading>Searching<i class=l1>.</i><i class=l2>.</i><i class=l3>.</i></div>
+                           <li class="no-results ellipsis_inline" data-placement="bottom" data-original-title="">
+                              <div class="loading">Searching<i class="l1">.</i><i class="l2">.</i><i class="l3">.</i></div>
                            </li>
                         </ul>
                      </div>
                   </div>
-                  <div class=quicksearch-button-wrapper>
-                     <button class="btn btn-link btn-invisible advanced" data-action=search_icon><i class="fa fa-search"></i></button>
+                  <div class="quicksearch-button-wrapper">
+                     <button class="btn btn-link btn-invisible advanced" data-action="search_icon"><i class="fa fa-search"></i></button>
                   </div>
                </div>
                <div>
                   <ul class="nav megamenu">
                      <li class="dropdown notification-list">
-                        <div class=btn-group data-name=notifications-list-button>
-                           <button class="btn btn-danger dropdown-toggle" data-toggle=dropdown rel=tooltip aria-label=Notifications data-placement=bottom data-original-title=Notifications>1</button>
+                        <div class="btn-group" data-name="notifications-list-button">
+                           <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" rel="tooltip" aria-label="Notifications" data-placement="bottom" data-original-title="Notifications">1</button>
                            <div class="dropdown-menu scroll pull-right">
-                              <ul role=menu>
-                                 <li><a class=row-fluid href=http://localhost/ent/sugarcrm/index.php#Notifications/3a2b9318-f381-3415-ab09-55f1a77a788e/detail data-id=3a2b9318-f381-3415-ab09-55f1a77a788e data-action=is-read-handler tabindex=-1><span class="span8 ellipsis_inline" data-placement=bottom data-original-title="Missing SMTP Server settings"><span sfuuid=499 class=detail><span class="label label-warning">Warning</span></span> Missing SMTP Server settings</span> <time datetime=2015-09-10T11:52:54-04:00 class="span4 pull-right" title="09/10/2015 11:52am">an hour ago</time></a></li>
-                                 <li><a class=row-fluid href=http://localhost/ent/sugarcrm/index.php#Notifications tabindex=-1><i class="fa fa-bars span1"></i><span class="span8 ellipsis_inline" data-original-title="">View Notifications</span></a></li>
+                              <ul role="menu">
+                                 <li><a class="row-fluid" href="http://localhost/ent/sugarcrm/index.php#Notifications/3a2b9318-f381-3415-ab09-55f1a77a788e/detail" data-id="3a2b9318-f381-3415-ab09-55f1a77a788e" data-action="is-read-handler" tabindex="-1"><span class="span8 ellipsis_inline" data-placement="bottom" data-original-title="Missing SMTP Server settings"><span sfuuid="499" class="detail"><span class="label label-warning">Warning</span></span> Missing SMTP Server settings</span> <time datetime="2015-09-10T11:52:54-04:00" class="span4 pull-right" title="09/10/2015 11:52am">an hour ago</time></a></li>
+                                 <li><a class="row-fluid" href="http://localhost/ent/sugarcrm/index.php#Notifications" tabindex="-1"><i class="fa fa-bars span1"></i><span class="span8 ellipsis_inline" data-original-title="">View Notifications</span></a></li>
                               </ul>
                            </div>
                         </div>
@@ -741,17 +749,17 @@
                   </ul>
                </div>
                <div>
-                  <ul class="nav megamenu" id=userList>
-                     <li class=dropdown id=userActions data-menu=user-actions tabindex=-1>
-                        <div class=btn-group>
-                           <button id=userTab data-toggle=dropdown class="btn btn-invisible btn-link dropdown-toggle" rel=tooltip data-placement=bottom track=click:userActions aria-label="User Menu" data-original-title=admin><img src=./include/picture alt=admin class="avatar avatar-btn"> <i class="fa fa-caret-down"></i></button>
+                  <ul class="nav megamenu" id="userList">
+                     <li class="dropdown" id="userActions" data-menu="user-actions" tabindex="-1">
+                        <div class="btn-group">
+                           <button id="userTab" data-toggle="dropdown" class="btn btn-invisible btn-link dropdown-toggle" rel="tooltip" data-placement="bottom" track="click:userActions" aria-label="User Menu" data-original-title="admin"><img src="./include/picture" alt="admin" class="avatar avatar-btn"> <i class="fa fa-caret-down"></i></button>
                            <div class="dropdown-menu scroll pull-right">
-                              <ul role=menu id=fullmenu>
-                                 <li class=profileactions-profile><a href=http://localhost/ent/sugarcrm/index.php#profile track=click:userAction-LBL_PROFILE tabindex=-1><span><img src=./include/picture alt=admin class="avatar avatar-sm"></span>Profile</a></li>
-                                 <li class=profileactions-employees><a href="http://localhost/ent/sugarcrm/index.php#bwc/index.php?module=Employees&action=index&query=true" track=click:userAction-LBL_EMPLOYEES tabindex=-1><i class="fa fa-users"></i>Employees</a></li>
-                                 <li class=administration><a href="http://localhost/ent/sugarcrm/index.php#bwc/index.php?module=Administration&action=index" track=click:userAction-LBL_ADMIN tabindex=-1><i class="fa fa-cogs"></i>Admin</a></li>
-                                 <li class=profileactions-about><a href=http://localhost/ent/sugarcrm/index.php#about track=click:userAction-LNK_ABOUT tabindex=-1><i class="fa fa-info-circle"></i>About</a></li>
-                                 <li class=profileactions-logout><a href="http://localhost/ent/sugarcrm/index.php#logout/?clear=1" track=click:userAction-LBL_LOGOUT tabindex=-1><i class="fa fa-sign-out"></i>Log Out</a></li>
+                              <ul role="menu" id="fullmenu">
+                                 <li class="profileactions-profile"><a href="http://localhost/ent/sugarcrm/index.php#profile" track="click:userAction-LBL_PROFILE" tabindex="-1"><span><img src="./include/picture" alt="admin" class="avatar avatar-sm"></span>Profile</a></li>
+                                 <li class="profileactions-employees"><a href="http://localhost/ent/sugarcrm/index.php#bwc/index.php?module=Employees&amp;action=index&amp;query=true" track="click:userAction-LBL_EMPLOYEES" tabindex="-1"><i class="fa fa-users"></i>Employees</a></li>
+                                 <li class="administration"><a href="http://localhost/ent/sugarcrm/index.php#bwc/index.php?module=Administration&amp;action=index" track="click:userAction-LBL_ADMIN" tabindex="-1"><i class="fa fa-cogs"></i>Admin</a></li>
+                                 <li class="profileactions-about"><a href="http://localhost/ent/sugarcrm/index.php#about" track="click:userAction-LNK_ABOUT" tabindex="-1"><i class="fa fa-info-circle"></i>About</a></li>
+                                 <li class="profileactions-logout"><a href="http://localhost/ent/sugarcrm/index.php#logout/?clear=1" track="click:userAction-LBL_LOGOUT" tabindex="-1"><i class="fa fa-sign-out"></i>Log Out</a></li>
                               </ul>
                            </div>
                         </div>
@@ -760,22 +768,22 @@
                </div>
                <div>
                   <ul class="nav megamenu">
-                     <li class=dropdown id=createList>
-                        <div class=btn-group>
-                           <button data-toggle=dropdown role=button class="btn btn-invisible btn-link dropdown-toggle" rel=tooltip data-placement=left track=click:quickCreate aria-label="Quick Create Menu" data-original-title="Quick Create"><i class="fa fa-plus fa-md"></i></button>
-                           <div class="dropdown-menu scroll pull-right" role=menu>
+                     <li class="dropdown" id="createList">
+                        <div class="btn-group">
+                           <button data-toggle="dropdown" role="button" class="btn btn-invisible btn-link dropdown-toggle" rel="tooltip" data-placement="left" track="click:quickCreate" aria-label="Quick Create Menu" data-original-title="Quick Create"><i class="fa fa-plus fa-md"></i></button>
+                           <div class="dropdown-menu scroll pull-right" role="menu">
                               <ul>
-                                 <li><span sfuuid=26 class=quickcreate><a class=actionLink data-module=Accounts data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Accounts tabindex=-1><i class="fa fa-plus"></i>Create Account</a></span></li>
-                                 <li><span sfuuid=27 class=quickcreate><a class=actionLink data-module=Contacts data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Contacts tabindex=-1><i class="fa fa-plus"></i>Create Contact</a></span></li>
-                                 <li><span sfuuid=28 class=quickcreate><a class=actionLink data-module=Opportunities data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Opportunities tabindex=-1><i class="fa fa-plus"></i>Create Opportunity</a></span></li>
-                                 <li><span sfuuid=29 class=quickcreate><a class=actionLink data-module=Leads data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Leads tabindex=-1><i class="fa fa-plus"></i>Create Lead</a></span></li>
-                                 <li><span sfuuid=30 class=quickcreate><a class=actionLink data-module=Documents data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Documents tabindex=-1><i class="fa fa-plus"></i>Create Document</a></span></li>
-                                 <li><span sfuuid=31 class=quickcreate><a data-action=email href=javascript:void(0) track=click:quickCreate-Emails tabindex=-1><i class="fa fa-plus"></i>Compose Email</a></span></li>
-                                 <li><span sfuuid=32 class=quickcreate><a class=actionLink data-module=Calls data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Calls tabindex=-1><i class="fa fa-phone"></i>Log Call</a></span></li>
-                                 <li><span sfuuid=33 class=quickcreate><a class=actionLink data-module=Meetings data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Meetings tabindex=-1><i class="fa fa-calendar"></i>Schedule Meeting</a></span></li>
-                                 <li><span sfuuid=34 class=quickcreate><a class=actionLink data-module=Tasks data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Tasks tabindex=-1><i class="fa fa-plus"></i>Create Task</a></span></li>
-                                 <li><span sfuuid=35 class=quickcreate><a class=actionLink data-module=Notes data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-Notes tabindex=-1><i class="fa fa-plus"></i>Create Note or Attachment</a></span></li>
-                                 <li><span sfuuid=36 class=quickcreate><a class=actionLink data-module=RevenueLineItems data-layout=create data-event=true href=javascript:void(0); track=click:quickCreate-RevenueLineItems tabindex=-1><i class="fa fa-plus"></i>Create Revenue Line Item</a></span></li>
+                                 <li><span sfuuid="26" class="quickcreate"><a class="actionLink" data-module="Accounts" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Accounts" tabindex="-1"><i class="fa fa-plus"></i>Create Account</a></span></li>
+                                 <li><span sfuuid="27" class="quickcreate"><a class="actionLink" data-module="Contacts" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Contacts" tabindex="-1"><i class="fa fa-plus"></i>Create Contact</a></span></li>
+                                 <li><span sfuuid="28" class="quickcreate"><a class="actionLink" data-module="Opportunities" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Opportunities" tabindex="-1"><i class="fa fa-plus"></i>Create Opportunity</a></span></li>
+                                 <li><span sfuuid="29" class="quickcreate"><a class="actionLink" data-module="Leads" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Leads" tabindex="-1"><i class="fa fa-plus"></i>Create Lead</a></span></li>
+                                 <li><span sfuuid="30" class="quickcreate"><a class="actionLink" data-module="Documents" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Documents" tabindex="-1"><i class="fa fa-plus"></i>Create Document</a></span></li>
+                                 <li><span sfuuid="31" class="quickcreate"><a data-action="email" href="javascript:void(0)" track="click:quickCreate-Emails" tabindex="-1"><i class="fa fa-plus"></i>Compose Email</a></span></li>
+                                 <li><span sfuuid="32" class="quickcreate"><a class="actionLink" data-module="Calls" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Calls" tabindex="-1"><i class="fa fa-phone"></i>Log Call</a></span></li>
+                                 <li><span sfuuid="33" class="quickcreate"><a class="actionLink" data-module="Meetings" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Meetings" tabindex="-1"><i class="fa fa-calendar"></i>Schedule Meeting</a></span></li>
+                                 <li><span sfuuid="34" class="quickcreate"><a class="actionLink" data-module="Tasks" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Tasks" tabindex="-1"><i class="fa fa-plus"></i>Create Task</a></span></li>
+                                 <li><span sfuuid="35" class="quickcreate"><a class="actionLink" data-module="Notes" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-Notes" tabindex="-1"><i class="fa fa-plus"></i>Create Note or Attachment</a></span></li>
+                                 <li><span sfuuid="36" class="quickcreate"><a class="actionLink" data-module="RevenueLineItems" data-layout="create" data-event="true" href="javascript:void(0);" track="click:quickCreate-RevenueLineItems" tabindex="-1"><i class="fa fa-plus"></i>Create Revenue Line Item</a></span></li>
                               </ul>
                            </div>
                         </div>
@@ -785,8 +793,8 @@
             </div>
          </div>
       </div>
-      </div>
-      </div>
+      
+      
       <div id="content">
          <div>
             <div class="row-fluid">
@@ -837,19 +845,19 @@
                                     <div class="filter-view search">
                                        <span class="table-cell">
                                           <div class="select2-container select2 search-filter">
-                                             <a href="javascript:void(0)" class="select2-choice" >
+                                             <a href="javascript:void(0)" class="select2-choice">
                                              <span class="select2-chosen">
-                                             <span class="select2-choice-type" >Filter<i class="fa fa-caret-down"></i></span>
+                                             <span class="select2-choice-type">Filter<i class="fa fa-caret-down"></i></span>
                                              </span>
                                              </a>
                                           </div>
                                           <div class="choice-filter choice-filter-clickable">
                                              <span class="choice-filter-label" ref="newFilterLabel">New filter</span>
-                                             <span class="choice-filter-close"><i class="fa fa-times-circle hidden" ref="newFilterCancel" ></i></span>
+                                             <span class="choice-filter-close"><i class="fa fa-times-circle hidden" ref="newFilterCancel"></i></span>
                                           </div>
                                        </span>
                                        <div class="table-cell full-width">
-                                          <input type="text" class="search-name" placeholder="Search..." />
+                                          <input type="text" class="search-name" placeholder="Search...">
                                        </div>
                                     </div>
                                     <div class="toggle-actions actions">
@@ -901,7 +909,7 @@
                                           <div class="filter-body fields FilterControlsAdvancedRow">
                                              <div class="row-fluid">
                                                 <div class="row-fluid variable span12">
-                                                   <div class="controls span5"> <span class="details row-one"> <input index="" data-type="" class=""/> </span>
+                                                   <div class="controls span5"> <span class="details row-one"> <input index="" data-type="" class=""> </span>
                                                    </div>
                                                    <div class="controls span7" style="position: relative">
                                                       <span class="">
@@ -931,7 +939,7 @@
                                           <div class="filter-body fields FilterControlsAdvancedRow">
                                              <div class="row-fluid">
                                                 <div class="row-fluid variable span12">
-                                                   <div class="controls span5"> <span class="details row-one"> <input index="" data-type="" class=""/> </span>
+                                                   <div class="controls span5"> <span class="details row-one"> <input index="" data-type="" class=""> </span>
                                                    </div>
                                                    <div class="controls span7" style="position: relative">
                                                       <span class="">
@@ -971,7 +979,7 @@
                                           <div class="filter-body fields FilterControlsAdvancedRow">
                                              <div class="row-fluid" style="padding-right: 10px">
                                                 <div class="row-fluid variable span4">
-                                                   <div class="controls span12"> <span class="details row-select2-abstract" data-storage="group_module_by" fake-select2-type="multi"><input ref="fake-select2" /> </span>
+                                                   <div class="controls span12"> <span class="details row-select2-abstract" data-storage="group_module_by" fake-select2-type="multi"><input ref="fake-select2"> </span>
                                                    </div>
                                                 </div>
                                                 <div class="row-fluid variable span8">
@@ -996,7 +1004,7 @@
                                           <div class="filter-body fields FilterControlsAdvancedRow">
                                              <div class="row-fluid" style="padding-right: 10px">
                                                 <div class="row-fluid variable span4">
-                                                   <div class="controls span12"> <span class="details row-select2-abstract" data-storage="summarize_module_by" fake-select2-type="multi"><input ref="fake-select2" /> </span>
+                                                   <div class="controls span12"> <span class="details row-select2-abstract" data-storage="summarize_module_by" fake-select2-type="multi"><input ref="fake-select2"> </span>
                                                    </div>
                                                 </div>
                                                 <div class="row-fluid variable span8">
@@ -1038,7 +1046,7 @@
                                                    </div>
                                                    <div class="controls span2 chart-type disabled">
                                                       <span class="details row-select2-abstract" data-storage="chart_type" fake-select2-type="html" ref="chart_type">
-                                                      <input style="width: 100%;    margin-top: -5px;" ref="fake-select2" />
+                                                      <input style="width: 100%;    margin-top: -5px;" ref="fake-select2">
                                                       </span>
                                                    </div>
                                                    <div class="controls span8"> <span class="detail"> &nbsp; </span>
@@ -1067,7 +1075,7 @@
                                                          </div>
                                                          <div style="position: relative; float: left">
                                                             <span class="details row-select2-abstract" data-storage="time_period" fake-select2-type="normal">
-                                                            <input style="width: 100%;" ref="fake-select2" />
+                                                            <input style="width: 100%;" ref="fake-select2">
                                                             </span>
                                                          </div>
                                                       </span>
@@ -1512,18 +1520,18 @@
                         <div class="row-fluid">
                            <div class="dashboard" data-dashboard="true">
                               <div class="cols row-fluid">
-                                 <div class=preview-headerbar>
-                                    <div class=headerpane>
+                                 <div class="preview-headerbar">
+                                    <div class="headerpane">
                                        <h1>
-                                          <span class=record-cell data-type=dashboardtitle data-name=name>
-                                             <span sfuuid=84 class=detail style=max-width:308px>
-                                                <div class=dropdown>
-                                                   <a class="dropdown-toggle btn btn-invisible btn-link" data-toggle=dropdown href=javascript:void(0);>Help Dashboard<i class="fa fa-caret-down"></i></a>
-                                                   <ul class=dropdown-menu>
+                                          <span class="record-cell" data-type="dashboardtitle" data-name="name">
+                                             <span sfuuid="84" class="detail" style="max-width:308px">
+                                                <div class="dropdown">
+                                                   <a class="dropdown-toggle btn btn-invisible btn-link" data-toggle="dropdown" href="javascript:void(0);">Help Dashboard<i class="fa fa-caret-down"></i></a>
+                                                   <ul class="dropdown-menu">
                                                       <li>
-                                                         <div class=alert-process>
+                                                         <div class="alert-process">
                                                             <strong>
-                                                               <div class=loading>Loading<i class=l1>.</i><i class=l2>.</i><i class=l3>.</i></div>
+                                                               <div class="loading">Loading<i class="l1">.</i><i class="l2">.</i><i class="l3">.</i></div>
                                                             </strong>
                                                          </div>
                                                       </li>
@@ -1531,44 +1539,44 @@
                                                 </div>
                                              </span>
                                           </span>
-                                          <span class=record-cell data-type=layoutbutton data-name=layout><span sfuuid=85 class=detail></span></span>
-                                          <div class=btn-toolbar>
-                                             <span sfuuid=86 class="fieldset actions detail btn-group">
-                                                <span sfuuid=91 class=detail><a class="rowaction btn" href=javascript:void(0); name=add_button track=click:add_button>Create</a></span> <a track=click:actiondropdown class="btn dropdown-toggle" data-toggle=dropdown href=javascript:void(0); data-placement=bottom rel=tooltip data-original-title=Actions><span class="fa fa-caret-down"></span></a>
-                                                <ul data-menu=dropdown class=dropdown-menu role=menu></ul>
+                                          <span class="record-cell" data-type="layoutbutton" data-name="layout"><span sfuuid="85" class="detail"></span></span>
+                                          <div class="btn-toolbar">
+                                             <span sfuuid="86" class="fieldset actions detail btn-group">
+                                                <span sfuuid="91" class="detail"><a class="rowaction btn" href="javascript:void(0);" name="add_button" track="click:add_button">Create</a></span> <a track="click:actiondropdown" class="btn dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" data-placement="bottom" rel="tooltip" data-original-title="Actions"><span class="fa fa-caret-down"></span></a>
+                                                <ul data-menu="dropdown" class="dropdown-menu" role="menu"></ul>
                                              </span>
-                                             <span sfuuid=87 class=detail><a class="btn btn-invisible btn-link hide" href=javascript:void(0); track=click:cancel_button name=cancel_button style=display:none>Cancel</a></span> <span sfuuid=88 class=detail><a class="btn btn-primary hide" href=javascript:void(0); track=click:save_button name=save_button style=display:none>Save</a></span> <span sfuuid=89 class=detail><a class="btn btn-invisible btn-link hide" href=javascript:void(0); track=click:create_cancel_button name=create_cancel_button style=display:none>Cancel</a></span> <span sfuuid=90 class=detail><a class="btn btn-primary hide" href=javascript:void(0); track=click:create_button name=create_button style=display:none>Save</a></span>
+                                             <span sfuuid="87" class="detail"><a class="btn btn-invisible btn-link hide" href="javascript:void(0);" track="click:cancel_button" name="cancel_button" style="display:none">Cancel</a></span> <span sfuuid="88" class="detail"><a class="btn btn-primary hide" href="javascript:void(0);" track="click:save_button" name="save_button" style="display:none">Save</a></span> <span sfuuid="89" class="detail"><a class="btn btn-invisible btn-link hide" href="javascript:void(0);" track="click:create_cancel_button" name="create_cancel_button" style="display:none">Cancel</a></span> <span sfuuid="90" class="detail"><a class="btn btn-primary hide" href="javascript:void(0);" track="click:create_button" name="create_button" style="display:none">Save</a></span>
                                           </div>
                                        </h1>
                                     </div>
                                  </div>
                                  <ul class="dashlets row-fluid">
-                                    <li class=span12>
+                                    <li class="span12">
                                        <ul class="dashlet-row ui-sortable ui-sortable-disabled">
-                                          <li class="row-fluid sortable" data-sortable=1>
+                                          <li class="row-fluid sortable" data-sortable="1">
                                              <div class="rows well well-invisible">
-                                                <a data-toggle=dropdown class="btn btn-invisible btn-link hide" rel=tooltip data-placement=bottom data-original-title=Configure tabindex=-1><i class="fa fa-cog"></i></a>
+                                                <a data-toggle="dropdown" class="btn btn-invisible btn-link hide" rel="tooltip" data-placement="bottom" data-original-title="Configure" tabindex="-1"><i class="fa fa-cog"></i></a>
                                                 <ul class="dropdown-menu left">
                                                    <div>
-                                                      <li><a class=remove-row tabindex=-1>Remove</a></li>
+                                                      <li><a class="remove-row" tabindex="-1">Remove</a></li>
                                                    </div>
                                                 </ul>
-                                                <a class="move btn btn-invisible btn-link hide" rel=tooltip data-container=body data-placement=bottom data-original-title=Move tabindex=-1><i class="fa fa-arrows-v"></i></a>
+                                                <a class="move btn btn-invisible btn-link hide" rel="tooltip" data-container="body" data-placement="bottom" data-original-title="Move" tabindex="-1"><i class="fa fa-arrows-v"></i></a>
                                                 <ul class="dashlet-cell rows row-fluid">
                                                    <li class="dashlet-container span12 ui-droppable">
                                                       <div>
-                                                         <div class="thumbnail dashlet ui-draggable" data-type=dashlet data-action=droppable>
-                                                            <div data-dashlet=toolbar>
-                                                               <div class=dashlet-header>
-                                                                  <div class="btn-toolbar pull-right"><span sfuuid=484 class=dashlet-toolbar><a href=javascript:void(0); track=click: data-dashletaction=toggleMinify rel=tooltip data-placement=bottom name="" class="dashlet-toggle btn btn-invisible minify" data-original-title=Open/Close><i class="fa fa-chevron-up" tabindex=-1></i></a></span></div>
-                                                                  <h4 data-toggle=dashlet class="dashlet-title ui-draggable-handle">List View Help</h4>
+                                                         <div class="thumbnail dashlet ui-draggable" data-type="dashlet" data-action="droppable">
+                                                            <div data-dashlet="toolbar">
+                                                               <div class="dashlet-header">
+                                                                  <div class="btn-toolbar pull-right"><span sfuuid="484" class="dashlet-toolbar"><a href="javascript:void(0);" track="click:" data-dashletaction="toggleMinify" rel="tooltip" data-placement="bottom" name="" class="dashlet-toggle btn btn-invisible minify" data-original-title="Open/Close"><i class="fa fa-chevron-up" tabindex="-1"></i></a></span></div>
+                                                                  <h4 data-toggle="dashlet" class="dashlet-title ui-draggable-handle">List View Help</h4>
                                                                </div>
                                                             </div>
-                                                            <div data-dashlet=dashlet class=dashlet-content>
+                                                            <div data-dashlet="dashlet" class="dashlet-content">
                                                                <div>
-                                                                  <div class=help-dashlet-content>
-                                                                     <div class=help-body>The Accounts module consists of companies with whom your organization has a relationship and is generally seen as the hub for managing and analyzing your business' interactions with each customer. There are various ways you can create Accounts in Sugar such as via the Accounts module, duplication, importing Accounts, etc. Once the Account record is created, you can view and edit information pertaining to the Account via the Accounts record view. Each Account record may then relate to other Sugar records such as Contacts, Meetings, Cases, Opportunities, and many others as the customer's relationship matures.</div>
-                                                                     <div class=help-more>For more information, refer to the <a href="http://www.sugarcrm.com/crm/product_doc.php?edition=ENT&version=7.0&lang=en_us&module=Accounts&route=list" target=_blank>Accounts documentation.</a></div>
+                                                                  <div class="help-dashlet-content">
+                                                                     <div class="help-body">The Accounts module consists of companies with whom your organization has a relationship and is generally seen as the hub for managing and analyzing your business' interactions with each customer. There are various ways you can create Accounts in Sugar such as via the Accounts module, duplication, importing Accounts, etc. Once the Account record is created, you can view and edit information pertaining to the Account via the Accounts record view. Each Account record may then relate to other Sugar records such as Contacts, Meetings, Cases, Opportunities, and many others as the customer's relationship matures.</div>
+                                                                     <div class="help-more">For more information, refer to the <a href="http://www.sugarcrm.com/crm/product_doc.php?edition=ENT&amp;version=7.0&amp;lang=en_us&amp;module=Accounts&amp;route=list" target="_blank">Accounts documentation.</a></div>
                                                                   </div>
                                                                </div>
                                                             </div>
@@ -1578,46 +1586,46 @@
                                                    </li>
                                                    <li class="dashlet-container span12 ui-droppable">
                                                       <div>
-                                                         <div class="thumbnail dashlet ui-draggable" data-type=dashlet data-action=droppable>
-                                                            <div data-dashlet=toolbar>
-                                                               <div class=dashlet-header>
+                                                         <div class="thumbnail dashlet ui-draggable" data-type="dashlet" data-action="droppable">
+                                                            <div data-dashlet="toolbar">
+                                                               <div class="dashlet-header">
                                                                   <div class="btn-toolbar pull-right">
-                                                                     <span sfuuid=485 class=dashlet-toolbar><a href=javascript:void(0); track=click: data-dashletaction=toggleMinify rel=tooltip data-placement=bottom name="" class="dashlet-toggle btn btn-invisible minify" data-original-title=Open/Close><i class="fa fa-chevron-up" tabindex=-1></i></a></span>
-                                                                     <div class=btn-group>
-                                                                        <a data-toggle=dropdown rel=tooltip class="dropdown-toggle btn btn-invisible" data-placement=bottom data-original-title=Configure><i data-action=loading class="fa fa-cog" track=click:dashletToolbarCog></i></a>
+                                                                     <span sfuuid="485" class="dashlet-toolbar"><a href="javascript:void(0);" track="click:" data-dashletaction="toggleMinify" rel="tooltip" data-placement="bottom" name="" class="dashlet-toggle btn btn-invisible minify" data-original-title="Open/Close"><i class="fa fa-chevron-up" tabindex="-1"></i></a></span>
+                                                                     <div class="btn-group">
+                                                                        <a data-toggle="dropdown" rel="tooltip" class="dropdown-toggle btn btn-invisible" data-placement="bottom" data-original-title="Configure"><i data-action="loading" class="fa fa-cog" track="click:dashletToolbarCog"></i></a>
                                                                         <ul class="dropdown-menu left">
                                                                            <div>
-                                                                              <li><span sfuuid=486 class=dashlet-toolbar><a href=javascript:void(0); track=click: data-dashletaction=editClicked name="">Edit</a></span></li>
-                                                                              <li><span sfuuid=487 class=dashlet-toolbar><a href=javascript:void(0); track=click: data-dashletaction=refreshClicked name="">Refresh</a></span></li>
-                                                                              <li><span sfuuid=488 class=dashlet-toolbar><a href=javascript:void(0); track=click: data-dashletaction=removeClicked name="">Remove</a></span></li>
+                                                                              <li><span sfuuid="486" class="dashlet-toolbar"><a href="javascript:void(0);" track="click:" data-dashletaction="editClicked" name="">Edit</a></span></li>
+                                                                              <li><span sfuuid="487" class="dashlet-toolbar"><a href="javascript:void(0);" track="click:" data-dashletaction="refreshClicked" name="">Refresh</a></span></li>
+                                                                              <li><span sfuuid="488" class="dashlet-toolbar"><a href="javascript:void(0);" track="click:" data-dashletaction="removeClicked" name="">Remove</a></span></li>
                                                                            </div>
                                                                         </ul>
                                                                      </div>
                                                                   </div>
-                                                                  <h4 data-toggle=dashlet class="dashlet-title ui-draggable-handle">Learning Resources</h4>
+                                                                  <h4 data-toggle="dashlet" class="dashlet-title ui-draggable-handle">Learning Resources</h4>
                                                                </div>
                                                             </div>
-                                                            <div data-dashlet=dashlet class=dashlet-content>
-                                                               <ul class=resource-list>
-                                                                  <li class=resource>
-                                                                     <a href=http://university.sugarcrm.com/ target=_blank><span class="label label-module label-module-md pull-left blue"><i class="fa fa-2x fa-book"></i></span></a>
-                                                                     <div class=resource-info>
-                                                                        <a href=http://university.sugarcrm.com/ target=_blank>Sugar University</a>
-                                                                        <p class=details>Become a Sugar expert with upgrade training, videos, classes, webinars, and certification.</p>
+                                                            <div data-dashlet="dashlet" class="dashlet-content">
+                                                               <ul class="resource-list">
+                                                                  <li class="resource">
+                                                                     <a href="http://university.sugarcrm.com/" target="_blank"><span class="label label-module label-module-md pull-left blue"><i class="fa fa-2x fa-book"></i></span></a>
+                                                                     <div class="resource-info">
+                                                                        <a href="http://university.sugarcrm.com/" target="_blank">Sugar University</a>
+                                                                        <p class="details">Become a Sugar expert with upgrade training, videos, classes, webinars, and certification.</p>
                                                                      </div>
                                                                   </li>
-                                                                  <li class=resource>
-                                                                     <a href=https://community.sugarcrm.com/ target=_blank><span class="label label-module label-module-md pull-left green"><i class="fa fa-2x fa-comments-o"></i></span></a>
-                                                                     <div class=resource-info>
-                                                                        <a href=https://community.sugarcrm.com/ target=_blank>Community Forums</a>
-                                                                        <p class=details>Join the discussion, problem solve, and share ideas with other users.</p>
+                                                                  <li class="resource">
+                                                                     <a href="https://community.sugarcrm.com/" target="_blank"><span class="label label-module label-module-md pull-left green"><i class="fa fa-2x fa-comments-o"></i></span></a>
+                                                                     <div class="resource-info">
+                                                                        <a href="https://community.sugarcrm.com/" target="_blank">Community Forums</a>
+                                                                        <p class="details">Join the discussion, problem solve, and share ideas with other users.</p>
                                                                      </div>
                                                                   </li>
-                                                                  <li class=resource>
-                                                                     <a href=http://support.sugarcrm.com/ target=_blank><span class="label label-module label-module-md pull-left red"><i class="fa fa-2x fa-question-circle"></i></span></a>
-                                                                     <div class=resource-info>
-                                                                        <a href=http://support.sugarcrm.com/ target=_blank>Documentation &amp; Support</a>
-                                                                        <p class=details>Learn the details of how Sugar works and engage with support.</p>
+                                                                  <li class="resource">
+                                                                     <a href="http://support.sugarcrm.com/" target="_blank"><span class="label label-module label-module-md pull-left red"><i class="fa fa-2x fa-question-circle"></i></span></a>
+                                                                     <div class="resource-info">
+                                                                        <a href="http://support.sugarcrm.com/" target="_blank">Documentation &amp; Support</a>
+                                                                        <p class="details">Learn the details of how Sugar works and engage with support.</p>
                                                                      </div>
                                                                   </li>
                                                                </ul>
@@ -1629,15 +1637,15 @@
                                                 </ul>
                                              </div>
                                           </li>
-                                          <li class=row-fluid data-sortable=1>
+                                          <li class="row-fluid" data-sortable="1">
                                              <div class="rows well well-invisible">
-                                                <a data-toggle=dropdown class="btn btn-invisible btn-link hide" rel=tooltip data-placement=bottom data-original-title=Configure tabindex=-1><i class="fa fa-cog"></i></a>
+                                                <a data-toggle="dropdown" class="btn btn-invisible btn-link hide" rel="tooltip" data-placement="bottom" data-original-title="Configure" tabindex="-1"><i class="fa fa-cog"></i></a>
                                                 <ul class="dropdown-menu left">
                                                    <div>
-                                                      <li><a class=remove-row tabindex=-1>Remove</a></li>
+                                                      <li><a class="remove-row" tabindex="-1">Remove</a></li>
                                                    </div>
                                                 </ul>
-                                                <a class="move btn btn-invisible btn-link hide" rel=tooltip data-container=body data-placement=bottom data-original-title=Move tabindex=-1><i class="fa fa-arrows-v"></i></a>
+                                                <a class="move btn btn-invisible btn-link hide" rel="tooltip" data-container="body" data-placement="bottom" data-original-title="Move" tabindex="-1"><i class="fa fa-arrows-v"></i></a>
                                                 <div>
                                                    <div></div>
                                                 </div>
@@ -1655,28 +1663,28 @@
             </div>
          </div>
       </div>
-      <div id=footer>
+      <div id="footer">
          <footer>
-            <div class=table-row>
-               <div class=table-cell>
-                  <button data-action=home title=SugarCRM class="btn btn-invisible logo" role=link aria-label=SugarCRM type=button><img src=./include/company_logo.png alt=SugarCRM></button>
+            <div class="table-row">
+               <div class="table-cell">
+                  <button data-action="home" title="SugarCRM" class="btn btn-invisible logo" role="link" aria-label="SugarCRM" type="button"><img src="./include/company_logo.png" alt="SugarCRM"></button>
                </div>
-               <div class=table-cell>
-                  <div class="btn-toolbar pull-right"><span><button data-action=mobile class="btn btn-invisible" aria-label=Mobile role=link type=button><i class="fa fa-mobile"></i><span class=action-label>Mobile</span></button>
-                     </span><span></span><span><button data-action=shortcuts class="btn btn-invisible" aria-label=Shortcuts role=link><i class="fa fa-keyboard-o"></i><span class=action-label>Shortcuts</span></button>
-                     <button data-action=tour class="btn btn-invisible" aria-label=Tour role=link><i class="fa fa-road"></i><span class=action-label>Tour</span></button>
-                     <button data-action=feedback class="btn btn-invisible" aria-label=Feedback role=link><i class="fa fa-comment"></i><span class=action-label>Feedback</span></button>
-                     <button data-action=help class="btn btn-invisible active" aria-label=Help role=link><i class="fa fa-exclamation-circle"></i><span class=action-label>Help</span></button>
-                     <button data-action=support class="btn btn-invisible" aria-label=Support role=link><i class="fa fa-question-circle"></i><span class=action-label>Support</span></button>
+               <div class="table-cell">
+                  <div class="btn-toolbar pull-right"><span><button data-action="mobile" class="btn btn-invisible" aria-label="Mobile" role="link" type="button"><i class="fa fa-mobile"></i><span class="action-label">Mobile</span></button>
+                     </span><span></span><span><button data-action="shortcuts" class="btn btn-invisible" aria-label="Shortcuts" role="link"><i class="fa fa-keyboard-o"></i><span class="action-label">Shortcuts</span></button>
+                     <button data-action="tour" class="btn btn-invisible" aria-label="Tour" role="link"><i class="fa fa-road"></i><span class="action-label">Tour</span></button>
+                     <button data-action="feedback" class="btn btn-invisible" aria-label="Feedback" role="link"><i class="fa fa-comment"></i><span class="action-label">Feedback</span></button>
+                     <button data-action="help" class="btn btn-invisible active" aria-label="Help" role="link"><i class="fa fa-exclamation-circle"></i><span class="action-label">Help</span></button>
+                     <button data-action="support" class="btn btn-invisible" aria-label="Support" role="link"><i class="fa fa-question-circle"></i><span class="action-label">Support</span></button>
                      </span>
                   </div>
                </div>
             </div>
          </footer>
       </div>
-      </div>
-      </div>
-   </body>
+      
+      
+   
    <script src="prototype.js"></script>
    <script>
       // plugin to make list view filterable
@@ -1702,4 +1710,5 @@
           });
       });
    </script>
-</html>
+
+</body></html>

@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
+<!DOCTYPE html><!--
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2009 Frederico Caldeira Knabben
  *
@@ -20,13 +19,11 @@
  * == END LICENSE ==
  *
  * Sample page.
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+--><html xmlns="http://www.w3.org/1999/xhtml"><head>
 	<title>FCKeditor - Sample</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex, nofollow" />
-	<link href="../sample.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="../sample.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="../../fckeditor.js"></script>
 	<script type="text/javascript">
 
@@ -43,6 +40,16 @@ function ChangeLanguage( languageCode )
 }
 
 	</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body>
 	<h1>
@@ -50,9 +57,9 @@ function ChangeLanguage( languageCode )
 	<div>
 		This sample shows how to change the editor toolbar.
 	</div>
-	<hr />
+	<hr>
 	<table cellpadding="0" cellspacing="0" border="0">
-		<tr>
+		<tbody><tr>
 			<td>
 				Select the toolbar to load:&nbsp;
 			</td>
@@ -63,8 +70,8 @@ function ChangeLanguage( languageCode )
 				</select>
 			</td>
 		</tr>
-	</table>
-	<br />
+	</tbody></table>
+	<br>
 	<form action="../php/sampleposteddata.php" method="post" target="_blank">
 		<script type="text/javascript">
 <!--
@@ -88,8 +95,9 @@ oFCKeditor.Value = '<p>This is some <strong>sample text<\/strong>. You are using
 oFCKeditor.Create() ;
 //-->
 		</script>
-		<br />
-		<input type="submit" value="Submit" />
+		<br>
+		<input type="submit" value="Submit">
 	</form>
-</body>
-</html>
+
+
+</body></html>

@@ -1,6 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-"http://www.w3.org/TR/html4/strict.dtd">
-<!--
+<!DOCTYPE html><!--
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2009 Frederico Caldeira Knabben
  *
@@ -21,9 +19,7 @@
  * == END LICENSE ==
  *
  * Page used to select the sample to view.
--->
-<html>
-<head>
+--><html><head>
 	<title>FCKeditor - Sample Selection</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="robots" content="noindex, nofollow">
@@ -40,13 +36,23 @@ function OpenSample( sample )
 }
 
 	</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body style="margin:1em;">
 	<table border="0" cellpadding="0" cellspacing="0" style="height: 100%">
-		<tr>
+		<tbody><tr>
 			<td>
 				Please select the sample you want to view:
-				<br />
+				<br>
 				<select onchange="OpenSample(this.value);">
 					<optgroup label="JavaScript">
 						<option value="html/sample01.html" selected="selected">JavaScript : Sample 01 : Editor
@@ -115,6 +121,7 @@ function OpenSample( sample )
 				</select>
 			</td>
 		</tr>
-	</table>
-</body>
-</html>
+	</tbody></table>
+
+
+</body></html>

@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!--
+<!DOCTYPE html><!--
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2009 Frederico Caldeira Knabben
  *
@@ -20,12 +19,10 @@
  * == END LICENSE ==
  *
  * Template selection dialog window.
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+--><html xmlns="http://www.w3.org/1999/xhtml"><head>
 	<title></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex, nofollow" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex, nofollow">
 	<style type="text/css">
 			.TplList
 			{
@@ -199,12 +196,22 @@ function SelectTemplate( index )
 }
 
 	</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body style="overflow: hidden">
 	<table width="100%" style="height: 100%">
-		<tr>
+		<tbody><tr>
 			<td align="center">
-				<span fcklang="DlgTemplatesSelMsg">Please select the template to open in the editor<br />
+				<span fcklang="DlgTemplatesSelMsg">Please select the template to open in the editor<br>
 					(the actual contents will be lost):</span>
 			</td>
 		</tr>
@@ -212,11 +219,11 @@ function SelectTemplate( index )
 			<td height="100%" align="center">
 				<div id="eList" align="left" class="TplList">
 					<div id="eLoading" align="center" style="display: none">
-						<br />
+						<br>
 						<span fcklang="DlgTemplatesLoading">Loading templates list. Please wait...</span>
 					</div>
 					<div id="eEmpty" align="center" style="display: none">
-						<br />
+						<br>
 						<span fcklang="DlgTemplatesNoTpl">(No templates defined)</span>
 					</div>
 				</div>
@@ -225,18 +232,19 @@ function SelectTemplate( index )
 		<tr id="xReplaceBlock" style="display: none">
 			<td>
 				<table cellpadding="0" cellspacing="0">
-					<tr>
+					<tbody><tr>
 						<td>
-							<input id="xChkReplaceAll" type="checkbox" /></td>
+							<input id="xChkReplaceAll" type="checkbox"></td>
 						<td>
 							&nbsp;</td>
 						<td>
 							<label for="xChkReplaceAll" fcklang="DlgTemplatesReplace">
 								Replace actual contents</label></td>
 					</tr>
-				</table>
+				</tbody></table>
 			</td>
 		</tr>
-	</table>
-</body>
-</html>
+	</tbody></table>
+
+
+</body></html>

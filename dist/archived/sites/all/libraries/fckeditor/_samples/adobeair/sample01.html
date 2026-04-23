@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
+<!DOCTYPE html><!--
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2009 Frederico Caldeira Knabben
  *
@@ -20,17 +19,25 @@
  * == END LICENSE ==
  *
  * Sample Adobe AIR application.
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+--><html xmlns="http://www.w3.org/1999/xhtml"><head>
 	<title>FCKeditor - Adobe AIR Sample</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex, nofollow" />
-	<link href="../sample.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="../sample.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="../../fckeditor.js"></script>
 	<style type="text/css">
 		body { margin: 10px ; }
 	</style>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body>
 	<h1>
@@ -39,7 +46,7 @@
 	<div>
 		This sample loads FCKeditor with full features enabled.
 	</div>
-	<hr />
+	<hr>
 	<script type="text/javascript">
 
 // Automatically calculates the editor base path based on the _samples directory.
@@ -54,5 +61,6 @@ oFCKeditor.Value	= '<p>FCKeditor is in the <strong>AIR</strong>!<\/p>' ;
 oFCKeditor.Create() ;
 
 	</script>
-</body>
-</html>
+
+
+</body></html>

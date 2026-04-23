@@ -9,6 +9,19 @@ const DIST = path.join(ROOT, 'dist');
 const CURRENT = path.join(DIST, 'deprecated', 'portfolio');
 const ARCHIVED = path.join(DIST, 'archived', 'portfolio');
 const OUTPUT = path.join(DIST, 'portfolio');
+const GA_MEASUREMENT_ID = 'G-F8M193CG7Z';
+
+function gtagHeadSnippet() {
+  return `  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '${GA_MEASUREMENT_ID}');
+  </script>`;
+}
 
 // ---------------------------------------------------------------------------
 // Utilities
@@ -287,6 +300,7 @@ function timelineHtml(yearGroups) {
   <title>Portfolio \u2014 f1vlad.com</title>
   <link rel="stylesheet" href="css/style.css">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="33f9e25a-b4ed-490e-88b2-09f9216ae1d9"></script>
+${gtagHeadSnippet()}
 </head>
 <body>
   <nav>
@@ -319,6 +333,7 @@ function projectPageHtml(p) {
   <title>${esc(p.title)} \u2014 Portfolio \u2014 f1vlad.com</title>
   <link rel="stylesheet" href="../../css/style.css">
   <script defer src="https://cloud.umami.is/script.js" data-website-id="33f9e25a-b4ed-490e-88b2-09f9216ae1d9"></script>
+${gtagHeadSnippet()}
 </head>
 <body>
   <nav>

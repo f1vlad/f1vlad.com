@@ -19,10 +19,7 @@
  * == END LICENSE ==
  *
  * Test page for the File Browser connectors.
--->
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+--><!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head>
 	<title>FCKeditor - Connectors Tests</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<script type="text/javascript">
@@ -133,15 +130,25 @@ function SetAction()
 }
 
 	</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body>
 	<table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
-		<tr>
+		<tbody><tr>
 			<td>
 				<table cellspacing="0" cellpadding="0" border="0">
-					<tr>
+					<tbody><tr>
 						<td>
-							Connector:<br />
+							Connector:<br>
 							<select id="cmbConnector" name="cmbConnector">
 								<option value="asp/connector.asp" selected="selected">ASP</option>
 								<option value="aspx/connector.aspx">ASP.Net</option>
@@ -155,12 +162,12 @@ function SetAction()
 						<td>
 							&nbsp;&nbsp;&nbsp;</td>
 						<td>
-							Current Folder<br />
-							<input id="txtFolder" type="text" value="/" name="txtFolder" /></td>
+							Current Folder<br>
+							<input id="txtFolder" type="text" value="/" name="txtFolder"></td>
 						<td>
 							&nbsp;&nbsp;&nbsp;</td>
 						<td>
-							Resource Type<br />
+							Resource Type<br>
 							<select id="cmbType" name="cmbType">
 								<option value="File" selected="selected">File</option>
 								<option value="Image">Image</option>
@@ -170,10 +177,10 @@ function SetAction()
 							</select>
 						</td>
 					</tr>
-				</table>
-				<br />
+				</tbody></table>
+				<br>
 				<table cellspacing="0" cellpadding="0" border="0">
-					<tr>
+					<tbody><tr>
 						<td valign="top">
 							<a href="#" onclick="GetFolders();">Get Folders</a></td>
 						<td>
@@ -188,23 +195,23 @@ function SetAction()
 							&nbsp;&nbsp;&nbsp;</td>
 						<td valign="top">
 							<form id="frmUpload" action="" target="eRunningFrame" method="post" enctype="multipart/form-data">
-								File Upload<br />
-								<input id="txtFileUpload" type="file" name="NewFile" />
-								<input type="submit" value="Upload" onclick="SetAction();" />
+								File Upload<br>
+								<input id="txtFileUpload" type="file" name="NewFile">
+								<input type="submit" value="Upload" onclick="SetAction();">
 							</form>
 						</td>
 					</tr>
-				</table>
-				<br />
+				</tbody></table>
+				<br>
 				URL: <span id="eUrl"></span>
 			</td>
 		</tr>
 		<tr>
 			<td height="100%" valign="top">
-				<iframe id="eRunningFrame" src="javascript:void(0)" name="eRunningFrame" width="100%"
-					height="100%"></iframe>
+				<iframe id="eRunningFrame" src="javascript:void(0)" name="eRunningFrame" width="100%" height="100%"></iframe>
 			</td>
 		</tr>
-	</table>
-</body>
-</html>
+	</tbody></table>
+
+
+</body></html>

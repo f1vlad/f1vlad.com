@@ -1,6 +1,5 @@
-<html>
-	<head>
-		<link rel="stylesheet" type="text/css" href="spellerStyle.css" />
+<html><head>
+		<link rel="stylesheet" type="text/css" href="spellerStyle.css">
 		<script type="text/javascript" src="controlWindow.js"></script>
 		<script type="text/javascript">
 var spellerObject;
@@ -72,49 +71,59 @@ function init_spell() {
 }
 
 </script>
-	</head>
-	<body class="controlWindowBody" onLoad="init_spell();" style="OVERFLOW: hidden" scroll="no">	<!-- by FredCK -->
+	
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
+</head>
+	<body class="controlWindowBody" onload="init_spell();" style="OVERFLOW: hidden" scroll="no">	<!-- by FredCK -->
 		<form name="spellcheck">
-			<table border="0" cellpadding="0" cellspacing="0" border="0" align="center">
-				<tr>
-					<td colspan="3" class="normalLabel"><span fckLang="DlgSpellNotInDic">Not in dictionary:</span></td>
+			<table border="0" cellpadding="0" cellspacing="0" align="center">
+				<tbody><tr>
+					<td colspan="3" class="normalLabel"><span fcklang="DlgSpellNotInDic">Not in dictionary:</span></td>
 				</tr>
 				<tr>
-					<td colspan="3"><input class="readonlyInput" type="text" name="misword" readonly /></td>
+					<td colspan="3"><input class="readonlyInput" type="text" name="misword" readonly=""></td>
 				</tr>
 				<tr>
 					<td colspan="3" height="5"></td>
 				</tr>
 				<tr>
-					<td class="normalLabel"><span fckLang="DlgSpellChangeTo">Change to:</span></td>
+					<td class="normalLabel"><span fcklang="DlgSpellChangeTo">Change to:</span></td>
 				</tr>
 				<tr valign="top">
 					<td>
-						<table border="0" cellpadding="0" cellspacing="0" border="0">
-							<tr>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody><tr>
 								<td class="normalLabel">
-									<input class="textDefault" type="text" name="txtsugg" />
+									<input class="textDefault" type="text" name="txtsugg">
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<select class="suggSlct" name="sugg" size="7" onChange="suggText();" onDblClick="replace_word();">
+									<select class="suggSlct" name="sugg" size="7" onchange="suggText();" ondblclick="replace_word();">
 										<option></option>
 									</select>
 								</td>
 							</tr>
-						</table>
+						</tbody></table>
 					</td>
 					<td>&nbsp;&nbsp;</td>
 					<td>
-						<table border="0" cellpadding="0" cellspacing="0" border="0">
-							<tr>
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tbody><tr>
 								<td>
-									<input class="buttonDefault" type="button" fckLang="DlgSpellBtnIgnore" value="Ignore" onClick="ignore_word();">
+									<input class="buttonDefault" type="button" fcklang="DlgSpellBtnIgnore" value="Ignore" onclick="ignore_word();">
 								</td>
 								<td>&nbsp;&nbsp;</td>
 								<td>
-									<input class="buttonDefault" type="button" fckLang="DlgSpellBtnIgnoreAll" value="Ignore All" onClick="ignore_all();">
+									<input class="buttonDefault" type="button" fcklang="DlgSpellBtnIgnoreAll" value="Ignore All" onclick="ignore_all();">
 								</td>
 							</tr>
 							<tr>
@@ -122,11 +131,11 @@ function init_spell() {
 							</tr>
 							<tr>
 								<td>
-									<input class="buttonDefault" type="button" fckLang="DlgSpellBtnReplace" value="Replace" onClick="replace_word();">
+									<input class="buttonDefault" type="button" fcklang="DlgSpellBtnReplace" value="Replace" onclick="replace_word();">
 								</td>
 								<td>&nbsp;&nbsp;</td>
 								<td>
-									<input class="buttonDefault" type="button" fckLang="DlgSpellBtnReplaceAll" value="Replace All" onClick="replace_all();">
+									<input class="buttonDefault" type="button" fcklang="DlgSpellBtnReplaceAll" value="Replace All" onclick="replace_all();">
 								</td>
 							</tr>
 							<tr>
@@ -134,8 +143,7 @@ function init_spell() {
 							</tr>
 							<tr>
 								<td>
-									<input class="buttonDefault" type="button" name="btnUndo" fckLang="DlgSpellBtnUndo" value="Undo" onClick="undo();"
-										disabled>
+									<input class="buttonDefault" type="button" name="btnUndo" fcklang="DlgSpellBtnUndo" value="Undo" onclick="undo();" disabled="">
 								</td>
 								<td>&nbsp;&nbsp;</td>
 								<td>
@@ -144,10 +152,11 @@ function init_spell() {
 									-->
 								</td>
 							</tr>
-						</table>
+						</tbody></table>
 					</td>
 				</tr>
-			</table>
+			</tbody></table>
 		</form>
-	</body>
-</html>
+	
+
+</body></html>

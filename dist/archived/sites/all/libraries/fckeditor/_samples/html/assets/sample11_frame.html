@@ -19,21 +19,29 @@
  * == END LICENSE ==
  *
  * Sample page.
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+--><html xmlns="http://www.w3.org/1999/xhtml"><head>
 	<title>FCKeditor - Sample</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="robots" content="noindex, nofollow" />
-	<link href="../sample.css" rel="stylesheet" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="robots" content="noindex, nofollow">
+	<link href="../sample.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="../../../fckeditor.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
 </head>
 <body>
 	<form action="../../php/sampleposteddata.php" method="post" target="_blank">
-		Normal text field:<br />
-		<input name="NormaText" value="Plain Text" />
-		<br />
-		<br />
+		Normal text field:<br>
+		<input name="NormaText" value="Plain Text">
+		<br>
+		<br>
 		FCKeditor 1:
 		<script type="text/javascript">
 <!--
@@ -50,7 +58,7 @@ oFCKeditor.Value = '<p>This is some <strong>sample text<\/strong>. You are using
 oFCKeditor.Create() ;
 //-->
 		</script>
-		<br />
+		<br>
 		FCKeditor 2:
 		<script type="text/javascript">
 <!--
@@ -62,8 +70,9 @@ oFCKeditor.Value = '<p>This is some <strong>sample text<\/strong>. You are using
 oFCKeditor.Create() ;
 //-->
 		</script>
-		<br />
-		<input type="submit" value="Submit" />
+		<br>
+		<input type="submit" value="Submit">
 	</form>
-</body>
-</html>
+
+
+</body></html>

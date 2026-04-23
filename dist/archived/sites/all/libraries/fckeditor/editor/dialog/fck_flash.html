@@ -1,5 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<!--
+<!DOCTYPE html><!--
  * FCKeditor - The text editor for Internet - http://www.fckeditor.net
  * Copyright (C) 2003-2009 Frederico Caldeira Knabben
  *
@@ -20,9 +19,7 @@
  * == END LICENSE ==
  *
  * Flash Properties dialog window.
--->
-<html>
-	<head>
+--><html><head>
 		<title>Flash Properties</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta content="noindex, nofollow" name="robots">
@@ -33,120 +30,131 @@
 document.write( FCKTools.GetStyleHtml( GetCommonDialogCss() ) ) ;
 
 		</script>
-	</head>
+	
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-F8M193CG7Z"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F8M193CG7Z');
+</script>
+</head>
 	<body scroll="no" style="OVERFLOW: hidden">
 		<div id="divInfo">
-			<table cellSpacing="1" cellPadding="1" width="100%" border="0">
-				<tr>
+			<table cellspacing="1" cellpadding="1" width="100%" border="0">
+				<tbody><tr>
 					<td>
-						<table cellSpacing="0" cellPadding="0" width="100%" border="0">
-							<tr>
-								<td width="100%"><span fckLang="DlgImgURL">URL</span>
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tbody><tr>
+								<td width="100%"><span fcklang="DlgImgURL">URL</span>
 								</td>
-								<td id="tdBrowse" style="DISPLAY: none" noWrap rowSpan="2">&nbsp; <input id="btnBrowse" onclick="BrowseServer();" type="button" value="Browse Server" fckLang="DlgBtnBrowseServer">
-								</td>
-							</tr>
-							<tr>
-								<td vAlign="top"><input id="txtUrl" onblur="UpdatePreview();" style="WIDTH: 100%" type="text">
+								<td id="tdBrowse" style="DISPLAY: none" nowrap="" rowspan="2">&nbsp; <input id="btnBrowse" onclick="BrowseServer();" type="button" value="Browse Server" fcklang="DlgBtnBrowseServer">
 								</td>
 							</tr>
-						</table>
+							<tr>
+								<td valign="top"><input id="txtUrl" onblur="UpdatePreview();" style="WIDTH: 100%" type="text">
+								</td>
+							</tr>
+						</tbody></table>
 					</td>
 				</tr>
-				<TR>
-					<TD>
-						<table cellSpacing="0" cellPadding="0" border="0">
-							<TR>
-								<TD nowrap>
-									<span fckLang="DlgImgWidth">Width</span><br>
-									<input id="txtWidth" onkeypress="return IsDigit(event);" type="text" size="3">
-								</TD>
-								<TD>&nbsp;</TD>
-								<TD>
-									<span fckLang="DlgImgHeight">Height</span><br>
-									<input id="txtHeight" onkeypress="return IsDigit(event);" type="text" size="3">
-								</TD>
-							</TR>
-						</table>
-					</TD>
-				</TR>
 				<tr>
-					<td vAlign="top">
-						<table cellSpacing="0" cellPadding="0" width="100%" border="0">
-							<tr>
+					<td>
+						<table cellspacing="0" cellpadding="0" border="0">
+							<tbody><tr>
+								<td nowrap="">
+									<span fcklang="DlgImgWidth">Width</span><br>
+									<input id="txtWidth" onkeypress="return IsDigit(event);" type="text" size="3">
+								</td>
+								<td>&nbsp;</td>
+								<td>
+									<span fcklang="DlgImgHeight">Height</span><br>
+									<input id="txtHeight" onkeypress="return IsDigit(event);" type="text" size="3">
+								</td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<table cellspacing="0" cellpadding="0" width="100%" border="0">
+							<tbody><tr>
 								<td valign="top" width="100%">
-									<table cellSpacing="0" cellPadding="0" width="100%">
-										<tr>
-											<td><span fckLang="DlgImgPreview">Preview</span></td>
+									<table cellspacing="0" cellpadding="0" width="100%">
+										<tbody><tr>
+											<td><span fcklang="DlgImgPreview">Preview</span></td>
 										</tr>
 										<tr>
 											<td id="ePreviewCell" valign="top" class="FlashPreviewArea"><iframe src="fck_flash/fck_flash_preview.html" frameborder="0" marginheight="0" marginwidth="0"></iframe></td>
 										</tr>
-									</table>
+									</tbody></table>
 								</td>
 							</tr>
-						</table>
+						</tbody></table>
 					</td>
 				</tr>
-			</table>
+			</tbody></table>
 		</div>
 		<div id="divUpload" style="DISPLAY: none">
 			<form id="frmUpload" method="post" target="UploadWindow" enctype="multipart/form-data" action="" onsubmit="return CheckUpload();">
-				<span fckLang="DlgLnkUpload">Upload</span><br />
-				<input id="txtUploadFile" style="WIDTH: 100%" type="file" size="40" name="NewFile" /><br />
-				<br />
-				<input id="btnUpload" type="submit" value="Send it to the Server" fckLang="DlgLnkBtnUpload" />
+				<span fcklang="DlgLnkUpload">Upload</span><br>
+				<input id="txtUploadFile" style="WIDTH: 100%" type="file" size="40" name="NewFile"><br>
+				<br>
+				<input id="btnUpload" type="submit" value="Send it to the Server" fcklang="DlgLnkBtnUpload">
 				<script type="text/javascript">
 					document.write( '<iframe name="UploadWindow" style="DISPLAY: none" src="' + FCKTools.GetVoidUrl() + '"><\/iframe>' ) ;
 				</script>
 			</form>
 		</div>
 		<div id="divAdvanced" style="DISPLAY: none">
-			<TABLE cellSpacing="0" cellPadding="0" border="0">
-				<TR>
-					<TD nowrap>
-						<span fckLang="DlgFlashScale">Scale</span><BR>
+			<table cellspacing="0" cellpadding="0" border="0">
+				<tbody><tr>
+					<td nowrap="">
+						<span fcklang="DlgFlashScale">Scale</span><br>
 						<select id="cmbScale">
-							<option value="" selected></option>
-							<option value="showall" fckLang="DlgFlashScaleAll">Show all</option>
-							<option value="noborder" fckLang="DlgFlashScaleNoBorder">No Border</option>
-							<option value="exactfit" fckLang="DlgFlashScaleFit">Exact Fit</option>
-						</select></TD>
-					<TD>&nbsp;&nbsp;&nbsp; &nbsp;
-					</TD>
+							<option value="" selected=""></option>
+							<option value="showall" fcklang="DlgFlashScaleAll">Show all</option>
+							<option value="noborder" fcklang="DlgFlashScaleNoBorder">No Border</option>
+							<option value="exactfit" fcklang="DlgFlashScaleFit">Exact Fit</option>
+						</select></td>
+					<td>&nbsp;&nbsp;&nbsp; &nbsp;
+					</td>
 					<td valign="bottom">
 						<table>
-							<tr>
-								<td><input id="chkAutoPlay" type="checkbox" checked></td>
-								<td><label for="chkAutoPlay" nowrap fckLang="DlgFlashChkPlay">Auto Play</label>&nbsp;&nbsp;</td>
-								<td><input id="chkLoop" type="checkbox" checked></td>
-								<td><label for="chkLoop" nowrap fckLang="DlgFlashChkLoop">Loop</label>&nbsp;&nbsp;</td>
-								<td><input id="chkMenu" type="checkbox" checked></td>
-								<td><label for="chkMenu" nowrap fckLang="DlgFlashChkMenu">Enable Flash Menu</label></td>
+							<tbody><tr>
+								<td><input id="chkAutoPlay" type="checkbox" checked=""></td>
+								<td><label for="chkAutoPlay" nowrap="" fcklang="DlgFlashChkPlay">Auto Play</label>&nbsp;&nbsp;</td>
+								<td><input id="chkLoop" type="checkbox" checked=""></td>
+								<td><label for="chkLoop" nowrap="" fcklang="DlgFlashChkLoop">Loop</label>&nbsp;&nbsp;</td>
+								<td><input id="chkMenu" type="checkbox" checked=""></td>
+								<td><label for="chkMenu" nowrap="" fcklang="DlgFlashChkMenu">Enable Flash Menu</label></td>
 							</tr>
-						</table>
+						</tbody></table>
 					</td>
-				</TR>
-			</TABLE>
+				</tr>
+			</tbody></table>
 			<br>
 			&nbsp;
-			<table cellSpacing="0" cellPadding="0" width="100%" align="center" border="0">
-				<tr>
-					<td vAlign="top" width="50%"><span fckLang="DlgGenId">Id</span><br>
+			<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0">
+				<tbody><tr>
+					<td valign="top" width="50%"><span fcklang="DlgGenId">Id</span><br>
 						<input id="txtAttId" style="WIDTH: 100%" type="text">
 					</td>
 					<td>&nbsp;&nbsp;</td>
-					<td vAlign="top" nowrap><span fckLang="DlgGenClass">Stylesheet Classes</span><br>
+					<td valign="top" nowrap=""><span fcklang="DlgGenClass">Stylesheet Classes</span><br>
 						<input id="txtAttClasses" style="WIDTH: 100%" type="text">
 					</td>
 					<td>&nbsp;&nbsp;</td>
-					<td vAlign="top" nowrap width="50%">&nbsp;<span fckLang="DlgGenTitle">Advisory Title</span><br>
+					<td valign="top" nowrap="" width="50%">&nbsp;<span fcklang="DlgGenTitle">Advisory Title</span><br>
 						<input id="txtAttTitle" style="WIDTH: 100%" type="text">
 					</td>
 				</tr>
-			</table>
-			<span fckLang="DlgGenStyle">Style</span><br>
+			</tbody></table>
+			<span fcklang="DlgGenStyle">Style</span><br>
 			<input id="txtAttStyle" style="WIDTH: 100%" type="text">
 		</div>
-	</body>
-</html>
+	
+
+</body></html>
